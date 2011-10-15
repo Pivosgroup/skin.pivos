@@ -110,18 +110,18 @@
 			<onright>1000</onright>
 			<onup>1000</onup>
 			<ondown>1000</ondown>
-		</control>		
+		</control>
 		<control type="rss">
-		  <posx>0</posx>
-		  <posy>1010</posy>
-		  <width>1920</width>
-		  <height>30</height>
+			<posx>0</posx>
+			<posy>1010</posy>
+			<width>1920</width>
+			<height>30</height>
 			<font>font30</font>
 			<urlset>1</urlset>
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 			<textcolor>orange</textcolor>
 			<titlecolor>orange</titlecolor>
 			<headlinecolor>white</headlinecolor>
-		</control>			
+		</control>
 	</controls>
 </window>
