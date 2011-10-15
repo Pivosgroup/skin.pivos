@@ -1,0 +1,127 @@
+<window id="0">
+	<defaultcontrol always="true">1000</defaultcontrol>
+	<controls>
+		<include>DefaultBackground</include>
+		<control type="list" id="1000">
+			<orientation>vertical</orientation>
+			<posx>40</posx>
+			<posy>320</posy>
+			<width>400</width>
+			<height>680</height>
+			<onup>1000</onup>
+			<ondown>1000</ondown>
+			<onleft>20</onleft>
+			<onright>20</onright>
+			<itemlayout width="400" height="80">
+				<control type="label">
+					<posx>200</posx>
+					<posy>2</posy>
+					<width>400</width>
+					<height>40</height>
+					<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+					<font>font50</font>
+					<align>center</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>FF000000</shadowcolor>
+				</control>
+			</itemlayout>
+			<focusedlayout width="400" height="80">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>400</width>
+					<height>80</height>
+					<texture border="20">Button.png</texture>
+					<animation effect="slide" start="0,-80" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1000).OnNext">focus</animation>
+					<animation effect="slide" start="0,80" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1000).OnPrevious">focus</animation>
+					<animation effect="fade" start="50" end="80" time="1500" pulse="true" condition="true">Conditional</animation>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>2</posy>
+					<width>400</width>
+					<height>40</height>
+					<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+					<font>font50</font>
+					<align>center</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>FF000000</shadowcolor>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>2</posy>
+					<width>400</width>
+					<height>40</height>
+					<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+					<font>font50</font>
+					<align>center</align>
+					<textcolor>orange</textcolor>
+					<animation effect="fade" start="0" end="100" time="150" pulse="true" condition="true">focus</animation>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<label>Play</label>
+					<onclick>ActivateWindow()</onclick>
+				</item>
+				<item id="2">
+					<label>Apps</label>
+					<onclick>ActivateWindow()</onclick>
+				</item>
+				<item id="3">
+					<label>Favourites</label>
+					<onclick>ActivateWindow()</onclick>
+				</item>
+				<item id="4">
+					<label>Weather</label>
+					<onclick>ActivateWindow()</onclick>
+				</item>
+				<item id="5">
+					<label>Settings</label>
+					<onclick>ActivateWindow(Settings)</onclick>
+				</item>
+			</content>
+		</control>
+		<control type="label">
+			<description>time label</description>
+			<posx>1780</posx>
+			<posy>10</posy>
+			<width>600</width>
+			<height>50</height>
+			<align>right</align>
+			<aligny>center</aligny>
+			<font>font40</font>
+			<textcolor>orange</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>[UPPERCASE]$INFO[System.Date][/UPPERCASE] | $INFO[System.Time]</label>
+		</control>
+		<control type="button" id="20">
+			<posx>1825</posx>
+			<posy>15</posy>
+			<width>43</width>
+			<height>43</height>
+			<label>31003</label>
+			<font>-</font>
+			<aligny>-</aligny>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
+			<texturefocus>home-power-focus.png</texturefocus>
+			<texturenofocus>home-power.png</texturenofocus>
+			<onleft>1000</onleft>
+			<onright>1000</onright>
+			<onup>1000</onup>
+			<ondown>1000</ondown>
+		</control>		
+		<control type="rss">
+		  <posx>0</posx>
+		  <posy>1010</posy>
+		  <width>1920</width>
+		  <height>30</height>
+			<font>font30</font>
+			<urlset>1</urlset>
+			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+			<textcolor>orange</textcolor>
+			<titlecolor>orange</titlecolor>
+			<headlinecolor>white</headlinecolor>
+		</control>			
+	</controls>
+</window>
