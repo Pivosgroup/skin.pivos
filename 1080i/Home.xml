@@ -2,10 +2,60 @@
 	<defaultcontrol always="true">1000</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
+		<control type="image">
+			<posx>1500</posx>
+			<posy>775</posy>
+			<width>372</width>
+			<height>220</height>
+			<texture>Logo.png</texture>
+			<colordiffuse>AAFFFFFF</colordiffuse>
+		</control>
+		<include>Header</include>
+		<control type="label">
+			<description>time label</description>
+			<posx>1890</posx>
+			<posy>100</posy>
+			<width>600</width>
+			<height>50</height>
+			<label>[B]$INFO[System.Time][/B]</label>
+			<font>font80</font>
+			<textcolor>lightorange</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<align>right</align>
+			<aligny>center</aligny>
+		</control>
+		<control type="label">
+			<description>date label</description>
+			<posx>1890</posx>
+			<posy>160</posy>
+			<width>600</width>
+			<height>50</height>
+			<label>[B]$INFO[System.Date][/B]</label>
+			<font>font30</font>
+			<textcolor>darkorange</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<align>right</align>
+			<aligny>center</aligny>
+		</control>
+		<control type="image">
+			<posx>1580</posx>
+			<posy>204</posy>
+			<width>310</width>
+			<height>1</height>
+			<texture>White.png</texture>
+			<colordiffuse>FFC37417</colordiffuse>
+		</control>
+		<control type="image">
+			<posx>30</posx>
+			<posy>330</posy>
+			<width>460</width>
+			<height>380</height>
+			<texture border="30">MenuBack.png</texture>
+		</control>
 		<control type="list" id="1000">
 			<orientation>vertical</orientation>
-			<posx>40</posx>
-			<posy>320</posy>
+			<posx>60</posx>
+			<posy>360</posy>
 			<width>400</width>
 			<height>680</height>
 			<onup>1000</onup>
@@ -13,6 +63,14 @@
 			<onleft>21</onleft>
 			<onright>20</onright>
 			<itemlayout width="400" height="80">
+				<control type="image">
+					<posx>50</posx>
+					<posy>79</posy>
+					<width>300</width>
+					<height>1</height>
+					<texture>White.png</texture>
+					<colordiffuse>19FFFFFF</colordiffuse>
+				</control>
 				<control type="label">
 					<posx>200</posx>
 					<posy>2</posy>
@@ -20,20 +78,29 @@
 					<height>40</height>
 					<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 					<font>font50</font>
-					<align>center</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>FF000000</shadowcolor>
+					<align>center</align>
+					<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
 				</control>
 			</itemlayout>
 			<focusedlayout width="400" height="80">
+				<control type="image">
+					<posx>50</posx>
+					<posy>79</posy>
+					<width>300</width>
+					<height>1</height>
+					<texture>White.png</texture>
+					<colordiffuse>19FFFFFF</colordiffuse>
+				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>400</width>
 					<height>80</height>
-					<texture border="20">Button.png</texture>
-					<animation effect="slide" start="0,-80" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1000).OnNext">focus</animation>
-					<animation effect="slide" start="0,80" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1000).OnPrevious">focus</animation>
+					<texture border="15">ListFocus.png</texture>
+					<animation effect="slide" start="0,-80" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1000).OnNext + !Container(1000).HasFocus(1)">focus</animation>
+					<animation effect="slide" start="0,80" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1000).OnPrevious + !Container(1000).HasFocus(4)">focus</animation>
 					<animation effect="fade" start="50" end="80" time="1500" pulse="true" condition="true">Conditional</animation>
 				</control>
 				<control type="label">
@@ -43,9 +110,10 @@
 					<height>40</height>
 					<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 					<font>font50</font>
-					<align>center</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>FF000000</shadowcolor>
+					<align>center</align>
+					<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
 				</control>
 				<control type="label">
 					<posx>200</posx>
@@ -54,9 +122,22 @@
 					<height>40</height>
 					<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 					<font>font50</font>
-					<align>center</align>
 					<textcolor>orange</textcolor>
-					<animation effect="fade" start="0" end="100" time="150" pulse="true" condition="true">focus</animation>
+					<align>center</align>
+					<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
+					<visible>Control.HasFocus(1000)</visible>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>2</posy>
+					<width>400</width>
+					<height>40</height>
+					<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+					<font>font50</font>
+					<textcolor>lightorange</textcolor>
+					<shadowcolor>FF000000</shadowcolor>
+					<align>center</align>
+					<visible>!Control.HasFocus(1000)</visible>
 				</control>
 			</focusedlayout>
 			<content>
@@ -78,62 +159,6 @@
 				</item>
 			</content>
 		</control>
-		<control type="label">
-			<description>time label</description>
-			<posx>1747</posx>
-			<posy>10</posy>
-			<width>600</width>
-			<height>50</height>
-			<align>right</align>
-			<aligny>center</aligny>
-			<font>font40</font>
-			<textcolor>orange</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<label>[UPPERCASE]$INFO[System.Date][/UPPERCASE] | $INFO[System.Time]</label>
-		</control>
-		<control type="button" id="20">
-			<posx>1770</posx>
-			<posy>5</posy>
-			<width>60</width>
-			<height>60</height>
-			<label>31003</label>
-			<font>-</font>
-			<aligny>-</aligny>
-			<onclick>ActivateWindow(Settings)</onclick>
-			<texturefocus>settings-focus.png</texturefocus>
-			<texturenofocus>settings.png</texturenofocus>
-			<onleft>1000</onleft>
-			<onright>21</onright>
-			<onup>1000</onup>
-			<ondown>1000</ondown>
-		</control>
-		<control type="button" id="21">
-			<posx>1845</posx>
-			<posy>15</posy>
-			<width>43</width>
-			<height>43</height>
-			<label>31003</label>
-			<font>-</font>
-			<aligny>-</aligny>
-			<onclick>ActivateWindow(ShutdownMenu)</onclick>
-			<texturefocus>home-power-focus.png</texturefocus>
-			<texturenofocus>home-power.png</texturenofocus>
-			<onleft>20</onleft>
-			<onright>1000</onright>
-			<onup>1000</onup>
-			<ondown>1000</ondown>
-		</control>
-		<control type="rss">
-			<posx>0</posx>
-			<posy>1010</posy>
-			<width>1920</width>
-			<height>30</height>
-			<font>font30</font>
-			<urlset>1</urlset>
-			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-			<textcolor>orange</textcolor>
-			<titlecolor>orange</titlecolor>
-			<headlinecolor>white</headlinecolor>
-		</control>
+		<include>Footer</include>
 	</controls>
 </window>

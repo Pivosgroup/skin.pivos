@@ -1,7 +1,7 @@
 <colors>
 	<color name="white">FFFFFFFF</color>
 	<color name="black">FF000000</color>
-	<color name="lightorange">FFFFBF99</color>
+	<color name="lightorange">FFF4C664</color>
 	<color name="orange">FFF7931D</color>
-	<color name="darkorange">FFFF6801</color>
+	<color name="darkorange">FFC37417</color>
 </colors>

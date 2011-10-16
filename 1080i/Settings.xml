@@ -2,6 +2,7 @@
 	<defaultcontrol>1000</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
+		<include>Header</include>
 		<control type="label">
 			<posx>0</posx>
 			<posy>10</posy>
@@ -23,5 +24,6 @@
 			<font>font30</font>
 			<onclick>ActivateWindow(AppearanceSettings)</onclick>
 		</control>
+		<include>Footer</include>
 	</controls>
 </window>
