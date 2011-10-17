@@ -148,19 +148,19 @@
 			</focusedlayout>
 			<content>
 				<item id="1">
-					<label>Play</label>
+					<label>$LOCALIZE[208]</label>
 					<onclick>ActivateWindow()</onclick>
 				</item>
 				<item id="2">
-					<label>Apps</label>
+					<label>$LOCALIZE[31001]</label>
 					<onclick>ActivateWindow()</onclick>
 				</item>
 				<item id="3">
-					<label>Favourites</label>
+					<label>$LOCALIZE[1036]</label>
 					<onclick>ActivateWindow()</onclick>
 				</item>
 				<item id="4">
-					<label>Weather</label>
+					<label>$LOCALIZE[8]</label>
 					<onclick>ActivateWindow()</onclick>
 				</item>
 			</content>
@@ -193,32 +193,32 @@
 				<include>SubMenu1</include>
 				<content>
 					<item id="1">
-						<label>Video</label>
+						<label>$LOCALIZE[157]</label>
 						<onclick>ActivateWindow()</onclick>
 						<visible>Container(1000).HasFocus(1)</visible>
 					</item>
 					<item id="2">
-						<label>Video Add-ons</label>
+						<label>$LOCALIZE[31002]</label>
 						<onclick>ActivateWindow()</onclick>
 						<visible>Container(1000).HasFocus(1)</visible>
 					</item>
 					<item id="3">
-						<label>Photo</label>
+						<label>$LOCALIZE[31003]</label>
 						<onclick>ActivateWindow()</onclick>
 						<visible>Container(1000).HasFocus(1)</visible>
 					</item>
 					<item id="4">
-						<label>Photo Add-ons</label>
+						<label>$LOCALIZE[31004]</label>
 						<onclick>ActivateWindow()</onclick>
 						<visible>Container(1000).HasFocus(1)</visible>
 					</item>
 					<item id="5">
-						<label>Music</label>
+						<label>$LOCALIZE[2]</label>
 						<onclick>ActivateWindow()</onclick>
 						<visible>Container(1000).HasFocus(1)</visible>
 					</item>
 					<item id="6">
-						<label>Music Add-ons</label>
+						<label>$LOCALIZE[31005]</label>
 						<onclick>ActivateWindow()</onclick>
 						<visible>Container(1000).HasFocus(1)</visible>
 					</item>
@@ -230,15 +230,15 @@
 				<include>SubMenu1</include>
 				<content>
 					<item id="1">
-						<label>All Apps</label>
+						<label>$LOCALIZE[31006]</label>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="2">
-						<label>Download Apps</label>
+						<label>$LOCALIZE[31007]</label>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="3">
-						<label>Manage Apps</label>
+						<label>$LOCALIZE[31008]</label>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 				</content>
@@ -249,31 +249,31 @@
 				<include>SubMenu1</include>
 				<content>
 					<item id="1">
-						<label>Favourite 1</label>
+						<label>$LOCALIZE[31009] 1</label>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="2">
-						<label>Favourite 2</label>
+						<label>$LOCALIZE[31009] 2</label>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="3">
-						<label>Favourite 3</label>
+						<label>$LOCALIZE[31009] 3</label>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="4">
-						<label>Favourite 4</label>
+						<label>$LOCALIZE[31009] 4</label>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="5">
-						<label>Favourite 5</label>
+						<label>$LOCALIZE[31009] 5</label>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="6">
-						<label>Favourite 6</label>
+						<label>$LOCALIZE[31009] 6</label>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="7">
-						<label>Favourite 7</label>
+						<label>$LOCALIZE[31009] 7</label>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 				</content>

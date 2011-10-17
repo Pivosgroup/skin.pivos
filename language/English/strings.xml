@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <strings>
 	<string id="31000">Default</string>
+	<string id="31001">Apps</string>
+	<string id="31002">Video Streams</string>
+	<string id="31003">Photo</string>
+	<string id="31004">Photo Sites</string>
+	<string id="31005">Internet Radio</string>
+	<string id="31006">All Apps</string>
+	<string id="31007">Manage Apps</string>
+	<string id="31008">Download Apps</string>
+	<string id="31009">Favourite</string>
 </strings>
