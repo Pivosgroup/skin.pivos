@@ -12,7 +12,6 @@
 		</control>
 		<include>Header</include>
 		<control type="label">
-			<description>time label</description>
 			<posx>1890</posx>
 			<posy>100</posy>
 			<width>600</width>
@@ -25,7 +24,6 @@
 			<aligny>center</aligny>
 		</control>
 		<control type="label">
-			<description>date label</description>
 			<posx>1890</posx>
 			<posy>160</posy>
 			<width>600</width>
@@ -46,6 +44,14 @@
 			<colordiffuse>FFC37417</colordiffuse>
 		</control>
 		<control type="image">
+			<posx>478</posx>
+			<posy>482</posy>
+			<width>35</width>
+			<height>78</height>
+			<texture>MenuSubArrow.png</texture>
+			<animation effect="fade" start="100" end="0" time="150" condition="Container(1000).HasFocus(4)">Conditional</animation>
+		</control>
+		<control type="image">
 			<posx>30</posx>
 			<posy>330</posy>
 			<width>460</width>
@@ -56,13 +62,13 @@
 			<orientation>vertical</orientation>
 			<posx>60</posx>
 			<posy>360</posy>
-			<width>400</width>
-			<height>680</height>
+			<width>430</width>
+			<height>320</height>
 			<onup>1000</onup>
 			<ondown>1000</ondown>
 			<onleft>21</onleft>
-			<onright>20</onright>
-			<itemlayout width="400" height="80">
+			<onright>999</onright>
+			<itemlayout width="430" height="80">
 				<control type="image">
 					<posx>50</posx>
 					<posy>79</posy>
@@ -84,7 +90,7 @@
 					<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
 				</control>
 			</itemlayout>
-			<focusedlayout width="400" height="80">
+			<focusedlayout width="430" height="80">
 				<control type="image">
 					<posx>50</posx>
 					<posy>79</posy>
@@ -158,6 +164,120 @@
 					<onclick>ActivateWindow()</onclick>
 				</item>
 			</content>
+		</control>
+		<control type="group" id="999">
+			<posx>500</posx>
+			<posy>330</posy>
+			<width>350</width>
+			<height>380</height>
+			<onleft>1000</onleft>
+			<onright>20</onright>
+			<animation type="Conditional" condition="ControlGroup(999).HasFocus">
+				<effect type="zoom" start="60" end="100" center="auto" time="250" tween="sine" easing="out"/>
+				<effect type="fade" start="0" end="100" time="300"/>
+			</animation>
+			<animation type="Conditional" condition="!ControlGroup(999).HasFocus">
+				<effect type="zoom" start="100" end="60" center="auto" time="250" tween="sine" easing="in"/>
+				<effect type="fade" start="100" end="0" time="300"/>
+			</animation>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>350</width>
+				<height>380</height>
+				<texture flipx="true" border="30">MenuBack.png</texture>
+			</control>
+			<control type="list" id="1001">
+				<visible>Container(1000).HasFocus(1)</visible>
+				<posy>60</posy>
+				<include>SubMenu1</include>
+				<content>
+					<item id="1">
+						<label>Video</label>
+						<onclick>ActivateWindow()</onclick>
+						<visible>Container(1000).HasFocus(1)</visible>
+					</item>
+					<item id="2">
+						<label>Video Add-ons</label>
+						<onclick>ActivateWindow()</onclick>
+						<visible>Container(1000).HasFocus(1)</visible>
+					</item>
+					<item id="3">
+						<label>Photo</label>
+						<onclick>ActivateWindow()</onclick>
+						<visible>Container(1000).HasFocus(1)</visible>
+					</item>
+					<item id="4">
+						<label>Photo Add-ons</label>
+						<onclick>ActivateWindow()</onclick>
+						<visible>Container(1000).HasFocus(1)</visible>
+					</item>
+					<item id="5">
+						<label>Music</label>
+						<onclick>ActivateWindow()</onclick>
+						<visible>Container(1000).HasFocus(1)</visible>
+					</item>
+					<item id="6">
+						<label>Music Add-ons</label>
+						<onclick>ActivateWindow()</onclick>
+						<visible>Container(1000).HasFocus(1)</visible>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="1001">
+				<visible>Container(1000).HasFocus(2)</visible>
+				<posy>120</posy>
+				<include>SubMenu1</include>
+				<content>
+					<item id="1">
+						<label>All Apps</label>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="2">
+						<label>Download Apps</label>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="3">
+						<label>Manage Apps</label>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="list" id="1001">
+				<visible>Container(1000).HasFocus(3)</visible>
+				<posy>40</posy>
+				<include>SubMenu1</include>
+				<content>
+					<item id="1">
+						<label>Favourite 1</label>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="2">
+						<label>Favourite 2</label>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="3">
+						<label>Favourite 3</label>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="4">
+						<label>Favourite 4</label>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="5">
+						<label>Favourite 5</label>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="6">
+						<label>Favourite 6</label>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="7">
+						<label>Favourite 7</label>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+				</content>
+			</control>
 		</control>
 		<include>Footer</include>
 	</controls>

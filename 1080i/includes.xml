@@ -136,4 +136,94 @@
 			<animation effect="rotate" start="0" end="-360" center="auto" time="1000" tween="back" easing="out" reversible="true">Focus</animation>
 		</control>
 	</include>
+	<include name="SubMenu1">
+		<orientation>vertical</orientation>
+		<posx>30</posx>
+		<width>290</width>
+		<height>680</height>
+		<onup>1001</onup>
+		<ondown>1001</ondown>
+		<onleft>1000</onleft>
+		<onright>20</onright>
+		<itemlayout width="290" height="40">
+			<control type="image">
+				<posx>20</posx>
+				<posy>44</posy>
+				<width>250</width>
+				<height>1</height>
+				<texture>White.png</texture>
+				<colordiffuse>19FFFFFF</colordiffuse>
+			</control>
+			<control type="label">
+				<posx>145</posx>
+				<posy>0</posy>
+				<width>290</width>
+				<height>20</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font30</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<align>center</align>
+				<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
+			</control>
+		</itemlayout>
+		<focusedlayout width="290" height="40">
+			<control type="image">
+				<posx>20</posx>
+				<posy>44</posy>
+				<width>250</width>
+				<height>1</height>
+				<texture>White.png</texture>
+				<colordiffuse>19FFFFFF</colordiffuse>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>4</posy>
+				<width>290</width>
+				<height>40</height>
+				<texture border="15,0,15,0">ListFocus.png</texture>
+				<animation effect="slide" start="0,-40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1001).OnNext + !Container(1001).HasFocus(1)">focus</animation>
+				<animation effect="slide" start="0,40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1001).OnPrevious + !Container(1001).HasFocus(6) + Container(1000).HasFocus(1)">focus</animation>
+				<animation effect="slide" start="0,40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1001).OnPrevious + !Container(1001).HasFocus(3) + Container(1000).HasFocus(2)">focus</animation>
+				<animation effect="slide" start="0,40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1001).OnPrevious + !Container(1001).HasFocus(7) + Container(1000).HasFocus(3)">focus</animation>
+				<animation effect="fade" start="50" end="80" time="1500" pulse="true" condition="true">Conditional</animation>
+			</control>
+			<control type="label">
+				<posx>145</posx>
+				<posy>0</posy>
+				<width>290</width>
+				<height>20</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font30</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<align>center</align>
+				<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="label">
+				<posx>145</posx>
+				<posy>0</posy>
+				<width>290</width>
+				<height>20</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font30</font>
+				<textcolor>orange</textcolor>
+				<align>center</align>
+				<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
+				<visible>Control.HasFocus(1001)</visible>
+			</control>
+			<control type="label">
+				<posx>145</posx>
+				<posy>0</posy>
+				<width>290</width>
+				<height>20</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font30</font>
+				<textcolor>lightorange</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<align>center</align>
+				<visible>!Control.HasFocus(1001)</visible>
+			</control>
+		</focusedlayout>
+	</include>
 </includes>
