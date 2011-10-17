@@ -9,131 +9,158 @@
 		</control>
 	</include>
 	<include name="Footer">
-		<control type="image">
-			<posx>0</posx>
-			<posy>1020</posy>
-			<width>1920</width>
-			<height>70</height>
-			<texture border="11">HeaderBack.png</texture>
-		</control>
-		<control type="rss">
-			<posx>0</posx>
-			<posy>1025</posy>
-			<width>1920</width>
-			<height>30</height>
-			<font>font30</font>
-			<textcolor>orange</textcolor>
-			<titlecolor>orange</titlecolor>
-			<headlinecolor>white</headlinecolor>
-			<urlset>1</urlset>
-			<animation effect="fade" time="300">WindowOpen</animation>
-			<animation effect="fade" time="300">WindowClose</animation>
-			<visible>System.GetBool(LookAndFeel.EnableRssFeeds) + Window.IsVisible(Home)</visible>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>1020</posy>
-			<width>300</width>
-			<height>70</height>
-			<texture border="8">RSS.png</texture>
-		</control>
-		<control type="image">
-			<posx>1620</posx>
-			<posy>1020</posy>
-			<width>300</width>
-			<height>70</height>
-			<texture flipx="true" border="8">RSS.png</texture>
+		<control type="group">
+			<animation type="WindowOpen" condition="Window.Previous(Startup)">
+				<effect type="slide" start="0,70" end="0,0" time="400" tween="sine" easing="out"/>
+				<effect type="fade" start="0" end="100" time="400"/>
+			</animation>
+			<control type="image">
+				<posx>0</posx>
+				<posy>1020</posy>
+				<width>1920</width>
+				<height>70</height>
+				<texture border="11">HeaderBack.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>1020</posy>
+				<width>300</width>
+				<height>70</height>
+				<texture border="8">HeaderFade.png</texture>
+			</control>
+			<control type="image">
+				<posx>1620</posx>
+				<posy>1020</posy>
+				<width>300</width>
+				<height>70</height>
+				<texture flipx="true" border="8">HeaderFade.png</texture>
+			</control>
+			<control type="image">
+				<posx>-512</posx>
+				<posy>1026</posy>
+				<width>512</width>
+				<height>4</height>
+				<texture>Highlight.png</texture>
+				<animation type="Conditional" reversible="false" condition="true" loop="true">
+					<effect type="fade" start="0" end="100" time="3500" delay="1000"/>
+					<effect type="slide" start="0,0" end="2432,0" time="12500" loop="false"/>
+					<effect type="fade" start="100" end="0" time="3000" delay="8000"/>
+					<effect type="slide" start="0,0" end="0,0" time="12500" delay="10000" loop="false"/>
+				</animation>
+				<animation effect="fade" time="300">WindowOpen</animation>
+				<animation effect="fade" time="300">WindowClose</animation>
+			</control>
+			<control type="rss">
+				<posx>0</posx>
+				<posy>1025</posy>
+				<width>1920</width>
+				<height>30</height>
+				<font>font30</font>
+				<textcolor>orange</textcolor>
+				<titlecolor>orange</titlecolor>
+				<headlinecolor>white</headlinecolor>
+				<urlset>1</urlset>
+				<animation effect="fade" time="300">WindowOpen</animation>
+				<animation effect="fade" time="300">WindowClose</animation>
+				<visible>System.GetBool(LookAndFeel.EnableRssFeeds) + Window.IsVisible(Home)</visible>
+			</control>
 		</control>
 	</include>
 	<include name="Header">
-		<control type="image">
-			<posx>0</posx>
-			<posy>-12</posy>
-			<width>1920</width>
-			<height>80</height>
-			<texture border="11">HeaderBack.png</texture>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>-10</posy>
-			<width>300</width>
-			<height>80</height>
-			<texture border="8">RSS.png</texture>
-		</control>
-		<control type="image">
-			<posx>1620</posx>
-			<posy>-10</posy>
-			<width>300</width>
-			<height>80</height>
-			<texture flipx="true" border="8">RSS.png</texture>
-		</control>
-		<control type="image">
-			<posx>1920</posx>
-			<posy>58</posy>
-			<width>512</width>
-			<height>4</height>
-			<texture>Highlight.png</texture>
-			<animation type="Conditional" reversible="false" condition="true" loop="true">
-				<effect type="fade" start="0" end="100" time="3000" delay="0"/>
-				<effect type="slide" start="0,0" end="-2432,0" time="10000" loop="false"/>
-				<effect type="fade" start="100" end="0" time="3000" delay="6000"/>
-				<effect type="slide" start="0,0" end="0,0" time="10000" delay="10000" loop="false"/>
+		<control type="group">
+			<animation type="WindowOpen" condition="Window.Previous(Startup)">
+				<effect type="slide" start="0,-70" end="0,0" time="400" tween="sine" easing="out"/>
+				<effect type="fade" start="0" end="100" time="400"/>
 			</animation>
-			<animation effect="fade" time="300">WindowOpen</animation>
-			<animation effect="fade" time="300">WindowClose</animation>
-		</control>
-		<control type="image">
-			<posx>28</posx>
-			<posy>0</posy>
-			<width>60</width>
-			<height>60</height>
-			<texture>$INFO[Weather.Conditions]</texture>
-		</control>
-		<control type="label">
-			<description>temp label</description>
-			<posx>100</posx>
-			<posy>12</posy>
-			<width>600</width>
-			<height>35</height>
-			<label>[B]$INFO[Weather.Temperature][/B]</label>
-			<font>font35</font>
-			<textcolor>white</textcolor>
-			<shadowcolor>black</shadowcolor>
-			<aligny>center</aligny>
-		</control>
-		<control type="button" id="20">
-			<posx>1786</posx>
-			<posy>9</posy>
-			<width>42</width>
-			<height>42</height>
-			<label>31003</label>
-			<font>-</font>
-			<aligny>-</aligny>
-			<texturefocus>SettingsFocus.png</texturefocus>
-			<texturenofocus>Settings.png</texturenofocus>
-			<onleft>1000</onleft>
-			<onright>21</onright>
-			<onup>1000</onup>
-			<ondown>1000</ondown>
-			<onclick>ActivateWindow(Settings)</onclick>
-			<animation effect="rotate" start="0" end="-360" center="auto" time="1000" tween="back" easing="out" reversible="true">Focus</animation>
-		</control>
-		<control type="button" id="21">
-			<posx>1846</posx>
-			<posy>8</posy>
-			<width>46</width>
-			<height>46</height>
-			<label>31003</label>
-			<font>-</font>
-			<aligny>-</aligny>
-			<texturefocus>PowerFocus.png</texturefocus>
-			<texturenofocus>Power.png</texturenofocus>
-			<onleft>20</onleft>
-			<onright>1000</onright>
-			<onup>1000</onup>
-			<ondown>1000</ondown>
-			<onclick>Shutdown()</onclick>
-			<animation effect="rotate" start="0" end="-360" center="auto" time="1000" tween="back" easing="out" reversible="true">Focus</animation>
+			<control type="image">
+				<posx>0</posx>
+				<posy>-12</posy>
+				<width>1920</width>
+				<height>80</height>
+				<texture border="11">HeaderBack.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>-10</posy>
+				<width>300</width>
+				<height>80</height>
+				<texture border="8">HeaderFade.png</texture>
+			</control>
+			<control type="image">
+				<posx>1620</posx>
+				<posy>-10</posy>
+				<width>300</width>
+				<height>80</height>
+				<texture flipx="true" border="8">HeaderFade.png</texture>
+			</control>
+			<control type="image">
+				<posx>1920</posx>
+				<posy>58</posy>
+				<width>512</width>
+				<height>4</height>
+				<texture>Highlight.png</texture>
+				<animation type="Conditional" reversible="false" condition="true" loop="true">
+					<effect type="fade" start="0" end="100" time="3500" delay="1000"/>
+					<effect type="slide" start="0,0" end="-2432,0" time="10000" loop="false"/>
+					<effect type="fade" start="100" end="0" time="3000" delay="5500"/>
+					<effect type="slide" start="0,0" end="0,0" time="10000" delay="10000" loop="false"/>
+				</animation>
+				<animation effect="fade" time="300">WindowOpen</animation>
+				<animation effect="fade" time="300">WindowClose</animation>
+			</control>
+			<control type="image">
+				<posx>28</posx>
+				<posy>0</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>$INFO[Weather.Conditions]</texture>
+			</control>
+			<control type="label">
+				<description>temp label</description>
+				<posx>100</posx>
+				<posy>12</posy>
+				<width>600</width>
+				<height>35</height>
+				<label>[B]$INFO[Weather.Temperature][/B]</label>
+				<font>font35</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="20">
+				<posx>1786</posx>
+				<posy>9</posy>
+				<width>42</width>
+				<height>42</height>
+				<label>31003</label>
+				<font>-</font>
+				<aligny>-</aligny>
+				<texturefocus>SettingsFocus.png</texturefocus>
+				<texturenofocus>Settings.png</texturenofocus>
+				<onleft>1000</onleft>
+				<onright>21</onright>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onclick>ActivateWindow(Settings)</onclick>
+				<animation effect="rotate" start="0" end="-360" center="auto" time="1000" tween="back" easing="out" reversible="true">Focus</animation>
+			</control>
+			<control type="button" id="21">
+				<posx>1846</posx>
+				<posy>8</posy>
+				<width>46</width>
+				<height>46</height>
+				<label>31003</label>
+				<font>-</font>
+				<aligny>-</aligny>
+				<texturefocus>PowerFocus.png</texturefocus>
+				<texturenofocus>Power.png</texturenofocus>
+				<onleft>20</onleft>
+				<onright>1000</onright>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onclick>Shutdown()</onclick>
+				<animation effect="rotate" start="0" end="-360" center="auto" time="1000" tween="back" easing="out" reversible="true">Focus</animation>
+			</control>
 		</control>
 	</include>
 	<include name="SubMenu1">
