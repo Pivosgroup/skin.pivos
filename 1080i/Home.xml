@@ -307,6 +307,6 @@
 				</control>
 			</control>
 		</control>
-	<include>Footer</include>
+		<include>FooterHome</include>
 	</controls>
 </window>

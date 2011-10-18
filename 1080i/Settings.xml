@@ -3,27 +3,308 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>Header</include>
-		<control type="label">
-			<posx>0</posx>
-			<posy>10</posy>
-			<width>1920</width>
-			<height>30</height>
-			<label>[B]SETTINGS[/B]</label>
-			<align>center</align>
-			<textcolor>white</textcolor>
-			<font>font30</font>
+		<control type="group">
+			<animation type="WindowOpen">
+				<effect type="fade" start="0" end="100" time="400"/>
+			</animation>
+			<animation type="WindowClose">
+				<effect type="fade" start="100" end="0" time="400"/>
+			</animation>
+			<control type="label">
+				<posx>0</posx>
+				<posy>55</posy>
+				<width>1920</width>
+				<height>30</height>
+				<label>[B][UPPERCASE]$LOCALIZE[5][/UPPERCASE][/B]</label>
+				<font>font80</font>
+				<textcolor>darkorange</textcolor>
+				<align>center</align>
+			</control>
+			<control type="image">
+				<posx>710</posx>
+				<posy>160</posy>
+				<width>500</width>
+				<height>1</height>
+				<texture>White.png</texture>
+				<colordiffuse>FFC37417</colordiffuse>
+			</control>
 		</control>
-		<control type="button" id="1000">
-			<posx>10</posx>
-			<posy>110</posy>
-			<width>300</width>
-			<height>30</height>
-			<label>Appearance</label>
-			<textcolor>lightorange</textcolor>
-			<focusedcolor>lightorange</focusedcolor>
-			<font>font30</font>
-			<onclick>ActivateWindow(AppearanceSettings)</onclick>
+		<control type="group">
+			<posx>30</posx>
+			<posy>330</posy>
+			<width>460</width>
+			<height>420</height>
+			<animation type="WindowOpen">
+				<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>
+				<effect type="fade" start="0" end="100" time="400"/>
+			</animation>
+			<animation type="WindowClose">
+				<effect type="zoom" start="100" end="60" center="auto" time="400" tween="sine" easing="in"/>
+				<effect type="fade" start="100" end="0" time="400"/>
+			</animation>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>460</width>
+				<height>430</height>
+				<texture border="30">MenuBack.png</texture>
+			</control>
+			<control type="list" id="1000">
+				<orientation>vertical</orientation>
+				<posx>30</posx>
+				<posy>30</posy>
+				<width>430</width>
+				<height>360</height>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onleft>1001</onleft>
+				<onright>1001</onright>
+				<itemlayout width="430" height="60">
+					<control type="image">
+						<posx>50</posx>
+						<posy>59</posy>
+						<width>300</width>
+						<height>1</height>
+						<texture>White.png</texture>
+						<colordiffuse>19FFFFFF</colordiffuse>
+					</control>
+					<control type="label">
+						<posx>200</posx>
+						<posy>-1</posy>
+						<width>400</width>
+						<height>30</height>
+						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+						<font>font40</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>center</align>
+						<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
+					</control>
+				</itemlayout>
+				<focusedlayout width="430" height="60">
+					<control type="image">
+						<posx>50</posx>
+						<posy>59</posy>
+						<width>300</width>
+						<height>1</height>
+						<texture>White.png</texture>
+						<colordiffuse>19FFFFFF</colordiffuse>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>60</height>
+						<texture border="15">ListFocus.png</texture>
+						<animation effect="slide" start="0,-40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1000).OnNext + !Container(1000).HasFocus(1)">focus</animation>
+						<animation effect="slide" start="0,40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1000).OnPrevious + !Container(1000).HasFocus(6)">focus</animation>
+						<animation effect="fade" start="50" end="80" time="1500" pulse="true" condition="true">Conditional</animation>
+					</control>
+					<control type="label">
+						<posx>200</posx>
+						<posy>-1</posy>
+						<width>400</width>
+						<height>30</height>
+						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+						<font>font40</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>center</align>
+						<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
+					</control>
+					<control type="label">
+						<posx>200</posx>
+						<posy>-1</posy>
+						<width>400</width>
+						<height>30</height>
+						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+						<font>font40</font>
+						<textcolor>orange</textcolor>
+						<align>center</align>
+						<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
+						<visible>Control.HasFocus(1000)</visible>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>$LOCALIZE[480]</label>
+						<onclick>ActivateWindow(AppearanceSettings)</onclick>
+					</item>
+					<item id="2">
+						<label>$LOCALIZE[3]</label>
+						<onclick>ActivateWindow(VideosSettings)</onclick>
+					</item>
+					<item id="3">
+						<label>$LOCALIZE[2]</label>
+						<onclick>ActivateWindow(MusicSettings)</onclick>
+					</item>
+					<item id="4">
+						<label>$LOCALIZE[1]</label>
+						<onclick>ActivateWindow(PicturesSettings)</onclick>
+					</item>
+					<item id="5">
+						<label>$LOCALIZE[8]</label>
+						<onclick>ActivateWindow(WeatherSettings)</onclick>
+					</item>
+					<item id="6">
+						<label>$LOCALIZE[13000]</label>
+						<onclick>ActivateWindow(SystemSettings)</onclick>
+					</item>
+				</content>
+			</control>
 		</control>
-		<include>Footer</include>
+		<control type="image">
+			<posx>656</posx>
+			<posy>240</posy>
+			<width>608</width>
+			<height>608</height>
+			<texture>SettingsGear.png</texture>
+			<aspectratio>keep</aspectratio>
+			<animation effect="rotate" end="-30" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(1)">Conditional</animation>
+			<animation effect="rotate" end="-60" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(2)">Conditional</animation>
+			<animation effect="rotate" end="-90" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(3)">Conditional</animation>
+			<animation effect="rotate" end="-120" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(4)">Conditional</animation>
+			<animation effect="rotate" end="-150" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(5)">Conditional</animation>
+			<animation effect="rotate" end="-180" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(6)">Conditional</animation>
+			<animation effect="rotate" end="-210" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(1)">Conditional</animation>
+			<animation effect="rotate" end="-240" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(2)">Conditional</animation>
+			<animation effect="rotate" end="-270" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(3)">Conditional</animation>
+			<animation effect="rotate" end="-300" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(4)">Conditional</animation>
+			<animation effect="rotate" end="-330" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(5)">Conditional</animation>
+			<animation effect="rotate" end="-360" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(6)">Conditional</animation>
+			<animation type="WindowOpen">
+				<effect type="zoom" start="160" end="100" center="auto" time="400" tween="sine" easing="out"/>
+				<effect type="fade" start="0" end="100" time="400"/>
+			</animation>
+			<animation type="WindowClose">
+				<effect type="zoom" start="100" end="160" center="auto" time="400" tween="sine" easing="in"/>
+				<effect type="fade" start="100" end="0" time="400"/>
+			</animation>
+		</control>
+		<control type="group">
+			<posx>1430</posx>
+			<posy>330</posy>
+			<width>460</width>
+			<height>420</height>
+			<animation type="WindowOpen">
+				<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>
+				<effect type="fade" start="0" end="100" time="400"/>
+			</animation>
+			<animation type="WindowClose">
+				<effect type="zoom" start="100" end="60" center="auto" time="400" tween="sine" easing="in"/>
+				<effect type="fade" start="100" end="0" time="400"/>
+			</animation>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>460</width>
+				<height>420</height>
+				<texture border="30">MenuBack.png</texture>
+			</control>
+			<control type="list" id="1001">
+				<orientation>vertical</orientation>
+				<posx>30</posx>
+				<posy>30</posy>
+				<width>430</width>
+				<height>360</height>
+				<onup>1001</onup>
+				<ondown>1001</ondown>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<itemlayout width="430" height="60">
+					<control type="image">
+						<posx>50</posx>
+						<posy>59</posy>
+						<width>300</width>
+						<height>1</height>
+						<texture>White.png</texture>
+						<colordiffuse>19FFFFFF</colordiffuse>
+					</control>
+					<control type="label">
+						<posx>200</posx>
+						<posy>-1</posy>
+						<width>400</width>
+						<height>30</height>
+						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+						<font>font40</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>center</align>
+						<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
+					</control>
+				</itemlayout>
+				<focusedlayout width="430" height="60">
+					<control type="image">
+						<posx>50</posx>
+						<posy>59</posy>
+						<width>300</width>
+						<height>1</height>
+						<texture>White.png</texture>
+						<colordiffuse>19FFFFFF</colordiffuse>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>60</height>
+						<texture border="15">ListFocus.png</texture>
+						<animation effect="slide" start="0,-40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1001).OnNext + !Container(1000).HasFocus(1)">focus</animation>
+						<animation effect="slide" start="0,40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1001).OnPrevious + !Container(1000).HasFocus(6)">focus</animation>
+						<animation effect="fade" start="50" end="80" time="1500" pulse="true" condition="true">Conditional</animation>
+					</control>
+					<control type="label">
+						<posx>200</posx>
+						<posy>-1</posy>
+						<width>400</width>
+						<height>30</height>
+						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+						<font>font40</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>center</align>
+						<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
+					</control>
+					<control type="label">
+						<posx>200</posx>
+						<posy>-1</posy>
+						<width>400</width>
+						<height>30</height>
+						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+						<font>font40</font>
+						<textcolor>orange</textcolor>
+						<align>center</align>
+						<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
+						<visible>Control.HasFocus(1001)</visible>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>$LOCALIZE[705]</label>
+						<onclick>ActivateWindow(NetworkSettings)</onclick>
+					</item>
+					<item id="2">
+						<label>$LOCALIZE[13200]</label>
+						<onclick>ActivateWindow(Profiles)</onclick>
+					</item>
+					<item id="3">
+						<label>$LOCALIZE[24001]</label>
+						<onclick>ActivateWindow(AddonBrowser)</onclick>
+					</item>
+					<item id="4">
+						<label>$LOCALIZE[20077]</label>
+						<onclick>ActivateWindow(1111)</onclick>
+					</item>
+					<item id="5">
+						<label>$LOCALIZE[10003]</label>
+						<onclick>ActivateWindow(FileManager)</onclick>
+					</item>
+					<item id="6">
+						<label>$LOCALIZE[130]</label>
+						<onclick>ActivateWindow(SystemInfo)</onclick>
+					</item>
+				</content>
+			</control>
+		</control>
+		<include>FooterSettings</include>
 	</controls>
 </window>

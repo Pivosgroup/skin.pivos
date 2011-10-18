@@ -1,0 +1,10 @@
+<includes>
+	<variable name="HomeSettingsButton">
+		<value condition="!Control.HasFocus(20)">Settings.png</value>
+		<value condition="Control.HasFocus(20)">SettingsFocus.png</value>
+	</variable>
+	<variable name="HomePowerButton">
+		<value condition="!Control.HasFocus(21)">Power.png</value>
+		<value condition="Control.HasFocus(21)">PowerFocus.png</value>
+	</variable>
+</includes>
