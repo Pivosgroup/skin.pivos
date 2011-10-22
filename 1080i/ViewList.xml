@@ -1,0 +1,232 @@
+<includes>
+	<include name="ViewListVideo">
+		<control type="group">
+			<posx>50</posx>
+			<posy>50</posy>	
+			<width>1300</width>
+			<height>660</height>			
+			<animation type="WindowOpen">
+				<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>
+				<effect type="fade" start="0" end="100" time="400"/>
+			</animation>
+			<animation type="WindowClose">
+				<effect type="zoom" start="100" end="60" center="auto" time="400" tween="sine" easing="in"/>
+				<effect type="fade" start="100" end="0" time="400"/>
+			</animation>
+			<control type="fixedlist" id="50">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>830</width>
+				<height>660</height>
+				<viewtype label="535">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<preloaditems>2</preloaditems>
+				<focusposition>2</focusposition>
+				<movement>2</movement>
+				<onleft>9000</onleft>
+				<onright>60</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<itemlayout width="830" height="108">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>830</width>
+						<height>110</height>
+						<texture border="35,8,35,8">ListNoFocus.png</texture>
+					</control>
+					<control type="label">
+						<posx>25</posx>
+						<posy>0</posy>
+						<width>830</width>
+						<height>20</height>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font35</font>
+						<textcolor>lightgrey</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+					</control>
+					<control type="label">
+						<posx>805</posx>
+						<posy>0</posy>
+						<width>830</width>
+						<height>20</height>
+						<label>[B]$INFO[ListItem.Year][/B]</label>
+						<font>font35</font>
+						<textcolor>lightgrey</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>right</align>
+					</control>
+					<control type="label">
+						<posx>25</posx>
+						<posy>50</posy>
+						<width>830</width>
+						<height>20</height>
+						<label>$VAR[DurationLabel]</label>
+						<font>font30</font>
+						<textcolor>lightgrey</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+					</control>
+					<control type="label">
+						<posx>805</posx>
+						<posy>50</posy>
+						<width>830</width>
+						<height>20</height>
+						<label>$INFO[ListItem.Rating]</label>
+						<font>font30</font>
+						<textcolor>lightgrey</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>right</align>
+					</control>
+				</itemlayout>
+				<focusedlayout width="830" height="108">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>830</width>
+						<height>110</height>
+						<texture border="35,8,35,8">ListNoFocus.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>830</width>
+						<height>110</height>
+						<texture border="35,8,35,8">ListFocus.png</texture>
+						<animation effect="slide" start="0,-70" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(50).OnNext + !Container(50).Position(0)">focus</animation>
+						<animation effect="slide" start="0,70" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(50).OnPrevious">focus</animation>
+						<animation effect="fade" start="50" end="80" time="1500" pulse="true" condition="true">Conditional</animation>
+					</control>
+					<control type="label">
+						<posx>25</posx>
+						<posy>0</posy>
+						<width>830</width>
+						<height>20</height>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font35</font>
+						<textcolor>lightgrey</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+					</control>
+					<control type="label">
+						<posx>25</posx>
+						<posy>0</posy>
+						<width>830</width>
+						<height>20</height>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font35</font>
+						<textcolor>orange</textcolor>
+						<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
+						<visible>Control.HasFocus(50)</visible>
+					</control>
+					<control type="label">
+						<posx>25</posx>
+						<posy>0</posy>
+						<width>830</width>
+						<height>20</height>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font35</font>
+						<textcolor>lightorange</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<visible>!Control.HasFocus(50)</visible>
+					</control>
+					<control type="label">
+						<posx>805</posx>
+						<posy>0</posy>
+						<width>830</width>
+						<height>20</height>
+						<label>[B]$INFO[ListItem.Year][/B]</label>
+						<font>font35</font>
+						<textcolor>lightorange</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>right</align>
+					</control>
+					<control type="label">
+						<posx>25</posx>
+						<posy>50</posy>
+						<width>830</width>
+						<height>20</height>
+						<label>$VAR[DurationLabel]</label>
+						<font>font30</font>
+						<textcolor>lightorange</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+					</control>
+					<control type="label">
+						<posx>805</posx>
+						<posy>50</posy>
+						<width>830</width>
+						<height>20</height>
+						<label>$INFO[ListItem.Rating]</label>
+						<font>font30</font>
+						<textcolor>lightorange</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>right</align>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(50)</visible>
+				<posx>835</posx>
+				<posy>-25</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>492</width>
+					<height>692</height>
+					<texture borde="32">ShadowMovies.png</texture>
+				</control>
+				<control type="image">
+					<posx>36</posx>
+					<posy>36</posy>
+					<width>420</width>
+					<height>620</height>
+					<texture background="true" diffuse="DiffuseMovies.png">$INFO[ListItem.Icon]</texture>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<fadetime>250</fadetime>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(50)</visible>
+				<posx>0</posx>
+				<posy>670</posy>
+				<control type="image">
+					<posx>250</posx>
+					<posy>0</posy>
+					<width>800</width>
+					<height>2</height>
+					<texture>White.png</texture>
+					<colordiffuse>50FFFFFF</colordiffuse>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>12</posy>
+					<width>1300</width>
+					<height>50</height>
+					<label>[B]$INFO[ListItem.Genre][/B]</label>
+					<font>font50</font>
+					<textcolor>darkorange</textcolor>
+					<shadowcolor>FF000000</shadowcolor>
+					<align>center</align>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<posx>50</posx>
+			<posy>876</posy>
+			<animation effect="fade" time="300">WindowOpen</animation>
+			<animation effect="fade" time="300">WindowClose</animation>
+			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Title)</visible>
+			<control type="textbox">
+				<posx>10</posx>
+				<posy>0</posy>
+				<width>1250</width>
+				<height>80</height>
+				<label>[B]$INFO[ListItem.PlotOutline][/B]</label>
+				<font>font30</font>
+				<textcolor>lightorange</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<autoscroll time="3500" delay="6000" repeat="3000">true</autoscroll>
+			</control>
+
+		</control>
+	</include>
+</includes>

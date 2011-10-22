@@ -1,5 +1,7 @@
 <colors>
 	<color name="white">FFFFFFFF</color>
+	<color name="lightgrey">FFE6E6E6</color>
+	<color name="grey">FF767676</color>
 	<color name="black">FF000000</color>
 	<color name="lightorange">FFF4C664</color>
 	<color name="orange">FFF7931D</color>

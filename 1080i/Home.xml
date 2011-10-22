@@ -97,12 +97,11 @@
 				<onright>999</onright>
 				<itemlayout width="430" height="80">
 					<control type="image">
-						<posx>50</posx>
-						<posy>79</posy>
-						<width>300</width>
-						<height>1</height>
-						<texture>White.png</texture>
-						<colordiffuse>19FFFFFF</colordiffuse>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>80</height>
+						<texture border="35,8,35,8">ListNoFocus.png</texture>
 					</control>
 					<control type="label">
 						<posx>200</posx>
@@ -111,27 +110,25 @@
 						<height>40</height>
 						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 						<font>font50</font>
-						<textcolor>white</textcolor>
+						<textcolor>lightgrey</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>center</align>
-						<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
 					</control>
 				</itemlayout>
 				<focusedlayout width="430" height="80">
 					<control type="image">
-						<posx>50</posx>
-						<posy>79</posy>
-						<width>300</width>
-						<height>1</height>
-						<texture>White.png</texture>
-						<colordiffuse>19FFFFFF</colordiffuse>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>80</height>
+						<texture border="35,8,35,8">ListNoFocus.png</texture>
 					</control>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>400</width>
 						<height>80</height>
-						<texture border="15">ListFocus.png</texture>
+						<texture border="35,8,35,8">ListFocus.png</texture>
 						<animation effect="slide" start="0,-80" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1000).OnNext + !Container(1000).HasFocus(1)">focus</animation>
 						<animation effect="slide" start="0,80" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1000).OnPrevious + !Container(1000).HasFocus(4)">focus</animation>
 						<animation effect="fade" start="50" end="80" time="1500" pulse="true" condition="true">Conditional</animation>
@@ -143,10 +140,9 @@
 						<height>40</height>
 						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 						<font>font50</font>
-						<textcolor>white</textcolor>
+						<textcolor>lightgrey</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>center</align>
-						<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
 					</control>
 					<control type="label">
 						<posx>200</posx>
@@ -216,12 +212,12 @@
 				</control>
 				<control type="list" id="1001">
 					<visible>Container(1000).HasFocus(1)</visible>
-					<posy>60</posy>
-					<include>SubMenu1</include>
+					<posy>40</posy>
+					<include>SubMenu</include>
 					<content>
 						<item id="1">
 							<label>$LOCALIZE[157]</label>
-							<onclick>ActivateWindow()</onclick>
+							<onclick>ActivateWindow(Videos)</onclick>
 							<visible>Container(1000).HasFocus(1)</visible>
 						</item>
 						<item id="2">
@@ -253,8 +249,8 @@
 				</control>
 				<control type="list" id="1001">
 					<visible>Container(1000).HasFocus(2)</visible>
-					<posy>120</posy>
-					<include>SubMenu1</include>
+					<posy>115</posy>
+					<include>SubMenu</include>
 					<content>
 						<item id="1">
 							<label>$LOCALIZE[31006]</label>
@@ -273,7 +269,7 @@
 				<control type="list" id="1001">
 					<visible>Container(1000).HasFocus(3)</visible>
 					<posy>40</posy>
-					<include>SubMenu1</include>
+					<include>SubMenu</include>
 					<content>
 						<item id="1">
 							<label>$LOCALIZE[31009] 1</label>
@@ -297,10 +293,6 @@
 						</item>
 						<item id="6">
 							<label>$LOCALIZE[31009] 6</label>
-							<onclick>ActivateWindow()</onclick>
-						</item>
-						<item id="7">
-							<label>$LOCALIZE[31009] 7</label>
 							<onclick>ActivateWindow()</onclick>
 						</item>
 					</content>

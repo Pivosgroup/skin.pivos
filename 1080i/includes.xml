@@ -1,5 +1,8 @@
 <includes>
+	<include file="defaults.xml"/>
 	<include file="IncludesVars.xml"/>
+	<include file="ViewList.xml"/>
+	<include file="ViewPanel.xml"/>
 	<include name="DefaultBackground">
 		<control type="image">
 			<posx>0</posx>
@@ -7,6 +10,18 @@
 			<width>1920</width>
 			<height>1080</height>
 			<texture>special://skin/backgrounds/DefaultBackground.jpg</texture>
+		</control>
+	</include>
+	<include name="Fanart">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1920</width>
+			<height>1080</height>
+			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>250</fadetime>
+			<colordiffuse>30FFFFFF</colordiffuse>
 		</control>
 	</include>
 	<include name="FooterHome">
@@ -26,20 +41,7 @@
 				<height>70</height>
 				<texture border="11">HeaderBack.png</texture>
 			</control>
-			<control type="rss">
-				<posx>0</posx>
-				<posy>5</posy>
-				<width>1920</width>
-				<height>30</height>
-				<font>font30</font>
-				<textcolor>orange</textcolor>
-				<titlecolor>orange</titlecolor>
-				<headlinecolor>white</headlinecolor>
-				<urlset>1</urlset>
-				<animation effect="fade" time="300">WindowOpen</animation>
-				<animation effect="fade" time="300">WindowClose</animation>
-				<visible>System.GetBool(LookAndFeel.EnableRssFeeds)</visible>
-			</control>
+			<include condition="System.GetBool(LookAndFeel.EnableRssFeeds)">HomeRSS</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -83,6 +85,56 @@
 		<animation effect="fade" time="250">Hidden</animation>
 		<animation effect="fade" time="300">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
+	</include>
+	<include name="FooterLibrary">
+		<control type="group">
+			<posx>0</posx>
+			<posy>1020</posy>
+			<width>1920</width>
+			<height>130</height>
+			<animation type="WindowOpen">
+				<effect type="slide" start="0,0" end="0,-60" time="400" tween="sine" easing="out"/>
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" start="0,-60" end="0,0" time="400" tween="sine" easing="in"/>
+			</animation>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1920</width>
+				<height>130</height>
+				<texture border="11">HeaderBack.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>300</width>
+				<height>200</height>
+				<texture border="8">HeaderFade.png</texture>
+			</control>
+			<control type="image">
+				<posx>1620</posx>
+				<posy>0</posy>
+				<width>300</width>
+				<height>200</height>
+				<texture flipx="true" border="8">HeaderFade.png</texture>
+			</control>
+			<control type="image">
+				<posx>-512</posx>
+				<posy>6</posy>
+				<width>512</width>
+				<height>4</height>
+				<texture>Highlight.png</texture>
+				<animation type="Conditional" reversible="false" condition="true" loop="true">
+					<effect type="fade" start="0" end="100" time="3500" delay="1000"/>
+					<effect type="slide" start="0,0" end="2432,0" time="12500" loop="false"/>
+					<effect type="fade" start="100" end="0" time="3000" delay="8000"/>
+					<effect type="slide" start="0,0" end="0,0" time="12500" delay="10000" loop="false"/>
+				</animation>
+				<animation effect="fade" time="300">WindowOpen</animation>
+				<animation effect="fade" time="300">WindowClose</animation>
+			</control>
+		</control>
 	</include>
 	<include name="FooterSettings">
 		<control type="group">
@@ -307,7 +359,22 @@
 			</control>
 		</control>
 	</include>
-	<include name="SubMenu1">
+	<include name="HomeRSS">
+		<control type="rss">
+			<posx>0</posx>
+			<posy>5</posy>
+			<width>1920</width>
+			<height>30</height>
+			<font>font30</font>
+			<textcolor>orange</textcolor>
+			<titlecolor>orange</titlecolor>
+			<headlinecolor>white</headlinecolor>
+			<urlset>1</urlset>
+			<animation effect="fade" time="300">WindowOpen</animation>
+			<animation effect="fade" time="300">WindowClose</animation>
+		</control>
+	</include>
+	<include name="SubMenu">
 		<orientation>vertical</orientation>
 		<posx>30</posx>
 		<width>290</width>
@@ -316,14 +383,13 @@
 		<ondown>1001</ondown>
 		<onleft>1000</onleft>
 		<onright>20</onright>
-		<itemlayout width="290" height="40">
+		<itemlayout width="290" height="50">
 			<control type="image">
-				<posx>20</posx>
-				<posy>44</posy>
-				<width>250</width>
-				<height>1</height>
-				<texture>White.png</texture>
-				<colordiffuse>19FFFFFF</colordiffuse>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>290</width>
+				<height>50</height>
+				<texture border="35,8,35,8">ListNoFocus.png</texture>
 			</control>
 			<control type="label">
 				<posx>145</posx>
@@ -332,26 +398,24 @@
 				<height>20</height>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<font>font30</font>
-				<textcolor>white</textcolor>
+				<textcolor>lightgrey</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<align>center</align>
-				<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
 			</control>
 		</itemlayout>
-		<focusedlayout width="290" height="40">
+		<focusedlayout width="290" height="50">
 			<control type="image">
-				<posx>20</posx>
-				<posy>44</posy>
-				<width>250</width>
-				<height>1</height>
-				<texture>White.png</texture>
-				<colordiffuse>19FFFFFF</colordiffuse>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>290</width>
+				<height>50</height>
+				<texture border="35,8,35,8">ListNoFocus.png</texture>
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>4</posy>
+				<posy>0</posy>
 				<width>290</width>
-				<height>40</height>
+				<height>50</height>
 				<texture border="15,0,15,0">ListFocus.png</texture>
 				<animation effect="slide" start="0,-40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1001).OnNext + !Container(1001).HasFocus(1)">focus</animation>
 				<animation effect="slide" start="0,40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(1001).OnPrevious + !Container(1001).HasFocus(6) + Container(1000).HasFocus(1)">focus</animation>
@@ -366,10 +430,9 @@
 				<height>20</height>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<font>font30</font>
-				<textcolor>white</textcolor>
+				<textcolor>lightgrey</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<align>center</align>
-				<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<posx>145</posx>

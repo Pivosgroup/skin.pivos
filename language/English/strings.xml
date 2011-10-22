@@ -23,4 +23,6 @@
 	<string id="31020">Setup the Pivos skin - Add and remove home menu items[CR]Change skin backgrounds</string>
 	<string id="31021">Access your files[CR]Copy, Move or delete files on your drives</string>
 	<string id="31022">Display your hardware - Check current network settings[CR]Monitor free discspace</string>
+	<string id="31023">Sort: Ascending</string>
+	<string id="31024">Sort: Descending</string>
 </strings>

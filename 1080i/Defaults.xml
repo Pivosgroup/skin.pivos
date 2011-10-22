@@ -1,0 +1,99 @@
+<includes>
+	<default type="button">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>300</width>
+		<height>50</height>
+		<label>-</label>
+		<font>font30</font>
+		<textcolor>lightgrey</textcolor>
+		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
+		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
+		<focusedcolor>orange</focusedcolor>
+		<disabledcolor>grey</disabledcolor>
+		<textoffsetx>25</textoffsetx>
+		<textoffsety>0</textoffsety>
+		<aligny>top</aligny>
+		<pulseonselect>true</pulseonselect>
+	</default>
+	<default type="edit">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>300</width>
+		<height>50</height>
+		<label>-</label>
+		<font>font30</font>
+		<textcolor>lightgrey</textcolor>
+		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
+		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
+		<focusedcolor>orange</focusedcolor>
+		<disabledcolor>grey</disabledcolor>
+		<textoffsetx>25</textoffsetx>
+		<textoffsety>0</textoffsety>
+		<aligny>top</aligny>
+		<pulseonselect>true</pulseonselect>
+	</default>
+	<default type="radiobutton">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>300</width>
+		<height>50</height>
+		<label>-</label>
+		<font>font30</font>
+		<textcolor>lightgrey</textcolor>
+		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
+		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
+		<focusedcolor>orange</focusedcolor>
+		<disabledcolor>grey</disabledcolor>
+		<textoffsetx>25</textoffsetx>
+		<textoffsety>0</textoffsety>
+		<aligny>top</aligny>
+		<pulseonselect>true</pulseonselect>
+		<radiowidth>30</radiowidth>
+		<radioheight>30</radioheight>
+		<textureradioon>RadioFocus.png</textureradioon>
+		<textureradiooff>Radio.png</textureradiooff>
+		<radioposx>1250</radioposx>
+	</default>
+	<default type="spincontrolex">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>300</width>
+		<height>50</height>
+		<label>-</label>
+		<font>font30</font>
+		<textcolor>lightgrey</textcolor>
+		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
+		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
+		<focusedcolor>orange</focusedcolor>
+		<disabledcolor>grey</disabledcolor>
+		<textoffsetx>25</textoffsetx>
+		<textoffsety>0</textoffsety>
+		<aligny>top</aligny>
+		<pulseonselect>true</pulseonselect>
+		<reverse>yes</reverse>
+		<textureup>ArrowUp.png</textureup>
+		<textureupfocus>ArrowUpFocus.png</textureupfocus>
+		<texturedown>ArrowDown.png</texturedown>
+		<texturedownfocus>ArrowDownFocus.png</texturedownfocus>
+	</default>
+	<default type="togglebutton">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>300</width>
+		<height>50</height>
+		<label>-</label>
+		<font>font30</font>
+		<textcolor>lightgrey</textcolor>
+		<focusedcolor>orange</focusedcolor>
+		<disabledcolor>grey</disabledcolor>
+		<textoffsetx>25</textoffsetx>
+		<textoffsety>0</textoffsety>
+		<aligny>top</aligny>
+		<pulseonselect>true</pulseonselect>
+		<texturefocus>ArrowUpFocus.png</texturefocus>
+		<texturenofocus>ArrowUp.png</texturenofocus>
+		<alttexturefocus>ArrowDownFocus.png</alttexturefocus>
+		<alttexturenofocus>ArrowDown.png</alttexturenofocus>
+	</default>
+</includes>

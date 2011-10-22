@@ -1,4 +1,8 @@
 <includes>
+	<variable name="DurationLabel">
+		<value condition="!substring(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
+		<value condition="substring(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
+	</variable>
 	<variable name="HomeSettingsButton">
 		<value condition="!Control.HasFocus(20)">Settings.png</value>
 		<value condition="Control.HasFocus(20)">SettingsFocus.png</value>

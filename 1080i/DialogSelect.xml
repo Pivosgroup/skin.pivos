@@ -1,39 +1,89 @@
 <window type="dialog" id="2000">
 	<defaultcontrol always="true">3</defaultcontrol>
 	<controls>
-		<control type="list" id="3">
-			<posx>1400</posx>
-			<posy>110</posy>
-			<width>300</width>
-			<height>580</height>
-			<onup>3</onup>
-			<ondown>3</ondown>
-			<onleft>3</onleft>
-			<onright>3</onright>
-			<itemlayout width="300" height="30">
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>30</height>
-					<font>font30</font>
-					<textcolor>white</textcolor>
-					<selectedcolor>white</selectedcolor>
-					<label>$INFO[ListItem.Label]</label>
+		<control type="group">
+			<posx>680</posx>
+			<posy>160</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>560</width>
+				<height>760</height>
+				<texture border="30">Back.png</texture>
 				</control>
-			</itemlayout>
-			<focusedlayout width="300" height="30">
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>30</height>
-					<font>font30</font>
-					<textcolor>lightorange</textcolor>
-					<selectedcolor>lightorange</selectedcolor>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-			</focusedlayout>
+			<control type="list" id="3">
+				<posx>30</posx>
+				<posy>30</posy>
+				<width>500</width>
+				<height>700</height>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<onleft>3</onleft>
+				<onright>3</onright>
+				<itemlayout width="500" height="50">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>500</width>
+						<height>50</height>
+						<texture border="35,8,35,8">ListNoFocus.png</texture>
+					</control>
+					<control type="label">
+						<posx>250</posx>
+						<posy>0</posy>
+						<width>500</width>
+						<height>20</height>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font30</font>
+						<textcolor>lightgrey</textcolor>
+						<selectedcolor>lightorange</selectedcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>center</align>
+					</control>
+				</itemlayout>
+				<focusedlayout width="500" height="50">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>500</width>
+						<height>50</height>
+						<texture border="35,8,35,8">ListNoFocus.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>500</width>
+						<height>50</height>
+						<texture border="15,0,15,0">ListFocus.png</texture>
+						<animation effect="slide" start="0,-40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(3).OnNext">focus</animation>
+						<animation effect="slide" start="0,40" end="0,0" time="150" reversible="false" tween="quadratic" easing="out" condition="Container(3).OnPrevious">focus</animation>
+						<animation effect="fade" start="50" end="80" time="1500" pulse="true" condition="true">Conditional</animation>
+					</control>
+					<control type="label">
+						<posx>250</posx>
+						<posy>0</posy>
+						<width>500</width>
+						<height>20</height>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font30</font>
+						<textcolor>lightgrey</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<align>center</align>
+					</control>
+					<control type="label">
+						<posx>250</posx>
+						<posy>0</posy>
+						<width>500</width>
+						<height>20</height>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font30</font>
+						<textcolor>orange</textcolor>
+						<selectedcolor>orange</selectedcolor>
+						<align>center</align>
+						<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
+					</control>
+				</focusedlayout>
+			</control>
 		</control>
 	</controls>
 </window>
