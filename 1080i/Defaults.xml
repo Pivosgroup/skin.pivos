@@ -49,11 +49,12 @@
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>
-		<radiowidth>30</radiowidth>
-		<radioheight>30</radioheight>
+		<radiowidth>36</radiowidth>
+		<radioheight>36</radioheight>
 		<textureradioon>RadioFocus.png</textureradioon>
 		<textureradiooff>Radio.png</textureradiooff>
-		<radioposx>1250</radioposx>
+		<radioposx>1236</radioposx>
+		<radioposy>6</radioposy>
 	</default>
 	<default type="spincontrolex">
 		<posx>0</posx>
@@ -76,6 +77,8 @@
 		<textureupfocus>ArrowUpFocus.png</textureupfocus>
 		<texturedown>ArrowDown.png</texturedown>
 		<texturedownfocus>ArrowDownFocus.png</texturedownfocus>
+		<spinwidth>40</spinwidth>
+		<spinheight>50</spinheight>
 	</default>
 	<default type="togglebutton">
 		<posx>0</posx>
