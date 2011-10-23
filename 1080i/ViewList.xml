@@ -5,14 +5,7 @@
 			<posy>50</posy>	
 			<width>1300</width>
 			<height>660</height>			
-			<animation type="WindowOpen">
-				<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>
-				<effect type="fade" start="0" end="100" time="400"/>
-			</animation>
-			<animation type="WindowClose">
-				<effect type="zoom" start="100" end="60" center="auto" time="400" tween="sine" easing="in"/>
-				<effect type="fade" start="100" end="0" time="400"/>
-			</animation>
+			<include>WindowOpenCloseZoomInOut</include>
 			<control type="fixedlist" id="50">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -212,15 +205,14 @@
 		<control type="group">
 			<posx>50</posx>
 			<posy>876</posy>
-			<animation effect="fade" time="300">WindowOpen</animation>
-			<animation effect="fade" time="300">WindowClose</animation>
+			<include>WindowOpenCloseFade</include>
 			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Title)</visible>
 			<control type="textbox">
 				<posx>10</posx>
 				<posy>0</posy>
 				<width>1250</width>
 				<height>80</height>
-				<label>[B]$INFO[ListItem.PlotOutline][/B]</label>
+				<label>[B]$VAR[PlotLabel][/B]</label>
 				<font>font30</font>
 				<textcolor>lightorange</textcolor>
 				<shadowcolor>FF000000</shadowcolor>

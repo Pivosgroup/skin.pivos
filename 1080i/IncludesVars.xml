@@ -11,4 +11,9 @@
 		<value condition="!Control.HasFocus(21)">Power.png</value>
 		<value condition="Control.HasFocus(21)">PowerFocus.png</value>
 	</variable>
+	<variable name="PlotLabel">
+		<value condition="!IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
+		<value condition="IsEmpty(ListItem.PlotOutline) + !IsEmpty(ListItem.TagLine)" >$INFO[ListItem.TagLine]</value>
+		<value condition="IsEmpty(ListItem.PlotOutline) + IsEmpty(ListItem.TagLine)">$INFO[ListItem.Plot]</value>
+	</variable>
 </includes>

@@ -4,12 +4,7 @@
 		<include>DefaultBackground</include>
 		<include>Header</include>
 		<control type="group">
-			<animation type="WindowOpen">
-				<effect type="fade" start="0" end="100" time="400"/>
-			</animation>
-			<animation type="WindowClose">
-				<effect type="fade" start="100" end="0" time="400"/>
-			</animation>
+			<include>WindowOpenCloseFade</include>
 			<control type="label">
 				<posx>0</posx>
 				<posy>55</posy>
@@ -34,14 +29,7 @@
 			<posy>330</posy>
 			<width>460</width>
 			<height>420</height>
-			<animation type="WindowOpen">
-				<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>
-				<effect type="fade" start="0" end="100" time="400"/>
-			</animation>
-			<animation type="WindowClose">
-				<effect type="zoom" start="100" end="60" center="auto" time="400" tween="sine" easing="in"/>
-				<effect type="fade" start="100" end="0" time="400"/>
-			</animation>
+			<include>WindowOpenCloseZoomInOut</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -157,40 +145,15 @@
 			<height>608</height>
 			<texture>SettingsGear.png</texture>
 			<aspectratio>keep</aspectratio>
-			<animation effect="rotate" end="-30" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(1)">Conditional</animation>
-			<animation effect="rotate" end="-60" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(2)">Conditional</animation>
-			<animation effect="rotate" end="-90" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(3)">Conditional</animation>
-			<animation effect="rotate" end="-120" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(4)">Conditional</animation>
-			<animation effect="rotate" end="-150" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(5)">Conditional</animation>
-			<animation effect="rotate" end="-180" time="200" center="auto" condition="Control.HasFocus(1000) + Container(1000).HasFocus(6)">Conditional</animation>
-			<animation effect="rotate" end="-210" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(1)">Conditional</animation>
-			<animation effect="rotate" end="-240" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(2)">Conditional</animation>
-			<animation effect="rotate" end="-270" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(3)">Conditional</animation>
-			<animation effect="rotate" end="-300" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(4)">Conditional</animation>
-			<animation effect="rotate" end="-330" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(5)">Conditional</animation>
-			<animation effect="rotate" end="-360" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(6)">Conditional</animation>
-			<animation type="WindowOpen">
-				<effect type="zoom" start="160" end="100" center="auto" time="400" tween="sine" easing="out"/>
-				<effect type="fade" start="0" end="100" time="400"/>
-			</animation>
-			<animation type="WindowClose">
-				<effect type="zoom" start="100" end="160" center="auto" time="400" tween="sine" easing="in"/>
-				<effect type="fade" start="100" end="0" time="400"/>
-			</animation>
+			<include>SettingsGearRotate</include>
+			<include>WindowOpenCloseZoomOutIn</include>
 		</control>
 		<control type="group">
 			<posx>1430</posx>
 			<posy>330</posy>
 			<width>460</width>
 			<height>420</height>
-			<animation type="WindowOpen">
-				<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>
-				<effect type="fade" start="0" end="100" time="400"/>
-			</animation>
-			<animation type="WindowClose">
-				<effect type="zoom" start="100" end="60" center="auto" time="400" tween="sine" easing="in"/>
-				<effect type="fade" start="100" end="0" time="400"/>
-			</animation>
+			<include>WindowOpenCloseZoomInOut</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>

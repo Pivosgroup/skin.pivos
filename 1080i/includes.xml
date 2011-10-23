@@ -1,6 +1,7 @@
 <includes>
 	<include file="defaults.xml"/>
 	<include file="IncludesVars.xml"/>
+	<include file="IncludesAnims.xml"/>
 	<include file="ViewList.xml"/>
 	<include file="ViewPanel.xml"/>
 	<include name="DefaultBackground">
@@ -22,8 +23,7 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>250</fadetime>
 			<colordiffuse>30FFFFFF</colordiffuse>
-			<animation effect="fade" time="300">WindowOpen</animation>
-			<animation effect="fade" time="300">WindowClose</animation>
+			<include>WindowOpenCloseFade</include>
 		</control>
 	</include>
 	<include name="FooterHome">
@@ -70,8 +70,7 @@
 					<effect type="fade" start="100" end="0" time="3000" delay="8000"/>
 					<effect type="slide" start="0,0" end="0,0" time="12500" delay="10000" loop="false"/>
 				</animation>
-				<animation effect="fade" time="300">WindowOpen</animation>
-				<animation effect="fade" time="300">WindowClose</animation>
+				<include>WindowOpenCloseFade</include>
 			</control>
 		</control>
 	</include>
@@ -133,8 +132,7 @@
 					<effect type="fade" start="100" end="0" time="3000" delay="8000"/>
 					<effect type="slide" start="0,0" end="0,0" time="12500" delay="10000" loop="false"/>
 				</animation>
-				<animation effect="fade" time="300">WindowOpen</animation>
-				<animation effect="fade" time="300">WindowClose</animation>
+				<include>WindowOpenCloseFade</include>
 			</control>
 		</control>
 	</include>
@@ -243,8 +241,7 @@
 					<effect type="fade" start="100" end="0" time="3000" delay="8000"/>
 					<effect type="slide" start="0,0" end="0,0" time="12500" delay="10000" loop="false"/>
 				</animation>
-				<animation effect="fade" time="300">WindowOpen</animation>
-				<animation effect="fade" time="300">WindowClose</animation>
+				<include>WindowOpenCloseFade</include>
 			</control>
 		</control>
 	</include>
@@ -287,8 +284,7 @@
 					<effect type="fade" start="100" end="0" time="3000" delay="5500"/>
 					<effect type="slide" start="0,0" end="0,0" time="10000" delay="10000" loop="false"/>
 				</animation>
-				<animation effect="fade" time="300">WindowOpen</animation>
-				<animation effect="fade" time="300">WindowClose</animation>
+				<include>WindowOpenCloseFade</include>
 			</control>
 			<control type="image">
 				<posx>28</posx>
@@ -372,8 +368,7 @@
 			<titlecolor>orange</titlecolor>
 			<headlinecolor>white</headlinecolor>
 			<urlset>1</urlset>
-			<animation effect="fade" time="300">WindowOpen</animation>
-			<animation effect="fade" time="300">WindowClose</animation>
+			<include>WindowOpenCloseFade</include>
 		</control>
 	</include>
 	<include name="SubMenu">
