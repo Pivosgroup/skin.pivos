@@ -13,6 +13,14 @@
 		<animation effect="rotate" end="-330" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(5)">Conditional</animation>
 		<animation effect="rotate" end="-360" time="200" center="auto" condition="Control.HasFocus(1001) + Container(1001).HasFocus(6)">Conditional</animation>
 	</include>
+	<include name="VisibleFade">
+		<animation type="Visible">
+			<effect type="fade" start="0" end="100" time="400"/>
+		</animation>
+		<animation type="Hidden">
+			<effect type="fade" start="100" end="0" time="400"/>
+		</animation>
+	</include>
 	<include name="WindowOpenCloseZoomInOut">
 		<animation type="WindowOpen">
 			<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>

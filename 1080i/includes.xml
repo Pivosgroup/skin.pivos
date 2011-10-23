@@ -24,6 +24,8 @@
 			<fadetime>250</fadetime>
 			<colordiffuse>30FFFFFF</colordiffuse>
 			<include>WindowOpenCloseFade</include>
+			<include>VisibleFade</include>
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
 	</include>
 	<include name="FooterHome">
@@ -84,8 +86,8 @@
 		<align>center</align>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="250">Hidden</animation>
-		<animation effect="fade" time="300" condition="Window.Previous(Home)">WindowOpen</animation>
-		<animation effect="fade" time="300" condition="Window.Next(Home)">WindowClose</animation>
+		<animation effect="fade" time="400" condition="Window.Previous(Home)">WindowOpen</animation>
+		<animation effect="fade" time="400" condition="Window.Next(Home)">WindowClose</animation>
 	</include>
 	<include name="FooterLibrary">
 		<control type="group">
