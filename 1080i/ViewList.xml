@@ -38,7 +38,7 @@
 					</control>
 					<control type="label">
 						<posx>25</posx>
-						<posy>0</posy>
+						<posy>6</posy>
 						<width>830</width>
 						<height>20</height>
 						<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -48,7 +48,7 @@
 					</control>
 					<control type="label">
 						<posx>805</posx>
-						<posy>0</posy>
+						<posy>6</posy>
 						<width>830</width>
 						<height>20</height>
 						<label>[B]$INFO[ListItem.Year][/B]</label>
@@ -99,7 +99,7 @@
 					</control>
 					<control type="label">
 						<posx>25</posx>
-						<posy>0</posy>
+						<posy>6</posy>
 						<width>830</width>
 						<height>20</height>
 						<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -109,7 +109,7 @@
 					</control>
 					<control type="label">
 						<posx>25</posx>
-						<posy>0</posy>
+						<posy>6</posy>
 						<width>830</width>
 						<height>20</height>
 						<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -120,7 +120,7 @@
 					</control>
 					<control type="label">
 						<posx>25</posx>
-						<posy>0</posy>
+						<posy>6</posy>
 						<width>830</width>
 						<height>20</height>
 						<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -131,7 +131,7 @@
 					</control>
 					<control type="label">
 						<posx>805</posx>
-						<posy>0</posy>
+						<posy>6</posy>
 						<width>830</width>
 						<height>20</height>
 						<label>[B]$INFO[ListItem.Year][/B]</label>

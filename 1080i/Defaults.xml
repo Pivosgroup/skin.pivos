@@ -54,7 +54,7 @@
 		<textureradioon>RadioFocus.png</textureradioon>
 		<textureradiooff>Radio.png</textureradiooff>
 		<radioposx>1236</radioposx>
-		<radioposy>6</radioposy>
+		<radioposy>7</radioposy>
 	</default>
 	<default type="spincontrolex">
 		<posx>0</posx>

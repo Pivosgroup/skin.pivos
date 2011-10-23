@@ -55,7 +55,7 @@
 				<posy>30</posy>
 				<width>430</width>
 				<height>360</height>
-				<onup>1000</onup>
+				<onup>21</onup>
 				<ondown>1000</ondown>
 				<onleft>1001</onleft>
 				<onright>1001</onright>
@@ -204,7 +204,7 @@
 				<posy>30</posy>
 				<width>430</width>
 				<height>360</height>
-				<onup>1001</onup>
+				<onup>21</onup>
 				<ondown>1001</ondown>
 				<onleft>1000</onleft>
 				<onright>1000</onright>

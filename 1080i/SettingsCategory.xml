@@ -3,48 +3,76 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>Header</include>
-		<control type="group">
-			<posx>30</posx>
-			<posy>140</posy>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
+		<control type="group" id="1000">
+			<control type="group">
+				<posx>30</posx>
+				<posy>140</posy>
 				<width>410</width>
 				<height>575</height>
-				<texture border="30">MenuBack.png</texture>
+				<animation type="WindowOpen">
+					<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>
+					<effect type="fade" start="0" end="100" time="400"/>
+				</animation>
+				<animation type="WindowClose">
+					<effect type="zoom" start="100" end="60" center="auto" time="400" tween="sine" easing="in"/>
+					<effect type="fade" start="100" end="0" time="400"/>
+				</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>410</width>
+					<height>575</height>
+					<texture border="30">MenuBack.png</texture>
+				</control>
+				<control type="grouplist" id="3">
+					<posx>25</posx>
+					<posy>30</posy>
+					<width>360</width>
+					<height>450</height>
+					<itemgap>0</itemgap>
+					<onup>21</onup>
+					<ondown>3</ondown>
+					<onleft>5</onleft>
+					<onright>5</onright>
+				</control>
 			</control>
-			<control type="grouplist" id="3">
-				<posx>25</posx>
-				<posy>30</posy>
-				<width>360</width>
-				<height>450</height>
-				<itemgap>0</itemgap>
-				<onleft>5</onleft>
-				<onright>5</onright>
-				<onup>3</onup>
-				<ondown>3</ondown>
-			</control>
-		</control>
-		<control type="group">
-			<posx>460</posx>
-			<posy>100</posy>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1400</width>
-				<height>830</height>
-				<texture border="30">MenuBack.png</texture>
-			</control>
-			<control type="grouplist" id="5">
-				<posx>50</posx>
-				<posy>30</posy>
-				<width>1300</width>
-				<height>660</height>
-				<itemgap>0</itemgap>
-				<onleft>3</onleft>
-				<onright>3</onright>
-				<onup>5</onup>
-				<ondown>5</ondown>
+			<control type="group">
+				<posx>460</posx>
+				<posy>100</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1400</width>
+					<height>830</height>
+					<texture border="30">MenuBack.png</texture>
+					<animation type="WindowOpen">
+						<effect type="zoom" start="160" end="100" center="auto" time="400" tween="sine" easing="out"/>
+						<effect type="fade" start="0" end="100" time="400"/>
+					</animation>
+					<animation type="WindowClose">
+						<effect type="zoom" start="100" end="160" center="auto" time="400" tween="sine" easing="in"/>
+						<effect type="fade" start="100" end="0" time="400"/>
+					</animation>
+				</control>
+				<control type="grouplist" id="5">
+					<posx>50</posx>
+					<posy>30</posy>
+					<width>1300</width>
+					<height>660</height>
+					<itemgap>0</itemgap>
+					<onup>21</onup>
+					<ondown>5</ondown>
+					<onleft>3</onleft>
+					<onright>3</onright>
+					<animation type="WindowOpen">
+						<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>
+						<effect type="fade" start="0" end="100" time="400"/>
+					</animation>
+					<animation type="WindowClose">
+						<effect type="zoom" start="100" end="60" center="auto" time="400" tween="sine" easing="in"/>
+						<effect type="fade" start="100" end="0" time="400"/>
+					</animation>
+				</control>
 			</control>
 		</control>
 		<control type="button" id="7">
@@ -68,7 +96,7 @@
 			<height>50</height>
 			<label>-</label>
 		</control>
-		<control type="togglebutton" id="10">
+		<control type="button" id="10">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>360</width>
@@ -76,9 +104,7 @@
 			<label>-</label>
 			<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
 			<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
-			<alttexturefocus border="35,8,35,8">ButtonFocus.png</alttexturefocus>
-			<alttexturenofocus border="35,8,35,8">ListNoFocus.png</alttexturenofocus>
 		</control>
-		<include>Footer</include>
+		<include>FooterSettings</include>
 	</controls>
 </window>
