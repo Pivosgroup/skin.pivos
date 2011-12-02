@@ -21,7 +21,7 @@
 				<height>50</height>
 				<label>[B]$INFO[System.Time][/B]</label>
 				<font>font80</font>
-				<textcolor>lightorange</textcolor>
+				<textcolor>light</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -33,7 +33,7 @@
 				<height>50</height>
 				<label>[B]$INFO[System.Date][/B]</label>
 				<font>font30</font>
-				<textcolor>darkorange</textcolor>
+				<textcolor>dark</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -134,7 +134,7 @@
 						<height>40</height>
 						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 						<font>font50</font>
-						<textcolor>orange</textcolor>
+						<textcolor>normal</textcolor>
 						<align>center</align>
 						<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
 						<visible>Control.HasFocus(1000)</visible>
@@ -146,7 +146,7 @@
 						<height>40</height>
 						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 						<font>font50</font>
-						<textcolor>lightorange</textcolor>
+						<textcolor>light</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>center</align>
 						<visible>!Control.HasFocus(1000)</visible>

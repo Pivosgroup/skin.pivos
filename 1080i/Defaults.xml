@@ -9,7 +9,7 @@
 		<textcolor>lightgrey</textcolor>
 		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
 		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
-		<focusedcolor>orange</focusedcolor>
+		<focusedcolor>normal</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>25</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -26,7 +26,7 @@
 		<textcolor>lightgrey</textcolor>
 		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
 		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
-		<focusedcolor>orange</focusedcolor>
+		<focusedcolor>normal</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>25</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -43,7 +43,7 @@
 		<textcolor>lightgrey</textcolor>
 		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
 		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
-		<focusedcolor>orange</focusedcolor>
+		<focusedcolor>normal</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>25</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -66,7 +66,7 @@
 		<textcolor>lightgrey</textcolor>
 		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
 		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
-		<focusedcolor>orange</focusedcolor>
+		<focusedcolor>normal</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>25</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -88,7 +88,7 @@
 		<label>-</label>
 		<font>font30</font>
 		<textcolor>lightgrey</textcolor>
-		<focusedcolor>orange</focusedcolor>
+		<focusedcolor>normal</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>25</textoffsetx>
 		<textoffsety>0</textoffsety>

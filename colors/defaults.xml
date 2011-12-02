@@ -3,7 +3,8 @@
 	<color name="lightgrey">FFE6E6E6</color>
 	<color name="grey">FF767676</color>
 	<color name="black">FF000000</color>
-	<color name="lightorange">FFF4C664</color>
-	<color name="orange">FFF7931D</color>
-	<color name="darkorange">FFC37417</color>
+	<color name="dark">FFFDAC17</color>
+	<color name="normal">FFF1B22F</color>
+	<color name="light">FFF9D37B</color>
+	<color name="extralight">FFFCEFCF</color>
 </colors>

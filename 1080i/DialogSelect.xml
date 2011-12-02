@@ -39,7 +39,7 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 						<font>font30</font>
 						<textcolor>lightgrey</textcolor>
-						<selectedcolor>lightorange</selectedcolor>
+						<selectedcolor>light</selectedcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>center</align>
 					</control>
@@ -80,8 +80,8 @@
 						<height>20</height>
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 						<font>font30</font>
-						<textcolor>orange</textcolor>
-						<selectedcolor>orange</selectedcolor>
+						<textcolor>normal</textcolor>
+						<selectedcolor>normal</selectedcolor>
 						<align>center</align>
 						<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
 					</control>

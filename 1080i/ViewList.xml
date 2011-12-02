@@ -107,7 +107,7 @@
 						<height>20</height>
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 						<font>font35</font>
-						<textcolor>orange</textcolor>
+						<textcolor>normal</textcolor>
 						<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
 						<visible>Control.HasFocus(50)</visible>
 					</control>
@@ -118,7 +118,7 @@
 						<height>20</height>
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 						<font>font35</font>
-						<textcolor>lightorange</textcolor>
+						<textcolor>light</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<visible>!Control.HasFocus(50)</visible>
 					</control>
@@ -129,7 +129,7 @@
 						<height>20</height>
 						<label>[B]$INFO[ListItem.Year][/B]</label>
 						<font>font35</font>
-						<textcolor>lightorange</textcolor>
+						<textcolor>light</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>right</align>
 					</control>
@@ -140,7 +140,7 @@
 						<height>20</height>
 						<label>$VAR[DurationLabel]</label>
 						<font>font30</font>
-						<textcolor>lightorange</textcolor>
+						<textcolor>light</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 					</control>
 					<control type="label">
@@ -150,7 +150,7 @@
 						<height>20</height>
 						<label>$INFO[ListItem.Rating]</label>
 						<font>font30</font>
-						<textcolor>lightorange</textcolor>
+						<textcolor>light</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>right</align>
 					</control>
@@ -196,7 +196,7 @@
 					<height>50</height>
 					<label>[B]$INFO[ListItem.Genre][/B]</label>
 					<font>font50</font>
-					<textcolor>darkorange</textcolor>
+					<textcolor>dark</textcolor>
 					<shadowcolor>FF000000</shadowcolor>
 					<align>center</align>
 				</control>
@@ -214,7 +214,7 @@
 				<height>80</height>
 				<label>[B]$VAR[PlotLabel][/B]</label>
 				<font>font30</font>
-				<textcolor>lightorange</textcolor>
+				<textcolor>light</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<autoscroll time="3500" delay="6000" repeat="3000">true</autoscroll>
 			</control>

@@ -12,7 +12,7 @@
 				<height>30</height>
 				<label>[B][UPPERCASE]$LOCALIZE[5][/UPPERCASE][/B]</label>
 				<font>font80</font>
-				<textcolor>darkorange</textcolor>
+				<textcolor>dark</textcolor>
 				<align>center</align>
 			</control>
 			<control type="image">
@@ -104,7 +104,7 @@
 						<height>30</height>
 						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 						<font>font40</font>
-						<textcolor>orange</textcolor>
+						<textcolor>normal</textcolor>
 						<align>center</align>
 						<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
 						<visible>Control.HasFocus(1000)</visible>
@@ -228,7 +228,7 @@
 						<height>30</height>
 						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 						<font>font40</font>
-						<textcolor>orange</textcolor>
+						<textcolor>normal</textcolor>
 						<align>center</align>
 						<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
 						<visible>Control.HasFocus(1001)</visible>

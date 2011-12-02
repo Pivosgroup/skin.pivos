@@ -366,8 +366,8 @@
 			<width>1920</width>
 			<height>30</height>
 			<font>font30</font>
-			<textcolor>orange</textcolor>
-			<titlecolor>orange</titlecolor>
+			<textcolor>normal</textcolor>
+			<titlecolor>normal</titlecolor>
 			<headlinecolor>white</headlinecolor>
 			<urlset>1</urlset>
 			<include>WindowOpenCloseFade</include>
@@ -440,7 +440,7 @@
 				<height>20</height>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<font>font30</font>
-				<textcolor>orange</textcolor>
+				<textcolor>normal</textcolor>
 				<align>center</align>
 				<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
 				<visible>Control.HasFocus(1001)</visible>
@@ -452,7 +452,7 @@
 				<height>20</height>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<font>font30</font>
-				<textcolor>lightorange</textcolor>
+				<textcolor>light</textcolor>
 				<shadowcolor>FF000000</shadowcolor>
 				<align>center</align>
 				<visible>!Control.HasFocus(1001)</visible>
