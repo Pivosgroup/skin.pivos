@@ -1,0 +1,38 @@
+<includes>
+	<include name="VisibleFade">
+		<animation type="Visible">
+			<effect type="fade" start="0" end="100" time="400"/>
+		</animation>
+		<animation type="Hidden">
+			<effect type="fade" start="100" end="0" time="400"/>
+		</animation>
+	</include>
+	<include name="WindowOpenCloseZoomInOut">
+		<animation type="WindowOpen">
+			<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>
+			<effect type="fade" start="0" end="100" time="400"/>
+		</animation>
+		<animation type="WindowClose">
+			<effect type="zoom" start="100" end="60" center="auto" time="400" tween="sine" easing="in"/>
+			<effect type="fade" start="100" end="0" time="400"/>
+		</animation>
+	</include>
+	<include name="WindowOpenCloseZoomOutIn">
+		<animation type="WindowOpen">
+			<effect type="zoom" start="160" end="100" center="auto" time="400" tween="sine" easing="out"/>
+			<effect type="fade" start="0" end="100" time="400"/>
+		</animation>
+		<animation type="WindowClose">
+			<effect type="zoom" start="100" end="160" center="auto" time="400" tween="sine" easing="in"/>
+			<effect type="fade" start="100" end="0" time="400"/>
+		</animation>
+	</include>
+	<include name="WindowOpenCloseFade">
+		<animation type="WindowOpen">
+			<effect type="fade" start="0" end="100" time="400"/>
+		</animation>
+		<animation type="WindowClose">
+			<effect type="fade" start="100" end="0" time="400"/>
+		</animation>
+	</include>
+</includes>

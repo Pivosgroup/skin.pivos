@@ -2,7 +2,6 @@
 	<defaultcontrol>3</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
-		<include>Header</include>
 		<control type="group" id="1000">
 			<control type="group">
 				<posx>30</posx>
@@ -10,13 +9,6 @@
 				<width>410</width>
 				<height>575</height>
 				<include>WindowOpenCloseZoomInOut</include>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>410</width>
-					<height>575</height>
-					<texture border="30">MenuBack.png</texture>
-				</control>
 				<control type="grouplist" id="3">
 					<posx>25</posx>
 					<posy>30</posy>
@@ -30,20 +22,12 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>460</posx>
+				<posx>300</posx>
 				<posy>100</posy>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1400</width>
-					<height>830</height>
-					<texture border="30">MenuBack.png</texture>
-					<include>WindowOpenCloseZoomOutIn</include>
-				</control>
 				<control type="grouplist" id="5">
 					<posx>50</posx>
 					<posy>30</posy>
-					<width>1300</width>
+					<width>600</width>
 					<height>660</height>
 					<itemgap>0</itemgap>
 					<onup>21</onup>
@@ -84,6 +68,5 @@
 			<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
 			<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
 		</control>
-		<include>FooterSettings</include>
 	</controls>
 </window>

@@ -1,0 +1,16 @@
+<window id="0">
+	<defaultcontrol always="true">1000</defaultcontrol>
+	<controls>
+		<include>DefaultBackground</include>
+		<control type="button" id="1000">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>64</height>
+			<label>-</label>
+			<texturefocus>home_search_focus.png</texturefocus>
+			<texturenofocus>home_search.png</texturenofocus>
+			<onclick>ActivateWindow(Settings)</onclick>
+		</control>
+	</controls>
+</window>

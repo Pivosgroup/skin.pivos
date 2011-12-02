@@ -1,0 +1,26 @@
+<fonts>
+	<fontset id="Default" idlock="31000" unicode="true">
+		<font>
+			<name>font20</name>
+			<filename>default.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>font30</name>
+			<filename>default.ttf</filename>
+			<size>30</size>
+		</font>
+	</fontset>
+	<fontset id="XBMC" idlock="31000" unicode="true">
+		<font>
+			<name>font20</name>
+			<filename>arial.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>font30</name>
+			<filename>arial.ttf</filename>
+			<size>30</size>
+		</font>
+	</fontset>
+</fonts>

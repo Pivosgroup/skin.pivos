@@ -2,41 +2,25 @@
 	<defaultcontrol>1000</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
-		<include>Header</include>
 		<control type="group">
 			<include>WindowOpenCloseFade</include>
 			<control type="label">
 				<posx>0</posx>
 				<posy>55</posy>
-				<width>1920</width>
+				<width>1280</width>
 				<height>30</height>
-				<label>[B][UPPERCASE]$LOCALIZE[5][/UPPERCASE][/B]</label>
-				<font>font80</font>
+				<label>[B]$LOCALIZE[5][/B]</label>
+				<font>font30</font>
 				<textcolor>dark</textcolor>
 				<align>center</align>
-			</control>
-			<control type="image">
-				<posx>710</posx>
-				<posy>165</posy>
-				<width>500</width>
-				<height>1</height>
-				<texture>White.png</texture>
-				<colordiffuse>FFC37417</colordiffuse>
 			</control>
 		</control>
 		<control type="group">
 			<posx>30</posx>
-			<posy>330</posy>
+			<posy>50</posy>
 			<width>460</width>
 			<height>420</height>
 			<include>WindowOpenCloseZoomInOut</include>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>460</width>
-				<height>430</height>
-				<texture border="30">MenuBack.png</texture>
-			</control>
 			<control type="list" id="1000">
 				<orientation>vertical</orientation>
 				<posx>30</posx>
@@ -61,7 +45,7 @@
 						<width>400</width>
 						<height>30</height>
 						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
-						<font>font40</font>
+						<font>font30</font>
 						<textcolor>lightgrey</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>center</align>
@@ -91,8 +75,8 @@
 						<posy>-1</posy>
 						<width>400</width>
 						<height>30</height>
-						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
-						<font>font40</font>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font30</font>
 						<textcolor>lightgrey</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>center</align>
@@ -102,8 +86,8 @@
 						<posy>-1</posy>
 						<width>400</width>
 						<height>30</height>
-						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
-						<font>font40</font>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font30</font>
 						<textcolor>normal</textcolor>
 						<align>center</align>
 						<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
@@ -138,29 +122,12 @@
 				</content>
 			</control>
 		</control>
-		<control type="image">
-			<posx>656</posx>
-			<posy>240</posy>
-			<width>608</width>
-			<height>608</height>
-			<texture>SettingsGear.png</texture>
-			<aspectratio>keep</aspectratio>
-			<include>SettingsGearRotate</include>
-			<include>WindowOpenCloseZoomOutIn</include>
-		</control>
 		<control type="group">
-			<posx>1430</posx>
-			<posy>330</posy>
+			<posx>800</posx>
+			<posy>50</posy>
 			<width>460</width>
 			<height>420</height>
 			<include>WindowOpenCloseZoomInOut</include>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>460</width>
-				<height>420</height>
-				<texture border="30">MenuBack.png</texture>
-			</control>
 			<control type="list" id="1001">
 				<orientation>vertical</orientation>
 				<posx>30</posx>
@@ -184,8 +151,8 @@
 						<posy>-1</posy>
 						<width>400</width>
 						<height>30</height>
-						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
-						<font>font40</font>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font30</font>
 						<textcolor>lightgrey</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>center</align>
@@ -215,8 +182,8 @@
 						<posy>-1</posy>
 						<width>400</width>
 						<height>30</height>
-						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
-						<font>font40</font>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font30</font>
 						<textcolor>lightgrey</textcolor>
 						<shadowcolor>FF000000</shadowcolor>
 						<align>center</align>
@@ -226,7 +193,7 @@
 						<posy>-1</posy>
 						<width>400</width>
 						<height>30</height>
-						<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
 						<font>font40</font>
 						<textcolor>normal</textcolor>
 						<align>center</align>
@@ -262,6 +229,5 @@
 				</content>
 			</control>
 		</control>
-		<include>FooterSettings</include>
 	</controls>
 </window>
