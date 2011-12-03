@@ -11,7 +11,7 @@
 		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
 		<focusedcolor>normal</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>25</textoffsetx>
+		<textoffsetx>0</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>
@@ -28,7 +28,7 @@
 		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
 		<focusedcolor>normal</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>25</textoffsetx>
+		<textoffsetx>0</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>
@@ -45,7 +45,7 @@
 		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
 		<focusedcolor>normal</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>25</textoffsetx>
+		<textoffsetx>0</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>
@@ -68,7 +68,7 @@
 		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
 		<focusedcolor>normal</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>25</textoffsetx>
+		<textoffsetx>0</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>
@@ -90,7 +90,7 @@
 		<textcolor>lightgrey</textcolor>
 		<focusedcolor>normal</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>25</textoffsetx>
+		<textoffsetx>0</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>

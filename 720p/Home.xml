@@ -2,15 +2,223 @@
 	<defaultcontrol always="true">1000</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
-		<control type="button" id="1000">
+		<include>Header</include>
+		<control type="label">
+			<posx>1240</posx>
+			<posy>45</posy>
+			<width>800</width>
+			<height>30</height>
+			<label>$LOCALIZE[31001] $INFO[System.ProfileName]</label>
+			<align>right</align>
+			<font>font20</font>
+			<textcolor>white</textcolor>
+		</control>
+		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
+			<width>107</width>
+			<height>720</height>
+			<texture>side_panel.png</texture>
+			<colordiffuse>EEFFFFFF</colordiffuse>
+		</control>
+		<control type="image">
+			<posx>107</posx>
+			<posy>0</posy>
+			<width>212</width>
+			<height>720</height>
+			<texture>white.png</texture>
+			<colordiffuse>99000000</colordiffuse>
+		</control>
+		<control type="group">
+			<posx>20</posx>
+			<posy>42</posy>
 			<width>64</width>
-			<height>64</height>
-			<label>-</label>
-			<texturefocus>home_search_focus.png</texturefocus>
-			<texturenofocus>home_search.png</texturenofocus>
-			<onclick>ActivateWindow(Settings)</onclick>
+			<height>600</height>			
+			<include>WindowOpenCloseZoomInOut</include>
+			<control type="list" id="1000">
+				<orientation>vertical</orientation>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>64</width>
+				<height>600</height>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onleft>1000</onleft>
+				<onright>100</onright>
+				<itemlayout width="64" height="75">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<animation effect="zoom" end="80" center="auto" condition="true">Conditional</animation>
+					</control>
+				</itemlayout>
+				<focusedlayout width="64" height="75">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<animation effect="zoom" start="80" end="100" time="200" center="auto">Focus</animation>
+						<animation effect="zoom" start="100" end="80" time="200" center="auto">UnFocus</animation>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
+						<animation type="focus">
+							<effect type="zoom" start="80" end="100" time="200" center="auto"/>
+							<effect type="fade" start="0" end="100" time="200"/>
+						</animation>
+						<animation type="unfocus">
+							<effect type="zoom" start="100" end="80" time="200" center="auto"/>
+							<effect type="fade" start="100" end="0" time="200"/>
+
+						</animation>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>-</label>
+						<icon>home_search.png</icon>
+						<property name="Icon_Focus">home_search_focus.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="2">
+						<label>-</label>
+						<icon>home_search.png</icon>
+						<property name="Icon_Focus">home_search_focus.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="3">
+						<label>-</label>
+						<icon>home_search.png</icon>
+						<property name="Icon_Focus">home_search_focus.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="4">
+						<label>-</label>
+						<icon>home_search.png</icon>
+						<property name="Icon_Focus">home_search_focus.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="5">
+						<label>-</label>
+						<icon>home_search.png</icon>
+						<property name="Icon_Focus">home_search_focus.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="6">
+						<label>-</label>
+						<icon>home_search.png</icon>
+						<property name="Icon_Focus">home_search_focus.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="7">
+						<label>-</label>
+						<icon>home_search.png</icon>
+						<property name="Icon_Focus">home_search_focus.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="8">
+						<label>-</label>
+						<icon>home_search.png</icon>
+						<property name="Icon_Focus">home_search_focus.png</property>
+						<onclick>ActivateWindow(Settings)</onclick>
+					</item>
+				</content>
+			</control>
+		</control>
+		<control type="grouplist">
+			<posx>140</posx>
+			<posy>132</posy>
+			<width>170</width>
+			<height>300</height>
+			<orientation>vertical</orientation>
+			<include>VisibleFade</include>
+			<visible>Container(1000).HasFocus(2)</visible>
+			<control type="button">
+				<width>170</width>
+				<height>26</height>
+				<label>Foobar</label>
+				<font>font20</font>
+				<textcolor>white</textcolor>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>-</onclick>
+			</control>
+			<control type="button">
+				<width>170</width>
+				<height>26</height>
+				<label>Foobar</label>
+				<font>font20</font>
+				<textcolor>white</textcolor>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>-</onclick>
+			</control>
+			<control type="button">
+				<width>170</width>
+				<height>26</height>
+				<label>Foobar</label>
+				<font>font20</font>
+				<textcolor>white</textcolor>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>-</onclick>
+			</control>
+			<control type="image">
+				<width>150</width>
+				<height>2</height>
+				<font>font20</font>
+				<texture>white.png</texture>
+				<colordiffuse>normal</colordiffuse>
+			</control>
+			<control type="button">
+				<width>170</width>
+				<height>26</height>
+				<label>Foobar</label>
+				<font>font20</font>
+				<textcolor>white</textcolor>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>-</onclick>
+			</control>
+			<control type="button">
+				<width>170</width>
+				<height>26</height>
+				<label>Foobar</label>
+				<font>font20</font>
+				<textcolor>white</textcolor>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>-</onclick>
+			</control>
+			<control type="button">
+				<width>170</width>
+				<height>26</height>
+				<label>Foobar</label>
+				<font>font20</font>
+				<textcolor>white</textcolor>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>-</onclick>
+			</control>
+			<control type="button">
+				<width>170</width>
+				<height>26</height>
+				<label>Foobar</label>
+				<font>font20</font>
+				<textcolor>white</textcolor>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>-</onclick>
+			</control>
 		</control>
 	</controls>
 </window>

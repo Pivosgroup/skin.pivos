@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <strings>
 	<string id="31000">Default</string>
-	<string id="31001">Apps</string>
-	<string id="31002">Video Streams</string>
-	<string id="31003">Photo</string>
-	<string id="31004">Photo Sites</string>
-	<string id="31005">Internet Radio</string>
-	<string id="31006">All Apps</string>
-	<string id="31007">Manage Apps</string>
-	<string id="31008">Download Apps</string>
-	<string id="31009">Favourite</string>
-	<string id="31010"></string>
-	<string id="31011">Select a skin - Set language and region - Change file listing options[CR]Set up a screensaver</string>
-	<string id="31012">Manage your video library - Set video playback options - Change video listing options[CR]Set subtitle fonts</string>
-	<string id="31013">Manage your music library - Set music playback options - Change music listing options[CR]Setup song submission - Set karaoke options</string>
-	<string id="31014">Set picture listing options[CR]Configure slideshows</string>
-	<string id="31015">Set three cities to collect weather information[CR]Select a weather plugin</string>
-	<string id="31016">Setup displays - Configure audio output - Setup remote controls[CR]Set power saving options - Enable debugging - Setup master lock</string>
-	<string id="31017">Setup control of XBMC via UPnP and HTTP - Configure file sharing[CR]Set internet access options</string>
-	<string id="31018">Select your XBMC user Profile[CR]to login and continue</string>
-	<string id="31019">Manage your installed Add-ons - Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings</string>
-	<string id="31020">Setup the Pivos skin - Add and remove home menu items[CR]Change skin backgrounds</string>
-	<string id="31021">Access your files[CR]Copy, Move or delete files on your drives</string>
-	<string id="31022">Display your hardware - Check current network settings[CR]Monitor free discspace</string>
-	<string id="31023">Sort: Ascending</string>
-	<string id="31024">Sort: Descending</string>
+	<string id="31001">Welcome, User </string>
 </strings>
