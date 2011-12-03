@@ -85,50 +85,50 @@
 				<content>
 					<item id="1">
 						<label>-</label>
-						<icon>home_search.png</icon>
-						<property name="Icon_Focus">home_search_focus.png</property>
+						<icon>home_search_NF.png</icon>
+						<property name="Icon_Focus">home_search_FO.png</property>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="2">
 						<label>-</label>
-						<icon>home_search.png</icon>
-						<property name="Icon_Focus">home_search_focus.png</property>
+						<icon>home_video_NF.png</icon>
+						<property name="Icon_Focus">home_video_FO.png</property>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="3">
 						<label>-</label>
-						<icon>home_search.png</icon>
-						<property name="Icon_Focus">home_search_focus.png</property>
+						<icon>home_audio_NF.png</icon>
+						<property name="Icon_Focus">home_audio_FO.png</property>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="4">
 						<label>-</label>
-						<icon>home_search.png</icon>
-						<property name="Icon_Focus">home_search_focus.png</property>
+						<icon>home_pictures_NF.png</icon>
+						<property name="Icon_Focus">home_pictures_FO.png</property>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="5">
 						<label>-</label>
-						<icon>home_search.png</icon>
-						<property name="Icon_Focus">home_search_focus.png</property>
+						<icon>home_favourites_NF.png</icon>
+						<property name="Icon_Focus">home_favourites_FO.png</property>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="6">
 						<label>-</label>
-						<icon>home_search.png</icon>
-						<property name="Icon_Focus">home_search_focus.png</property>
+						<icon>home_chat_NF.png</icon>
+						<property name="Icon_Focus">home_chat_FO.png</property>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="7">
 						<label>-</label>
-						<icon>home_search.png</icon>
-						<property name="Icon_Focus">home_search_focus.png</property>
+						<icon>home_office_NF.png</icon>
+						<property name="Icon_Focus">home_office_FO.png</property>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="8">
 						<label>-</label>
-						<icon>home_search.png</icon>
-						<property name="Icon_Focus">home_search_focus.png</property>
+						<icon>home_settings_NF.png</icon>
+						<property name="Icon_Focus">home_settings_FO.png</property>
 						<onclick>ActivateWindow(Settings)</onclick>
 					</item>
 				</content>
