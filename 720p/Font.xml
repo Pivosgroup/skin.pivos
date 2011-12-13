@@ -1,9 +1,49 @@
 <fonts>
 	<fontset id="Default" idlock="31000" unicode="true">
 		<font>
+			<name>font13</name>
+			<filename>default.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
+			<name>font14</name>
+			<filename>default.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>font16</name>
+			<filename>default.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>font18</name>
+			<filename>default.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
 			<name>font20</name>
 			<filename>default.ttf</filename>
 			<size>20</size>
+		</font>
+		<font>
+			<name>font22</name>
+			<filename>default.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>font24</name>
+			<filename>default.ttf</filename>
+			<size>24</size>
+		</font>
+		<font>
+			<name>font26</name>
+			<filename>default.ttf</filename>
+			<size>26</size>
+		</font>
+		<font>
+			<name>font28</name>
+			<filename>default.ttf</filename>
+			<size>28</size>
 		</font>
 		<font>
 			<name>font30</name>
@@ -13,14 +53,9 @@
 	</fontset>
 	<fontset id="XBMC" idlock="31000" unicode="true">
 		<font>
-			<name>font20</name>
-			<filename>arial.ttf</filename>
-			<size>20</size>
-		</font>
-		<font>
-			<name>font30</name>
-			<filename>arial.ttf</filename>
-			<size>30</size>
+			<name>font13</name>
+			<filename>default.ttf</filename>
+			<size>18</size>
 		</font>
 	</fontset>
 </fonts>
