@@ -66,4 +66,12 @@
 			</control>
 		</control>
 	</include>
+	<include name="HomeSubButton">
+		<width>170</width>
+		<height>26</height>
+		<font>font20</font>
+		<textcolor>white</textcolor>
+		<texturefocus>-</texturefocus>
+		<texturenofocus>-</texturenofocus>
+	</include>
 </includes>

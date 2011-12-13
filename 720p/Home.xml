@@ -16,18 +16,17 @@
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>107</width>
+			<width>140</width>
 			<height>720</height>
-			<texture>side_panel.png</texture>
-			<colordiffuse>EEFFFFFF</colordiffuse>
+			<texture>home_icon_background.png</texture>
 		</control>
 		<control type="image">
-			<posx>107</posx>
+			<posx>140</posx>
 			<posy>0</posy>
-			<width>212</width>
+			<width>200</width>
 			<height>720</height>
-			<texture>white.png</texture>
-			<colordiffuse>99000000</colordiffuse>
+			<texture>home_menu_background.png</texture>
+			<colordiffuse>88000000</colordiffuse>
 		</control>
 		<control type="group">
 			<posx>20</posx>
@@ -44,7 +43,7 @@
 				<onup>1000</onup>
 				<ondown>1000</ondown>
 				<onleft>1000</onleft>
-				<onright>100</onright>
+				<onright>200</onright>
 				<itemlayout width="64" height="75">
 					<control type="image">
 						<posx>0</posx>
@@ -134,91 +133,124 @@
 				</content>
 			</control>
 		</control>
-		<control type="grouplist">
+		<control type="grouplist" id="200">
 			<posx>140</posx>
 			<posy>132</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
 			<include>VisibleFade</include>
+			<onup>200</onup>
+			<ondown>200</ondown>
+			<onleft>1000</onleft>
+			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(2)</visible>
-			<control type="button">
-				<width>170</width>
-				<height>26</height>
+			<control type="button" id="201">
 				<label>Foobar</label>
-				<font>font20</font>
-				<textcolor>white</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="button">
-				<width>170</width>
-				<height>26</height>
+			<control type="button" id="202">
 				<label>Foobar</label>
-				<font>font20</font>
-				<textcolor>white</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="button">
-				<width>170</width>
-				<height>26</height>
+			<control type="button" id="203">
 				<label>Foobar</label>
-				<font>font20</font>
-				<textcolor>white</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="image">
+			<control type="image" id="204">
 				<width>150</width>
 				<height>2</height>
 				<font>font20</font>
 				<texture>white.png</texture>
 				<colordiffuse>normal</colordiffuse>
 			</control>
-			<control type="button">
-				<width>170</width>
-				<height>26</height>
+			<control type="button" id="205">
 				<label>Foobar</label>
-				<font>font20</font>
-				<textcolor>white</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="button">
-				<width>170</width>
-				<height>26</height>
+			<control type="button" id="206">
 				<label>Foobar</label>
-				<font>font20</font>
-				<textcolor>white</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="button">
-				<width>170</width>
-				<height>26</height>
+			<control type="button" id="207">
 				<label>Foobar</label>
-				<font>font20</font>
-				<textcolor>white</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="button">
-				<width>170</width>
-				<height>26</height>
+			<control type="button" id="208">
 				<label>Foobar</label>
-				<font>font20</font>
-				<textcolor>white</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
+		</control>
+		<control type="grouplist" id="200">
+			<posx>140</posx>
+			<posy>132</posy>
+			<width>170</width>
+			<height>300</height>
+			<orientation>vertical</orientation>
+			<include>VisibleFade</include>
+			<onup>200</onup>
+			<ondown>200</ondown>
+			<onleft>1000</onleft>
+			<onright>1000</onright>
+			<visible>Container(1000).HasFocus(4)</visible>
+			<control type="button" id="201">
+				<label>Foobar</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+			<control type="button" id="202">
+				<label>Foobar</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+			<control type="button" id="203">
+				<label>Foobar</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+			<control type="image" id="204">
+				<width>150</width>
+				<height>2</height>
+				<font>font20</font>
+				<texture>white.png</texture>
+				<colordiffuse>normal</colordiffuse>
+			</control>
+			<control type="button" id="205">
+				<label>Foobar</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+			<control type="button" id="206">
+				<label>Foobar</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+			<control type="button" id="207">
+				<label>Foobar</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+			<control type="button" id="208">
+				<label>Foobar</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+		</control>
+		<control type="multiimage">
+			<posx>900</posx>
+			<posy>630</posy>
+			<width>70</width>
+			<height>70</height>
+			<imagepath>busy</imagepath>
+			<timeperimage>200</timeperimage>
+			<randomize>false</randomize>
 		</control>
 	</controls>
 </window>
