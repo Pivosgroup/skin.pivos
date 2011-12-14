@@ -2,14 +2,16 @@
 	<defaultcontrol always="true">1000</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>.tmp/home.png</texture>
-		</control>
 		<include>Header</include>
+		<include>SideMenu</include>
+		<control type="image">
+			<posx>940</posx>
+			<posy>45</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>white.png</texture>
+			<colordiffuse>60FFFFFF</colordiffuse>
+		</control>
 		<control type="label">
 			<posx>1240</posx>
 			<posy>45</posy>
@@ -17,132 +19,12 @@
 			<height>30</height>
 			<label>$LOCALIZE[31001] $INFO[System.ProfileName]</label>
 			<align>right</align>
-			<font>font20</font>
+			<font>font18</font>
 			<textcolor>white</textcolor>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>140</width>
-			<height>720</height>
-			<texture>home_icon_background.png</texture>
-		</control>
-		<control type="image">
-			<posx>140</posx>
-			<posy>0</posy>
-			<width>200</width>
-			<height>720</height>
-			<texture>home_menu_background.png</texture>
-			<colordiffuse>88FFFFFF</colordiffuse>
-		</control>
-		<control type="group">
-			<posx>20</posx>
-			<posy>42</posy>
-			<width>64</width>
-			<height>600</height>			
-			<include>WindowOpenCloseZoomInOut</include>
-			<control type="list" id="1000">
-				<orientation>vertical</orientation>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>64</width>
-				<height>600</height>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
-				<onleft>1000</onleft>
-				<onright>200</onright>
-				<itemlayout width="64" height="75">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>64</width>
-						<height>64</height>
-						<texture>$INFO[ListItem.Icon]</texture>
-						<animation effect="zoom" end="80" center="auto" condition="true">Conditional</animation>
-					</control>
-				</itemlayout>
-				<focusedlayout width="64" height="75">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>64</width>
-						<height>64</height>
-						<texture>$INFO[ListItem.Icon]</texture>
-						<animation effect="zoom" start="80" end="100" time="200" center="auto">Focus</animation>
-						<animation effect="zoom" start="100" end="80" time="200" center="auto">UnFocus</animation>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>64</width>
-						<height>64</height>
-						<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
-						<animation type="focus">
-							<effect type="zoom" start="80" end="100" time="200" center="auto"/>
-							<effect type="fade" start="0" end="100" time="200"/>
-						</animation>
-						<animation type="unfocus">
-							<effect type="zoom" start="100" end="80" time="200" center="auto"/>
-							<effect type="fade" start="100" end="0" time="200"/>
-
-						</animation>
-					</control>
-				</focusedlayout>
-				<content>
-					<item id="1">
-						<label>-</label>
-						<icon>home_search_NF.png</icon>
-						<property name="Icon_Focus">home_search_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="2">
-						<label>-</label>
-						<icon>home_video_NF.png</icon>
-						<property name="Icon_Focus">home_video_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="3">
-						<label>-</label>
-						<icon>home_audio_NF.png</icon>
-						<property name="Icon_Focus">home_audio_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="4">
-						<label>-</label>
-						<icon>home_pictures_NF.png</icon>
-						<property name="Icon_Focus">home_pictures_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="5">
-						<label>-</label>
-						<icon>home_favourites_NF.png</icon>
-						<property name="Icon_Focus">home_favourites_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="6">
-						<label>-</label>
-						<icon>home_chat_NF.png</icon>
-						<property name="Icon_Focus">home_chat_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="7">
-						<label>-</label>
-						<icon>home_office_NF.png</icon>
-						<property name="Icon_Focus">home_office_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="8">
-						<label>-</label>
-						<icon>home_settings_NF.png</icon>
-						<property name="Icon_Focus">home_settings_FO.png</property>
-						<onclick>ActivateWindow(Settings)</onclick>
-					</item>
-				</content>
-			</control>
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>132</posy>
+			<posy>57</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -153,44 +35,28 @@
 			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(1)</visible>
 			<control type="button" id="201">
-				<label>Foobar</label>
+				<label>Movies</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="202">
-				<label>Foobar</label>
+				<label>TV Shows</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="203">
-				<label>Foobar</label>
+				<label>Music Videos</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="image" id="204">
 				<width>150</width>
 				<height>2</height>
-				<font>font20</font>
 				<texture>white.png</texture>
 				<colordiffuse>normal</colordiffuse>
 			</control>
 			<control type="button" id="205">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="206">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="207">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="208">
-				<label>Foobar</label>
+				<label>Songs</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
@@ -208,51 +74,50 @@
 			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(2)</visible>
 			<control type="button" id="201">
-				<label>Foobar</label>
+				<label>Play Lists</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="202">
-				<label>Foobar</label>
+				<label>Party Mode</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="203">
-				<label>Foobar</label>
+				<label>Recently Played</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="image" id="204">
 				<width>150</width>
 				<height>2</height>
-				<font>font20</font>
 				<texture>white.png</texture>
 				<colordiffuse>normal</colordiffuse>
 			</control>
 			<control type="button" id="205">
-				<label>Foobar</label>
+				<label>Video Add-ons</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="206">
-				<label>Foobar</label>
+				<label>TV Shows</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="207">
-				<label>Foobar</label>
+				<label>Movies</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="208">
-				<label>Foobar</label>
+				<label>Music Videos</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>132</posy>
+			<posy>207</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -263,51 +128,45 @@
 			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(3)</visible>
 			<control type="button" id="201">
-				<label>Foobar</label>
+				<label>Play Lists</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="202">
-				<label>Foobar</label>
+				<label>Party Mode</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="203">
-				<label>Foobar</label>
+				<label>Recently Played</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="image" id="204">
 				<width>150</width>
 				<height>2</height>
-				<font>font20</font>
 				<texture>white.png</texture>
 				<colordiffuse>normal</colordiffuse>
 			</control>
 			<control type="button" id="205">
-				<label>Foobar</label>
+				<label>Artists</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="206">
-				<label>Foobar</label>
+				<label>Albums</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="207">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="208">
-				<label>Foobar</label>
+				<label>Songs</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>132</posy>
+			<posy>282</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -318,51 +177,20 @@
 			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(4)</visible>
 			<control type="button" id="201">
-				<label>Foobar</label>
+				<label>Picture Add-Ons</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="button" id="202">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="203">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="204">
+			<control type="image" id="202">
 				<width>150</width>
 				<height>2</height>
-				<font>font20</font>
 				<texture>white.png</texture>
 				<colordiffuse>normal</colordiffuse>
-			</control>
-			<control type="button" id="205">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="206">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="207">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="208">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
 			</control>
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>132</posy>
+			<posy>357</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -373,51 +201,55 @@
 			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(5)</visible>
 			<control type="button" id="201">
-				<label>Foobar</label>
+				<label>Favourite 1</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="202">
-				<label>Foobar</label>
+				<label>Favourite 2</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="203">
-				<label>Foobar</label>
+				<label>Favourite 3</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="image" id="204">
+			<control type="button" id="204">
+				<label>Favourite 4</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+			<control type="image" id="205">
 				<width>150</width>
 				<height>2</height>
-				<font>font20</font>
 				<texture>white.png</texture>
 				<colordiffuse>normal</colordiffuse>
 			</control>
-			<control type="button" id="205">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
 			<control type="button" id="206">
-				<label>Foobar</label>
+				<label>Favourite 5</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="207">
-				<label>Foobar</label>
+				<label>Favourite 6</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="208">
-				<label>Foobar</label>
+				<label>Favourite 7</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+			<control type="button" id="209">
+				<label>Favourite 8</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>132</posy>
+			<posy>432</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -428,51 +260,45 @@
 			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(6)</visible>
 			<control type="button" id="201">
-				<label>Foobar</label>
+				<label>Add-Ons</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="button" id="202">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="203">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="204">
+			<control type="image" id="202">
 				<width>150</width>
 				<height>2</height>
-				<font>font20</font>
 				<texture>white.png</texture>
 				<colordiffuse>normal</colordiffuse>
 			</control>
+			<control type="button" id="203">
+				<label>Add-On 1</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+			<control type="button" id="204">
+				<label>Add-On 2</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
 			<control type="button" id="205">
-				<label>Foobar</label>
+				<label>Add-On 3</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="206">
-				<label>Foobar</label>
+				<label>Add-On 4</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="207">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="208">
-				<label>Foobar</label>
+				<label>Add-On 5</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>132</posy>
+			<posy>507</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -483,51 +309,20 @@
 			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(7)</visible>
 			<control type="button" id="201">
-				<label>Foobar</label>
+				<label>Weather</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="button" id="202">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="203">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="204">
+			<control type="image" id="202">
 				<width>150</width>
 				<height>2</height>
-				<font>font20</font>
 				<texture>white.png</texture>
 				<colordiffuse>normal</colordiffuse>
-			</control>
-			<control type="button" id="205">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="206">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="207">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="208">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
 			</control>
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>132</posy>
+			<posy>582</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -538,53 +333,48 @@
 			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(8)</visible>
 			<control type="button" id="201">
-				<label>Foobar</label>
+				<label>System Info</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
 			<control type="button" id="202">
-				<label>Foobar</label>
+				<label>File Manager</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="button" id="203">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="204">
+			<control type="image" id="203">
 				<width>150</width>
 				<height>2</height>
-				<font>font20</font>
 				<texture>white.png</texture>
 				<colordiffuse>normal</colordiffuse>
 			</control>
-			<control type="button" id="205">
-				<label>Foobar</label>
+			<control type="button" id="204">
+				<label>Skin Settings</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
-			<control type="button" id="206">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="207">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="208">
-				<label>Foobar</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
+		</control>
+		<control type="image">
+			<posx>110</posx>
+			<posy>62</posy>
+			<width>20</width>
+			<height>20</height>
+			<texture>$VAR[SubMenuArrow]</texture>
+			<animation effect="slide" end="0,75" time="200" condition="Container(1000).HasFocus(2)">Conditional</animation>
+			<animation effect="slide" end="0,150" time="200" condition="Container(1000).HasFocus(3)">Conditional</animation>
+			<animation effect="slide" end="0,225" time="200" condition="Container(1000).HasFocus(4)">Conditional</animation>
+			<animation effect="slide" end="0,300" time="200" condition="Container(1000).HasFocus(5)">Conditional</animation>
+			<animation effect="slide" end="0,375" time="200" condition="Container(1000).HasFocus(6)">Conditional</animation>
+			<animation effect="slide" end="0,450" time="200" condition="Container(1000).HasFocus(7)">Conditional</animation>
+			<animation effect="slide" end="0,525" time="200" condition="Container(1000).HasFocus(8)">Conditional</animation>
 		</control>
 		<control type="group">
 			<posx>450</posx>
 			<posy>515</posy>
 			<width>300</width>
 			<height>300</height>
+			<include>VisibleFade</include>
+			<visible>Container(1000).HasFocus(2)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -593,24 +383,106 @@
 				<texture>playing_now_background.png</texture>
 			</control>
 			<control type="label">
-				<posx>140</posx>
+				<posx>95</posx>
 				<posy>25</posy>
-				<width>280</width>
+				<width>230</width>
 				<height>30</height>
 				<label>Now Playing...</label>
-				<align>left</align>
-				<font>font24</font>
+				<align>center</align>
+				<font>font26</font>
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
-				<posx>80</posx>
-				<posy>60</posy>
-				<width>280</width>
+				<posx>62</posx>
+				<posy>62</posy>
+				<width>300</width>
 				<height>30</height>
-				<label>The Pengiun Song</label>
+				<label>THE VERY THOUGHT OF YOU</label>
 				<align>center</align>
 				<font>font18</font>
-				<textcolor>grey</textcolor>
+				<textcolor>lightgrey</textcolor>
+			</control>
+			<control type="label">
+				<posx>12</posx>
+				<posy>140</posy>
+				<width>120</width>
+				<height>30</height>
+				<label>[B]0:28:59[/B]</label>
+				<align>center</align>
+				<font>font30</font>
+				<textcolor>white</textcolor>
+			</control>
+			<control type="group">
+				<posx>115</posx>
+				<posy>112</posy>
+				<width>90</width>
+				<height>90</height>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture diffuse="thumb-diffuse.png">tmp-cd.jpg</texture>
+					<animation effect="rotatey" end="-30" center="0,45" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>89</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">tmp-cd.jpg</texture>
+					<animation effect="rotatey" end="-30" center="0,45" time="0" condition="true">Conditional</animation>
+				</control>
+			</control>
+			<control type="group">
+				<posx>225</posx>
+				<posy>112</posy>
+				<width>90</width>
+				<height>90</height>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture diffuse="thumb-diffuse.png">white.png</texture>
+					<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
+					<colordiffuse>FF3F3E36</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture diffuse="thumb-diffuse.png">disc.png</texture>
+					<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>89</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">white.png</texture>
+					<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
+					<colordiffuse>FF3F3E36</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>89</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">disc.png</texture>
+					<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
+				</control>
+			</control>
+			<control type="label">
+				<posx>294</posx>
+				<posy>140</posy>
+				<width>120</width>
+				<height>30</height>
+				<label>[B]2:14:30[/B]</label>
+				<align>center</align>
+				<font>font30</font>
+				<textcolor>white</textcolor>
 			</control>
 		</control>
 		<control type="group">
@@ -619,13 +491,13 @@
 			<width>410</width>
 			<height>110</height>
 			<include>VisibleZoomInOut</include>
-			<visible>Container(1000).HasFocus(8)</visible>
+			<visible>Container(1000).HasFocus(2)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>410</width>
 				<height>110</height>
-				<texture border="50">busy_background.png</texture>
+				<texture border="40">busy_background.png</texture>
 				<colordiffuse>55FFFFFF</colordiffuse>
 			</control>
 			<control type="multiimage">
@@ -634,27 +506,27 @@
 				<width>50</width>
 				<height>50</height>
 				<imagepath>busy</imagepath>
-				<timeperimage>500</timeperimage>
+				<timeperimage>200</timeperimage>
 				<randomize>false</randomize>
 			</control>
 			<control type="label">
 				<posx>85</posx>
-				<posy>30</posy>
-				<width>280</width>
+				<posy>31</posy>
+				<width>295</width>
 				<height>30</height>
-				<label>Downloading illegal content:</label>
+				<label>Downloading Movie Information</label>
 				<align>left</align>
-				<font>font20</font>
+				<font>font16</font>
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
 				<posx>85</posx>
-				<posy>50</posy>
+				<posy>54</posy>
 				<width>280</width>
 				<height>30</height>
 				<label>Monsters Inc. (2009)</label>
 				<align>left</align>
-				<font>font20</font>
+				<font>font16</font>
 				<textcolor>white</textcolor>
 			</control>
 		</control>

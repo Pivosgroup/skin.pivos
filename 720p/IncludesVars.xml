@@ -1,0 +1,6 @@
+<includes>
+	<variable name="SubMenuArrow">
+		<value condition="!ControlGroup(200).HasFocus">arrow_right_NF.png</value>
+		<value condition="ControlGroup(200).HasFocus">arrow_right_FO.png</value>
+	</variable>
+</includes>

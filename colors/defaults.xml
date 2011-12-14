@@ -1,6 +1,6 @@
 <colors>
 	<color name="white">FFFFFFFF</color>
-	<color name="lightgrey">FFE6E6E6</color>
+	<color name="lightgrey">FFC6C6C6</color>
 	<color name="grey">FF767676</color>
 	<color name="black">FF000000</color>
 	<color name="dark">FFFDAC17</color>

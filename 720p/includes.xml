@@ -1,6 +1,8 @@
 <includes>
 	<include file="defaults.xml"/>
-	<include file="IncludesAnims.xml"/>/
+	<include file="IncludesAnims.xml"/>
+	<include file="IncludesVars.xml"/>
+	<include file="ViewPanel.xml"/>
 	<include name="DefaultBackground">
 		<control type="image">
 			<posx>0</posx>
@@ -28,23 +30,23 @@
 	<include name="Header">
 		<control type="grouplist">
 			<posx>354</posx>
-			<posy>14</posy>
+			<posy>10</posy>
 			<width>900</width>
 			<height>30</height>
 			<align>right</align>
 			<orientation>horizontal</orientation>
 			<control type="label">
-				<width min="10" max="100">auto</width>
-				<height>20</height>
+				<width min="10" max="120">auto</width>
+				<height>30</height>
 				<label>[B]$INFO[Weather.Temperature]    [/B]</label>
-				<font>font20</font>
+				<font>font22</font>
 				<textcolor>lightgrey</textcolor>
 			</control>
 			<control type="label">
 				<width min="10" max="400">auto</width>
-				<height>20</height>
+				<height>30</height>
 				<label>[B]$INFO[System.Date][/B]</label>
-				<font>font20</font>
+				<font>font22</font>
 				<textcolor>lightgrey</textcolor>
 			</control>
 			<control type="group">
@@ -53,15 +55,15 @@
 					<posx>4</posx>
 					<posy>5</posy>
 					<width>2</width>
-					<height>20</height>
+					<height>30</height>
 					<texture>white.png</texture>
 				</control>
 			</control>
 			<control type="label">
-				<width min="10" max="400">auto</width>
-				<height>20</height>
+				<width min="10" max="370">auto</width>
+				<height>30</height>
 				<label>[B]$INFO[System.Time][/B]</label>
-				<font>font20</font>
+				<font>font22</font>
 				<textcolor>grey</textcolor>
 			</control>
 		</control>
@@ -73,5 +75,137 @@
 		<textcolor>white</textcolor>
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
+	</include>
+	<include name="SideMenu">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>105</width>
+			<height>720</height>
+			<texture>home_icon_background.png</texture>
+			<colordiffuse>E0FFFFFF</colordiffuse>
+		</control>
+		<control type="image">
+			<posx>105</posx>
+			<posy>0</posy>
+			<width>218</width>
+			<height>720</height>
+			<texture>home_menu_background.png</texture>
+			<colordiffuse>90FFFFFF</colordiffuse>
+			<visible>Window.IsVisible(Home)</visible>
+		</control>
+		<control type="image">
+			<posx>105</posx>
+			<posy>15</posy>
+			<width>1160</width>
+			<height>690</height>
+			<texture>white.png</texture>
+			<colordiffuse>90000000</colordiffuse>
+			<visible>!Window.IsVisible(Home)</visible>
+		</control>
+		<control type="group">
+			<posx>20</posx>
+			<posy>42</posy>
+			<width>64</width>
+			<height>600</height>
+			<control type="list" id="1000">
+				<orientation>vertical</orientation>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>64</width>
+				<height>600</height>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onleft>1000</onleft>
+				<onright>200</onright>
+				<itemlayout width="64" height="75">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<animation effect="zoom" end="80" center="auto" condition="true">Conditional</animation>
+					</control>
+				</itemlayout>
+				<focusedlayout width="64" height="75">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<animation effect="zoom" start="80" end="100" time="200" center="auto">Focus</animation>
+						<animation effect="zoom" start="100" end="80" time="200" center="auto">UnFocus</animation>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
+						<animation type="focus">
+							<effect type="zoom" start="80" end="100" time="200" center="auto"/>
+							<effect type="fade" start="0" end="100" time="200"/>
+						</animation>
+						<animation type="unfocus">
+							<effect type="zoom" start="100" end="80" time="200" center="auto"/>
+							<effect type="fade" start="100" end="0" time="200"/>
+
+						</animation>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>-</label>
+						<icon>home_search_NF.png</icon>
+						<property name="Icon_Focus">home_search_FO.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="2">
+						<label>-</label>
+						<icon>home_video_NF.png</icon>
+						<property name="Icon_Focus">home_video_FO.png</property>
+						<onclick>ActivateWindow(Videos)</onclick>
+					</item>
+					<item id="3">
+						<label>-</label>
+						<icon>home_audio_NF.png</icon>
+						<property name="Icon_Focus">home_audio_FO.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="4">
+						<label>-</label>
+						<icon>home_pictures_NF.png</icon>
+						<property name="Icon_Focus">home_pictures_FO.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="5">
+						<label>-</label>
+						<icon>home_favourites_NF.png</icon>
+						<property name="Icon_Focus">home_favourites_FO.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="6">
+						<label>-</label>
+						<icon>home_chat_NF.png</icon>
+						<property name="Icon_Focus">home_chat_FO.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="7">
+						<label>-</label>
+						<icon>home_office_NF.png</icon>
+						<property name="Icon_Focus">home_office_FO.png</property>
+						<onclick>ActivateWindow()</onclick>
+					</item>
+					<item id="8">
+						<label>-</label>
+						<icon>home_settings_NF.png</icon>
+						<property name="Icon_Focus">home_settings_FO.png</property>
+						<onclick>ActivateWindow(Settings)</onclick>
+					</item>
+				</content>
+			</control>
+		</control>
 	</include>
 </includes>
