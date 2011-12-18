@@ -443,7 +443,7 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="4">button_FO.png</texturefocus>
 					<texturenofocus border="4">-</texturenofocus>
-					<onclick>ActivateWindow(AppearanceSettings)</onclick>
+					<onclick>ReplaceWindow(AppearanceSettings)</onclick>
 				</control>
 				<control type="group" id="3003">
 					<posx>0</posx>
@@ -471,7 +471,7 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="4">button_FO.png</texturefocus>
 					<texturenofocus border="4">-</texturenofocus>
-					<onclick>ActivateWindow(VideosSettings)</onclick>
+					<onclick>ReplaceWindow(VideosSettings)</onclick>
 				</control>
 				<control type="group" id="3005">
 					<posx>0</posx>
@@ -499,7 +499,7 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="4">button_FO.png</texturefocus>
 					<texturenofocus border="4">-</texturenofocus>
-					<onclick>ActivateWindow(MusicSettings)</onclick>
+					<onclick>ReplaceWindow(MusicSettings)</onclick>
 				</control>
 				<control type="group" id="3007">
 					<posx>0</posx>
@@ -527,7 +527,7 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="4">button_FO.png</texturefocus>
 					<texturenofocus border="4">-</texturenofocus>
-					<onclick>ActivateWindow(PicturesSettings)</onclick>
+					<onclick>ReplaceWindow(PicturesSettings)</onclick>
 				</control>
 				<control type="group" id="3009">
 					<posx>0</posx>
@@ -555,7 +555,7 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="4">button_FO.png</texturefocus>
 					<texturenofocus border="4">-</texturenofocus>
-					<onclick>ActivateWindow(WeatherSettings)</onclick>
+					<onclick>ReplaceWindow(WeatherSettings)</onclick>
 				</control>
 				<control type="group" id="3011">
 					<posx>0</posx>
@@ -583,7 +583,7 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="4">button_FO.png</texturefocus>
 					<texturenofocus border="4">-</texturenofocus>
-					<onclick>ActivateWindow(NetworkSettings)</onclick>
+					<onclick>ReplaceWindow(NetworkSettings)</onclick>
 				</control>
 				<control type="group" id="3013">
 					<posx>0</posx>
@@ -611,7 +611,7 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="4">button_FO.png</texturefocus>
 					<texturenofocus border="4">-</texturenofocus>
-					<onclick>ActivateWindow(SystemSettings)</onclick>
+					<onclick>ReplaceWindow(SystemSettings)</onclick>
 				</control>
 			</control>
 		</control>

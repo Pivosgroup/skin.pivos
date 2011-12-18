@@ -202,24 +202,23 @@
 			<visible allowhiddenfocus="true">Control.IsVisible(50) + Control.HasFocus(60)</visible>
 		</control>
 		<control type="group">
-			<posx>200</posx>
+			<posx>102</posx>
 			<posy>610</posy>
-			<width>880</width>
+			<width>1178</width>
 			<height>110</height>
 			<include>VisibleZoomInOut</include>
 			<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Label) + System.IdleTime(1)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>880</width>
+				<width>1178</width>
 				<height>110</height>
-				<texture border="40">busy_background.png</texture>
-				<colordiffuse>D0FFFFFF</colordiffuse>
+				<texture border="4">info_background.png</texture>
 			</control>
 			<control type="label">
 				<posx>20</posx>
 				<posy>25</posy>
-				<width>840</width>
+				<width>1138</width>
 				<height>30</height>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<align>center</align>

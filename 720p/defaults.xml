@@ -3,9 +3,9 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>300</width>
-		<height>30</height>
+		<height>40</height>
 		<label>-</label>
-		<font>font20</font>
+		<font>font16m</font>
 		<textcolor>lightgrey</textcolor>
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
@@ -13,16 +13,16 @@
 		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
-		<aligny>top</aligny>
-		<pulseonselect>true</pulseonselect>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="edit">
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>300</width>
-		<height>30</height>
+		<height>40</height>
 		<label>-</label>
-		<font>font20</font>
+		<font>font16m</font>
 		<textcolor>lightgrey</textcolor>
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
@@ -30,16 +30,16 @@
 		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
-		<aligny>top</aligny>
-		<pulseonselect>true</pulseonselect>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="radiobutton">
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>300</width>
-		<height>30</height>
+		<height>40</height>
 		<label>-</label>
-		<font>font20</font>
+		<font>font16m</font>
 		<textcolor>lightgrey</textcolor>
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
@@ -47,22 +47,21 @@
 		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
-		<aligny>top</aligny>
-		<pulseonselect>true</pulseonselect>
-		<radiowidth>36</radiowidth>
-		<radioheight>36</radioheight>
-		<textureradioon>RadioFocus.png</textureradioon>
-		<textureradiooff>Radio.png</textureradiooff>
-		<radioposx>1236</radioposx>
-		<radioposy>7</radioposy>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+		<radiowidth>56</radiowidth>
+		<radioheight>40</radioheight>
+		<textureradioon>radio_FO.png</textureradioon>
+		<textureradiooff>radio_NF.png</textureradiooff>
+		<radioposx>787</radioposx>
 	</default>
 	<default type="spincontrolex">
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>300</width>
-		<height>30</height>
+		<height>40</height>
 		<label>-</label>
-		<font>font20</font>
+		<font>font16m</font>
 		<textcolor>lightgrey</textcolor>
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
@@ -70,30 +69,30 @@
 		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
-		<aligny>top</aligny>
-		<pulseonselect>true</pulseonselect>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
 		<reverse>yes</reverse>
-		<textureup>ArrowUp.png</textureup>
-		<textureupfocus>ArrowUpFocus.png</textureupfocus>
-		<texturedown>ArrowDown.png</texturedown>
-		<texturedownfocus>ArrowDownFocus.png</texturedownfocus>
-		<spinwidth>30</spinwidth>
-		<spinheight>30</spinheight>
+		<textureup>arrow_up_NF.png</textureup>
+		<textureupfocus>arrow_up_FO.png</textureupfocus>
+		<texturedown>arrow_down_NF.png</texturedown>
+		<texturedownfocus>arrow_down_FO.png</texturedownfocus>
+		<spinwidth>28</spinwidth>
+		<spinheight>40</spinheight>
 	</default>
 	<default type="togglebutton">
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>300</width>
-		<height>30</height>
+		<height>40</height>
 		<label>-</label>
-		<font>font20</font>
+		<font>font16m</font>
 		<textcolor>lightgrey</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
-		<aligny>top</aligny>
-		<pulseonselect>true</pulseonselect>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<alttexturefocus border="4">button_FO.png</alttexturefocus>
