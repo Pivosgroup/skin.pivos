@@ -3,15 +3,15 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>300</width>
-		<height>50</height>
+		<height>30</height>
 		<label>-</label>
 		<font>font20</font>
 		<textcolor>lightgrey</textcolor>
-		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
-		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
-		<focusedcolor>normal</focusedcolor>
+		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturenofocus border="6">button_NF.png</texturenofocus>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>0</textoffsetx>
+		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>
@@ -20,15 +20,15 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>300</width>
-		<height>50</height>
+		<height>30</height>
 		<label>-</label>
 		<font>font20</font>
 		<textcolor>lightgrey</textcolor>
-		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
-		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
-		<focusedcolor>normal</focusedcolor>
+		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturenofocus border="6">button_NF.png</texturenofocus>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>0</textoffsetx>
+		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>
@@ -37,15 +37,15 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>300</width>
-		<height>50</height>
+		<height>30</height>
 		<label>-</label>
 		<font>font20</font>
 		<textcolor>lightgrey</textcolor>
-		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
-		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
-		<focusedcolor>normal</focusedcolor>
+		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturenofocus border="6">button_NF.png</texturenofocus>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>0</textoffsetx>
+		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>
@@ -60,15 +60,15 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>300</width>
-		<height>50</height>
+		<height>30</height>
 		<label>-</label>
 		<font>font20</font>
 		<textcolor>lightgrey</textcolor>
-		<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
-		<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
-		<focusedcolor>normal</focusedcolor>
+		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturenofocus border="6">button_NF.png</texturenofocus>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>0</textoffsetx>
+		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>
@@ -77,26 +77,26 @@
 		<textureupfocus>ArrowUpFocus.png</textureupfocus>
 		<texturedown>ArrowDown.png</texturedown>
 		<texturedownfocus>ArrowDownFocus.png</texturedownfocus>
-		<spinwidth>40</spinwidth>
-		<spinheight>50</spinheight>
+		<spinwidth>30</spinwidth>
+		<spinheight>30</spinheight>
 	</default>
 	<default type="togglebutton">
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>300</width>
-		<height>50</height>
+		<height>30</height>
 		<label>-</label>
 		<font>font20</font>
 		<textcolor>lightgrey</textcolor>
-		<focusedcolor>normal</focusedcolor>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>0</textoffsetx>
+		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>top</aligny>
 		<pulseonselect>true</pulseonselect>
-		<texturefocus>ArrowUpFocus.png</texturefocus>
-		<texturenofocus>ArrowUp.png</texturenofocus>
-		<alttexturefocus>ArrowDownFocus.png</alttexturefocus>
-		<alttexturenofocus>ArrowDown.png</alttexturenofocus>
+		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturenofocus border="6">button_NF.png</texturenofocus>
+		<alttexturefocus border="4">button_FO.png</alttexturefocus>
+		<alttexturenofocus border="4">button_NF.png</alttexturenofocus>
 	</default>
 </includes>

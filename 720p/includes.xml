@@ -71,7 +71,7 @@
 	<include name="HomeSubButton">
 		<width>170</width>
 		<height>26</height>
-		<font>font20</font>
+		<font>font14m</font>
 		<textcolor>white</textcolor>
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
@@ -109,15 +109,18 @@
 			<width>64</width>
 			<height>600</height>
 			<control type="list" id="1000">
-				<orientation>vertical</orientation>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>64</width>
 				<height>600</height>
+				<orientation>vertical</orientation>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
 				<onleft>1000</onleft>
-				<onright>200</onright>
+				<onright condition="Window.IsVisible(Home)">200</onright>
+				<onright condition="Window.IsVisible(Videos)">50</onright>
+				<onright condition="!Window.IsVisible(Home) + !Window.IsVisible(Videos)">3</onright>
+				<onback condition="!Window.IsVisible(Home)">ActivateWindow(Home)</onback>
 				<itemlayout width="64" height="75">
 					<control type="image">
 						<posx>0</posx>
@@ -202,9 +205,414 @@
 						<label>-</label>
 						<icon>home_settings_NF.png</icon>
 						<property name="Icon_Focus">home_settings_FO.png</property>
-						<onclick>ActivateWindow(Settings)</onclick>
+						<onclick>ActivateWindow(AppearanceSettings)</onclick>
 					</item>
 				</content>
+			</control>
+		</control>
+	</include>
+	<include name="TopMenuVideo">
+		<control type="group">
+			<posx>115</posx>
+			<posy>24</posy>
+			<width>64</width>
+			<height>600</height>
+			<control type="grouplist" id="9000">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1130</width>
+				<height>30</height>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<onleft>1000</onleft>
+				<onright>9000</onright>
+				<control type="button" id="3000">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>26</width>
+					<height>26</height>
+					<label>-</label>
+					<font>font16m</font>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus>home_FO.png</texturefocus>
+					<texturenofocus>home_NF.png</texturenofocus>
+					<onclick>ActivateWindow(Home)</onclick>
+				</control>
+				<control type="group" id="3001">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="2">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>26</height>
+					<label>-</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>-</onclick>
+				</control>
+				<control type="group" id="3002">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="3">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>26</height>
+					<label>-</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>-</onclick>
+				</control>
+				<control type="group" id="3003">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="togglebutton" id="4">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>26</height>
+					<label>Sort Direction:</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<alttexturefocus border="4">button_FO.png</alttexturefocus>
+					<alttexturenofocus border="4">-</alttexturenofocus>
+					<onclick>-</onclick>
+				</control>
+				<control type="group" id="3004">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="10">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>26</height>
+					<label>-</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>-</onclick>
+				</control>
+				<control type="group" id="3005">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="3006">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>26</height>
+					<label>Options</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>-</onclick>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="TopMenuSettings">
+		<control type="group">
+			<posx>115</posx>
+			<posy>24</posy>
+			<width>64</width>
+			<height>600</height>
+			<control type="grouplist" id="9000">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1133</width>
+				<height>30</height>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<onleft>1000</onleft>
+				<onright>9000</onright>
+				<onback>ActivateWindow(Home)</onback>
+				<control type="button" id="3000">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>26</width>
+					<height>26</height>
+					<label>-</label>
+					<font>font16m</font>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus>home_FO.png</texturefocus>
+					<texturenofocus>home_NF.png</texturenofocus>
+					<onclick>ActivateWindow(Home)</onclick>
+				</control>
+				<control type="group" id="3001">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="3002">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>149</width>
+					<height>26</height>
+					<label>Appearance</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>ActivateWindow(AppearanceSettings)</onclick>
+				</control>
+				<control type="group" id="3003">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="3004">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>149</width>
+					<height>26</height>
+					<label>Video</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>ActivateWindow(VideosSettings)</onclick>
+				</control>
+				<control type="group" id="3005">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="3006">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>149</width>
+					<height>26</height>
+					<label>Music</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>ActivateWindow(MusicSettings)</onclick>
+				</control>
+				<control type="group" id="3007">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="3008">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>149</width>
+					<height>26</height>
+					<label>Picture</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>ActivateWindow(PicturesSettings)</onclick>
+				</control>
+				<control type="group" id="3009">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="3010">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>149</width>
+					<height>26</height>
+					<label>Weather</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>ActivateWindow(WeatherSettings)</onclick>
+				</control>
+				<control type="group" id="3011">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="3012">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>149</width>
+					<height>26</height>
+					<label>Network</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>ActivateWindow(NetworkSettings)</onclick>
+				</control>
+				<control type="group" id="3013">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>9</width>
+					<height>26</height>
+					<control type="image">
+						<posx>4</posx>
+						<posy>0</posy>
+						<width>1</width>
+						<height>26</height>
+						<texture>white.png</texture>
+						<colordiffuse>80FFFFFF</colordiffuse>
+					</control>
+				</control>
+				<control type="button" id="3014">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>149</width>
+					<height>26</height>
+					<label>System</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">-</texturenofocus>
+					<onclick>ActivateWindow(SystemSettings)</onclick>
+				</control>
 			</control>
 		</control>
 	</include>

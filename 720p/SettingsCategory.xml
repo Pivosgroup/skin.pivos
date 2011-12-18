@@ -2,71 +2,73 @@
 	<defaultcontrol>3</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
-		<control type="group" id="1000">
+		<include>SideMenu</include>
+		<include>TopMenuSettings</include>
+		<control type="group">
 			<control type="group">
-				<posx>30</posx>
+				<posx>115</posx>
 				<posy>140</posy>
 				<width>410</width>
 				<height>575</height>
 				<include>WindowOpenCloseZoomInOut</include>
 				<control type="grouplist" id="3">
-					<posx>25</posx>
+					<posx>0</posx>
 					<posy>30</posy>
-					<width>360</width>
-					<height>450</height>
+					<width>250</width>
+					<height>660</height>
 					<itemgap>0</itemgap>
-					<onup>21</onup>
+					<onup>9000</onup>
 					<ondown>3</ondown>
-					<onleft>5</onleft>
+					<onleft>1000</onleft>
 					<onright>5</onright>
+					<onback>ActivateWindow(Home)</onback>
 				</control>
 			</control>
 			<control type="group">
-				<posx>300</posx>
+				<posx>400</posx>
 				<posy>100</posy>
+				<include>WindowOpenCloseZoomInOut</include>
 				<control type="grouplist" id="5">
-					<posx>50</posx>
+					<posx>0</posx>
 					<posy>30</posy>
-					<width>600</width>
+					<width>848</width>
 					<height>660</height>
 					<itemgap>0</itemgap>
-					<onup>21</onup>
+					<onup>9000</onup>
 					<ondown>5</ondown>
 					<onleft>3</onleft>
 					<onright>3</onright>
-					<include>WindowOpenCloseZoomInOut</include>
+					<onback>ActivateWindow(Home)</onback>
 				</control>
 			</control>
+		</control>
+		<control type="button" id="10">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>250</width>
+			<height>50</height>
+			<label>-</label>
 		</control>
 		<control type="button" id="7">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>360</width>
-			<height>50</height>
+			<width>848</width>
+			<height>30</height>
 			<label>-</label>
 		</control>
 		<control type="radiobutton" id="8">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>360</width>
-			<height>50</height>
+			<width>848</width>
+			<height>30</height>
 			<label>-</label>
 		</control>
 		<control type="spincontrolex" id="9">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>360</width>
-			<height>50</height>
+			<width>848</width>
+			<height>30</height>
 			<label>-</label>
-		</control>
-		<control type="button" id="10">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>360</width>
-			<height>50</height>
-			<label>-</label>
-			<texturefocus border="35,8,35,8">ButtonFocus.png</texturefocus>
-			<texturenofocus border="35,8,35,8">ListNoFocus.png</texturenofocus>
 		</control>
 	</controls>
 </window>

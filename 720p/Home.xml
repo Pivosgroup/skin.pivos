@@ -24,11 +24,11 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>57</posy>
+			<posy>61</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
-			<include>VisibleFade</include>
+			<include>SubMenuFade</include>
 			<onup>200</onup>
 			<ondown>200</ondown>
 			<onleft>1000</onleft>
@@ -63,11 +63,11 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>132</posy>
+			<posy>136</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
-			<include>VisibleFade</include>
+			<include>SubMenuFade</include>
 			<onup>200</onup>
 			<ondown>200</ondown>
 			<onleft>1000</onleft>
@@ -117,11 +117,11 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>207</posy>
+			<posy>211</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
-			<include>VisibleFade</include>
+			<include>SubMenuFade</include>
 			<onup>200</onup>
 			<ondown>200</ondown>
 			<onleft>1000</onleft>
@@ -166,11 +166,11 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>282</posy>
+			<posy>286</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
-			<include>VisibleFade</include>
+			<include>SubMenuFade</include>
 			<onup>200</onup>
 			<ondown>200</ondown>
 			<onleft>1000</onleft>
@@ -190,11 +190,11 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>357</posy>
+			<posy>361</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
-			<include>VisibleFade</include>
+			<include>SubMenuFade</include>
 			<onup>200</onup>
 			<ondown>200</ondown>
 			<onleft>1000</onleft>
@@ -249,18 +249,18 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>432</posy>
+			<posy>436</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
-			<include>VisibleFade</include>
+			<include>SubMenuFade</include>
 			<onup>200</onup>
 			<ondown>200</ondown>
 			<onleft>1000</onleft>
 			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(6)</visible>
 			<control type="button" id="201">
-				<label>Add-Ons</label>
+				<label>Get Add-Ons</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
@@ -298,18 +298,18 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>507</posy>
+			<posy>511</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
-			<include>VisibleFade</include>
+			<include>SubMenuFade</include>
 			<onup>200</onup>
 			<ondown>200</ondown>
 			<onleft>1000</onleft>
 			<onright>1000</onright>
 			<visible>Container(1000).HasFocus(7)</visible>
 			<control type="button" id="201">
-				<label>Weather</label>
+				<label>Refresh Weather</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
 			</control>
@@ -319,14 +319,19 @@
 				<texture>white.png</texture>
 				<colordiffuse>normal</colordiffuse>
 			</control>
+			<control type="button" id="201">
+				<label>Change Location</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>582</posy>
+			<posy>586</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
-			<include>VisibleFade</include>
+			<include>SubMenuFade</include>
 			<onup>200</onup>
 			<ondown>200</ondown>
 			<onleft>1000</onleft>
@@ -349,6 +354,11 @@
 				<colordiffuse>normal</colordiffuse>
 			</control>
 			<control type="button" id="204">
+				<label>Profile Settings</label>
+				<include>HomeSubButton</include>
+				<onclick>-</onclick>
+			</control>
+			<control type="button" id="205">
 				<label>Skin Settings</label>
 				<include>HomeSubButton</include>
 				<onclick>-</onclick>
