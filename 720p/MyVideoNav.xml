@@ -7,5 +7,6 @@
 		<include>SideMenu</include>
 		<include>TopMenuVideo</include>
 		<include>ViewPanelVideo</include>
+		<include>ScrollLabel</include>
 	</controls>
 </window>

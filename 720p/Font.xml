@@ -60,6 +60,21 @@
 			<filename>menu.ttf</filename>
 			<size>16</size>
 		</font>
+		<font>
+			<name>font17m</name>
+			<filename>menu.ttf</filename>
+			<size>17</size>
+		</font>
+		<font>
+			<name>font24m</name>
+			<filename>menu.ttf</filename>
+			<size>24</size>
+		</font>
+		<font>
+			<name>font30m</name>
+			<filename>menu.ttf</filename>
+			<size>30</size>
+		</font>
 	</fontset>
 	<fontset id="XBMC" idlock="31000" unicode="true">
 		<font>

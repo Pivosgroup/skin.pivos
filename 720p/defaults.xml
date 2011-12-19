@@ -53,7 +53,7 @@
 		<radioheight>40</radioheight>
 		<textureradioon>radio_FO.png</textureradioon>
 		<textureradiooff>radio_NF.png</textureradiooff>
-		<radioposx>787</radioposx>
+		<radioposx>726</radioposx>
 	</default>
 	<default type="spincontrolex">
 		<posx>0</posx>
@@ -96,6 +96,6 @@
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<alttexturefocus border="4">button_FO.png</alttexturefocus>
-		<alttexturenofocus border="4">button_NF.png</alttexturenofocus>
+		<alttexturenofocus border="6">button_NF.png</alttexturenofocus>
 	</default>
 </includes>

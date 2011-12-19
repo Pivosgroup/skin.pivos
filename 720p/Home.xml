@@ -24,7 +24,7 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>61</posy>
+			<posy>57</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -63,7 +63,7 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>136</posy>
+			<posy>132</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -117,7 +117,7 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>211</posy>
+			<posy>207</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -166,7 +166,7 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>286</posy>
+			<posy>282</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -190,7 +190,7 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>361</posy>
+			<posy>357</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -249,7 +249,7 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>436</posy>
+			<posy>432</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -298,7 +298,7 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>511</posy>
+			<posy>507</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -327,7 +327,7 @@
 		</control>
 		<control type="grouplist" id="200">
 			<posx>140</posx>
-			<posy>586</posy>
+			<posy>582</posy>
 			<width>170</width>
 			<height>300</height>
 			<orientation>vertical</orientation>
@@ -454,34 +454,32 @@
 					<posy>0</posy>
 					<width>90</width>
 					<height>90</height>
-					<texture diffuse="thumb-diffuse.png">white.png</texture>
-					<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
-					<colordiffuse>FF3F3E36</colordiffuse>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>90</width>
-					<height>90</height>
-					<texture diffuse="thumb-diffuse.png">disc.png</texture>
+					<texture diffuse="thumb-diffuse.png">cdcase-inside.png</texture>
 					<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>89</posy>
-					<width>90</width>
-					<height>90</height>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">white.png</texture>
-					<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
-					<colordiffuse>FF3F3E36</colordiffuse>
+					<posx>4</posx>
+					<posy>3</posy>
+					<width>80</width>
+					<height>80</height>
+					<texture diffuse="thumb-diffuse.png">tmp-disc.png</texture>
+					<animation effect="rotatey" end="30" center="80,40" time="0" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>89</posy>
 					<width>90</width>
 					<height>90</height>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">disc.png</texture>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">cdcase-inside.png</texture>
 					<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>3</posx>
+					<posy>92</posy>
+					<width>80</width>
+					<height>80</height>
+					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">tmp-disc.png</texture>
+					<animation effect="rotatey" end="30" center="80,40" time="0" condition="true">Conditional</animation>
 				</control>
 			</control>
 			<control type="label">

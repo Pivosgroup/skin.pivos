@@ -73,8 +73,39 @@
 		<height>26</height>
 		<font>font14m</font>
 		<textcolor>white</textcolor>
+		<focusedcolor>normal</focusedcolor>
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
+	</include>
+	<include name="ScrollLabel">
+		<control type="group">
+			<visible>Container.Scrolling</visible>
+			<animation effect="fade" time="300">Visible</animation>
+			<animation effect="fade" time="300" delay="500">Hidden</animation>
+			<posx>602</posx>
+			<posy>322</posy>
+			<width>76</width>
+			<height>76</height>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>76</width>
+				<height>76</height>
+				<texture border="14">scroll-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>-2</posy>
+				<width>76</width>
+				<height>76</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>[I][B]$INFO[ListItem.SortLetter][/B][/I] </label>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<font>font30m</font>
+			</control>
+		</control>
 	</include>
 	<include name="SideMenu">
 		<control type="image">
@@ -120,7 +151,6 @@
 				<onright condition="Window.IsVisible(Home)">200</onright>
 				<onright condition="Window.IsVisible(Videos)">50</onright>
 				<onright condition="!Window.IsVisible(Home) + !Window.IsVisible(Videos)">3</onright>
-				<onback condition="!Window.IsVisible(Home)">ActivateWindow(Home)</onback>
 				<itemlayout width="64" height="75">
 					<control type="image">
 						<posx>0</posx>
@@ -169,7 +199,7 @@
 						<label>-</label>
 						<icon>home_video_NF.png</icon>
 						<property name="Icon_Focus">home_video_FO.png</property>
-						<onclick>ActivateWindow(Videos)</onclick>
+						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 					</item>
 					<item id="3">
 						<label>-</label>
@@ -403,7 +433,6 @@
 				<ondown>5</ondown>
 				<onleft>1000</onleft>
 				<onright>9000</onright>
-				<onback>ActivateWindow(Home)</onback>
 				<control type="button" id="3000">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -434,7 +463,7 @@
 				<control type="button" id="3002">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>149</width>
+					<width>148</width>
 					<height>26</height>
 					<label>Appearance</label>
 					<font>font16m</font>
@@ -462,7 +491,7 @@
 				<control type="button" id="3004">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>149</width>
+					<width>148</width>
 					<height>26</height>
 					<label>Video</label>
 					<font>font16m</font>
@@ -490,7 +519,7 @@
 				<control type="button" id="3006">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>149</width>
+					<width>148</width>
 					<height>26</height>
 					<label>Music</label>
 					<font>font16m</font>
@@ -518,7 +547,7 @@
 				<control type="button" id="3008">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>149</width>
+					<width>148</width>
 					<height>26</height>
 					<label>Picture</label>
 					<font>font16m</font>
@@ -546,7 +575,7 @@
 				<control type="button" id="3010">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>149</width>
+					<width>148</width>
 					<height>26</height>
 					<label>Weather</label>
 					<font>font16m</font>
@@ -574,7 +603,7 @@
 				<control type="button" id="3012">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>149</width>
+					<width>148</width>
 					<height>26</height>
 					<label>Network</label>
 					<font>font16m</font>
@@ -602,7 +631,7 @@
 				<control type="button" id="3014">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>149</width>
+					<width>148</width>
 					<height>26</height>
 					<label>System</label>
 					<font>font16m</font>
