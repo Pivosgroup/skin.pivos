@@ -66,6 +66,11 @@
 			<size>17</size>
 		</font>
 		<font>
+			<name>font18m</name>
+			<filename>menu.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
 			<name>font24m</name>
 			<filename>menu.ttf</filename>
 			<size>24</size>

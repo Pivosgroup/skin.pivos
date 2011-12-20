@@ -370,13 +370,13 @@
 			<width>20</width>
 			<height>20</height>
 			<texture>$VAR[SubMenuArrow]</texture>
-			<animation effect="slide" end="0,75" time="200" condition="Container(1000).HasFocus(2)">Conditional</animation>
-			<animation effect="slide" end="0,150" time="200" condition="Container(1000).HasFocus(3)">Conditional</animation>
-			<animation effect="slide" end="0,225" time="200" condition="Container(1000).HasFocus(4)">Conditional</animation>
-			<animation effect="slide" end="0,300" time="200" condition="Container(1000).HasFocus(5)">Conditional</animation>
-			<animation effect="slide" end="0,375" time="200" condition="Container(1000).HasFocus(6)">Conditional</animation>
-			<animation effect="slide" end="0,450" time="200" condition="Container(1000).HasFocus(7)">Conditional</animation>
-			<animation effect="slide" end="0,525" time="200" condition="Container(1000).HasFocus(8)">Conditional</animation>
+			<animation effect="slide" end="0,75" time="150" condition="Container(1000).HasFocus(2)">Conditional</animation>
+			<animation effect="slide" end="0,150" time="150" condition="Container(1000).HasFocus(3)">Conditional</animation>
+			<animation effect="slide" end="0,225" time="150" condition="Container(1000).HasFocus(4)">Conditional</animation>
+			<animation effect="slide" end="0,300" time="150" condition="Container(1000).HasFocus(5)">Conditional</animation>
+			<animation effect="slide" end="0,375" time="150" condition="Container(1000).HasFocus(6)">Conditional</animation>
+			<animation effect="slide" end="0,450" time="150" condition="Container(1000).HasFocus(7)">Conditional</animation>
+			<animation effect="slide" end="0,525" time="150" condition="Container(1000).HasFocus(8)">Conditional</animation>
 		</control>
 		<control type="group">
 			<posx>450</posx>
@@ -400,7 +400,7 @@
 				<label>Now Playing...</label>
 				<align>center</align>
 				<font>font26</font>
-				<textcolor>white</textcolor>
+				<textcolor>normal</textcolor>
 			</control>
 			<control type="label">
 				<posx>62</posx>
@@ -410,7 +410,7 @@
 				<label>THE VERY THOUGHT OF YOU</label>
 				<align>center</align>
 				<font>font18</font>
-				<textcolor>lightgrey</textcolor>
+				<textcolor>light</textcolor>
 			</control>
 			<control type="label">
 				<posx>12</posx>
@@ -432,7 +432,7 @@
 					<posy>0</posy>
 					<width>90</width>
 					<height>90</height>
-					<texture diffuse="thumb-diffuse.png">tmp-cd.jpg</texture>
+					<texture diffuse="cover-diffuse.png">tmp-cd.jpg</texture>
 					<animation effect="rotatey" end="-30" center="0,45" time="0" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
@@ -440,7 +440,7 @@
 					<posy>89</posy>
 					<width>90</width>
 					<height>90</height>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">tmp-cd.jpg</texture>
+					<texture flipy="true" diffuse="cover-diffuse-mirror.png">tmp-cd.jpg</texture>
 					<animation effect="rotatey" end="-30" center="0,45" time="0" condition="true">Conditional</animation>
 				</control>
 			</control>
@@ -454,7 +454,7 @@
 					<posy>0</posy>
 					<width>90</width>
 					<height>90</height>
-					<texture diffuse="thumb-diffuse.png">cdcase-inside.png</texture>
+					<texture diffuse="cover-diffuse.png">cdcase-inside.png</texture>
 					<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
@@ -462,7 +462,7 @@
 					<posy>3</posy>
 					<width>80</width>
 					<height>80</height>
-					<texture diffuse="thumb-diffuse.png">tmp-disc.png</texture>
+					<texture diffuse="cover-diffuse.png">tmp-disc.png</texture>
 					<animation effect="rotatey" end="30" center="80,40" time="0" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
@@ -470,7 +470,7 @@
 					<posy>89</posy>
 					<width>90</width>
 					<height>90</height>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">cdcase-inside.png</texture>
+					<texture flipy="true" diffuse="cover-diffuse-mirror.png">cdcase-inside.png</texture>
 					<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
 				</control>
 				<control type="image">
@@ -478,7 +478,7 @@
 					<posy>92</posy>
 					<width>80</width>
 					<height>80</height>
-					<texture flipy="true" diffuse="thumb-diffuse-mirror.png">tmp-disc.png</texture>
+					<texture flipy="true" diffuse="cover-diffuse-mirror.png">tmp-disc.png</texture>
 					<animation effect="rotatey" end="30" center="80,40" time="0" condition="true">Conditional</animation>
 				</control>
 			</control>

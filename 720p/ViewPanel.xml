@@ -26,7 +26,7 @@
 				<preloaditems>4</preloaditems>
 				<onleft>1000</onleft>
 				<onright>50</onright>
-				<onup>2</onup>
+				<onup>9000</onup>
 				<ondown>60</ondown>
 				<orientation>horizontal</orientation>
 				<itemlayout width="140" height="208">
@@ -287,11 +287,11 @@
 			<posy>685</posy>
 			<width>1120</width>
 			<height>20</height>
-			<texturesliderbackground border="10,0,10,0">scrollbar-back.png</texturesliderbackground>
+			<texturesliderbackground border="10,0,10,0">scrollbar_back.png</texturesliderbackground>
 			<texturesliderbar>-</texturesliderbar>
 			<texturesliderbarfocus>-</texturesliderbarfocus>
-			<textureslidernib>scrollbar-nib.png</textureslidernib>
-			<textureslidernibfocus>scrollbar-nib.png</textureslidernibfocus>
+			<textureslidernib>scrollbar_nib.png_NF</textureslidernib>
+			<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<showonepage>false</showonepage>

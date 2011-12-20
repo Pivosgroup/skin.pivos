@@ -55,6 +55,19 @@
 		<textureradiooff>radio_NF.png</textureradiooff>
 		<radioposx>726</radioposx>
 	</default>
+	<default type="scrollbar">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>20</width>
+		<height>400</height>
+		<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+		<texturesliderbar>-</texturesliderbar>
+		<texturesliderbarfocus>-</texturesliderbarfocus>
+		<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+		<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+		<showonepage>false</showonepage>
+		<orientation>vertical</orientation>
+	</default>
 	<default type="spincontrolex">
 		<posx>0</posx>
 		<posy>0</posy>
