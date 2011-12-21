@@ -53,4 +53,28 @@
 			<effect type="fade" start="100" end="0" time="400"/>
 		</animation>
 	</include>
+	<include name="WindowOpenCloseFadeHome">
+		<animation type="WindowOpen">
+			<effect type="fade" start="0" end="100" time="150" delay="250"/>
+		</animation>
+		<animation type="WindowClose">
+			<effect type="fade" start="100" end="0" time="150"/>
+		</animation>
+	</include>
+	<include name="WindowOpenSlide">
+		<animation type="WindowOpen">
+			<effect type="slide" start="-1265,0" end="0,0" time="250"/>
+		</animation>
+		<animation type="WindowClose">
+			<effect type="slide" start="0,0" end="-1265,0" time="250" delay="150"/>
+		</animation>
+	</include>
+	<include name="WindowOpenSlideHome">
+		<animation type="WindowOpen">
+			<effect type="slide" start="-323,0" end="0,0" time="400"/>
+		</animation>
+		<animation type="WindowClose">
+			<effect type="slide" start="0,0" end="-323,0" time="400"/>
+		</animation>
+	</include>
 </includes>

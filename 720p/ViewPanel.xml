@@ -356,7 +356,7 @@
 			</control>
 			<control type="label">
 				<posx>140</posx>
-				<posy>30</posy>
+				<posy>28</posy>
 				<width>900</width>
 				<height>30</height>
 				<label>[B]$INFO[ListItem.Title][/B]</label>
@@ -365,40 +365,47 @@
 				<textcolor>white</textcolor>
 			</control>
 			<control type="image">
-				<posx>190</posx>
-				<posy>64</posy>
-				<width>800</width>
-				<height>1</height>
+				<posx>165</posx>
+				<posy>70</posy>
+				<width>850</width>
+				<height>40</height>
+				<texture border="4">button_alt_NF.png</texture>		
+			</control>
+			<control type="image">
+				<posx>590</posx>
+				<posy>75</posy>
+				<width>1</width>
+				<height>30</height>
 				<texture>white.png</texture>
-				<colordiffuse>60FFFFFF</colordiffuse>				
+				<colordiffuse>60FFFFFF</colordiffuse>	
 			</control>
 			<control type="label">
 				<posx>280</posx>
-				<posy>68</posy>
-				<width>140</width>
+				<posy>72</posy>
+				<width>110</width>
 				<height>30</height>
-				<label>Director:</label>
+				<label>$LOCALIZE[20339]:</label>
 				<align>right</align>
-				<font>font17m</font>
+				<font>font12m</font>
 				<textcolor>normal</textcolor>
 			</control>
 			<control type="label">
 				<posx>285</posx>
-				<posy>68</posy>
+				<posy>72</posy>
 				<width>300</width>
 				<height>30</height>
 				<label>$INFO[ListItem.Director]</label>
-				<font>font18</font>
+				<font>font14</font>
 				<textcolor>light</textcolor>
 			</control>
 			<control type="label">
 				<posx>280</posx>
 				<posy>88</posy>
-				<width>140</width>
+				<width>110</width>
 				<height>30</height>
-				<label>Genre:</label>
+				<label>$LOCALIZE[515]:</label>
 				<align>right</align>
-				<font>font17m</font>
+				<font>font12m</font>
 				<textcolor>normal</textcolor>
 			</control>
 			<control type="label">
@@ -407,46 +414,57 @@
 				<width>300</width>
 				<height>30</height>
 				<label>$INFO[ListItem.Genre]</label>
-				<font>font18</font>
+				<font>font14</font>
 				<textcolor>light</textcolor>
 			</control>
 			<control type="label">
-				<posx>730</posx>
-				<posy>68</posy>
-				<width>140</width>
+				<posx>700</posx>
+				<posy>72</posy>
+				<width>110</width>
 				<height>30</height>
-				<label>Studio:</label>
+				<label>$LOCALIZE[572]:</label>
 				<align>right</align>
-				<font>font17m</font>
+				<font>font12m</font>
 				<textcolor>normal</textcolor>
 			</control>
 			<control type="label">
-				<posx>735</posx>
-				<posy>68</posy>
+				<posx>705</posx>
+				<posy>72</posy>
 				<width>300</width>
 				<height>30</height>
 				<label>$INFO[ListItem.Studio]</label>
-				<font>font18</font>
+				<font>font14</font>
 				<textcolor>light</textcolor>
 			</control>
 			<control type="label">
-				<posx>730</posx>
+				<posx>700</posx>
 				<posy>88</posy>
-				<width>140</width>
+				<width>110</width>
 				<height>30</height>
-				<label>Duration:</label>
+				<label>$LOCALIZE[180]:</label>
 				<align>right</align>
-				<font>font17m</font>
+				<font>font12m</font>
 				<textcolor>normal</textcolor>
 			</control>
 			<control type="label">
-				<posx>735</posx>
+				<posx>705</posx>
 				<posy>88</posy>
 				<width>300</width>
 				<height>30</height>
-				<label>$INFO[ListItem.Duration] Minutes</label>
-				<font>font18</font>
+				<label>$INFO[ListItem.Duration] $LOCALIZE[12391]</label>
+				<font>font14</font>
 				<textcolor>light</textcolor>
+				<visible>!SubString(ListItem.Duration,min)</visible>
+			</control>
+			<control type="label">
+				<posx>705</posx>
+				<posy>88</posy>
+				<width>300</width>
+				<height>30</height>
+				<label>$INFO[ListItem.Duration]</label>
+				<font>font14</font>
+				<textcolor>light</textcolor>
+				<visible>SubString(ListItem.Duration,min)</visible>
 			</control>
 			<control type="image">
 				<posx>1040</posx>
@@ -471,7 +489,7 @@
 				<posy>85</posy>
 				<width>60</width>
 				<height>20</height>
-				<label>rating</label>
+				<label>$LOCALIZE[563]</label>
 				<font>font16</font>
 				<textcolor>light</textcolor>
 				<align>right</align>

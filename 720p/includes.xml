@@ -28,43 +28,54 @@
 		</control>
 	</include>
 	<include name="Header">
-		<control type="grouplist">
-			<posx>354</posx>
-			<posy>10</posy>
-			<width>900</width>
-			<height>30</height>
-			<align>right</align>
-			<orientation>horizontal</orientation>
-			<control type="label">
-				<width min="10" max="120">auto</width>
+		<control type="group">
+			<include>WindowOpenCloseFade</include>
+			<control type="image">
+				<posx>795</posx>
+				<posy>10</posy>
+				<width>470</width>
 				<height>30</height>
-				<label>[B]$INFO[Weather.Temperature]    [/B]</label>
-				<font>font22</font>
-				<textcolor>lightgrey</textcolor>
+				<texture border="4">button_alt_NF.png</texture>		
 			</control>
-			<control type="label">
-				<width min="10" max="400">auto</width>
+			<control type="grouplist">
+				<posx>350</posx>
+				<posy>10</posy>
+				<width>900</width>
 				<height>30</height>
-				<label>[B]$INFO[System.Date][/B]</label>
-				<font>font22</font>
-				<textcolor>lightgrey</textcolor>
-			</control>
-			<control type="group">
-				<width>10</width>
-				<control type="image">
-					<posx>4</posx>
-					<posy>5</posy>
-					<width>2</width>
+				<align>right</align>
+				<orientation>horizontal</orientation>
+				<control type="label">
+					<width min="10" max="110">auto</width>
 					<height>30</height>
-					<texture>white.png</texture>
+					<label>[B]$INFO[Weather.Temperature]    [/B]</label>
+					<font>font22</font>
+					<textcolor>lightgrey</textcolor>
 				</control>
-			</control>
-			<control type="label">
-				<width min="10" max="370">auto</width>
-				<height>30</height>
-				<label>[B]$INFO[System.Time][/B]</label>
-				<font>font22</font>
-				<textcolor>grey</textcolor>
+				<control type="label">
+					<width min="10" max="230">auto</width>
+					<height>30</height>
+					<label>[B]$INFO[System.Date][/B]</label>
+					<font>font22</font>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="group">
+					<width>10</width>
+					<control type="image">
+						<posx>4</posx>
+						<posy>3</posy>
+						<width>2</width>
+						<height>24</height>
+						<texture>white.png</texture>
+						<colordiffuse>A0F1B22F</colordiffuse>
+					</control>
+				</control>
+				<control type="label">
+					<width min="10" max="150">auto</width>
+					<height>30</height>
+					<label>[B]$INFO[System.Time][/B]</label>
+					<font>font22</font>
+					<textcolor>grey</textcolor>
+				</control>
 			</control>
 		</control>
 	</include>
@@ -109,30 +120,22 @@
 	</include>
 	<include name="SideMenu">
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>105</width>
-			<height>720</height>
-			<texture>home_icon_background.png</texture>
-			<colordiffuse>E0FFFFFF</colordiffuse>
-		</control>
-		<control type="image">
-			<posx>105</posx>
-			<posy>0</posy>
-			<width>218</width>
-			<height>720</height>
-			<texture>home_menu_background.png</texture>
-			<colordiffuse>90FFFFFF</colordiffuse>
-			<visible>Window.IsVisible(Home)</visible>
-		</control>
-		<control type="image">
 			<posx>105</posx>
 			<posy>15</posy>
 			<width>1160</width>
 			<height>690</height>
 			<texture>white.png</texture>
 			<colordiffuse>90000000</colordiffuse>
+			<include>WindowOpenSlide</include>
 			<visible>!Window.IsVisible(Home)</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>105</width>
+			<height>720</height>
+			<texture>home_icon_background.png</texture>
+			<colordiffuse>E0FFFFFF</colordiffuse>
 		</control>
 		<control type="group">
 			<posx>20</posx>
@@ -151,7 +154,7 @@
 				<onright condition="Window.IsVisible(Home)">200</onright>
 				<onright condition="Window.IsVisible(Videos)">50</onright>
 				<onright condition="!Window.IsVisible(Home) + !Window.IsVisible(Videos)">3</onright>
-				<itemlayout width="64" height="75">
+				<itemlayout width="64" height="72">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -161,7 +164,7 @@
 						<animation effect="zoom" end="80" center="auto" condition="true">Conditional</animation>
 					</control>
 				</itemlayout>
-				<focusedlayout width="64" height="75">
+				<focusedlayout width="64" height="72">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -203,8 +206,8 @@
 					</item>
 					<item id="3">
 						<label>-</label>
-						<icon>home_audio_NF.png</icon>
-						<property name="Icon_Focus">home_audio_FO.png</property>
+						<icon>home_music_NF.png</icon>
+						<property name="Icon_Focus">home_music_FO.png</property>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="4">
@@ -221,14 +224,14 @@
 					</item>
 					<item id="6">
 						<label>-</label>
-						<icon>home_chat_NF.png</icon>
-						<property name="Icon_Focus">home_chat_FO.png</property>
+						<icon>home_addons_NF.png</icon>
+						<property name="Icon_Focus">home_addons_FO.png</property>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="7">
 						<label>-</label>
-						<icon>home_office_NF.png</icon>
-						<property name="Icon_Focus">home_office_FO.png</property>
+						<icon>home_weather_NF.png</icon>
+						<property name="Icon_Focus">home_weather_FO.png</property>
 						<onclick>ActivateWindow()</onclick>
 					</item>
 					<item id="8">
@@ -247,6 +250,7 @@
 			<posy>24</posy>
 			<width>64</width>
 			<height>600</height>
+			<include>WindowOpenCloseFade</include>
 			<control type="button" id="3000">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -351,8 +355,8 @@
 					<posy>0</posy>
 					<width>210</width>
 					<height>26</height>
-					<label>Sort: Ascending</label>
-					<altlabel>Sort: Descending</altlabel>
+					<label>$LOCALIZE[31002]</label>
+					<altlabel>$LOCALIZE[31003]</altlabel>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
@@ -410,7 +414,7 @@
 					<posy>0</posy>
 					<width>210</width>
 					<height>26</height>
-					<label>Search</label>
+					<label>$LOCALIZE[137]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
@@ -589,6 +593,7 @@
 			<posy>24</posy>
 			<width>64</width>
 			<height>600</height>
+			<include>WindowOpenCloseFade</include>
 			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -632,7 +637,7 @@
 					<posy>0</posy>
 					<width>148</width>
 					<height>26</height>
-					<label>Appearance</label>
+					<label>$LOCALIZE[480]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
@@ -660,7 +665,7 @@
 					<posy>0</posy>
 					<width>148</width>
 					<height>26</height>
-					<label>Video</label>
+					<label>$LOCALIZE[157]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
@@ -688,7 +693,7 @@
 					<posy>0</posy>
 					<width>148</width>
 					<height>26</height>
-					<label>Music</label>
+					<label>$LOCALIZE[2]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
@@ -716,7 +721,7 @@
 					<posy>0</posy>
 					<width>148</width>
 					<height>26</height>
-					<label>Picture</label>
+					<label>$LOCALIZE[1]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
@@ -744,7 +749,7 @@
 					<posy>0</posy>
 					<width>148</width>
 					<height>26</height>
-					<label>Weather</label>
+					<label>$LOCALIZE[8]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
@@ -772,7 +777,7 @@
 					<posy>0</posy>
 					<width>148</width>
 					<height>26</height>
-					<label>Network</label>
+					<label>$LOCALIZE[705]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
@@ -800,7 +805,7 @@
 					<posy>0</posy>
 					<width>148</width>
 					<height>26</height>
-					<label>System</label>
+					<label>$LOCALIZE[13000]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>

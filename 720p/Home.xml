@@ -3,387 +3,422 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>Header</include>
+		<control type="group">
+			<include>WindowOpenCloseFade</include>
+			<control type="image">
+				<posx>933</posx>
+				<posy>45</posy>
+				<width>315</width>
+				<height>1</height>
+				<texture>white.png</texture>
+				<colordiffuse>60F9D37B</colordiffuse>
+			</control>
+			<control type="label">
+				<posx>1246</posx>
+				<posy>46</posy>
+				<width>800</width>
+				<height>30</height>
+				<label>[I]$LOCALIZE[31001] $INFO[System.ProfileName] [/I]</label>
+				<align>right</align>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+			</control>
+		</control>
+		<control type="group">
+			<include>WindowOpenSlideHome</include>
+			<control type="image">
+				<posx>105</posx>
+				<posy>0</posy>
+				<width>218</width>
+				<height>720</height>
+				<texture>home_menu_background.png</texture>
+				<colordiffuse>90FFFFFF</colordiffuse>
+				<include>WindowOpenSlideHome</include>
+				<visible>Window.IsVisible(Home)</visible>
+			</control>
+			<control type="grouplist" id="200">
+				<posx>140</posx>
+				<posy>57</posy>
+				<width>170</width>
+				<height>300</height>
+				<orientation>vertical</orientation>
+				<include>SubMenuFade</include>
+				<include>WindowOpenCloseFadeHome</include>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<visible>Container(1000).HasFocus(1)</visible>
+				<control type="button" id="201">
+					<label>$LOCALIZE[20342]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="202">
+					<label>$LOCALIZE[20343]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="203">
+					<label>$LOCALIZE[20389]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="image" id="204">
+					<width>150</width>
+					<height>2</height>
+					<texture>white.png</texture>
+					<colordiffuse>normal</colordiffuse>
+				</control>
+				<control type="button" id="205">
+					<label>$LOCALIZE[133]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="206">
+					<label>$LOCALIZE[132]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="207">
+					<label>$LOCALIZE[134]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+			</control>
+			<control type="grouplist" id="200">
+				<posx>140</posx>
+				<posy>129</posy>
+				<width>170</width>
+				<height>300</height>
+				<orientation>vertical</orientation>
+				<include>SubMenuFade</include>
+				<include>WindowOpenCloseFadeHome</include>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<visible>Container(1000).HasFocus(2)</visible>
+				<control type="button" id="201">
+					<label>$LOCALIZE[136]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="202">
+					<label>$LOCALIZE[589]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="203">
+					<label>$LOCALIZE[31004]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="image" id="204">
+					<width>150</width>
+					<height>2</height>
+					<texture>white.png</texture>
+					<colordiffuse>normal</colordiffuse>
+				</control>
+				<control type="button" id="205">
+					<label>$LOCALIZE[3]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="206">
+					<label>$LOCALIZE[20343]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="207">
+					<label>$LOCALIZE[20389]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="208">
+					<label>$LOCALIZE[1037]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+			</control>
+			<control type="grouplist" id="200">
+				<posx>140</posx>
+				<posy>201</posy>
+				<width>170</width>
+				<height>300</height>
+				<orientation>vertical</orientation>
+				<include>SubMenuFade</include>
+				<include>WindowOpenCloseFadeHome</include>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<visible>Container(1000).HasFocus(3)</visible>
+				<control type="button" id="201">
+					<label>$LOCALIZE[136]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="202">
+					<label>$LOCALIZE[589]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="203">
+					<label>$LOCALIZE[31004]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="image" id="204">
+					<width>150</width>
+					<height>2</height>
+					<texture>white.png</texture>
+					<colordiffuse>normal</colordiffuse>
+				</control>
+				<control type="button" id="205">
+					<label>$LOCALIZE[133]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="206">
+					<label>$LOCALIZE[132]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="207">
+					<label>$LOCALIZE[131]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+			</control>
+			<control type="grouplist" id="200">
+				<posx>140</posx>
+				<posy>273</posy>
+				<width>170</width>
+				<height>300</height>
+				<orientation>vertical</orientation>
+				<include>SubMenuFade</include>
+				<include>WindowOpenCloseFadeHome</include>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<visible>Container(1000).HasFocus(4)</visible>
+				<control type="button" id="201">
+					<label>$LOCALIZE[1039]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="image" id="202">
+					<width>150</width>
+					<height>2</height>
+					<texture>white.png</texture>
+					<colordiffuse>normal</colordiffuse>
+				</control>
+			</control>
+			<control type="grouplist" id="200">
+				<posx>140</posx>
+				<posy>345</posy>
+				<width>170</width>
+				<height>300</height>
+				<orientation>vertical</orientation>
+				<include>SubMenuFade</include>
+				<include>WindowOpenCloseFadeHome</include>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<visible>Container(1000).HasFocus(5)</visible>
+				<control type="button" id="201">
+					<label>$LOCALIZE[31005] 1</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="202">
+					<label>$LOCALIZE[31005] 2</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="203">
+					<label>$LOCALIZE[31005] 3</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="204">
+					<label>$LOCALIZE[31005] 4</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="image" id="205">
+					<width>150</width>
+					<height>2</height>
+					<texture>white.png</texture>
+					<colordiffuse>normal</colordiffuse>
+				</control>
+				<control type="button" id="206">
+					<label>$LOCALIZE[31005] 5</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="207">
+					<label>$LOCALIZE[31005] 6</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="208">
+					<label>$LOCALIZE[31005] 7</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="209">
+					<label>$LOCALIZE[31005] 8</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+			</control>
+			<control type="grouplist" id="200">
+				<posx>140</posx>
+				<posy>417</posy>
+				<width>170</width>
+				<height>300</height>
+				<orientation>vertical</orientation>
+				<include>SubMenuFade</include>
+				<include>WindowOpenCloseFadeHome</include>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<visible>Container(1000).HasFocus(6)</visible>
+				<control type="button" id="201">
+					<label>$LOCALIZE[24033]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="image" id="202">
+					<width>150</width>
+					<height>2</height>
+					<texture>white.png</texture>
+					<colordiffuse>normal</colordiffuse>
+				</control>
+				<control type="button" id="203">
+					<label>$LOCALIZE[24000] 1</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="204">
+					<label>$LOCALIZE[24000] 2</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="205">
+					<label>$LOCALIZE[24000] 3</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="206">
+					<label>$LOCALIZE[24000] 4</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="207">
+					<label>$LOCALIZE[24000] 5</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+			</control>
+			<control type="grouplist" id="200">
+				<posx>140</posx>
+				<posy>489</posy>
+				<width>170</width>
+				<height>300</height>
+				<orientation>vertical</orientation>
+				<include>SubMenuFade</include>
+				<include>WindowOpenCloseFadeHome</include>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<visible>Container(1000).HasFocus(7)</visible>
+				<control type="button" id="201">
+					<label>$LOCALIZE[31006]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="image" id="202">
+					<width>150</width>
+					<height>2</height>
+					<texture>white.png</texture>
+					<colordiffuse>normal</colordiffuse>
+				</control>
+				<control type="button" id="201">
+					<label>$LOCALIZE[31007]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+			</control>
+			<control type="grouplist" id="200">
+				<posx>140</posx>
+				<posy>561</posy>
+				<width>170</width>
+				<height>300</height>
+				<orientation>vertical</orientation>
+				<include>SubMenuFade</include>
+				<include>WindowOpenCloseFadeHome</include>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<visible>Container(1000).HasFocus(8)</visible>
+				<control type="button" id="201">
+					<label>$LOCALIZE[130]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="202">
+					<label>$LOCALIZE[10003]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="image" id="203">
+					<width>150</width>
+					<height>2</height>
+					<texture>white.png</texture>
+					<colordiffuse>normal</colordiffuse>
+				</control>
+				<control type="button" id="204">
+					<label>$LOCALIZE[13200]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+				<control type="button" id="205">
+					<label>$LOCALIZE[20077]</label>
+					<include>HomeSubButton</include>
+					<onclick>-</onclick>
+				</control>
+			</control>
+			<control type="image">
+				<posx>110</posx>
+				<posy>62</posy>
+				<width>20</width>
+				<height>20</height>
+				<texture>$VAR[SubMenuArrow]</texture>
+				<animation effect="slide" end="0,72" time="150" condition="Container(1000).HasFocus(2)">Conditional</animation>
+				<animation effect="slide" end="0,144" time="150" condition="Container(1000).HasFocus(3)">Conditional</animation>
+				<animation effect="slide" end="0,216" time="150" condition="Container(1000).HasFocus(4)">Conditional</animation>
+				<animation effect="slide" end="0,288" time="150" condition="Container(1000).HasFocus(5)">Conditional</animation>
+				<animation effect="slide" end="0,360" time="150" condition="Container(1000).HasFocus(6)">Conditional</animation>
+				<animation effect="slide" end="0,432" time="150" condition="Container(1000).HasFocus(7)">Conditional</animation>
+				<animation effect="slide" end="0,504" time="150" condition="Container(1000).HasFocus(8)">Conditional</animation>
+			</control>
+		</control>
 		<include>SideMenu</include>
-		<control type="image">
-			<posx>940</posx>
-			<posy>45</posy>
-			<width>300</width>
-			<height>1</height>
-			<texture>white.png</texture>
-			<colordiffuse>60FFFFFF</colordiffuse>
-		</control>
-		<control type="label">
-			<posx>1240</posx>
-			<posy>45</posy>
-			<width>800</width>
-			<height>30</height>
-			<label>$LOCALIZE[31001] $INFO[System.ProfileName]</label>
-			<align>right</align>
-			<font>font18</font>
-			<textcolor>white</textcolor>
-		</control>
-		<control type="grouplist" id="200">
-			<posx>140</posx>
-			<posy>57</posy>
-			<width>170</width>
-			<height>300</height>
-			<orientation>vertical</orientation>
-			<include>SubMenuFade</include>
-			<onup>200</onup>
-			<ondown>200</ondown>
-			<onleft>1000</onleft>
-			<onright>1000</onright>
-			<visible>Container(1000).HasFocus(1)</visible>
-			<control type="button" id="201">
-				<label>Movies</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="202">
-				<label>TV Shows</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="203">
-				<label>Music Videos</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="204">
-				<width>150</width>
-				<height>2</height>
-				<texture>white.png</texture>
-				<colordiffuse>normal</colordiffuse>
-			</control>
-			<control type="button" id="205">
-				<label>Songs</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-		</control>
-		<control type="grouplist" id="200">
-			<posx>140</posx>
-			<posy>132</posy>
-			<width>170</width>
-			<height>300</height>
-			<orientation>vertical</orientation>
-			<include>SubMenuFade</include>
-			<onup>200</onup>
-			<ondown>200</ondown>
-			<onleft>1000</onleft>
-			<onright>1000</onright>
-			<visible>Container(1000).HasFocus(2)</visible>
-			<control type="button" id="201">
-				<label>Play Lists</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="202">
-				<label>Party Mode</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="203">
-				<label>Recently Played</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="204">
-				<width>150</width>
-				<height>2</height>
-				<texture>white.png</texture>
-				<colordiffuse>normal</colordiffuse>
-			</control>
-			<control type="button" id="205">
-				<label>Video Add-ons</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="206">
-				<label>TV Shows</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="207">
-				<label>Movies</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="208">
-				<label>Music Videos</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-		</control>
-		<control type="grouplist" id="200">
-			<posx>140</posx>
-			<posy>207</posy>
-			<width>170</width>
-			<height>300</height>
-			<orientation>vertical</orientation>
-			<include>SubMenuFade</include>
-			<onup>200</onup>
-			<ondown>200</ondown>
-			<onleft>1000</onleft>
-			<onright>1000</onright>
-			<visible>Container(1000).HasFocus(3)</visible>
-			<control type="button" id="201">
-				<label>Play Lists</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="202">
-				<label>Party Mode</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="203">
-				<label>Recently Played</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="204">
-				<width>150</width>
-				<height>2</height>
-				<texture>white.png</texture>
-				<colordiffuse>normal</colordiffuse>
-			</control>
-			<control type="button" id="205">
-				<label>Artists</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="206">
-				<label>Albums</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="207">
-				<label>Songs</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-		</control>
-		<control type="grouplist" id="200">
-			<posx>140</posx>
-			<posy>282</posy>
-			<width>170</width>
-			<height>300</height>
-			<orientation>vertical</orientation>
-			<include>SubMenuFade</include>
-			<onup>200</onup>
-			<ondown>200</ondown>
-			<onleft>1000</onleft>
-			<onright>1000</onright>
-			<visible>Container(1000).HasFocus(4)</visible>
-			<control type="button" id="201">
-				<label>Picture Add-Ons</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="202">
-				<width>150</width>
-				<height>2</height>
-				<texture>white.png</texture>
-				<colordiffuse>normal</colordiffuse>
-			</control>
-		</control>
-		<control type="grouplist" id="200">
-			<posx>140</posx>
-			<posy>357</posy>
-			<width>170</width>
-			<height>300</height>
-			<orientation>vertical</orientation>
-			<include>SubMenuFade</include>
-			<onup>200</onup>
-			<ondown>200</ondown>
-			<onleft>1000</onleft>
-			<onright>1000</onright>
-			<visible>Container(1000).HasFocus(5)</visible>
-			<control type="button" id="201">
-				<label>Favourite 1</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="202">
-				<label>Favourite 2</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="203">
-				<label>Favourite 3</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="204">
-				<label>Favourite 4</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="205">
-				<width>150</width>
-				<height>2</height>
-				<texture>white.png</texture>
-				<colordiffuse>normal</colordiffuse>
-			</control>
-			<control type="button" id="206">
-				<label>Favourite 5</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="207">
-				<label>Favourite 6</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="208">
-				<label>Favourite 7</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="209">
-				<label>Favourite 8</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-		</control>
-		<control type="grouplist" id="200">
-			<posx>140</posx>
-			<posy>432</posy>
-			<width>170</width>
-			<height>300</height>
-			<orientation>vertical</orientation>
-			<include>SubMenuFade</include>
-			<onup>200</onup>
-			<ondown>200</ondown>
-			<onleft>1000</onleft>
-			<onright>1000</onright>
-			<visible>Container(1000).HasFocus(6)</visible>
-			<control type="button" id="201">
-				<label>Get Add-Ons</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="202">
-				<width>150</width>
-				<height>2</height>
-				<texture>white.png</texture>
-				<colordiffuse>normal</colordiffuse>
-			</control>
-			<control type="button" id="203">
-				<label>Add-On 1</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="204">
-				<label>Add-On 2</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="205">
-				<label>Add-On 3</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="206">
-				<label>Add-On 4</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="207">
-				<label>Add-On 5</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-		</control>
-		<control type="grouplist" id="200">
-			<posx>140</posx>
-			<posy>507</posy>
-			<width>170</width>
-			<height>300</height>
-			<orientation>vertical</orientation>
-			<include>SubMenuFade</include>
-			<onup>200</onup>
-			<ondown>200</ondown>
-			<onleft>1000</onleft>
-			<onright>1000</onright>
-			<visible>Container(1000).HasFocus(7)</visible>
-			<control type="button" id="201">
-				<label>Refresh Weather</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="202">
-				<width>150</width>
-				<height>2</height>
-				<texture>white.png</texture>
-				<colordiffuse>normal</colordiffuse>
-			</control>
-			<control type="button" id="201">
-				<label>Change Location</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-		</control>
-		<control type="grouplist" id="200">
-			<posx>140</posx>
-			<posy>582</posy>
-			<width>170</width>
-			<height>300</height>
-			<orientation>vertical</orientation>
-			<include>SubMenuFade</include>
-			<onup>200</onup>
-			<ondown>200</ondown>
-			<onleft>1000</onleft>
-			<onright>1000</onright>
-			<visible>Container(1000).HasFocus(8)</visible>
-			<control type="button" id="201">
-				<label>System Info</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="202">
-				<label>File Manager</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="image" id="203">
-				<width>150</width>
-				<height>2</height>
-				<texture>white.png</texture>
-				<colordiffuse>normal</colordiffuse>
-			</control>
-			<control type="button" id="204">
-				<label>Profile Settings</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="205">
-				<label>Skin Settings</label>
-				<include>HomeSubButton</include>
-				<onclick>-</onclick>
-			</control>
-		</control>
-		<control type="image">
-			<posx>110</posx>
-			<posy>62</posy>
-			<width>20</width>
-			<height>20</height>
-			<texture>$VAR[SubMenuArrow]</texture>
-			<animation effect="slide" end="0,75" time="150" condition="Container(1000).HasFocus(2)">Conditional</animation>
-			<animation effect="slide" end="0,150" time="150" condition="Container(1000).HasFocus(3)">Conditional</animation>
-			<animation effect="slide" end="0,225" time="150" condition="Container(1000).HasFocus(4)">Conditional</animation>
-			<animation effect="slide" end="0,300" time="150" condition="Container(1000).HasFocus(5)">Conditional</animation>
-			<animation effect="slide" end="0,375" time="150" condition="Container(1000).HasFocus(6)">Conditional</animation>
-			<animation effect="slide" end="0,450" time="150" condition="Container(1000).HasFocus(7)">Conditional</animation>
-			<animation effect="slide" end="0,525" time="150" condition="Container(1000).HasFocus(8)">Conditional</animation>
-		</control>
 		<control type="group">
 			<posx>450</posx>
 			<posy>515</posy>
 			<width>300</width>
 			<height>300</height>
 			<include>VisibleFade</include>
+			<include>WindowOpenCloseFade</include>
 			<visible>Container(1000).HasFocus(2)</visible>
 			<control type="image">
 				<posx>0</posx>
@@ -397,7 +432,7 @@
 				<posy>25</posy>
 				<width>230</width>
 				<height>30</height>
-				<label>Now Playing...</label>
+				<label>$LOCALIZE[13350]</label>
 				<align>center</align>
 				<font>font26</font>
 				<textcolor>normal</textcolor>
@@ -499,6 +534,7 @@
 			<width>410</width>
 			<height>110</height>
 			<include>VisibleZoomInOut</include>
+			<include>WindowOpenCloseFade</include>
 			<visible>Container(1000).HasFocus(2)</visible>
 			<control type="image">
 				<posx>0</posx>
@@ -522,7 +558,7 @@
 				<posy>31</posy>
 				<width>295</width>
 				<height>30</height>
-				<label>Downloading Movie Information</label>
+				<label>$LOCALIZE[20374]</label>
 				<align>left</align>
 				<font>font16</font>
 				<textcolor>white</textcolor>

@@ -12,6 +12,7 @@
 				<height>628</height>
 				<texture>white.png</texture>
 				<colordiffuse>10FFFFFF</colordiffuse>
+				<include>WindowOpenCloseFade</include>
 			</control>
 			<control type="group">
 				<posx>135</posx>

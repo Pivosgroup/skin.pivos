@@ -2,4 +2,10 @@
 <strings>
 	<string id="31000">Default</string>
 	<string id="31001">Welcome,</string>
+	<string id="31002">Sort: Ascending</string>
+	<string id="31003">Sort: Descending</string>
+	<string id="31004">Recently Added</string>
+	<string id="31005">Favourite</string>
+	<string id="31006">Refresh Weather</string>
+	<string id="31007">Change Location</string>
 </strings>
