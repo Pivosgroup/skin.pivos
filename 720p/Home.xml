@@ -2,16 +2,29 @@
 	<defaultcontrol always="true">1000</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Container(5001).ListItem.Property(FanartImage)]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>250</fadetime>
+			<colordiffuse>50FFFFFF</colordiffuse>
+			<include>WindowOpenCloseFade</include>
+			<include>VisibleFade</include>
+			<visible>Control.HasFocus(5001)</visible>
+		</control>
 		<include>Header</include>
 		<control type="group">
 			<include>WindowOpenCloseFade</include>
 			<control type="image">
 				<posx>933</posx>
 				<posy>45</posy>
-				<width>315</width>
+				<width>316</width>
 				<height>1</height>
 				<texture>white.png</texture>
-				<colordiffuse>60F9D37B</colordiffuse>
+				<colordiffuse>light</colordiffuse>
 			</control>
 			<control type="label">
 				<posx>1246</posx>
@@ -47,7 +60,7 @@
 				<onup>200</onup>
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
-				<onright>1000</onright>
+				<onright>5001</onright>
 				<visible>Container(1000).HasFocus(1)</visible>
 				<control type="button" id="201">
 					<label>$LOCALIZE[20342]</label>
@@ -97,7 +110,7 @@
 				<onup>200</onup>
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
-				<onright>1000</onright>
+				<onright>5001</onright>
 				<visible>Container(1000).HasFocus(2)</visible>
 				<control type="button" id="201">
 					<label>$LOCALIZE[136]</label>
@@ -152,7 +165,7 @@
 				<onup>200</onup>
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
-				<onright>1000</onright>
+				<onright>5001</onright>
 				<visible>Container(1000).HasFocus(3)</visible>
 				<control type="button" id="201">
 					<label>$LOCALIZE[136]</label>
@@ -202,7 +215,7 @@
 				<onup>200</onup>
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
-				<onright>1000</onright>
+				<onright>5001</onright>
 				<visible>Container(1000).HasFocus(4)</visible>
 				<control type="button" id="201">
 					<label>$LOCALIZE[1039]</label>
@@ -227,7 +240,7 @@
 				<onup>200</onup>
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
-				<onright>1000</onright>
+				<onright>5001</onright>
 				<visible>Container(1000).HasFocus(5)</visible>
 				<control type="button" id="201">
 					<label>$LOCALIZE[31005] 1</label>
@@ -287,7 +300,7 @@
 				<onup>200</onup>
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
-				<onright>1000</onright>
+				<onright>5001</onright>
 				<visible>Container(1000).HasFocus(6)</visible>
 				<control type="button" id="201">
 					<label>$LOCALIZE[24033]</label>
@@ -337,7 +350,7 @@
 				<onup>200</onup>
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
-				<onright>1000</onright>
+				<onright>5001</onright>
 				<visible>Container(1000).HasFocus(7)</visible>
 				<control type="button" id="201">
 					<label>$LOCALIZE[31006]</label>
@@ -367,7 +380,7 @@
 				<onup>200</onup>
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
-				<onright>1000</onright>
+				<onright>5001</onright>
 				<visible>Container(1000).HasFocus(8)</visible>
 				<control type="button" id="201">
 					<label>$LOCALIZE[130]</label>
@@ -409,12 +422,13 @@
 				<animation effect="slide" end="0,360" time="150" condition="Container(1000).HasFocus(6)">Conditional</animation>
 				<animation effect="slide" end="0,432" time="150" condition="Container(1000).HasFocus(7)">Conditional</animation>
 				<animation effect="slide" end="0,504" time="150" condition="Container(1000).HasFocus(8)">Conditional</animation>
+				<include>WindowOpenCloseFadeHome</include>
 			</control>
 		</control>
 		<include>SideMenu</include>
 		<control type="group">
-			<posx>450</posx>
-			<posy>515</posy>
+			<posx>418</posx>
+			<posy>508</posy>
 			<width>300</width>
 			<height>300</height>
 			<include>VisibleFade</include>
@@ -423,42 +437,42 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>425</width>
-				<height>205</height>
+				<width>444</width>
+				<height>212</height>
 				<texture>playing_now_background.png</texture>
 			</control>
 			<control type="label">
-				<posx>95</posx>
-				<posy>25</posy>
+				<posx>107</posx>
+				<posy>30</posy>
 				<width>230</width>
 				<height>30</height>
-				<label>$LOCALIZE[13350]</label>
+				<label>[B]$LOCALIZE[13350][/B]</label>
 				<align>center</align>
-				<font>font26</font>
+				<font>font22</font>
 				<textcolor>normal</textcolor>
 			</control>
 			<control type="label">
-				<posx>62</posx>
+				<posx>72</posx>
 				<posy>62</posy>
 				<width>300</width>
 				<height>30</height>
 				<label>THE VERY THOUGHT OF YOU</label>
 				<align>center</align>
 				<font>font18</font>
-				<textcolor>light</textcolor>
+				<textcolor>dark</textcolor>
 			</control>
 			<control type="label">
-				<posx>12</posx>
+				<posx>22</posx>
 				<posy>140</posy>
 				<width>120</width>
 				<height>30</height>
-				<label>[B]0:28:59[/B]</label>
+				<label>[B]02:13[/B]</label>
 				<align>center</align>
 				<font>font30</font>
 				<textcolor>white</textcolor>
 			</control>
 			<control type="group">
-				<posx>115</posx>
+				<posx>122</posx>
 				<posy>112</posy>
 				<width>90</width>
 				<height>90</height>
@@ -480,7 +494,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>225</posx>
+				<posx>232</posx>
 				<posy>112</posy>
 				<width>90</width>
 				<height>90</height>
@@ -518,45 +532,152 @@
 				</control>
 			</control>
 			<control type="label">
-				<posx>294</posx>
+				<posx>302</posx>
 				<posy>140</posy>
 				<width>120</width>
 				<height>30</height>
-				<label>[B]2:14:30[/B]</label>
+				<label>[B]05:49[/B]</label>
 				<align>center</align>
 				<font>font30</font>
 				<textcolor>white</textcolor>
 			</control>
 		</control>
 		<control type="group">
+			<posx>830</posx>
+			<posy>520</posy>
+			<include>VisibleZoomInOut</include>
+			<include>WindowOpenCloseFade</include>
+			<visible>Container(1000).HasFocus(1)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>425</width>
+				<height>185</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="wraplist" id="5001">
+				<posx>24</posx>
+				<posy>20</posy>
+				<height>145</height>
+				<width>384</width>
+				<orientation>horizontal</orientation>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onleft>5001</onleft>
+				<onright>5001</onright>
+				<itemlayout width="68" height="145">
+					<control type="image">
+						<posx>0</posx>
+						<posy>55</posy>
+						<width>60</width>
+						<height>90</height>
+						<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="112" height="145">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>100</width>
+						<height>145</height>
+						<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
+						<thumb>$INFO[Window.Property(LatestMovie.1.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMovie.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestMovie.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="2">
+						<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
+						<thumb>$INFO[Window.Property(LatestMovie.2.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMovie.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestMovie.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="3">
+						<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
+						<thumb>$INFO[Window.Property(LatestMovie.3.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMovie.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestMovie.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="4">
+						<label>$INFO[Window.Property(LatestMovie.4.Title)]</label>
+						<thumb>$INFO[Window.Property(LatestMovie.4.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMovie.4.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestMovie.4.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="5">
+						<label>$INFO[Window.Property(LatestMovie.5.Title)]</label>
+						<thumb>$INFO[Window.Property(LatestMovie.5.Thumb)]</thumb>
+						<property name="FanartImage">$INFO[Window.Property(LatestMovie.5.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestMovie.5.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="label">
+				<posx>130</posx>
+				<posy>22</posy>
+				<width>280</width>
+				<height>30</height>
+				<label>[B]$LOCALIZE[31004][/B]</label>
+				<align>center</align>
+				<font>font20</font>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="label">
+				<posx>130</posx>
+				<posy>46</posy>
+				<width>280</width>
+				<height>30</height>
+				<label>$INFO[Container(5001).ListItem.Label]</label>
+				<align>center</align>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+			</control>
+		</control>
+		<control type="group">
 			<posx>880</posx>
-			<posy>610</posy>
+			<posy>620</posy>
 			<width>410</width>
 			<height>110</height>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>Container(1000).HasFocus(2)</visible>
+			<visible>Container(1000).HasFocus(5) | Container(1000).HasFocus(6)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>410</width>
-				<height>110</height>
-				<texture border="40">busy_background.png</texture>
-				<colordiffuse>55FFFFFF</colordiffuse>
+				<width>380</width>
+				<height>90</height>
+				<texture border="18">dialog-back.png</texture>
 			</control>
 			<control type="multiimage">
-				<posx>30</posx>
-				<posy>30</posy>
-				<width>50</width>
-				<height>50</height>
+				<posx>25</posx>
+				<posy>25</posy>
+				<width>40</width>
+				<height>40</height>
 				<imagepath>busy</imagepath>
 				<timeperimage>200</timeperimage>
 				<randomize>false</randomize>
+				<visible>Container(1000).HasFocus(5)</visible>
+			</control>
+			<control type="multiimage">
+				<posx>25</posx>
+				<posy>25</posy>
+				<width>40</width>
+				<height>40</height>
+				<imagepath>busy2</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<visible>Container(1000).HasFocus(6)</visible>
 			</control>
 			<control type="label">
-				<posx>85</posx>
-				<posy>31</posy>
-				<width>295</width>
+				<posx>80</posx>
+				<posy>24</posy>
+				<width>280</width>
 				<height>30</height>
 				<label>$LOCALIZE[20374]</label>
 				<align>left</align>
@@ -564,14 +685,272 @@
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label">
-				<posx>85</posx>
-				<posy>54</posy>
+				<posx>80</posx>
+				<posy>42</posy>
 				<width>280</width>
 				<height>30</height>
 				<label>Monsters Inc. (2009)</label>
 				<align>left</align>
 				<font>font16</font>
 				<textcolor>white</textcolor>
+			</control>
+		</control>
+		<control type="group">
+			<posx>830</posx>
+			<posy>520</posy>
+			<include>VisibleZoomInOut</include>
+			<include>WindowOpenCloseFade</include>
+			<visible>Container(1000).HasFocus(7)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>425</width>
+				<height>185</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>10</posx>
+				<posy>13</posy>
+				<width>405</width>
+				<height>30</height>
+				<label>[B]$INFO[Window(Weather).Property(Location)][/B]</label>
+				<font>font26</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
+			<control type="label">
+				<posx>10</posx>
+				<posy>38</posy>
+				<width>405</width>
+				<height>30</height>
+				<label>[I]$INFO[Weather.Conditions ] [/I]</label>
+				<font>font18</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+			</control>
+			<control type="group">
+				<posx>19</posx>
+				<posy>65</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>86</width>
+					<height>100</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>2</posy>
+					<width>76</width>
+					<height>76</height>
+					<texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>68</posy>
+					<width>86</width>
+					<height>30</height>
+					<label>[B]$INFO[Weather.Temperature][/B]</label>
+					<font>font26</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="group">
+				<posx>110</posx>
+				<posy>65</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<height>100</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<height>20</height>
+					<label>Mon</label>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>20</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>$INFO[Window(Weather).Property(Day0.OutlookIcon)]</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>65</posy>
+					<width>70</width>
+					<height>30</height>
+					<label>Hi: [COLOR=white]$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<font>font14</font>
+					<textcolor>normal</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>80</posy>
+					<width>70</width>
+					<height>30</height>
+					<label>Lo: [COLOR=white]$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<font>font14</font>
+					<textcolor>normal</textcolor>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="group">
+				<posx>185</posx>
+				<posy>65</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<height>100</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<height>20</height>
+					<label>Tue</label>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>20</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>65</posy>
+					<width>70</width>
+					<height>30</height>
+					<label>Hi: [COLOR=white]$INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<font>font14</font>
+					<textcolor>normal</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>80</posy>
+					<width>70</width>
+					<height>30</height>
+					<label>Lo: [COLOR=white]$INFO[Window(Weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<font>font14</font>
+					<textcolor>normal</textcolor>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="group">
+				<posx>260</posx>
+				<posy>65</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<height>100</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<height>20</height>
+					<label>Wed</label>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>20</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>65</posy>
+					<width>70</width>
+					<height>30</height>
+					<label>Hi: [COLOR=white]$INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<font>font14</font>
+					<textcolor>normal</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>80</posy>
+					<width>70</width>
+					<height>30</height>
+					<label>Lo: [COLOR=white]$INFO[Window(Weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<font>font14</font>
+					<textcolor>normal</textcolor>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="group">
+				<posx>335</posx>
+				<posy>65</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<height>100</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<height>20</height>
+					<label>Thu</label>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>20</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>65</posy>
+					<width>70</width>
+					<height>30</height>
+					<label>Hi: [COLOR=white]$INFO[Window(Weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<font>font14</font>
+					<textcolor>normal</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>80</posy>
+					<width>70</width>
+					<height>30</height>
+					<label>Lo: [COLOR=white]$INFO[Window(Weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<font>font14</font>
+					<textcolor>normal</textcolor>
+					<align>center</align>
+				</control>
 			</control>
 		</control>
 	</controls>

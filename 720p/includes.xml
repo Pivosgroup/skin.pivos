@@ -21,7 +21,7 @@
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>250</fadetime>
-			<colordiffuse>30FFFFFF</colordiffuse>
+			<colordiffuse>50FFFFFF</colordiffuse>
 			<include>WindowOpenCloseFade</include>
 			<include>VisibleFade</include>
 			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
@@ -61,12 +61,11 @@
 				<control type="group">
 					<width>10</width>
 					<control type="image">
-						<posx>4</posx>
-						<posy>3</posy>
-						<width>2</width>
-						<height>24</height>
-						<texture>white.png</texture>
-						<colordiffuse>A0F1B22F</colordiffuse>
+						<posx>0</posx>
+						<posy>12</posy>
+						<width>10</width>
+						<height>10</height>
+						<texture>scrollbar_nib_FO.png</texture>
 					</control>
 				</control>
 				<control type="label">
@@ -150,7 +149,7 @@
 				<orientation>vertical</orientation>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
-				<onleft>1000</onleft>
+				<onleft>5001</onleft>
 				<onright condition="Window.IsVisible(Home)">200</onright>
 				<onright condition="Window.IsVisible(Videos)">50</onright>
 				<onright condition="!Window.IsVisible(Home) + !Window.IsVisible(Videos)">3</onright>
