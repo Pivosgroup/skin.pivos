@@ -1,8 +1,4 @@
 <includes>
-	<variable name="SubMenuArrow">
-		<value condition="!ControlGroup(200).HasFocus">arrow_right_NF.png</value>
-		<value condition="ControlGroup(200).HasFocus">arrow_right_FO.png</value>
-	</variable>
 	<variable name="MediaIconAudioCodec">
 		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,1)">mediaicons/audiocodec/dd10.png</value>
 		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,2)">mediaicons/audiocodec/dd20.png</value>
@@ -29,5 +25,45 @@
 		<value condition="stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,7)">mediaicons/audiocodec/dtsma61.png</value>
 		<value condition="stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,8)">mediaicons/audiocodec/dtsma71.png</value>
 		<value>mediaicons/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
+	</variable>
+	<variable name="SubMenuArrow">
+		<value condition="!ControlGroup(200).HasFocus">arrow_right_NF.png</value>
+		<value condition="ControlGroup(200).HasFocus">arrow_right_FO.png</value>
+	</variable>
+	<variable name="WeatherDay0">
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[12])">$LOCALIZE[42]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[13])">$LOCALIZE[43]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[14])">$LOCALIZE[44]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[15])">$LOCALIZE[45]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[16])">$LOCALIZE[46]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[17])">$LOCALIZE[47]</value>
+	</variable>
+	<variable name="WeatherDay1">
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[12])">$LOCALIZE[42]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[13])">$LOCALIZE[43]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[14])">$LOCALIZE[44]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[15])">$LOCALIZE[45]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[16])">$LOCALIZE[46]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day1.Title),$LOCALIZE[17])">$LOCALIZE[47]</value>
+	</variable>
+	<variable name="WeatherDay2">
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[12])">$LOCALIZE[42]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[13])">$LOCALIZE[43]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[14])">$LOCALIZE[44]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[15])">$LOCALIZE[45]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[16])">$LOCALIZE[46]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day2.Title),$LOCALIZE[17])">$LOCALIZE[47]</value>
+	</variable>
+	<variable name="WeatherDay3">
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[12])">$LOCALIZE[42]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[13])">$LOCALIZE[43]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[14])">$LOCALIZE[44]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[15])">$LOCALIZE[45]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[16])">$LOCALIZE[46]</value>
+		<value condition="StringCompare(Window(Weather).Property(Day3.Title),$LOCALIZE[17])">$LOCALIZE[47]</value>
 	</variable>
 </includes>

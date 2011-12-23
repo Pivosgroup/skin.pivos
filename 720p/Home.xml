@@ -433,7 +433,7 @@
 			<height>300</height>
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>Container(1000).HasFocus(2)</visible>
+			<visible>Container(1000).HasFocus(3)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -547,7 +547,7 @@
 			<posy>520</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>Container(1000).HasFocus(1)</visible>
+			<visible>Container(1000).HasFocus(2)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -555,12 +555,40 @@
 				<height>185</height>
 				<texture border="18">dialog-back.png</texture>
 			</control>
+			<control type="image">
+				<posx>130</posx>
+				<posy>22</posy>
+				<width>275</width>
+				<height>47</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>130</posx>
+				<posy>22</posy>
+				<width>275</width>
+				<height>30</height>
+				<label>[B]$LOCALIZE[31004][/B]</label>
+				<align>center</align>
+				<font>font20</font>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="label">
+				<posx>130</posx>
+				<posy>46</posy>
+				<width>275</width>
+				<height>30</height>
+				<label>$INFO[Container(5001).ListItem.Label]</label>
+				<align>center</align>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+			</control>
 			<control type="wraplist" id="5001">
 				<posx>24</posx>
 				<posy>20</posy>
 				<height>145</height>
 				<width>384</width>
 				<orientation>horizontal</orientation>
+				<scrolltime>0</scrolltime>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
 				<onleft>5001</onleft>
@@ -617,26 +645,6 @@
 						<onclick>$INFO[Window.Property(LatestMovie.5.Path),PlayMedia(&quot;,&quot;)]</onclick>
 					</item>
 				</content>
-			</control>
-			<control type="label">
-				<posx>130</posx>
-				<posy>22</posy>
-				<width>280</width>
-				<height>30</height>
-				<label>[B]$LOCALIZE[31004][/B]</label>
-				<align>center</align>
-				<font>font20</font>
-				<textcolor>normal</textcolor>
-			</control>
-			<control type="label">
-				<posx>130</posx>
-				<posy>46</posy>
-				<width>280</width>
-				<height>30</height>
-				<label>$INFO[Container(5001).ListItem.Label]</label>
-				<align>center</align>
-				<font>font16</font>
-				<textcolor>white</textcolor>
 			</control>
 		</control>
 		<control type="group">
@@ -700,7 +708,7 @@
 			<posy>520</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>Container(1000).HasFocus(7)</visible>
+			<visible>Container(1000).HasFocus(1) | Container(1000).HasFocus(4) | Container(1000).HasFocus(7) | Container(1000).HasFocus(8)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -723,7 +731,7 @@
 				<posy>38</posy>
 				<width>405</width>
 				<height>30</height>
-				<label>[I]$INFO[Weather.Conditions ] [/I]</label>
+				<label>[I]$INFO[Weather.Conditions] [/I]</label>
 				<font>font18</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
@@ -771,7 +779,7 @@
 					<posy>0</posy>
 					<width>70</width>
 					<height>20</height>
-					<label>Mon</label>
+					<label>$VAR[WeatherDay0]</label>
 					<font>font20</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
@@ -789,7 +797,7 @@
 					<posy>65</posy>
 					<width>70</width>
 					<height>30</height>
-					<label>Hi: [COLOR=white]$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<label>$LOCALIZE[31008]: [COLOR=white]$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<font>font14</font>
 					<textcolor>normal</textcolor>
 					<align>center</align>
@@ -799,7 +807,7 @@
 					<posy>80</posy>
 					<width>70</width>
 					<height>30</height>
-					<label>Lo: [COLOR=white]$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<label>$LOCALIZE[31009]: [COLOR=white]$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<font>font14</font>
 					<textcolor>normal</textcolor>
 					<align>center</align>
@@ -820,7 +828,7 @@
 					<posy>0</posy>
 					<width>70</width>
 					<height>20</height>
-					<label>Tue</label>
+					<label>$VAR[WeatherDay1]</label>
 					<font>font20</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
@@ -838,7 +846,7 @@
 					<posy>65</posy>
 					<width>70</width>
 					<height>30</height>
-					<label>Hi: [COLOR=white]$INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<label>$LOCALIZE[31008]: [COLOR=white]$INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<font>font14</font>
 					<textcolor>normal</textcolor>
 					<align>center</align>
@@ -848,7 +856,7 @@
 					<posy>80</posy>
 					<width>70</width>
 					<height>30</height>
-					<label>Lo: [COLOR=white]$INFO[Window(Weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<label>$LOCALIZE[31009]: [COLOR=white]$INFO[Window(Weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<font>font14</font>
 					<textcolor>normal</textcolor>
 					<align>center</align>
@@ -869,7 +877,7 @@
 					<posy>0</posy>
 					<width>70</width>
 					<height>20</height>
-					<label>Wed</label>
+					<label>$VAR[WeatherDay2]</label>
 					<font>font20</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
@@ -887,7 +895,7 @@
 					<posy>65</posy>
 					<width>70</width>
 					<height>30</height>
-					<label>Hi: [COLOR=white]$INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<label>$LOCALIZE[31008]: [COLOR=white]$INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<font>font14</font>
 					<textcolor>normal</textcolor>
 					<align>center</align>
@@ -897,7 +905,7 @@
 					<posy>80</posy>
 					<width>70</width>
 					<height>30</height>
-					<label>Lo: [COLOR=white]$INFO[Window(Weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<label>$LOCALIZE[31009]: [COLOR=white]$INFO[Window(Weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<font>font14</font>
 					<textcolor>normal</textcolor>
 					<align>center</align>
@@ -918,7 +926,7 @@
 					<posy>0</posy>
 					<width>70</width>
 					<height>20</height>
-					<label>Thu</label>
+					<label>$VAR[WeatherDay3]</label>
 					<font>font20</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
@@ -936,7 +944,7 @@
 					<posy>65</posy>
 					<width>70</width>
 					<height>30</height>
-					<label>Hi: [COLOR=white]$INFO[Window(Weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<label>$LOCALIZE[31008]: [COLOR=white]$INFO[Window(Weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<font>font14</font>
 					<textcolor>normal</textcolor>
 					<align>center</align>
@@ -946,7 +954,7 @@
 					<posy>80</posy>
 					<width>70</width>
 					<height>30</height>
-					<label>Lo: [COLOR=white]$INFO[Window(Weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<label>$LOCALIZE[31009]: [COLOR=white]$INFO[Window(Weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<font>font14</font>
 					<textcolor>normal</textcolor>
 					<align>center</align>

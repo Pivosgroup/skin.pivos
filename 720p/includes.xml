@@ -35,7 +35,7 @@
 				<posy>10</posy>
 				<width>470</width>
 				<height>30</height>
-				<texture border="4">button_alt_NF.png</texture>		
+				<texture border="4">button_alt_NF.png</texture>
 			</control>
 			<control type="grouplist">
 				<posx>350</posx>
@@ -186,7 +186,6 @@
 						<animation type="unfocus">
 							<effect type="zoom" start="100" end="80" time="200" center="auto"/>
 							<effect type="fade" start="100" end="0" time="200"/>
-
 						</animation>
 					</control>
 				</focusedlayout>

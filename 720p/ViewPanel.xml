@@ -2,9 +2,9 @@
 	<include name="ViewPanelVideo">
 		<control type="group">
 			<posx>115</posx>
-			<posy>60</posy>	
+			<posy>60</posy>
 			<width>1120</width>
-			<height>624</height>			
+			<height>624</height>
 			<include>WindowOpenCloseZoomInOut</include>
 			<visible>Control.IsVisible(50)</visible>
 			<control type="image">
@@ -369,7 +369,7 @@
 				<posy>70</posy>
 				<width>850</width>
 				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>		
+				<texture border="4">button_alt_NF.png</texture>
 			</control>
 			<control type="image">
 				<posx>590</posx>
@@ -377,7 +377,7 @@
 				<width>1</width>
 				<height>30</height>
 				<texture>white.png</texture>
-				<colordiffuse>60FFFFFF</colordiffuse>	
+				<colordiffuse>60FFFFFF</colordiffuse>
 			</control>
 			<control type="label">
 				<posx>280</posx>
@@ -472,7 +472,7 @@
 				<width>1</width>
 				<height>75</height>
 				<texture>white.png</texture>
-				<colordiffuse>60FFFFFF</colordiffuse>				
+				<colordiffuse>60FFFFFF</colordiffuse>
 			</control>
 			<control type="label">
 				<posx>1043</posx>
