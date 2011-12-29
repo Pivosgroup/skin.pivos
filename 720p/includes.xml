@@ -21,10 +21,9 @@
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>250</fadetime>
-			<colordiffuse>50FFFFFF</colordiffuse>
 			<include>WindowOpenCloseFade</include>
 			<include>VisibleFade</include>
-			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+			<visible>!Control.IsVisible(50) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
 	</include>
 	<include name="Header">
@@ -123,9 +122,8 @@
 			<posy>15</posy>
 			<width>1160</width>
 			<height>690</height>
-			<texture>white.png</texture>
-			<colordiffuse>90000000</colordiffuse>
-			<include>WindowOpenSlide</include>
+			<texture>background-dark.png</texture>
+			<include>WindowOpenFade</include>
 			<visible>!Window.IsVisible(Home)</visible>
 		</control>
 		<control type="image">

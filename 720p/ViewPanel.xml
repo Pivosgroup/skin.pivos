@@ -12,8 +12,7 @@
 				<posy>-2</posy>
 				<width>1124</width>
 				<height>628</height>
-				<texture>white.png</texture>
-				<colordiffuse>10FFFFFF</colordiffuse>
+				<texture>background-light.png</texture>
 			</control>
 			<control type="panel" id="50">
 				<posx>0</posx>
