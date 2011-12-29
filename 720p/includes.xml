@@ -123,136 +123,148 @@
 			<width>1160</width>
 			<height>690</height>
 			<texture>background-dark.png</texture>
-			<include>WindowOpenFade</include>
+			<include>WindowOpenCloseFade</include>
 			<visible>!Window.IsVisible(Home)</visible>
 		</control>
-		<control type="image">
+		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>105</width>
-			<height>720</height>
-			<texture>home_icon_background.png</texture>
-			<colordiffuse>E0FFFFFF</colordiffuse>
-		</control>
-		<control type="group">
-			<posx>20</posx>
-			<posy>42</posy>
-			<width>64</width>
-			<height>600</height>
-			<control type="list" id="1000">
+			<animation type="WindowOpen">
+				<effect type="slide" start="-323,0" end="0,0" time="400"/>
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" start="0,0" end="-323,0" time="400"/>
+			</animation>
+			<animation effect="slide" start="0,0" end="105,0" time="200" center="auto" condition="!Window.IsVisible(Home) + Control.HasFocus(1000)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-105,0" time="0" center="auto" condition="!Window.IsVisible(Home)">Conditional</animation>
+			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
+				<width>105</width>
+				<height>720</height>
+				<texture>home_icon_background.png</texture>
+				<colordiffuse>E0FFFFFF</colordiffuse>
+			</control>
+			<control type="group">
+				<posx>20</posx>
+				<posy>42</posy>
 				<width>64</width>
 				<height>600</height>
-				<orientation>vertical</orientation>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
-				<onleft>5001</onleft>
-				<onright condition="Window.IsVisible(Home)">200</onright>
-				<onright condition="Window.IsVisible(Videos)">50</onright>
-				<onright condition="!Window.IsVisible(Home) + !Window.IsVisible(Videos)">3</onright>
-				<itemlayout width="64" height="72">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>64</width>
-						<height>64</height>
-						<texture>$INFO[ListItem.Icon]</texture>
-						<animation effect="zoom" end="80" center="auto" condition="true">Conditional</animation>
-					</control>
-				</itemlayout>
-				<focusedlayout width="64" height="72">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>64</width>
-						<height>64</height>
-						<texture>$INFO[ListItem.Icon]</texture>
-						<animation effect="zoom" start="80" end="100" time="200" center="auto">Focus</animation>
-						<animation effect="zoom" start="100" end="80" time="200" center="auto">UnFocus</animation>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>64</width>
-						<height>64</height>
-						<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
-						<animation type="Focus">
-							<effect type="zoom" start="80" end="100" time="200" center="auto"/>
-							<effect type="fade" start="0" end="100" time="200"/>
-						</animation>
-						<animation type="UnFocus">
-							<effect type="zoom" start="100" end="80" time="200" center="auto"/>
-							<effect type="fade" start="100" end="0" time="200"/>
-						</animation>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>64</width>
-						<height>64</height>
-						<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
-						<animation type="Hidden">
-							<effect type="zoom" start="80" end="100" time="200" center="auto"/>
-							<effect type="fade" start="70" end="100" time="200"/>
-						</animation>
-						<animation type="Visible">
-							<effect type="zoom" start="100" end="80" time="200" center="auto"/>
-							<effect type="fade" start="100" end="70" time="200"/>
-						</animation>
-						<visible>ControlGroup(200).HasFocus</visible>
-					</control>
-				</focusedlayout>
-				<content>
-					<item id="1">
-						<label>-</label>
-						<icon>home_search_NF.png</icon>
-						<property name="Icon_Focus">home_search_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="2">
-						<label>-</label>
-						<icon>home_video_NF.png</icon>
-						<property name="Icon_Focus">home_video_FO.png</property>
-						<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
-					</item>
-					<item id="3">
-						<label>-</label>
-						<icon>home_music_NF.png</icon>
-						<property name="Icon_Focus">home_music_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="4">
-						<label>-</label>
-						<icon>home_pictures_NF.png</icon>
-						<property name="Icon_Focus">home_pictures_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="5">
-						<label>-</label>
-						<icon>home_favourites_NF.png</icon>
-						<property name="Icon_Focus">home_favourites_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="6">
-						<label>-</label>
-						<icon>home_addons_NF.png</icon>
-						<property name="Icon_Focus">home_addons_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="7">
-						<label>-</label>
-						<icon>home_weather_NF.png</icon>
-						<property name="Icon_Focus">home_weather_FO.png</property>
-						<onclick>ActivateWindow()</onclick>
-					</item>
-					<item id="8">
-						<label>-</label>
-						<icon>home_settings_NF.png</icon>
-						<property name="Icon_Focus">home_settings_FO.png</property>
-						<onclick>ActivateWindow(AppearanceSettings)</onclick>
-					</item>
-				</content>
+				<control type="list" id="1000">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>64</width>
+					<height>600</height>
+					<orientation>vertical</orientation>
+					<onup>1000</onup>
+					<ondown>1000</ondown>
+					<onleft>5001</onleft>
+					<onright condition="Window.IsVisible(Home)">200</onright>
+					<onright condition="Window.IsVisible(Videos)">50</onright>
+					<onright condition="!Window.IsVisible(Home) + !Window.IsVisible(Videos)">3</onright>
+					<itemlayout width="64" height="72">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>64</width>
+							<height>64</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<animation effect="zoom" end="80" center="auto" condition="true">Conditional</animation>
+						</control>
+					</itemlayout>
+					<focusedlayout width="64" height="72">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>64</width>
+							<height>64</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<animation effect="zoom" start="80" end="100" time="200" center="auto">Focus</animation>
+							<animation effect="zoom" start="100" end="80" time="200" center="auto">UnFocus</animation>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>64</width>
+							<height>64</height>
+							<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
+							<animation type="Focus">
+								<effect type="zoom" start="80" end="100" time="200" center="auto"/>
+								<effect type="fade" start="0" end="100" time="200"/>
+							</animation>
+							<animation type="UnFocus">
+								<effect type="zoom" start="100" end="80" time="200" center="auto"/>
+								<effect type="fade" start="100" end="0" time="200"/>
+							</animation>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>64</width>
+							<height>64</height>
+							<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
+							<animation type="Hidden" condition="Window.IsVisible(Home)">
+								<effect type="zoom" start="80" end="100" time="200" center="auto"/>
+								<effect type="fade" start="70" end="100" time="200"/>
+							</animation>
+							<animation type="Visible" condition="Window.IsVisible(Home)">
+								<effect type="zoom" start="100" end="80" time="200" center="auto"/>
+								<effect type="fade" start="100" end="70" time="200"/>
+							</animation>
+							<visible>ControlGroup(200).HasFocus</visible>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="1">
+							<label>-</label>
+							<icon>home_search_NF.png</icon>
+							<property name="Icon_Focus">home_search_FO.png</property>
+							<onclick>ActivateWindow()</onclick>
+						</item>
+						<item id="2">
+							<label>-</label>
+							<icon>home_video_NF.png</icon>
+							<property name="Icon_Focus">home_video_FO.png</property>
+							<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+						</item>
+						<item id="3">
+							<label>-</label>
+							<icon>home_music_NF.png</icon>
+							<property name="Icon_Focus">home_music_FO.png</property>
+							<onclick>ActivateWindow()</onclick>
+						</item>
+						<item id="4">
+							<label>-</label>
+							<icon>home_pictures_NF.png</icon>
+							<property name="Icon_Focus">home_pictures_FO.png</property>
+							<onclick>ActivateWindow()</onclick>
+						</item>
+						<item id="5">
+							<label>-</label>
+							<icon>home_favourites_NF.png</icon>
+							<property name="Icon_Focus">home_favourites_FO.png</property>
+							<onclick>ActivateWindow()</onclick>
+						</item>
+						<item id="6">
+							<label>-</label>
+							<icon>home_addons_NF.png</icon>
+							<property name="Icon_Focus">home_addons_FO.png</property>
+							<onclick>ActivateWindow()</onclick>
+						</item>
+						<item id="7">
+							<label>-</label>
+							<icon>home_weather_NF.png</icon>
+							<property name="Icon_Focus">home_weather_FO.png</property>
+							<onclick>ActivateWindow()</onclick>
+						</item>
+						<item id="8">
+							<label>-</label>
+							<icon>home_settings_NF.png</icon>
+							<property name="Icon_Focus">home_settings_FO.png</property>
+							<onclick>ActivateWindow(AppearanceSettings)</onclick>
+						</item>
+					</content>
+				</control>
 			</control>
 		</control>
 	</include>
