@@ -177,14 +177,30 @@
 						<width>64</width>
 						<height>64</height>
 						<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
-						<animation type="focus">
+						<animation type="Focus">
 							<effect type="zoom" start="80" end="100" time="200" center="auto"/>
 							<effect type="fade" start="0" end="100" time="200"/>
 						</animation>
-						<animation type="unfocus">
+						<animation type="UnFocus">
 							<effect type="zoom" start="100" end="80" time="200" center="auto"/>
 							<effect type="fade" start="100" end="0" time="200"/>
 						</animation>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
+						<animation type="Hidden">
+							<effect type="zoom" start="80" end="100" time="200" center="auto"/>
+							<effect type="fade" start="70" end="100" time="200"/>
+						</animation>
+						<animation type="Visible">
+							<effect type="zoom" start="100" end="80" time="200" center="auto"/>
+							<effect type="fade" start="100" end="70" time="200"/>
+						</animation>
+						<visible>ControlGroup(200).HasFocus</visible>
 					</control>
 				</focusedlayout>
 				<content>
