@@ -6,7 +6,7 @@
 			<width>410</width>
 			<height>110</height>
 			<include>WindowOpenCloseZoomInOut</include>
-			<visible>![Window.IsVisible(InfoDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar) | SubString(Window(Videos).Property(CinemaExperienceRunning),True)]</visible>
+			<visible>![Window.IsVisible(InfoDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar)]</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
