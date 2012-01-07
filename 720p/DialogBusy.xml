@@ -29,7 +29,7 @@
 				<posy>25</posy>
 				<width>40</width>
 				<height>40</height>
-				<imagepath>busy2</imagepath>
+				<imagepath>busy</imagepath>
 				<timeperimage>100</timeperimage>
 				<randomize>false</randomize>
 			</control>
