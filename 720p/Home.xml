@@ -648,62 +648,6 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>880</posx>
-			<posy>620</posy>
-			<width>410</width>
-			<height>110</height>
-			<include>VisibleZoomInOut</include>
-			<include>WindowOpenCloseFade</include>
-			<visible>Container(1000).HasFocus(5) | Container(1000).HasFocus(6)</visible>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>380</width>
-				<height>90</height>
-				<texture border="18">dialog-back.png</texture>
-			</control>
-			<control type="multiimage">
-				<posx>25</posx>
-				<posy>25</posy>
-				<width>40</width>
-				<height>40</height>
-				<imagepath>busy</imagepath>
-				<timeperimage>200</timeperimage>
-				<randomize>false</randomize>
-				<visible>Container(1000).HasFocus(5)</visible>
-			</control>
-			<control type="multiimage">
-				<posx>25</posx>
-				<posy>25</posy>
-				<width>40</width>
-				<height>40</height>
-				<imagepath>busy2</imagepath>
-				<timeperimage>100</timeperimage>
-				<randomize>false</randomize>
-				<visible>Container(1000).HasFocus(6)</visible>
-			</control>
-			<control type="label">
-				<posx>80</posx>
-				<posy>24</posy>
-				<width>280</width>
-				<height>30</height>
-				<label>$LOCALIZE[20374]</label>
-				<align>left</align>
-				<font>font16</font>
-				<textcolor>white</textcolor>
-			</control>
-			<control type="label">
-				<posx>80</posx>
-				<posy>42</posy>
-				<width>280</width>
-				<height>30</height>
-				<label>Monsters Inc. (2009)</label>
-				<align>left</align>
-				<font>font16</font>
-				<textcolor>white</textcolor>
-			</control>
-		</control>
-		<control type="group">
 			<posx>830</posx>
 			<posy>520</posy>
 			<include>VisibleZoomInOut</include>

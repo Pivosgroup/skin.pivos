@@ -1,0 +1,48 @@
+<window id="138">
+	<controls>
+		<control type="group">
+			<posx>880</posx>
+			<posy>620</posy>
+			<width>410</width>
+			<height>110</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<visible>![Window.IsVisible(InfoDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar) | SubString(Window(Videos).Property(CinemaExperienceRunning),True)]</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>380</width>
+				<height>90</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>80</posx>
+				<posy>24</posy>
+				<width>280</width>
+				<height>30</height>
+				<label>$LOCALIZE[31010]</label>
+				<align>left</align>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+			</control>			
+			<control type="multiimage">
+				<posx>25</posx>
+				<posy>25</posy>
+				<width>40</width>
+				<height>40</height>
+				<imagepath>busy2</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+			</control>
+			<control type="label">
+				<posx>80</posx>
+				<posy>42</posy>
+				<width>280</width>
+				<height>30</height>
+				<label>$LOCALIZE[20186]!</label>
+				<align>left</align>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+			</control>
+		</control>
+	</controls>
+</window>
