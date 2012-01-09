@@ -625,8 +625,10 @@
 				<height>30</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>5</onup>
-				<ondown>5</ondown>
+				<onup condition="!Window.IsVisible(SystemInfo)">5</onup>
+				<onup condition="Window.IsVisible(SystemInfo)">3</onup>
+				<ondown condition="!Window.IsVisible(SystemInfo)">5</ondown>
+				<ondown condition="Window.IsVisible(SystemInfo)">3</ondown>
 				<onleft>1000</onleft>
 				<onright>9000</onright>
 				<control type="button" id="3000">
