@@ -1,11 +1,15 @@
 <window id="107">
+	<coordinates>
+		<posx>880</posx>
+		<posy>620</posy>
+	</coordinates>
 	<controls>
 		<control type="group">
-			<posx>880</posx>
-			<posy>620</posy>
-			<width>410</width>
-			<height>110</height>
-			<include>WindowOpenCloseZoomInOut</include>		
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>380</width>
+			<height>90</height>
+			<include>WindowOpenCloseZoomInOut</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -55,22 +59,20 @@
 			<control type="label" id="401">
 				<description>Line 1 Label</description>
 				<posx>80</posx>
-				<posy>16</posy>
+				<posy>22</posy>
 				<width>280</width>
 				<height>30</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<font>font16</font>
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label" id="402">
 				<description>Line 2 Label</description>
 				<posx>80</posx>
-				<posy>38</posy>
+				<posy>46</posy>
 				<width>280</width>
 				<height>30</height>
 				<align>center</align>
-				<aligny>center</aligny>
 				<font>font16</font>
 				<scroll>true</scroll>
 				<textcolor>white</textcolor>

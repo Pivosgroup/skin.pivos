@@ -1,11 +1,16 @@
 <window id="104">
+	<coordinates>
+		<posx>880</posx>
+		<posy>620</posy>
+	</coordinates>
 	<controls>
 		<control type="group">
-			<posx>880</posx>
-			<posy>620</posy>
-			<width>410</width>
-			<height>110</height>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>380</width>
+			<height>90</height>
 			<include>WindowOpenCloseZoomInOut</include>
+			<visible>![Window.IsVisible(InfoDialog) | Window.IsVisible(MuteBug)]</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
