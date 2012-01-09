@@ -18,7 +18,6 @@
 				<texture border="18">dialog-back.png</texture>
 			</control>
 			<control type="image" id="400">
-				<description>avatar</description>
 				<posx>22</posx>
 				<posy>16</posy>
 				<width>64</width>
@@ -27,7 +26,6 @@
 				<texture>kai-warn.png</texture>
 			</control>
 			<control type="image" id="403">
-				<description>avatar</description>
 				<posx>22</posx>
 				<posy>16</posy>
 				<width>64</width>
@@ -37,7 +35,6 @@
 				<visible>false</visible>
 			</control>
 			<control type="image" id="404">
-				<description>avatar</description>
 				<posx>22</posx>
 				<posy>16</posy>
 				<width>64</width>
@@ -47,7 +44,6 @@
 				<visible>false</visible>
 			</control>
 			<control type="image" id="405">
-				<description>avatar</description>
 				<posx>22</posx>
 				<posy>16</posy>
 				<width>64</width>
@@ -57,7 +53,6 @@
 				<visible>false</visible>
 			</control>
 			<control type="label" id="401">
-				<description>Line 1 Label</description>
 				<posx>80</posx>
 				<posy>22</posy>
 				<width>280</width>
@@ -67,7 +62,6 @@
 				<textcolor>white</textcolor>
 			</control>
 			<control type="label" id="402">
-				<description>Line 2 Label</description>
 				<posx>80</posx>
 				<posy>46</posy>
 				<width>280</width>

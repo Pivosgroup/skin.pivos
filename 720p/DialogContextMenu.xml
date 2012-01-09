@@ -10,7 +10,6 @@
 			<texture border="18">dialog-back.png</texture>
 		</control>
 		<control type="grouplist" id="996">
-			<description>grouplist for context buttons</description>
 			<posx>30</posx>
 			<posy>60</posy>
 			<width>300</width>
