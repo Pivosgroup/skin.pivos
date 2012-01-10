@@ -17,7 +17,7 @@
 				<posx>135</posx>
 				<posy>170</posy>
 				<width>250</width>
-				<height>660</height>
+				<height>500</height>
 				<include>WindowOpenCloseZoomInOut</include>
 				<control type="grouplist" id="3">
 					<posx>0</posx>
@@ -34,19 +34,36 @@
 			<control type="group">
 				<posx>430</posx>
 				<posy>130</posy>
-				<width>788</width>
-				<height>660</height>
+				<width>775</width>
+				<height>500</height>
 				<include>WindowOpenCloseZoomInOut</include>
 				<control type="grouplist" id="5">
+					<pagecontrol>60</pagecontrol>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>788</width>
+					<width>775</width>
 					<height>660</height>
 					<itemgap>-1</itemgap>
 					<onup>9000</onup>
 					<ondown>5</ondown>
 					<onleft>3</onleft>
-					<onright>3</onright>
+					<onright>60</onright>
+				</control>
+				<control type="scrollbar" id="60">
+					<posx>782</posx>
+					<posy>0</posy>
+					<width>20</width>
+					<height>500</height>
+					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+					<texturesliderbar>-</texturesliderbar>
+					<texturesliderbarfocus>-</texturesliderbarfocus>
+					<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+					<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+					<onleft>5</onleft>
+					<onright>5</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<include>VisibleFade</include>
 				</control>
 			</control>
 		</control>
@@ -65,21 +82,21 @@
 		<control type="button" id="7">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>788</width>
+			<width>775</width>
 			<height>40</height>
 			<label>-</label>
 		</control>
 		<control type="radiobutton" id="8">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>788</width>
+			<width>775</width>
 			<height>40</height>
 			<label>-</label>
 		</control>
 		<control type="spincontrolex" id="9">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>788</width>
+			<width>775</width>
 			<height>40</height>
 			<label>-</label>
 		</control>

@@ -71,7 +71,7 @@
 		<radioheight>40</radioheight>
 		<textureradioon>radio_FO.png</textureradioon>
 		<textureradiooff>radio_NF.png</textureradiooff>
-		<radioposx>726</radioposx>
+		<radioposx>713</radioposx>
 	</default>
 	<default type="scrollbar">
 		<posx>0</posx>

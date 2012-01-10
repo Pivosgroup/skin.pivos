@@ -401,12 +401,12 @@
 				<control type="button" id="204">
 					<label>$LOCALIZE[13200]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(Profiles)</onclick>
 				</control>
 				<control type="button" id="205">
 					<label>$LOCALIZE[20077]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(1111)</onclick>
 				</control>
 			</control>
 			<control type="image">

@@ -1,0 +1,174 @@
+<window id="7">
+	<defaultcontrol>95</defaultcontrol>
+	<controls>
+		<include>DefaultBackground</include>
+		<include>SideMenu</include>
+		<include>TopMenuSettings</include>
+		<control type="group">
+			<control type="image">
+				<posx>113</posx>
+				<posy>58</posy>
+				<width>1127</width>
+				<height>628</height>
+				<texture>background-light.png</texture>
+				<include>WindowOpenCloseFade</include>
+			</control>
+			<control type="group">
+				<posx>135</posx>
+				<posy>170</posy>
+				<width>250</width>
+				<height>500</height>
+				<include>WindowOpenCloseZoomInOut</include>
+				<control type="grouplist" id="3">
+					<posx>5</posx>
+					<posy>0</posy>
+					<width>250</width>
+					<height>500</height>
+					<itemgap>-1</itemgap>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<onleft>1000</onleft>
+					<onright>1000</onright>
+					<control type="button" id="95">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>250</width>
+						<height>50</height>
+						<label>20037</label>
+					</control>
+					<control type="button" id="94">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>250</width>
+						<height>50</height>
+						<label>13277</label>
+					</control>
+					<control type="button" id="96">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>250</width>
+						<height>50</height>
+						<label>13279</label>
+					</control>
+					<control type="button" id="97">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>250</width>
+						<height>50</height>
+						<label>13280</label>
+					</control>
+					<control type="button" id="98">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>250</width>
+						<height>50</height>
+						<label>13281</label>
+					</control>
+				</control>
+			</control>
+			<control type="group">
+				<posx>430</posx>
+				<posy>130</posy>
+				<width>775</width>
+				<height>500</height>
+				<include>WindowOpenCloseZoomInOut</include>
+				<control type="label" id="2">
+					<posx>5</posx>
+					<posy>0</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label" id="3">
+					<posx>5</posx>
+					<posy>40</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label" id="4">
+					<posx>5</posx>
+					<posy>80</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label" id="5">
+					<posx>5</posx>
+					<posy>120</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label" id="6">
+					<posx>5</posx>
+					<posy>160</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label" id="7">
+					<posx>5</posx>
+					<posy>200</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label" id="8">
+					<posx>5</posx>
+					<posy>240</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label" id="9">
+					<posx>5</posx>
+					<posy>280</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label" id="10">
+					<posx>5</posx>
+					<posy>320</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label" id="11">
+					<posx>5</posx>
+					<posy>360</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label" id="52">
+					<posx>5</posx>
+					<posy>440</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>-</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+				<control type="label">
+					<posx>5</posx>
+					<posy>480</posy>
+					<width>765</width>
+					<height>40</height>
+					<label>PIVOS SKIN - V0.0.2</label>
+					<textcolor>lightgrey</textcolor>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

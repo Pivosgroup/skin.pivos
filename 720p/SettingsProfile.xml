@@ -1,0 +1,185 @@
+<window id="34">
+	<defaultcontrol>2</defaultcontrol>
+	<controls>
+		<include>DefaultBackground</include>
+		<include>SideMenu</include>
+		<include>TopMenuSettings</include>
+		<control type="group">
+			<control type="image">
+				<posx>113</posx>
+				<posy>58</posy>
+				<width>1127</width>
+				<height>628</height>
+				<texture>background-light.png</texture>
+				<include>WindowOpenCloseFade</include>
+			</control>
+			<control type="group">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>250</width>
+				<height>500</height>
+				<include>WindowOpenCloseZoomInOut</include>
+				<control type="grouplist" id="3">
+					<posx>135</posx>
+					<posy>170</posy>
+					<width>250</width>
+					<height>660</height>
+					<itemgap>-1</itemgap>
+					<include>WindowOpenCloseZoomInOut</include>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<onleft>1000</onleft>
+					<onright>2</onright>
+					<control type="button" id="4">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>250</width>
+						<height>50</height>
+						<label>20096</label>
+						<textcolor>white</textcolor>
+						<texturenofocus border="6">button_alt_FO.png</texturenofocus>
+					</control>
+				</control>
+				<control type="label">
+					<posx>380</posx>
+					<posy>170</posy>
+					<width>50</width>
+					<height>50</height>
+					<label>$LOCALIZE[16041]</label>
+					<textcolor>white</textcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<animation type="WindowOpen">
+						<effect type="slide" start="-30,0" end="0,0" time="400"/>
+					</animation>
+					<animation type="WindowClose">
+						<effect type="slide" start="0,0" end="-30,0" time="400"/>
+					</animation>
+					<visible>System.HasLoginScreen</visible>
+				</control>
+				<control type="label">
+					<posx>380</posx>
+					<posy>170</posy>
+					<width>50</width>
+					<height>50</height>
+					<label>$LOCALIZE[16039]</label>
+					<textcolor>white</textcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<animation type="WindowOpen">
+						<effect type="slide" start="-30,0" end="0,0" time="400"/>
+					</animation>
+					<animation type="WindowClose">
+						<effect type="slide" start="0,0" end="-30,0" time="400"/>
+					</animation>
+					<visible>!System.HasLoginScreen</visible>
+				</control>
+				<control type="image">
+					<posx>160</posx>
+					<posy>300</posy>
+					<width>200</width>
+					<height>200</height>
+					<texture fallback="unknown-user.png" diffuse="thumb-diffuse.png">$INFO[Container(2).Listitem.Icon]</texture>
+				</control>
+			</control>
+			<control type="group">
+				<posx>430</posx>
+				<posy>130</posy>
+				<width>775</width>
+				<height>500</height>
+				<include>WindowOpenCloseZoomInOut</include>
+				<control type="list" id="2">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>775</width>
+					<height>500</height>
+					<pagecontrol>60</pagecontrol>
+					<onup>9000</onup>
+					<ondown>2</ondown>
+					<onleft>3</onleft>
+					<onright>60</onright>
+					<itemlayout width="775" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>775</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="label">
+							<posx>5</posx>
+							<posy>0</posy>
+							<width>765</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>lightgrey</textcolor>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<posx>770</posx>
+							<posy>0</posy>
+							<width>765</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label2]</label>
+							<textcolor>lightgrey</textcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="775" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>775</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>775</width>
+							<height>40</height>
+							<texture border="4">button_FO.png</texture>
+							<visible>Control.HasFocus(2)</visible>
+						</control>
+						<control type="label">
+							<posx>5</posx>
+							<posy>0</posy>
+							<width>765</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>white</textcolor>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<posx>770</posx>
+							<posy>0</posy>
+							<width>765</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label2]</label>
+							<textcolor>white</textcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="scrollbar" id="60">
+					<posx>782</posx>
+					<posy>0</posy>
+					<width>20</width>
+					<height>500</height>
+					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+					<texturesliderbar>-</texturesliderbar>
+					<texturesliderbarfocus>-</texturesliderbarfocus>
+					<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+					<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+					<onleft>2</onleft>
+					<onright>2</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<include>VisibleFade</include>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

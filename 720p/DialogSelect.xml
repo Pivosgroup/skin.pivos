@@ -1,9 +1,13 @@
 <window type="dialog" id="2000">
 	<defaultcontrol always="true">3</defaultcontrol>
+	<coordinates>
+		<posx>390</posx>
+		<posy>75</posy>
+	</coordinates>
 	<controls>
 		<control type="group">
-			<posx>390</posx>
-			<posy>75</posy>
+			<posx>0</posx>
+			<posy>0</posy>
 			<width>500</width>
 			<height>570</height>
 			<include>WindowOpenCloseZoomInOut</include>
@@ -205,7 +209,7 @@
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<include>VisibleFade</include>
-				<visible allowhiddenfocus="true">Control.IsVisible(3)</visible>
+				<visible>Control.IsVisible(3)</visible>
 			</control>
 			<control type="scrollbar" id="61">
 				<posx>520</posx>
@@ -222,7 +226,7 @@
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<include>VisibleFade</include>
-				<visible allowhiddenfocus="true">Control.IsVisible(6)</visible>
+				<visible>Control.IsVisible(6)</visible>
 			</control>
 			<control type="button" id="5">
 				<posx>180</posx>

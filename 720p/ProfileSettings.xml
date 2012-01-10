@@ -1,0 +1,23 @@
+<window type="dialog" id="130">
+	<defaultcontrol always="true">1</defaultcontrol>
+	<coordinates>
+		<posx>390</posx>
+		<posy>75</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>500</width>
+			<height>570</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>560</width>
+				<height>570</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+		</control>
+	</controls>
+</window>
