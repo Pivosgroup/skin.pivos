@@ -305,7 +305,7 @@
 				<control type="button" id="201">
 					<label>$LOCALIZE[24033]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(AddonBrowser)</onclick>
 				</control>
 				<control type="image" id="202">
 					<width>150</width>
