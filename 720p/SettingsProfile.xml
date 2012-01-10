@@ -80,6 +80,7 @@
 					<width>200</width>
 					<height>200</height>
 					<texture fallback="unknown-user.png" diffuse="thumb-diffuse.png">$INFO[Container(2).Listitem.Icon]</texture>
+					<aspectratio scalediffuse="true">keep</aspectratio>
 				</control>
 			</control>
 			<control type="group">
