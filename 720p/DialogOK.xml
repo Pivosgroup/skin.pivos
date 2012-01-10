@@ -5,7 +5,7 @@
 		<posy>210</posy>
 	</coordinates>
 	<controls>
-		<control type="Group">
+		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>600</width>
