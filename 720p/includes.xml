@@ -26,57 +26,6 @@
 			<visible>!Control.IsVisible(50) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
 	</include>
-	<include name="Header">
-		<control type="group">
-			<include>WindowOpenCloseFade</include>
-			<control type="image">
-				<posx>795</posx>
-				<posy>10</posy>
-				<width>470</width>
-				<height>30</height>
-				<texture border="4">button_alt_NF.png</texture>
-			</control>
-			<control type="grouplist">
-				<posx>350</posx>
-				<posy>10</posy>
-				<width>900</width>
-				<height>30</height>
-				<align>right</align>
-				<orientation>horizontal</orientation>
-				<control type="label">
-					<width min="10" max="110">auto</width>
-					<height>30</height>
-					<label>[B]$INFO[Weather.Temperature]    [/B]</label>
-					<font>font22</font>
-					<textcolor>lightgrey</textcolor>
-				</control>
-				<control type="label">
-					<width min="10" max="230">auto</width>
-					<height>30</height>
-					<label>[B]$INFO[System.Date][/B]</label>
-					<font>font22</font>
-					<textcolor>lightgrey</textcolor>
-				</control>
-				<control type="group">
-					<width>10</width>
-					<control type="image">
-						<posx>0</posx>
-						<posy>12</posy>
-						<width>10</width>
-						<height>10</height>
-						<texture>scrollbar_nib_FO.png</texture>
-					</control>
-				</control>
-				<control type="label">
-					<width min="10" max="150">auto</width>
-					<height>30</height>
-					<label>[B]$INFO[System.Time][/B]</label>
-					<font>font22</font>
-					<textcolor>grey</textcolor>
-				</control>
-			</control>
-		</control>
-	</include>
 	<include name="HomeSubButton">
 		<width>170</width>
 		<height>26</height>
