@@ -75,12 +75,8 @@
 				<posy>170</posy>
 				<width>170</width>
 				<height>35</height>
-				<label>106</label>
-				<font>font16m</font>
+				<label>$LOCALIZE[106]</label>
 				<align>center</align>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus border="4">button_FO.png</texturefocus>
 				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
 				<onleft>11</onleft>
 				<onright>11</onright>

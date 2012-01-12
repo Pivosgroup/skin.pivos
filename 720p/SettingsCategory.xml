@@ -17,13 +17,13 @@
 				<posx>135</posx>
 				<posy>170</posy>
 				<width>250</width>
-				<height>500</height>
+				<height>470</height>
 				<include>WindowOpenCloseZoomInOut</include>
 				<control type="grouplist" id="3">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>250</width>
-					<height>500</height>
+					<height>470</height>
 					<itemgap>-1</itemgap>
 					<onup>9000</onup>
 					<ondown>3</ondown>
@@ -35,15 +35,15 @@
 				<posx>430</posx>
 				<posy>130</posy>
 				<width>775</width>
-				<height>500</height>
+				<height>510</height>
 				<include>WindowOpenCloseZoomInOut</include>
 				<control type="grouplist" id="5">
-					<pagecontrol>60</pagecontrol>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>775</width>
-					<height>500</height>
+					<height>510</height>
 					<itemgap>-1</itemgap>
+					<pagecontrol>60</pagecontrol>
 					<onup>9000</onup>
 					<ondown>5</ondown>
 					<onleft>3</onleft>
@@ -53,7 +53,7 @@
 					<posx>782</posx>
 					<posy>0</posy>
 					<width>20</width>
-					<height>500</height>
+					<height>510</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
 					<texturesliderbar>-</texturesliderbar>
 					<texturesliderbarfocus>-</texturesliderbarfocus>

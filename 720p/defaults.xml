@@ -7,10 +7,10 @@
 		<label>-</label>
 		<font>font16m</font>
 		<textcolor>lightgrey</textcolor>
-		<texturefocus border="4">button_FO.png</texturefocus>
-		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
+		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>center</aligny>
@@ -24,10 +24,10 @@
 		<label>-</label>
 		<font>font16m</font>
 		<textcolor>lightgrey</textcolor>
-		<texturefocus border="4">button_FO.png</texturefocus>
-		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
+		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>center</aligny>
@@ -41,6 +41,12 @@
 		<label>-</label>
 		<font>font16m</font>
 		<textcolor>white</textcolor>
+	</default>
+	<default type="mover">
+		<posx>0</posx>
+		<posy>500</posy>
+		<texturefocus>calibrate-subtitles_FO.png</texturefocus>
+		<texturenofocus>calibrate-subtitles_NF.png</texturenofocus>
 	</default>
 	<default type="progress">
 		<posx>0</posx>
@@ -59,10 +65,10 @@
 		<label>-</label>
 		<font>font16m</font>
 		<textcolor>lightgrey</textcolor>
-		<texturefocus border="4">button_FO.png</texturefocus>
-		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
+		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>center</aligny>
@@ -72,6 +78,14 @@
 		<textureradioon>radio_FO.png</textureradioon>
 		<textureradiooff>radio_NF.png</textureradiooff>
 		<radioposx>713</radioposx>
+	</default>
+	<default type="resize">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>288</width>
+		<height>288</height>
+		<texturefocus>calibrate-pixelratio_FO.png</texturefocus>
+		<texturenofocus>calibrate-pixelratio_NF.png</texturenofocus>
 	</default>
 	<default type="scrollbar">
 		<posx>0</posx>
@@ -86,6 +100,29 @@
 		<showonepage>false</showonepage>
 		<orientation>vertical</orientation>
 	</default>
+	<default type="sliderex">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>300</width>
+		<height>40</height>
+		<label>-</label>
+		<font>font16m</font>
+		<textcolor>lightgrey</textcolor>
+		<focusedcolor>white</focusedcolor>
+		<disabledcolor>grey</disabledcolor>
+		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturenofocus border="6">button_NF.png</texturenofocus>
+		<sliderwidth>300</sliderwidth>
+		<sliderheight>40</sliderheight>
+		<texturesliderbar>slider_back.png</texturesliderbar>
+		<textureslidernib>slider_nib_NF.png</textureslidernib>
+		<textureslidernibfocus>slider_nib_FO.png</textureslidernibfocus>
+		<radiowidth>56</radiowidth>
+		<radioheight>40</radioheight>
+		<textureradioon>radio_FO.png</textureradioon>
+		<textureradiooff>radio_NF.png</textureradiooff>
+		<radioposx>713</radioposx>
+	</default>
 	<default type="spincontrolex">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -94,6 +131,8 @@
 		<label>-</label>
 		<font>font16m</font>
 		<textcolor>lightgrey</textcolor>
+		<focusedcolor>white</focusedcolor>
+		<disabledcolor>grey</disabledcolor>
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<focusedcolor>white</focusedcolor>
@@ -120,13 +159,13 @@
 		<textcolor>lightgrey</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<textoffsetx>5</textoffsetx>
-		<textoffsety>0</textoffsety>
-		<aligny>center</aligny>
-		<pulseonselect>false</pulseonselect>
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<alttexturefocus border="4">button_FO.png</alttexturefocus>
 		<alttexturenofocus border="6">button_NF.png</alttexturenofocus>
+		<textoffsetx>5</textoffsetx>
+		<textoffsety>0</textoffsety>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
 	</default>
 </includes>
