@@ -48,8 +48,8 @@
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<texturesliderbar>osd_slider_bg.png</texturesliderbar>
-				<textureslidernib>osd_slider_nibNF.png</textureslidernib>
-				<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
+				<textureslidernib>osd_slider_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>osd_slider_nib_FO.png</textureslidernibfocus>
 				<onup>11</onup>
 				<ondown>11</ondown>
 				<onleft>11</onleft>
