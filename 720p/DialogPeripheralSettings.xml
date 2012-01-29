@@ -1,0 +1,144 @@
+<window id="150">
+	<defaultcontrol>20</defaultcontrol>
+	<coordinates>
+		<posx>195</posx>
+		<posy>108</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>960</width>
+			<height>528</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>960</width>
+				<height>528</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>960</width>
+				<height>48</height>
+				<texture>header-back.png</texture>
+			</control>
+			<control type="label" id="1">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>960</width>
+				<height>30</height>
+				<label>$LOCALIZE[10004]</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
+			<control type="grouplist" id="5">
+				<posx>30</posx>
+				<posy>100</posy>
+				<width>880</width>
+				<height>330</height>
+				<pagecontrol>60</pagecontrol>
+				<onleft>5</onleft>
+				<onright>60</onright>
+				<onup>5</onup>
+				<ondown>28</ondown>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>915</posx>
+				<posy>100</posy>
+				<width>20</width>
+				<height>330</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onleft>20</onleft>
+				<onright>20</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<include>VisibleFade</include>
+			</control>
+			<control type="label" id="3">
+				<posx>30</posx>
+				<posy>100</posy>
+				<width>880</width>
+				<height>30</height>
+				<label>[B]$LOCALIZE[35004][/B]</label>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="button" id="7">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>880</width>
+				<height>40</height>
+				<label>-</label>
+			</control>
+			<control type="radiobutton" id="8">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>880</width>
+				<height>40</height>
+				<label>-</label>
+				<radioposx>818</radioposx>
+			</control>
+			<control type="spincontrolex" id="9">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>880</width>
+				<height>40</height>
+				<label>-</label>
+			</control>
+			<control type="sliderex" id="10">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>880</width>
+				<height>40</height>
+			</control>
+			<control type="button" id="28">
+				<posx>195</posx>
+				<posy>463</posy>
+				<width>170</width>
+				<height>35</height>
+				<label>$LOCALIZE[186]</label>
+				<align>center</align>
+				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<onleft>50</onleft>
+				<onright>29</onright>
+			</control>
+			<control type="button" id="29">
+				<posx>395</posx>
+				<posy>463</posy>
+				<width>170</width>
+				<height>35</height>
+				<label>$LOCALIZE[222]</label>
+				<align>center</align>
+				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<onleft>28</onleft>
+				<onright>50</onright>
+			</control>
+			<control type="button" id="50">
+				<posx>595</posx>
+				<posy>463</posy>
+				<width>170</width>
+				<height>35</height>
+				<label>$LOCALIZE[409]</label>
+				<align>center</align>
+				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<onleft>29</onleft>
+				<onright>28</onright>
+			</control>
+		</control>
+	</controls>
+</window>
