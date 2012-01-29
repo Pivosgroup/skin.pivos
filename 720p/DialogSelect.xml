@@ -26,9 +26,9 @@
 				<texture>header-back.png</texture>
 			</control>
 			<control type="label" id="1">
-				<posx>0</posx>
+				<posx>30</posx>
 				<posy>14</posy>
-				<width>560</width>
+				<width>500</width>
 				<height>30</height>
 				<label>-</label>
 				<font>font30</font>

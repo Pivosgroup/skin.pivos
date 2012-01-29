@@ -3,6 +3,7 @@
 	<include file="IncludesAnims.xml"/>
 	<include file="IncludesVars.xml"/>
 	<include file="ViewPanel.xml"/>
+	<constant name="CrossFade">250</constant>
 	<include name="BackgroundPanel">
 		<control type="image">
 			<posx>105</posx>
@@ -40,7 +41,7 @@
 			<height>720</height>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<aspectratio>scale</aspectratio>
-			<fadetime>250</fadetime>
+			<fadetime>CrossFade</fadetime>
 			<include>WindowOpenCloseFade</include>
 			<include>VisibleFade</include>
 			<visible>!Control.IsVisible(50) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
@@ -98,9 +99,9 @@
 				<texture>header-back.png</texture>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>30</posx>
 				<posy>0</posy>
-				<width>1127</width>
+				<width>1067</width>
 				<height>30</height>
 				<label>$VAR[SettingsHeader]</label>
 				<font>font30</font>

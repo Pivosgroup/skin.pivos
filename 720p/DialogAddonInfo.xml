@@ -26,9 +26,9 @@
 				<texture>header-back.png</texture>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>30</posx>
 				<posy>14</posy>
-				<width>960</width>
+				<width>900</width>
 				<height>30</height>
 				<label>$LOCALIZE[24003]</label>
 				<font>font30</font>
