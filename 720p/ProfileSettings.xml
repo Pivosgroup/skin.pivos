@@ -93,7 +93,7 @@
 				<width>680</width>
 				<height>40</height>
 				<label>-</label>
-				<radioposx>418</radioposx>
+				<radioposx>618</radioposx>
 			</control>
 			<control type="spincontrolex" id="9">
 				<posx>0</posx>
