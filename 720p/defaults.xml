@@ -167,6 +167,8 @@
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<alttexturefocus border="4">button_FO.png</alttexturefocus>
 		<alttexturenofocus border="6">button_NF.png</alttexturenofocus>
+		<textoffsetx>5</textoffsetx>
+		<textoffsety>0</textoffsety>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
 	</default>
