@@ -1,4 +1,4 @@
-<window type="dialog" id="130">
+<window id="130">
 	<defaultcontrol always="true">5</defaultcontrol>
 	<coordinates>
 		<posx>195</posx>
@@ -56,7 +56,7 @@
 				<posx>230</posx>
 				<posy>100</posy>
 				<width>680</width>
-				<height>510</height>
+				<height>340</height>
 				<itemgap>-1</itemgap>
 				<pagecontrol>60</pagecontrol>
 				<onup>28</onup>
@@ -65,10 +65,10 @@
 				<onright>60</onright>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>782</posx>
+				<posx>920</posx>
 				<posy>100</posy>
 				<width>20</width>
-				<height>510</height>
+				<height>340</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
 				<texturesliderbar>-</texturesliderbar>
 				<texturesliderbarfocus>-</texturesliderbarfocus>

@@ -144,6 +144,15 @@
 		<spinwidth>28</spinwidth>
 		<spinheight>40</spinheight>
 	</default>
+	<default type="textbox">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>300</width>
+		<height>30</height>
+		<label>-</label>
+		<font>font16m</font>
+		<textcolor>white</textcolor>
+	</default>
 	<default type="togglebutton">
 		<posx>0</posx>
 		<posy>0</posy>

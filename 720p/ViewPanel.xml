@@ -280,23 +280,23 @@
 					</control>
 				</focusedlayout>
 			</control>
-		</control>
-		<control type="scrollbar" id="60">
-			<posx>115</posx>
-			<posy>685</posy>
-			<width>1120</width>
-			<height>20</height>
-			<texturesliderbackground border="10,0,10,0">scrollbar_back.png</texturesliderbackground>
-			<texturesliderbar>-</texturesliderbar>
-			<texturesliderbarfocus>-</texturesliderbarfocus>
-			<textureslidernib>scrollbar_nib.png_NF</textureslidernib>
-			<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
-			<onup>50</onup>
-			<ondown>50</ondown>
-			<showonepage>false</showonepage>
-			<orientation>horizontal</orientation>
-			<include>VisibleFade</include>
-			<visible allowhiddenfocus="true">Control.IsVisible(50) + Control.HasFocus(60)</visible>
+			<control type="scrollbar" id="60">
+				<posx>0</posx>
+				<posy>625</posy>
+				<width>1120</width>
+				<height>20</height>
+				<texturesliderbackground border="10,0,10,0">scrollbar_back.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib.png_NF</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<showonepage>false</showonepage>
+				<orientation>horizontal</orientation>
+				<include>VisibleFade</include>
+				<visible allowhiddenfocus="true">Control.IsVisible(50) + Control.HasFocus(60)</visible>
+			</control>
 		</control>
 		<control type="group">
 			<posx>103</posx>
@@ -533,9 +533,9 @@
 				<onup>9000</onup>
 				<ondown>50</ondown>
 				<orientation>vertical</orientation>
-				<itemlayout width="184" height="208">
+				<itemlayout width="182" height="208">
 					<control type="label">
-						<posx>92</posx>
+						<posx>91</posx>
 						<posy>180</posy>
 						<width>180</width>
 						<height>30</height>
@@ -545,8 +545,8 @@
 						<align>center</align>
 					</control>
 					<control type="image">
-						<posx>12</posx>
-						<posy>12</posy>
+						<posx>11</posx>
+						<posy>11</posy>
 						<width>160</width>
 						<height>160</height>
 						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
@@ -561,9 +561,9 @@
 						<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout width="184" height="208">
+				<focusedlayout width="182" height="208">
 					<control type="label">
-						<posx>92</posx>
+						<posx>91</posx>
 						<posy>180</posy>
 						<width>180</width>
 						<height>30</height>
@@ -573,8 +573,8 @@
 						<align>center</align>
 					</control>
 					<control type="image">
-						<posx>12</posx>
-						<posy>12</posy>
+						<posx>11</posx>
+						<posy>11</posy>
 						<width>160</width>
 						<height>160</height>
 						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
@@ -598,22 +598,22 @@
 					</control>
 				</focusedlayout>
 			</control>
-		</control>
-		<control type="scrollbar" id="60">
-			<posx>1214</posx>
-			<posy>60</posy>
-			<width>20</width>
-			<height>624</height>
-			<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
-			<texturesliderbar>-</texturesliderbar>
-			<texturesliderbarfocus>-</texturesliderbarfocus>
-			<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
-			<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
-			<onup>50</onup>
-			<ondown>50</ondown>
-			<showonepage>false</showonepage>
-			<orientation>horizontal</orientation>
-			<include>VisibleFade</include>
+			<control type="scrollbar" id="60">
+				<posx>1100</posx>
+				<posy>12</posy>
+				<width>20</width>
+				<height>600</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<showonepage>false</showonepage>
+				<orientation>horizontal</orientation>
+				<include>VisibleFade</include>
+			</control>
 		</control>
 		<control type="group">
 			<posx>103</posx>
