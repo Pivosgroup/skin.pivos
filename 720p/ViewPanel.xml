@@ -529,13 +529,13 @@
 				<scrolltime>200</scrolltime>
 				<preloaditems>4</preloaditems>
 				<onleft>1000</onleft>
-				<onright>50</onright>
+				<onright>60</onright>
 				<onup>9000</onup>
-				<ondown>60</ondown>
-				<orientation>horizontal</orientation>
-				<itemlayout width="186" height="208">
+				<ondown>50</ondown>
+				<orientation>vertical</orientation>
+				<itemlayout width="184" height="208">
 					<control type="label">
-						<posx>93</posx>
+						<posx>92</posx>
 						<posy>180</posy>
 						<width>180</width>
 						<height>30</height>
@@ -545,25 +545,25 @@
 						<align>center</align>
 					</control>
 					<control type="image">
-						<posx>13</posx>
-						<posy>13</posy>
+						<posx>12</posx>
+						<posy>12</posy>
 						<width>160</width>
 						<height>160</height>
 						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 					<control type="image">
-						<posx>130</posx>
-						<posy>130</posy>
+						<posx>124</posx>
+						<posy>124</posy>
 						<width>40</width>
 						<height>40</height>
 						<texture>OverlayError.png</texture>
 						<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout width="160" height="208">
+				<focusedlayout width="184" height="208">
 					<control type="label">
-						<posx>93</posx>
+						<posx>92</posx>
 						<posy>180</posy>
 						<width>180</width>
 						<height>30</height>
@@ -573,8 +573,8 @@
 						<align>center</align>
 					</control>
 					<control type="image">
-						<posx>13</posx>
-						<posy>13</posy>
+						<posx>12</posx>
+						<posy>12</posy>
 						<width>160</width>
 						<height>160</height>
 						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
@@ -586,8 +586,8 @@
 						</animation>
 					</control>
 					<control type="image">
-						<posx>130</posx>
-						<posy>130</posy>
+						<posx>124</posx>
+						<posy>124</posy>
 						<width>40</width>
 						<height>40</height>
 						<texture>OverlayError.png</texture>
@@ -600,21 +600,20 @@
 			</control>
 		</control>
 		<control type="scrollbar" id="60">
-			<posx>115</posx>
-			<posy>685</posy>
-			<width>1120</width>
-			<height>20</height>
-			<texturesliderbackground border="10,0,10,0">scrollbar_back.png</texturesliderbackground>
+			<posx>1214</posx>
+			<posy>60</posy>
+			<width>20</width>
+			<height>624</height>
+			<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
 			<texturesliderbar>-</texturesliderbar>
 			<texturesliderbarfocus>-</texturesliderbarfocus>
-			<textureslidernib>scrollbar_nib.png_NF</textureslidernib>
+			<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
 			<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
 			<include>VisibleFade</include>
-			<visible allowhiddenfocus="true">Control.IsVisible(50) + Control.HasFocus(60)</visible>
 		</control>
 		<control type="group">
 			<posx>103</posx>

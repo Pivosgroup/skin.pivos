@@ -112,16 +112,13 @@
 		<disabledcolor>grey</disabledcolor>
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
-		<sliderwidth>300</sliderwidth>
-		<sliderheight>40</sliderheight>
+		<textoffsetx>5</textoffsetx>
+		<textoffsety>0</textoffsety>
+		<sliderwidth>167</sliderwidth>
+		<sliderheight>17</sliderheight>
 		<texturesliderbar>slider_back.png</texturesliderbar>
 		<textureslidernib>slider_nib_NF.png</textureslidernib>
 		<textureslidernibfocus>slider_nib_FO.png</textureslidernibfocus>
-		<radiowidth>56</radiowidth>
-		<radioheight>40</radioheight>
-		<textureradioon>radio_FO.png</textureradioon>
-		<textureradiooff>radio_NF.png</textureradiooff>
-		<radioposx>713</radioposx>
 	</default>
 	<default type="spincontrolex">
 		<posx>0</posx>
@@ -135,8 +132,6 @@
 		<disabledcolor>grey</disabledcolor>
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
-		<focusedcolor>white</focusedcolor>
-		<disabledcolor>grey</disabledcolor>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
 		<aligny>center</aligny>
@@ -163,8 +158,6 @@
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<alttexturefocus border="4">button_FO.png</alttexturefocus>
 		<alttexturenofocus border="6">button_NF.png</alttexturenofocus>
-		<textoffsetx>5</textoffsetx>
-		<textoffsety>0</textoffsety>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
 	</default>

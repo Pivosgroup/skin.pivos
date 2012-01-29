@@ -18,9 +18,26 @@
 				<height>570</height>
 				<texture border="18">dialog-back.png</texture>
 			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>560</width>
+				<height>48</height>
+				<texture>header-back.png</texture>
+			</control>
+			<control type="label" id="1">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>560</width>
+				<height>30</height>
+				<label>-</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
 			<control type="list" id="3">
 				<posx>30</posx>
-				<posy>60</posy>
+				<posy>80</posy>
 				<width>480</width>
 				<height>400</height>
 				<pagecontrol>60</pagecontrol>
@@ -89,7 +106,7 @@
 			</control>
 			<control type="list" id="6">
 				<posx>30</posx>
-				<posy>60</posy>
+				<posy>80</posy>
 				<width>480</width>
 				<height>400</height>
 				<pagecontrol>61</pagecontrol>
@@ -196,7 +213,7 @@
 			</control>
 			<control type="scrollbar" id="60">
 				<posx>520</posx>
-				<posy>60</posy>
+				<posy>80</posy>
 				<width>20</width>
 				<height>400</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
@@ -213,7 +230,7 @@
 			</control>
 			<control type="scrollbar" id="61">
 				<posx>520</posx>
-				<posy>60</posy>
+				<posy>80</posy>
 				<width>20</width>
 				<height>400</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
@@ -230,7 +247,7 @@
 			</control>
 			<control type="button" id="5">
 				<posx>195</posx>
-				<posy>485</posy>
+				<posy>505</posy>
 				<width>170</width>
 				<height>35</height>
 				<label>-</label>

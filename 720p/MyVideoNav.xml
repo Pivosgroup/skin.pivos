@@ -4,6 +4,7 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>Fanart</include>
+		<include>BackgroundPanel</include>
 		<include>SideMenu</include>
 		<include>TopMenuVideo</include>
 		<include>ViewPanelVideo</include>

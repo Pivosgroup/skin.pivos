@@ -26,6 +26,18 @@
 		<value condition="stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,8)">mediaicons/audiocodec/dtsma71.png</value>
 		<value>mediaicons/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
 	</variable>
+	<variable name="SettingsHeader">
+		<value condition="Window.IsVisible(AppearanceSettings)">$LOCALIZE[10019]</value>
+		<value condition="Window.IsVisible(VideosSettings)">$LOCALIZE[10017]</value>
+		<value condition="Window.IsVisible(MusicSettings)">$LOCALIZE[10015]</value>
+		<value condition="Window.IsVisible(PicturesSettings)">$LOCALIZE[10012]</value>
+		<value condition="Window.IsVisible(WeatherSettings)">$LOCALIZE[10014]</value>
+		<value condition="Window.IsVisible(NetworkSettings)">$LOCALIZE[10018]</value>
+		<value condition="Window.IsVisible(SystemSettings)">$LOCALIZE[10016]</value>
+		<value condition="Window.IsVisible(Profiles)">$LOCALIZE[10034]</value>
+		<value condition="Window.IsVisible(SystemInfo)">$LOCALIZE[10007]</value>
+		<value condition="Window.IsVisible(1111)">$LOCALIZE[20077]</value>
+	</variable>
 	<variable name="SubMenuArrow">
 		<value condition="!ControlGroup(200).HasFocus">arrow_right_NF.png</value>
 		<value condition="ControlGroup(200).HasFocus">arrow_right_FO.png</value>

@@ -13,6 +13,7 @@
 				<texture>background-light.png</texture>
 				<include>WindowOpenCloseFade</include>
 			</control>
+			<include>SettingsHeader</include>
 			<control type="group">
 				<posx>135</posx>
 				<posy>170</posy>

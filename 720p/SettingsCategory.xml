@@ -2,6 +2,7 @@
 	<defaultcontrol>3</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
+		<include>BackgroundPanelSettings</include>
 		<include>SideMenu</include>
 		<include>TopMenuSettings</include>
 		<control type="group">
@@ -11,14 +12,15 @@
 				<width>1127</width>
 				<height>628</height>
 				<texture>background-light.png</texture>
-				<include>WindowOpenCloseFade</include>
+				<include>WindowOpenCloseFadeSettings</include>
 			</control>
+			<include>SettingsHeader</include>
 			<control type="group">
 				<posx>135</posx>
 				<posy>170</posy>
 				<width>250</width>
 				<height>470</height>
-				<include>WindowOpenCloseZoomInOut</include>
+				<include>WindowOpenCloseZoomInOutSettings</include>
 				<control type="grouplist" id="3">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -36,7 +38,7 @@
 				<posy>130</posy>
 				<width>775</width>
 				<height>510</height>
-				<include>WindowOpenCloseZoomInOut</include>
+				<include>WindowOpenCloseZoomInOutSettings</include>
 				<control type="grouplist" id="5">
 					<posx>0</posx>
 					<posy>0</posy>

@@ -18,16 +18,33 @@
 				<height>628</height>
 				<texture border="18">dialog-back.png</texture>
 			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>1127</width>
+				<height>48</height>
+				<texture>header-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>1127</width>
+				<height>30</height>
+				<label>$LOCALIZE[1045]</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
 			<control type="group">
 				<posx>35</posx>
-				<posy>100</posy>
+				<posy>140</posy>
 				<width>250</width>
 				<height>470</height>
 				<control type="grouplist" id="9">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>250</width>
-					<height>470</height>
+					<height>420</height>
 					<itemgap>-1</itemgap>
 					<onup>9</onup>
 					<ondown>9</ondown>
@@ -37,14 +54,14 @@
 			</control>
 			<control type="group">
 				<posx>317</posx>
-				<posy>60</posy>
+				<posy>100</posy>
 				<width>775</width>
 				<height>470</height>
 				<control type="grouplist" id="2">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>760</width>
-					<height>470</height>
+					<height>424</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onup>2</onup>
@@ -56,7 +73,7 @@
 					<posx>767</posx>
 					<posy>0</posy>
 					<width>20</width>
-					<height>470</height>
+					<height>424</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
 					<texturesliderbar>-</texturesliderbar>
 					<texturesliderbarfocus>-</texturesliderbarfocus>
@@ -106,7 +123,7 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>760</width>
-					<height>2</height>
+					<height>1</height>
 					<texture>white.png</texture>
 				</control>
 				<control type="label" id="7">
