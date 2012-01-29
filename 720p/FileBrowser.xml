@@ -250,7 +250,7 @@
 				<texture border="4">button_alt_NF.png</texture>
 			</control>
 			<control type="label" id="412">
-				<posx>5</posx>
+				<posx>35</posx>
 				<posy>463</posy>
 				<width>890</width>
 				<height>30</height>

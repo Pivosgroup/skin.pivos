@@ -39,7 +39,7 @@
 				<posx>30</posx>
 				<posy>80</posy>
 				<width>480</width>
-				<height>400</height>
+				<height>440</height>
 				<pagecontrol>60</pagecontrol>
 				<onup>3</onup>
 				<ondown>5</ondown>
@@ -215,7 +215,7 @@
 				<posx>520</posx>
 				<posy>80</posy>
 				<width>20</width>
-				<height>400</height>
+				<height>440</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
 				<texturesliderbar>-</texturesliderbar>
 				<texturesliderbarfocus>-</texturesliderbarfocus>

@@ -36,11 +36,11 @@
 		</animation>
 	</include>
 	<include name="WindowOpenCloseZoomInOutSettings">
-		<animation type="WindowOpen" condition="Window.Previous(Home)">
+		<animation type="WindowOpen" condition="![Window.Previous(AppearanceSettings) | Window.Previous(VideosSettings) | Window.Previous(MusicSettings) | Window.Previous(PicturesSettings) | Window.Previous(WeatherSettings) | Window.Previous(NetworkSettings) | Window.Previous(SystemSettings)]">
 			<effect type="zoom" start="60" end="100" center="auto" time="400" tween="sine" easing="out"/>
 			<effect type="fade" start="0" end="100" time="400"/>
 		</animation>
-		<animation type="WindowClose" condition="Window.Next(Home)">
+		<animation type="WindowClose" condition="![Window.Next(AppearanceSettings) | Window.Next(VideosSettings) | Window.Next(MusicSettings) | Window.Next(PicturesSettings) | Window.Next(WeatherSettings) | Window.Next(NetworkSettings) | Window.Next(SystemSettings)]">
 			<effect type="zoom" start="100" end="60" center="auto" time="400" tween="sine" easing="in"/>
 			<effect type="fade" start="100" end="0" time="400"/>
 		</animation>
@@ -71,10 +71,10 @@
 			<effect type="fade" start="100" end="0" time="150"/>
 		</animation>
 	</include>	<include name="WindowOpenCloseFadeSettings">
-		<animation type="WindowOpen" condition="Window.Previous(Home)">
+		<animation type="WindowOpen" condition="![Window.Previous(AppearanceSettings) | Window.Previous(VideosSettings) | Window.Previous(MusicSettings) | Window.Previous(PicturesSettings) | Window.Previous(WeatherSettings) | Window.Previous(NetworkSettings) | Window.Previous(SystemSettings)]">
 			<effect type="fade" start="0" end="100" time="400"/>
 		</animation>
-		<animation type="WindowClose" condition="Window.Next(Home)">
+		<animation type="WindowClose" condition="![Window.Next(AppearanceSettings) | Window.Next(VideosSettings) | Window.Next(MusicSettings) | Window.Next(PicturesSettings) | Window.Next(WeatherSettings) | Window.Next(NetworkSettings) | Window.Next(SystemSettings)]">
 			<effect type="fade" start="100" end="0" time="400"/>
 		</animation>
 	</include>
