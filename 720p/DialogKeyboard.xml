@@ -41,7 +41,6 @@
 				<posx>-168</posx>
 				<posy>72</posy>
 				<control type="button" id="49">
-					<description>'1' button</description>
 					<posx>200</posx>
 					<posy>0</posy>
 					<width>64</width>
@@ -55,7 +54,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="50">
-					<description>'2' button</description>
 					<posx>250</posx>
 					<posy>0</posy>
 					<width>64</width>
@@ -69,7 +67,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="51">
-					<description>'3' button</description>
 					<posx>300</posx>
 					<posy>0</posy>
 					<width>64</width>
@@ -83,7 +80,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="52">
-					<description>'4' button</description>
 					<posx>350</posx>
 					<posy>0</posy>
 					<width>64</width>
@@ -97,7 +93,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="53">
-					<description>'5' button</description>
 					<posx>400</posx>
 					<posy>0</posy>
 					<width>64</width>
@@ -111,7 +106,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="54">
-					<description>'6' button</description>
 					<posx>450</posx>
 					<posy>0</posy>
 					<width>64</width>
@@ -125,7 +119,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="55">
-					<description>'7' button</description>
 					<posx>500</posx>
 					<posy>0</posy>
 					<width>64</width>
@@ -139,7 +132,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="56">
-					<description>'8' button</description>
 					<posx>550</posx>
 					<posy>0</posy>
 					<width>64</width>
@@ -153,7 +145,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="57">
-					<description>'9' button</description>
 					<posx>600</posx>
 					<posy>0</posy>
 					<width>64</width>
@@ -167,7 +158,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="48">
-					<description>'0' button</description>
 					<posx>650</posx>
 					<posy>0</posy>
 					<width>64</width>
@@ -181,7 +171,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="8">
-					<description>'BACKSPACE' button</description>
 					<posx>700</posx>
 					<posy>0</posy>
 					<width>134</width>
@@ -196,7 +185,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="81">
-					<description>'Q' button</description>
 					<posx>210</posx>
 					<posy>50</posy>
 					<width>64</width>
@@ -210,7 +198,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="87">
-					<description>'W' button</description>
 					<posx>260</posx>
 					<posy>50</posy>
 					<width>64</width>
@@ -224,7 +211,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="69">
-					<description>'E' button</description>
 					<posx>310</posx>
 					<posy>50</posy>
 					<width>64</width>
@@ -238,7 +224,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="82">
-					<description>'R' button</description>
 					<posx>360</posx>
 					<posy>50</posy>
 					<width>64</width>
@@ -252,7 +237,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="84">
-					<description>'T' button</description>
 					<posx>410</posx>
 					<posy>50</posy>
 					<width>64</width>
@@ -266,7 +250,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="89">
-					<description>'Y' button</description>
 					<posx>460</posx>
 					<posy>50</posy>
 					<width>64</width>
@@ -280,7 +263,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="85">
-					<description>'U' button</description>
 					<posx>510</posx>
 					<posy>50</posy>
 					<width>64</width>
@@ -294,7 +276,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="73">
-					<description>'I' button</description>
 					<posx>560</posx>
 					<posy>50</posy>
 					<width>64</width>
@@ -308,7 +289,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="79">
-					<description>'O' button</description>
 					<posx>610</posx>
 					<posy>50</posy>
 					<width>64</width>
@@ -322,7 +302,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="80">
-					<description>'P' button</description>
 					<posx>660</posx>
 					<posy>50</posy>
 					<width>64</width>
@@ -336,7 +315,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="300">
-					<description>DONE button</description>
 					<posx>710</posx>
 					<posy>50</posy>
 					<width>124</width>
@@ -351,7 +329,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="65">
-					<description>'A' button</description>
 					<posx>220</posx>
 					<posy>100</posy>
 					<width>64</width>
@@ -365,7 +342,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="83">
-					<description>'S' button</description>
 					<posx>270</posx>
 					<posy>100</posy>
 					<width>64</width>
@@ -379,7 +355,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="68">
-					<description>'D' button</description>
 					<posx>320</posx>
 					<posy>100</posy>
 					<width>64</width>
@@ -393,7 +368,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="70">
-					<description>'F' button</description>
 					<posx>370</posx>
 					<posy>100</posy>
 					<width>64</width>
@@ -407,7 +381,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="71">
-					<description>'G' button</description>
 					<posx>420</posx>
 					<posy>100</posy>
 					<width>64</width>
@@ -421,7 +394,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="72">
-					<description>'H' button</description>
 					<posx>470</posx>
 					<posy>100</posy>
 					<width>64</width>
@@ -435,7 +407,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="74">
-					<description>'J' button</description>
 					<posx>520</posx>
 					<posy>100</posy>
 					<width>64</width>
@@ -449,7 +420,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="75">
-					<description>'K' button</description>
 					<posx>570</posx>
 					<posy>100</posy>
 					<width>64</width>
@@ -463,7 +433,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="76">
-					<description>'L' button</description>
 					<posx>620</posx>
 					<posy>100</posy>
 					<width>64</width>
@@ -477,7 +446,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="togglebutton" id="303">
-					<description>CAPS LOCK button</description>
 					<posx>670</posx>
 					<posy>100</posy>
 					<width>164</width>
@@ -494,7 +462,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="90">
-					<description>'Z' button</description>
 					<posx>228</posx>
 					<posy>150</posy>
 					<width>64</width>
@@ -508,7 +475,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="88">
-					<description>'X' button</description>
 					<posx>280</posx>
 					<posy>150</posy>
 					<width>64</width>
@@ -522,7 +488,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="67">
-					<description>'C' button</description>
 					<posx>330</posx>
 					<posy>150</posy>
 					<width>64</width>
@@ -536,7 +501,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="86">
-					<description>'V' button</description>
 					<posx>380</posx>
 					<posy>150</posy>
 					<width>64</width>
@@ -550,7 +514,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="66">
-					<description>'B' button</description>
 					<posx>430</posx>
 					<posy>150</posy>
 					<width>64</width>
@@ -564,7 +527,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="78">
-					<description>'N' button</description>
 					<posx>480</posx>
 					<posy>150</posy>
 					<width>64</width>
@@ -578,7 +540,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="77">
-					<description>'M' button</description>
 					<posx>530</posx>
 					<posy>150</posy>
 					<width>64</width>
@@ -592,7 +553,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="305">
-					<description>previous button</description>
 					<posx>580</posx>
 					<posy>150</posy>
 					<width>64</width>
@@ -609,7 +569,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="306">
-					<description>next button</description>
 					<posx>630</posx>
 					<posy>150</posy>
 					<width>64</width>
@@ -626,7 +585,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="togglebutton" id="302">
-					<description>SHIFT button</description>
 					<posx>680</posx>
 					<posy>150</posy>
 					<width>154</width>
@@ -643,7 +601,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="307">
-					<description>IP Input button</description>
 					<posx>200</posx>
 					<posy>200</posy>
 					<width>164</width>
@@ -661,7 +618,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="button" id="32">
-					<description>SPACE button</description>
 					<posx>350</posx>
 					<posy>200</posy>
 					<width>334</width>
@@ -676,7 +632,6 @@
 					<include>KeyButton</include>
 				</control>
 				<control type="togglebutton" id="304">
-					<description>Symbols button</description>
 					<posx>670</posx>
 					<posy>200</posy>
 					<width>164</width>
