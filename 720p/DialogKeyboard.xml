@@ -10,7 +10,9 @@
 			<posy>0</posy>
 			<width>960</width>
 			<height>528</height>
+			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseZoomInOut</include>
+			<visible>!Window.IsVisible(NumericInput)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -707,7 +709,6 @@
 				<font>font20</font>
 				<textcolor>normal</textcolor>
 				<align>center</align>
-				<haspath>true</haspath>
 			</control>
 		</control>
 	</controls>
