@@ -24,8 +24,7 @@
 				<width>520</width>
 				<height>30</height>
 				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<selectedcolor>white</selectedcolor>
+				<textcolor>light</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -44,7 +43,6 @@
 				<height>30</height>
 				<font>font16m</font>
 				<textcolor>lightgrey</textcolor>
-				<selectedcolor>white</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -55,7 +53,6 @@
 				<height>30</height>
 				<font>font16m</font>
 				<textcolor>lightgrey</textcolor>
-				<selectedcolor>white</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
@@ -66,7 +63,6 @@
 				<height>30</height>
 				<font>font16m</font>
 				<textcolor>lightgrey</textcolor>
-				<selectedcolor>white</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 			</control>
