@@ -1,0 +1,245 @@
+<window id="129">
+	<defaultcontrol always="true">11</defaultcontrol>
+	<coordinates>
+		<posx>195</posx>
+		<posy>108</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>960</width>
+			<height>528</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>960</width>
+				<height>528</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>960</width>
+				<height>48</height>
+				<texture>header-back.png</texture>
+			</control>
+			<control type="label" id="2">
+				<posx>30</posx>
+				<posy>14</posy>
+				<width>900</width>
+				<height>30</height>
+				<label>-</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
+			<control type="image">
+				<posx>30</posx>
+				<posy>78</posy>
+				<width>170</width>
+				<height>170</height>
+				<texture diffuse="thumb-diffuse.png">DefaultAddSource.png</texture>
+			</control>
+			<control type="group" id="8000">
+				<posx>30</posx>
+				<posy>263</posy>
+				<control type="button" id="11">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[1024]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>19</onup>
+					<ondown>13</ondown>
+					<onleft>10</onleft>
+					<onright>10</onright>
+				</control>
+				<control type="button" id="13">
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[15019]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>11</onup>
+					<ondown>14</ondown>
+					<onleft>10</onleft>
+					<onright>10</onright>
+				</control>
+				<control type="button" id="14">
+					<posx>0</posx>
+					<posy>80</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[1210]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>13</onup>
+					<ondown>18</ondown>
+					<onleft>10</onleft>
+					<onright>10</onright>
+				</control>
+				<control type="button" id="18">
+					<posx>0</posx>
+					<posy>120</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[186]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>14</onup>
+					<ondown>19</ondown>
+					<onleft>10</onleft>
+					<onright>10</onright>
+				</control>
+				<control type="button" id="19">
+					<posx>0</posx>
+					<posy>160</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[222]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>18</onup>
+					<ondown>11</ondown>
+					<onleft>10</onleft>
+					<onright>10</onright>
+				</control>
+			</control>
+			<control type="label">
+				<posx>230</posx>
+				<posy>100</posy>
+				<width>695</width>
+				<height>30</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font16m</font>
+				<label>$LOCALIZE[1021]</label>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="list" id="10">
+				<posx>230</posx>
+				<posy>130</posy>
+				<width>680</width>
+				<height>280</height>
+				<pagecontrol>60</pagecontrol>
+				<onup>12</onup>
+				<ondown>12</ondown>
+				<onleft>8000</onleft>
+				<onright>60</onright>
+				<itemlayout width="680" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>670</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>lightgrey</textcolor>
+						<aligny>center</aligny>
+					</control>
+				</itemlayout>
+				<focusedlayout width="680" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="4">button_FO.png</texture>
+						<visible>Control.HasFocus(10)</visible>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>670</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>white</textcolor>
+						<aligny>center</aligny>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>920</posx>
+				<posy>130</posy>
+				<width>20</width>
+				<height>280</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onleft>10</onleft>
+				<onright>10</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<include>VisibleFade</include>
+			</control>
+			<control type="label">
+				<posx>230</posx>
+				<posy>428</posy>
+				<width>695</width>
+				<height>30</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font16m</font>
+				<label>$LOCALIZE[1022]</label>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="button" id="12">
+				<posx>230</posx>
+				<posy>458</posy>
+				<width>695</width>
+				<height>40</height>
+				<label>-</label>
+				<font>font20</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+				<texturefocus border="4">button_FO.png</texturefocus>
+				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<onup>10</onup>
+				<onleft>8000</onleft>
+				<onright>8000</onright>
+				<ondown>10</ondown>
+			</control>
+		</control>
+	</controls>
+</window>
