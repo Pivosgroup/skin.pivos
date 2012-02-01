@@ -26,6 +26,27 @@
 		<value condition="stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,8)">mediaicons/audiocodec/dtsma71.png</value>
 		<value>mediaicons/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
 	</variable>
+	<variable name="SeekBarLabel">
+		<value condition="Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31012][/B]</value>
+		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31013][/B]</value>
+		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[15107] $INFO[Player.CacheLevel]%[/B]</value>
+		<value condition="Player.Seeking">[B]$LOCALIZE[773] $INFO[Player.SeekOffset][/B]</value>
+		<value condition="Player.Rewinding2x + !Player.Seeking">[B]$LOCALIZE[31015] x2[/B]</value>
+		<value condition="Player.Rewinding4x + !Player.Seeking">[B]$LOCALIZE[31015] x4[/B]</value>
+		<value condition="Player.Rewinding8x + !Player.Seeking">[B]$LOCALIZE[31015] x8[/B]</value>
+		<value condition="Player.Rewinding16x + !Player.Seeking">[B]$LOCALIZE[31015] x16[/B]</value>
+		<value condition="Player.Rewinding32x + !Player.Seeking">[B]$LOCALIZE[31015] x32[/B]</value>
+		<value condition="Player.Forwarding2x + !Player.Seeking">[B]$LOCALIZE[31014] x2[/B]</value>
+		<value condition="Player.Forwarding4x + !Player.Seeking">[B]$LOCALIZE[31014] x4[/B]</value>
+		<value condition="Player.Forwarding8x + !Player.Seeking">[B]$LOCALIZE[31014] x8[/B]</value>
+		<value condition="Player.Forwarding16x + !Player.Seeking">[B]$LOCALIZE[31014] x16[/B]</value>
+		<value condition="Player.Forwarding32x + !Player.Seeking">[B]$LOCALIZE[31014] x32[/B]</value>
+		<value condition="Player.DisplayAfterSeek + !Player.Seeking">[B]$INFO[Player.SeekOffset][/B]</value>
+	</variable>
+	<variable name="SeekBarTime">
+		<value condition="!Player.Seeking">$INFO[Player.Time]</value>
+		<value condition="Player.Seeking">$INFO[Player.SeekTime]</value>
+	</variable>
 	<variable name="SettingsHeader">
 		<value condition="Window.IsVisible(AppearanceSettings)">$LOCALIZE[10019]</value>
 		<value condition="Window.IsVisible(VideosSettings)">$LOCALIZE[10017]</value>

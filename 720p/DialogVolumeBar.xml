@@ -55,9 +55,9 @@
 				<width>260</width>
 				<height>30</height>
 				<label>$INFO[Player.Volume]</label>
-				<align>center</align>
 				<font>font16</font>
 				<textcolor>white</textcolor>
+				<align>center</align>
 				<visible>!Player.Passthrough</visible>
 			</control>
 			<control type="label">
@@ -65,10 +65,10 @@
 				<posy>22</posy>
 				<width>260</width>
 				<height>30</height>
-				<label>[UPPERCASE][B]$LOCALIZE[29802][/B][/UPPERCASE]</label>
-				<align>center</align>
-				<font>font16</font>
+				<label>[B]$LOCALIZE[29802][/B]</label>
+				<font>font16c</font>
 				<textcolor>white</textcolor>
+				<align>center</align>
 				<visible>Player.Passthrough</visible>
 			</control>
 			<control type="progress">
@@ -77,8 +77,8 @@
 				<width>260</width>
 				<height>20</height>
 				<info>Player.Volume</info>
-				<visible>true</visible>
 				<animation effect="fade" start="50" end="50" time="0" condition="Player.Passthrough">Conditional</animation>
+				<visible>true</visible>
 			</control>
 		</control>
 	</controls>

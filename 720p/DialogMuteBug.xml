@@ -6,7 +6,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>![Window.IsVisible(Seekbar) | Window.IsVisible(DialogVideoScan.xml) | Window.IsVisible(DialogMusicScan.xml) | Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(BusyDialog) | Window.IsVisible(SliderDialog)]</visible>
+			<visible>![Window.IsVisible(Seekbar) | Window.IsVisible(VideoScan) | Window.IsVisible(MusicScan) | Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(BusyDialog) | Window.IsVisible(SliderDialog)]</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -14,16 +14,6 @@
 				<height>90</height>
 				<texture border="18">dialog-back.png</texture>
 			</control>
-			<control type="label">
-				<posx>105</posx>
-				<posy>22</posy>
-				<width>100</width>
-				<height>30</height>
-				<label>$INFO[Player.Volume]</label>
-				<align>left</align>
-				<font>font16</font>
-				<textcolor>white</textcolor>
-			</control>			
 			<control type="image">
 				<posx>25</posx>
 				<posy>20</posy>
@@ -31,25 +21,24 @@
 				<height>50</height>
 				<texture>volume_mute.png</texture>
 			</control>
+			<control type="label">
+				<posx>95</posx>
+				<posy>22</posy>
+				<width>260</width>
+				<height>30</height>
+				<label>[B]$LOCALIZE[31011][/B]</label>
+				<font>font16c</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+			</control>
 			<control type="progress">
 				<posx>95</posx>
 				<posy>46</posy>
 				<width>260</width>
 				<height>20</height>
 				<info>Player.Volume</info>
+				<animation effect="fade" start="50" end="50" time="0" condition="Player.Passthrough">Conditional</animation>
 				<visible>true</visible>
-				<animation effect="fade" start="50" end="50" time="0" condition="Player.Passthrough">Conditional</animation>	
-			</control>
-			<control type="label">
-				<description>Label</description>
-				<posx>345</posx>
-				<posy>22</posy>
-				<width>260</width>
-				<height>25</height>
-				<label>[UPPERCASE][B]$LOCALIZE[31011][/B][/UPPERCASE]</label>
-				<font>font16</font>
-				<textcolor>white</textcolor>
-				<align>right</align>
 			</control>
 		</control>
 	</controls>

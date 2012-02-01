@@ -12,4 +12,8 @@
 	<string id="31009">Lo</string>
 	<string id="31010">Working...</string>
 	<string id="31011">Volume muted</string>
+	<string id="31012">Playing</string>
+	<string id="31013">Paused</string>
+	<string id="31014">Fast Forward</string>
+	<string id="31015">Rewind</string>
 </strings>

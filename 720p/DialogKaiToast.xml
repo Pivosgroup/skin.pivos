@@ -59,7 +59,7 @@
 				<height>30</height>
 				<align>center</align>
 				<font>font16</font>
-				<textcolor>white</textcolor>
+				<textcolor>light</textcolor>
 			</control>
 			<control type="label" id="402">
 				<posx>80</posx>

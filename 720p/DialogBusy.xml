@@ -35,7 +35,7 @@
 				<label>$LOCALIZE[31010]</label>
 				<align>left</align>
 				<font>font16</font>
-				<textcolor>white</textcolor>
+				<textcolor>light</textcolor>
 			</control>
 			<control type="label">
 				<posx>80</posx>

@@ -24,20 +24,20 @@
 				<posy>20</posy>
 				<width>160</width>
 				<height>16</height>
-				<align>left</align>
-				<aligny>center</aligny>
 				<font>font16</font>
 				<textcolor>white</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
 			</control>
 			<control type="label" id="12">
 				<posx>355</posx>
 				<posy>20</posy>
 				<width>160</width>
 				<height>16</height>
-				<align>right</align>
-				<aligny>center</aligny>
 				<font>font16</font>
 				<textcolor>white</textcolor>
+				<align>right</align>
+				<aligny>center</aligny>
 			</control>
 			<control type="slider" id="11">
 				<posx>25</posx>
