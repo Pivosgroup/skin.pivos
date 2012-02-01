@@ -227,13 +227,13 @@
 							<label>-</label>
 							<icon>home_music_NF.png</icon>
 							<property name="Icon_Focus">home_music_FO.png</property>
-							<onclick>ActivateWindow()</onclick>
+							<onclick>ActivateWindow(MusicLibrary)</onclick>
 						</item>
 						<item id="4">
 							<label>-</label>
 							<icon>home_pictures_NF.png</icon>
 							<property name="Icon_Focus">home_pictures_FO.png</property>
-							<onclick>ActivateWindow()</onclick>
+							<onclick>ActivateWindow(Pictures)</onclick>
 						</item>
 						<item id="5">
 							<label>-</label>
@@ -245,7 +245,7 @@
 							<label>-</label>
 							<icon>home_addons_NF.png</icon>
 							<property name="Icon_Focus">home_addons_FO.png</property>
-							<onclick>ActivateWindow()</onclick>
+							<onclick>ActivateWindow(Programs)</onclick>
 						</item>
 						<item id="7">
 							<label>-</label>

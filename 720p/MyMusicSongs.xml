@@ -1,0 +1,12 @@
+<window id="501">
+	<defaultcontrol always="true">50</defaultcontrol>
+	<views>50</views>
+	<controls>
+		<include>DefaultBackground</include>
+		<include>Fanart</include>
+		<include>BackgroundPanel</include>
+		<include>SideMenu</include>
+		<include>ViewList</include>
+		<include>ScrollLabel</include>
+	</controls>
+</window>
