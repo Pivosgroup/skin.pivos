@@ -8,6 +8,7 @@
 		<font>font16m</font>
 		<textcolor>lightgrey</textcolor>
 		<focusedcolor>white</focusedcolor>
+		<selectedcolor>light</selectedcolor>
 		<disabledcolor>grey</disabledcolor>
 		<texturefocus border="4">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>

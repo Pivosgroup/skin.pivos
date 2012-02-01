@@ -167,6 +167,7 @@
 						<height>40</height>
 						<label>$INFO[ListItem.Label]</label>
 						<textcolor>lightgrey</textcolor>
+						<selectedcolor>light</selectedcolor>
 						<aligny>center</aligny>
 					</control>
 				</itemlayout>
@@ -193,6 +194,7 @@
 						<height>40</height>
 						<label>$INFO[ListItem.Label]</label>
 						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
 						<aligny>center</aligny>
 					</control>
 				</focusedlayout>

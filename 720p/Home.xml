@@ -181,7 +181,7 @@
 				<control type="button" id="205">
 					<label>$LOCALIZE[3]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(Videos,Files,return)</onclick>
 				</control>
 				<control type="button" id="206">
 					<label>$LOCALIZE[20343]</label>
