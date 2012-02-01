@@ -1,0 +1,110 @@
+<includes>
+	<include name="ViewList">
+		<control type="group">
+			<posx>115</posx>
+			<posy>60</posy>
+			<width>1120</width>
+			<height>624</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<visible>Control.IsVisible(50)</visible>
+			<control type="image">
+				<posx>-2</posx>
+				<posy>-2</posy>
+				<width>1124</width>
+				<height>628</height>
+				<texture>background-light.png</texture>
+			</control>
+			<control type="list" id="50">
+				<posx>30</posx>
+				<posy>30</posy>
+				<width>1060</width>
+				<height>560</height>
+				<pagecontrol>60</pagecontrol>
+				<onleft>1000</onleft>
+				<onright>60</onright>
+				<onup>9000</onup>
+				<ondown>50</ondown>
+				<itemlayout width="1060" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1060</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>1055</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>lightgrey</textcolor>
+						<aligny>center</aligny>
+					</control>
+					<control type="label">
+						<posx>1115</posx>
+						<posy>0</posy>
+						<width>1055</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label2]</label>
+						<textcolor>lightgrey</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+					</control>
+				</itemlayout>
+				<focusedlayout width="1060" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1060</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1060</width>
+						<height>40</height>
+						<texture border="4">button_FO.png</texture>
+						<visible>Control.HasFocus(50)</visible>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>1055</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>white</textcolor>
+						<aligny>center</aligny>
+					</control>
+					<control type="label">
+						<posx>1115</posx>
+						<posy>0</posy>
+						<width>1055</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label2]</label>
+						<textcolor>lightgrey</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>1095</posx>
+				<posy>30</posy>
+				<width>20</width>
+				<height>560</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<include>VisibleFade</include>
+			</control>
+		</control>
+	</include>
+</includes>

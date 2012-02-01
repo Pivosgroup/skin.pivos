@@ -2,6 +2,7 @@
 	<include file="defaults.xml"/>
 	<include file="IncludesAnims.xml"/>
 	<include file="IncludesVars.xml"/>
+	<include file="ViewList.xml"/>
 	<include file="ViewPanel.xml"/>
 	<constant name="CrossFade">250</constant>
 	<include name="BackgroundPanel">
