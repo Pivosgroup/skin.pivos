@@ -1,0 +1,89 @@
+<window id="115">
+	<visible>Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding</visible>
+	<coordinates>
+		<posx>880</posx>
+		<posy>620</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>380</width>
+			<height>90</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<visible>![Window.IsVisible(KaraokeSelector) | Window.IsVisible(KaraokeLargeSelector) | Window.IsVisible(InfoDialog) | Window.IsVisible(BusyDialog) | Window.IsVisible(SliderDialog) | Window.IsVisible(VolumeBar)]</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>380</width>
+				<height>90</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>25</posx>
+				<posy>22</posy>
+				<width>330</width>
+				<height>30</height>
+				<label>$VAR[SeekBarLabel]</label>
+				<font>font16c</font>
+				<align>center</align>
+				<textcolor>light</textcolor>
+			</control>
+			<control type="label">
+				<posx>24</posx>
+				<posy>44</posy>
+				<width>80</width>
+				<height>20</height>
+				<label>$VAR[SeekBarTime]</label>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="progress">
+				<posx>100</posx>
+				<posy>46</posy>
+				<width>180</width>
+				<height>20</height>
+				<info>Player.ProgressCache</info>
+				<midtexture border="13,0,13,0">progress_cache.png</midtexture>
+			</control>
+			<control type="progress">
+				<posx>100</posx>
+				<posy>46</posy>
+				<width>180</width>
+				<height>20</height>
+			</control>
+			<control type="progress">
+				<posx>100</posx>
+				<posy>46</posy>
+				<width>180</width>
+				<height>20</height>
+				<info>Player.CacheLevel</info>
+				<midtexture border="13,0,13,0">progress_buffer.png</midtexture>
+				<visible>Player.Caching</visible>
+			</control>
+			<control type="slider" id="401">
+				<posx>100</posx>
+				<posy>49</posy>
+				<width>180</width>
+				<height>21</height>
+				<texturesliderbar>seekslider_back.png</texturesliderbar>
+				<textureslidernib>osd_slider_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>osd_slider_nib_NF.png</textureslidernibfocus>
+				<visible>Player.Seeking</visible>
+			</control>
+			<control type="label">
+				<posx>356</posx>
+				<posy>44</posy>
+				<width>80</width>
+				<height>20</height>
+				<font>font16</font>
+				<label>$INFO[Player.Duration]</label>
+				<textcolor>white</textcolor>
+				<align>right</align>
+				<aligny>center</aligny>
+			</control>
+		</control>
+	</controls>
+</window>
