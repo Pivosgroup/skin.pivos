@@ -37,20 +37,50 @@
 			</control>
 			<control type="image" id="2">
 				<posx>30</posx>
-				<posy>100</posy>
+				<posy>78</posy>
 				<width>170</width>
 				<height>170</height>
-				<texture diffuse="thumb-diffuse.png">unknown-user.png</texture>
+				<texture diffuse="thumb-diffuse.png">DefaultUser.png</texture>
 				<aspectratio scalediffuse="true">keep</aspectratio>
+				<fadetime>250</fadetime>
 			</control>
-			<control type="label" id="1000">
-				<posx>20</posx>
-				<posy>280</posy>
-				<width>190</width>
-				<height>30</height>
-				<font>font20</font>
-				<textcolor>white</textcolor>
-				<align>center</align>
+			<control type="group" id="8000">
+				<posx>30</posx>
+				<posy>263</posy>
+				<control type="button" id="28">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[186]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>28</onup>
+					<ondown>29</ondown>
+					<onleft>5</onleft>
+					<onright>5</onright>
+				</control>
+				<control type="button" id="29">
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[222]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>28</onup>
+					<ondown>28</ondown>
+					<onleft>5</onleft>
+					<onright>5</onright>
+				</control>
 			</control>
 			<control type="grouplist" id="5">
 				<posx>230</posx>
@@ -59,9 +89,9 @@
 				<height>320</height>
 				<itemgap>-1</itemgap>
 				<pagecontrol>60</pagecontrol>
-				<onup>28</onup>
-				<ondown>28</ondown>
-				<onleft>5</onleft>
+				<onup>5</onup>
+				<ondown>5</ondown>
+				<onleft>8000</onleft>
 				<onright>60</onright>
 			</control>
 			<control type="scrollbar" id="60">
@@ -102,31 +132,23 @@
 				<height>40</height>
 				<label>-</label>
 			</control>
-			<control type="button" id="28">
-				<posx>295</posx>
-				<posy>463</posy>
-				<width>170</width>
-				<height>35</height>
-				<label>$LOCALIZE[186]</label>
-				<align>center</align>
-				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				<onup>5</onup>
-				<ondown>5</ondown>
-				<onleft>29</onleft>
-				<onright>29</onright>
+			<control type="image">
+				<posx>30</posx>
+				<posy>458</posy>
+				<width>900</width>
+				<height>40</height>
+				<texture border="4">button_alt_NF.png</texture>
 			</control>
-			<control type="button" id="29">
-				<posx>495</posx>
+			<control type="label" id="1000">
+				<posx>35</posx>
 				<posy>463</posy>
-				<width>170</width>
-				<height>35</height>
-				<label>$LOCALIZE[222]</label>
+				<width>890</width>
+				<height>30</height>
+				<label>-</label>
+				<font>font20</font>
+				<textcolor>normal</textcolor>
 				<align>center</align>
-				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				<onup>5</onup>
-				<ondown>5</ondown>
-				<onleft>28</onleft>
-				<onright>28</onright>
+				<haspath>true</haspath>
 			</control>
 		</control>
 	</controls>

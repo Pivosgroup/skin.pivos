@@ -41,6 +41,8 @@
 				<width>170</width>
 				<height>170</height>
 				<texture fallback="DefaultAddon.png" diffuse="thumb-diffuse.png">$INFO[Container(4).ListItem.Icon]</texture>
+				<aspectratio scalediffuse="true">keep</aspectratio>
+				<fadetime>250</fadetime>
 			</control>
 			<control type="group" id="8000">
 				<posx>30</posx>
