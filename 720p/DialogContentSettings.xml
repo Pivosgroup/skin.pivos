@@ -1,0 +1,236 @@
+<window id="132">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<coordinates>
+		<posx>195</posx>
+		<posy>58</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>960</width>
+			<height>628</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>960</width>
+				<height>628</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>960</width>
+				<height>48</height>
+				<texture>header-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>14</posy>
+				<width>900</width>
+				<height>30</height>
+				<label>$LOCALIZE[20333]</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
+			<control type="image">
+				<posx>30</posx>
+				<posy>78</posy>
+				<width>170</width>
+				<height>170</height>
+				<texture fallback="DefaultAddon.png" diffuse="thumb-diffuse.png">$INFO[Container(4).ListItem.Icon]</texture>
+			</control>
+			<control type="group" id="8000">
+				<posx>30</posx>
+				<posy>263</posy>
+				<control type="button" id="6">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[5]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>29</onup>
+					<ondown>28</ondown>
+					<onleft>3</onleft>
+					<onright>3</onright>
+				</control>
+				<control type="button" id="28">
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[186]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>6</onup>
+					<ondown>29</ondown>
+					<onleft>3</onleft>
+					<onright>3</onright>
+				</control>
+				<control type="button" id="29">
+					<posx>0</posx>
+					<posy>80</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[222]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>28</onup>
+					<ondown>6</ondown>
+					<onleft>3</onleft>
+					<onright>3</onright>
+				</control>
+			</control>
+			<control type="spincontrolex" id="3">
+				<posx>230</posx>
+				<posy>100</posy>
+				<width>695</width>
+				<height>40</height>
+				<aligny>center</aligny>
+				<font>font16m</font>
+				<label>$LOCALIZE[20344]</label>
+				<textcolor>white</textcolor>
+				<onup>4</onup>
+				<ondown>4</ondown>
+				<onleft>8000</onleft>
+				<onright>8000</onright>
+			</control>
+			<control type="label">
+				<posx>230</posx>
+				<posy>155</posy>
+				<width>695</width>
+				<height>30</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font16m</font>
+				<label>$LOCALIZE[21412]</label>
+				<textcolor>normal</textcolor>
+				<visible>Control.IsVisible(4)</visible>
+			</control>
+			<control type="list" id="4">
+				<posx>230</posx>
+				<posy>185</posy>
+				<width>680</width>
+				<height>160</height>
+				<pagecontrol>60</pagecontrol>
+				<onup>3</onup>
+				<ondown>5</ondown>
+				<onleft>8000</onleft>
+				<onright>60</onright>
+				<itemlayout width="680" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>670</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>lightgrey</textcolor>
+						<selectedcolor>light</selectedcolor>
+						<aligny>center</aligny>
+					</control>
+				</itemlayout>
+				<focusedlayout width="680" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="4">button_FO.png</texture>
+						<visible>Control.HasFocus(4)</visible>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>670</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<aligny>center</aligny>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>920</posx>
+				<posy>185</posy>
+				<width>20</width>
+				<height>160</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onleft>4</onleft>
+				<onright>4</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<include>VisibleFade</include>
+			</control>
+			<control type="label">
+				<posx>230</posx>
+				<posy>360</posy>
+				<width>695</width>
+				<height>30</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font16m</font>
+				<label>$LOCALIZE[33063]</label>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="grouplist" id="5">
+				<posx>230</posx>
+				<posy>390</posy>
+				<width>695</width>
+				<height>200</height>
+				<itemgap>-1</itemgap>
+				<onup>4</onup>
+				<ondown>3</ondown>
+				<onleft>8000</onleft>
+				<onright>8000</onright>
+			</control>
+			<control type="button" id="7">
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>40</height>
+				<width>695</width>
+			</control>
+			<control type="radiobutton" id="8">
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>40</height>
+				<width>695</width>
+				<radioposx>633</radioposx>
+			</control>
+		</control>
+	</controls>
+</window>
