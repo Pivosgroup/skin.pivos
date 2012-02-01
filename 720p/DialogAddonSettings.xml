@@ -61,7 +61,7 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>760</width>
-					<height>424</height>
+					<height>434</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onup>2</onup>
@@ -130,11 +130,12 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>760</width>
-					<height>30</height>
+					<height>40</height>
 					<label>-</label>
-					<height>30</height>
 					<font>font20</font>
+					<textcolor>normal</textcolor>
 					<align>center</align>
+					<aligny>center</aligny>
 				</control>
 				<control type="sliderex" id="8">
 					<posx>0</posx>
