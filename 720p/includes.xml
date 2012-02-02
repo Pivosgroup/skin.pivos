@@ -227,7 +227,7 @@
 							<label>-</label>
 							<icon>home_music_NF.png</icon>
 							<property name="Icon_Focus">home_music_FO.png</property>
-							<onclick>ActivateWindow(MusicLibrary)</onclick>
+							<onclick>ActivateWindow(Music)</onclick>
 						</item>
 						<item id="4">
 							<label>-</label>

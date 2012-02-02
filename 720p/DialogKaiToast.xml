@@ -57,19 +57,19 @@
 				<posy>22</posy>
 				<width>280</width>
 				<height>30</height>
-				<align>center</align>
 				<font>font16</font>
 				<textcolor>light</textcolor>
+				<align>center</align>
 			</control>
 			<control type="label" id="402">
 				<posx>80</posx>
 				<posy>46</posy>
 				<width>280</width>
 				<height>30</height>
-				<align>center</align>
 				<font>font16</font>
 				<scroll>true</scroll>
 				<textcolor>white</textcolor>
+				<align>center</align>
 			</control>
 		</control>
 	</controls>

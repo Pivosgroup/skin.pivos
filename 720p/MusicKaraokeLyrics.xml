@@ -1,0 +1,51 @@
+<window id="2009">
+	<controls>
+		<control type="karvisualisation" id="1">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+		</control>
+		<control type="image" id="2">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+		</control>
+		<control type="group">
+			<posx>880</posx>
+			<posy>620</posy>
+			<width>380</width>
+			<height>90</height>
+			<include>VisibleZoomInOut</include>
+			<visible>MusicPlayer.HasNext + !IntegerGreaterThan(Player.TimeRemaining,20) + !Window.IsVisible(KaraokeSelector) + !Window.IsVisible(KaraokeLargeSelector)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>380</width>
+				<height>90</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>25</posx>
+				<posy>22</posy>
+				<width>330</width>
+				<height>30</height>
+				<font>font16</font>
+				<label>$LOCALIZE[209]</label>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
+			<control type="label">
+				<posx>25</posx>
+				<posy>46</posy>
+				<width>330</width>
+				<height>30</height>
+				<label>$INFO[MusicPlayer.Offset(1).Title]</label>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+			</control>
+		</control>
+	</controls>
+</window>

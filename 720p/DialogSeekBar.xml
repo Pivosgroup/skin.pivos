@@ -31,9 +31,9 @@
 			</control>
 			<control type="label">
 				<posx>24</posx>
-				<posy>44</posy>
+				<posy>38</posy>
 				<width>80</width>
-				<height>20</height>
+				<height>30</height>
 				<label>$VAR[SeekBarTime]</label>
 				<font>font16</font>
 				<textcolor>white</textcolor>
@@ -75,9 +75,9 @@
 			</control>
 			<control type="label">
 				<posx>356</posx>
-				<posy>44</posy>
+				<posy>38</posy>
 				<width>80</width>
-				<height>20</height>
+				<height>30</height>
 				<font>font16</font>
 				<label>$INFO[Player.Duration]</label>
 				<textcolor>white</textcolor>
