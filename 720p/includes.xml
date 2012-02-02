@@ -157,7 +157,8 @@
 					<onleft>5001</onleft>
 					<onright condition="Window.IsVisible(Home)">200</onright>
 					<onright condition="Window.IsVisible(Videos) | Window.IsVisible(AddonBrowser)">50</onright>
-					<onright condition="!Window.IsVisible(Home) + !Window.IsVisible(Videos)">3</onright>
+					<onright condition="Window.IsVisible(FileManager)">20</onright>
+					<onright condition="!Window.IsVisible(Home) + !Window.IsVisible(Videos) + !Window.IsVisible(FileManager)">3</onright>
 					<itemlayout width="64" height="72">
 						<control type="image">
 							<posx>0</posx>
@@ -457,8 +458,10 @@
 				<height>30</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>3</onup>
-				<ondown>3</ondown>
+				<onup condition="!Window.IsVisible(FileManager)">3</onup>
+				<onup condition="Window.IsVisible(FileManager)">20</onup>
+				<ondown condition="!Window.IsVisible(FileManager)">3</ondown>
+				<ondown condition="Window.IsVisible(FileManager)">20</ondown>
 				<onleft>1000</onleft>
 				<onright>9000</onright>
 				<control type="button" id="3000">

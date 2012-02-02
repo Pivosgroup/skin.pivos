@@ -57,6 +57,7 @@
 		<value condition="Window.IsVisible(SystemSettings)">$LOCALIZE[10016]</value>
 		<value condition="Window.IsVisible(Profiles)">$LOCALIZE[10034]</value>
 		<value condition="Window.IsVisible(SystemInfo)">$LOCALIZE[10007]</value>
+		<value condition="Window.IsVisible(FileManager)">$LOCALIZE[7]</value>
 		<value condition="Window.IsVisible(1111)">$LOCALIZE[20077]</value>
 	</variable>
 	<variable name="SubMenuArrow">

@@ -20,10 +20,10 @@
 				<width>1060</width>
 				<height>560</height>
 				<pagecontrol>60</pagecontrol>
-				<onleft>1000</onleft>
-				<onright>60</onright>
 				<onup>9000</onup>
 				<ondown>50</ondown>
+				<onleft>1000</onleft>
+				<onright>60</onright>
 				<itemlayout width="1060" height="40">
 					<control type="image">
 						<posx>0</posx>

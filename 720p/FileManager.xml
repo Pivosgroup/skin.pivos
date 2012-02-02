@@ -1,0 +1,276 @@
+<window id="3">
+	<defaultcontrol>20</defaultcontrol>
+	<controls>
+		<include>DefaultBackground</include>
+		<include>BackgroundPanelSettings</include>
+		<include>SideMenu</include>
+		<include>TopMenuSettings</include>
+		<control type="group">
+			<control type="image">
+				<posx>113</posx>
+				<posy>58</posy>
+				<width>1127</width>
+				<height>628</height>
+				<texture>background-light.png</texture>
+				<include>WindowOpenCloseFadeSettings</include>
+			</control>
+			<include>SettingsHeader</include>
+			<control type="group">
+				<posx>135</posx>
+				<posy>130</posy>
+				<width>250</width>
+				<height>470</height>
+				<include>WindowOpenCloseZoomInOutSettings</include>
+				<control type="label" id="101">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>520</width>
+					<height>40</height>
+					<font>font20</font>
+					<textcolor>normal</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="list" id="20">
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>520</width>
+					<height>480</height>
+					<pagecontrol>60</pagecontrol>
+					<scrolltime>250</scrolltime>
+					<preloaditems>2</preloaditems>
+					<onup>9000</onup>
+					<ondown>20</ondown>
+					<onleft>1000</onleft>
+					<onright>60</onright>
+					<itemlayout width="520" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>520</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="image">
+							<posx>5</posx>
+							<posy>5</posy>
+							<width>30</width>
+							<height>30</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="label">
+							<posx>40</posx>
+							<posy>0</posy>
+							<width>475</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>light</selectedcolor>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<posx>515</posx>
+							<posy>0</posy>
+							<width>475</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label2]</label>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>light</selectedcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="520" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>520</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>520</width>
+							<height>40</height>
+							<texture border="4">button_FO.png</texture>
+							<visible>Control.HasFocus(20)</visible>
+						</control>
+						<control type="image">
+							<posx>5</posx>
+							<posy>5</posy>
+							<width>30</width>
+							<height>30</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="label">
+							<posx>40</posx>
+							<posy>0</posy>
+							<width>475</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<posx>515</posx>
+							<posy>0</posy>
+							<width>475</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label2]</label>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="scrollbar" id="60">
+					<posx>525</posx>
+					<posy>40</posy>
+					<width>20</width>
+					<height>480</height>
+					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+					<texturesliderbar>-</texturesliderbar>
+					<texturesliderbarfocus>-</texturesliderbarfocus>
+					<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+					<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+					<onleft>20</onleft>
+					<onright>21</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<include>VisibleFade</include>
+				</control>
+			</control>
+			<control type="group">
+				<posx>688</posx>
+				<posy>130</posy>
+				<width>775</width>
+				<height>510</height>
+				<include>WindowOpenCloseZoomInOutSettings</include>
+				<control type="label" id="102">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>530</width>
+					<height>40</height>
+					<font>font20</font>
+					<textcolor>normal</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="list" id="21">
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>520</width>
+					<height>480</height>
+					<pagecontrol>61</pagecontrol>
+					<scrolltime>250</scrolltime>
+					<preloaditems>2</preloaditems>
+					<onup>9000</onup>
+					<ondown>21</ondown>
+					<onleft>20</onleft>
+					<onright>61</onright>
+					<itemlayout width="520" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>520</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="image">
+							<posx>5</posx>
+							<posy>5</posy>
+							<width>30</width>
+							<height>30</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="label">
+							<posx>40</posx>
+							<posy>0</posy>
+							<width>475</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>light</selectedcolor>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<posx>515</posx>
+							<posy>0</posy>
+							<width>475</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label2]</label>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>light</selectedcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="520" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>520</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>520</width>
+							<height>40</height>
+							<texture border="4">button_FO.png</texture>
+							<visible>Control.HasFocus(21)</visible>
+						</control>
+						<control type="image">
+							<posx>5</posx>
+							<posy>5</posy>
+							<width>30</width>
+							<height>30</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="label">
+							<posx>40</posx>
+							<posy>0</posy>
+							<width>475</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<posx>515</posx>
+							<posy>0</posy>
+							<width>475</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label2]</label>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="scrollbar" id="61">
+					<posx>525</posx>
+					<posy>40</posy>
+					<width>20</width>
+					<height>480</height>
+					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+					<texturesliderbar>-</texturesliderbar>
+					<texturesliderbarfocus>-</texturesliderbarfocus>
+					<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+					<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+					<onleft>21</onleft>
+					<onright>20</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<include>VisibleFade</include>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>
