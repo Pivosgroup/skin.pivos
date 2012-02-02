@@ -110,17 +110,17 @@
 				<control type="button" id="201">
 					<label>$LOCALIZE[20342]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunScript(script.globalsearch,movies=true)</onclick>
 				</control>
 				<control type="button" id="202">
 					<label>$LOCALIZE[20343]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunScript(script.globalsearch,tvshows=true)</onclick>
 				</control>
 				<control type="button" id="203">
 					<label>$LOCALIZE[20389]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunScript(script.globalsearch,musicvideos=true)</onclick>
 				</control>
 				<control type="image" id="204">
 					<width>150</width>
@@ -131,17 +131,17 @@
 				<control type="button" id="205">
 					<label>$LOCALIZE[133]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunScript(script.globalsearch,artists=true)</onclick>
 				</control>
 				<control type="button" id="206">
 					<label>$LOCALIZE[132]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunScript(script.globalsearch,albums=true)</onclick>
 				</control>
 				<control type="button" id="207">
 					<label>$LOCALIZE[134]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunScript(script.globalsearch,songs=true)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">
@@ -160,17 +160,17 @@
 				<control type="button" id="201">
 					<label>$LOCALIZE[136]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 				</control>
 				<control type="button" id="202">
 					<label>$LOCALIZE[589]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>PlayerControl(Partymode(Video))</onclick>
 				</control>
 				<control type="button" id="203">
 					<label>$LOCALIZE[31004]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
 				</control>
 				<control type="image" id="204">
 					<width>150</width>
@@ -181,22 +181,22 @@
 				<control type="button" id="205">
 					<label>$LOCALIZE[3]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(Videos,Files,return)</onclick>
+					<onclick>ActivateWindow(Videos)</onclick>
 				</control>
 				<control type="button" id="206">
 					<label>$LOCALIZE[20343]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
 				</control>
 				<control type="button" id="207">
 					<label>$LOCALIZE[20389]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 				</control>
 				<control type="button" id="208">
 					<label>$LOCALIZE[1037]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">
@@ -215,17 +215,17 @@
 				<control type="button" id="201">
 					<label>$LOCALIZE[136]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 				</control>
 				<control type="button" id="202">
 					<label>$LOCALIZE[589]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>PlayerControl(Partymode(Music))</onclick>
 				</control>
 				<control type="button" id="203">
 					<label>$LOCALIZE[31004]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</onclick>
 				</control>
 				<control type="image" id="204">
 					<width>150</width>
@@ -236,17 +236,17 @@
 				<control type="button" id="205">
 					<label>$LOCALIZE[133]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 				</control>
 				<control type="button" id="206">
 					<label>$LOCALIZE[132]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 				</control>
 				<control type="button" id="207">
 					<label>$LOCALIZE[134]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">
@@ -265,7 +265,7 @@
 				<control type="button" id="201">
 					<label>$LOCALIZE[1039]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 				</control>
 				<control type="image" id="202">
 					<width>150</width>
@@ -400,7 +400,7 @@
 				<control type="button" id="201">
 					<label>$LOCALIZE[31006]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>Weather.Refresh</onclick>
 				</control>
 				<control type="image" id="202">
 					<width>150</width>
@@ -411,7 +411,7 @@
 				<control type="button" id="203">
 					<label>$LOCALIZE[31007]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>Weather.LocationNext</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">

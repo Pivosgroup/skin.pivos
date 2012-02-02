@@ -216,7 +216,7 @@
 							<label>-</label>
 							<icon>home_search_NF.png</icon>
 							<property name="Icon_Focus">home_search_FO.png</property>
-							<onclick>ActivateWindow()</onclick>
+							<onclick>RunScript(script.globalsearch)</onclick>
 						</item>
 						<item id="2">
 							<label>-</label>
@@ -246,13 +246,13 @@
 							<label>-</label>
 							<icon>home_addons_NF.png</icon>
 							<property name="Icon_Focus">home_addons_FO.png</property>
-							<onclick>ActivateWindow(Programs)</onclick>
+							<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 						</item>
 						<item id="7">
 							<label>-</label>
 							<icon>home_weather_NF.png</icon>
 							<property name="Icon_Focus">home_weather_FO.png</property>
-							<onclick>ActivateWindow()</onclick>
+							<onclick>ActivateWindow(Weather)</onclick>
 						</item>
 						<item id="8">
 							<label>-</label>

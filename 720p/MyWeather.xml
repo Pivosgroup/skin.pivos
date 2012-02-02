@@ -1,12 +1,9 @@
-<window id="40">
+<window id="2600">
 	<defaultcontrol always="true">50</defaultcontrol>
-	<views>50,51</views>
 	<controls>
 		<include>DefaultBackground</include>
+		<include>Fanart</include>
 		<include>BackgroundPanel</include>
 		<include>SideMenu</include>
-		<include>TopMenuAddons</include>
-		<include>ViewList</include>
-		<include>ViewPanelAddons</include>
 	</controls>
 </window>
