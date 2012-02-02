@@ -239,7 +239,7 @@
 							<label>-</label>
 							<icon>home_favourites_NF.png</icon>
 							<property name="Icon_Focus">home_favourites_FO.png</property>
-							<onclick>ActivateWindow()</onclick>
+							<onclick>ActivateWindow(Favourites)</onclick>
 						</item>
 						<item id="6">
 							<label>-</label>

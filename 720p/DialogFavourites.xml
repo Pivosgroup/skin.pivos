@@ -1,5 +1,5 @@
-<window id="130">
-	<defaultcontrol always="true">5</defaultcontrol>
+<window id="134">
+	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
 		<posx>195</posx>
 		<posy>108</posy>
@@ -30,7 +30,7 @@
 				<posy>14</posy>
 				<width>900</width>
 				<height>30</height>
-				<label>$INFO[Window.Property(heading)]</label>
+				<label>$LOCALIZE[1036]</label>
 				<font>font30</font>
 				<textcolor>light</textcolor>
 				<align>center</align>
@@ -40,7 +40,7 @@
 				<posy>78</posy>
 				<width>170</width>
 				<height>170</height>
-				<texture diffuse="thumb-diffuse.png" background="true">DefaultUser.png</texture>
+				<texture fallback="DefaultFolder.png" diffuse="thumb-diffuse.png" background="true">$INFO[Container(450).ListItem.Icon]</texture>
 				<aspectratio scalediffuse="true">keep</aspectratio>
 				<fadetime>CrossFade</fadetime>
 			</control>
@@ -60,95 +60,84 @@
 					<texturefocus border="4">button_FO.png</texturefocus>
 					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
 					<onup>28</onup>
-					<ondown>29</ondown>
-					<onleft>5</onleft>
-					<onright>5</onright>
-				</control>
-				<control type="button" id="29">
-					<posx>0</posx>
-					<posy>40</posy>
-					<width>170</width>
-					<height>35</height>
-					<label>$LOCALIZE[222]</label>
-					<font>font16m</font>
-					<align>center</align>
-					<textcolor>lightgrey</textcolor>
-					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<onup>28</onup>
 					<ondown>28</ondown>
-					<onleft>5</onleft>
-					<onright>5</onright>
+					<onleft>450</onleft>
+					<onright>450</onright>
+					<onclick>Dialog.Close(Favourites)</onclick>
 				</control>
 			</control>
-			<control type="grouplist" id="5">
+			<control type="list" id="450">
 				<posx>230</posx>
 				<posy>100</posy>
 				<width>680</width>
-				<height>320</height>
-				<itemgap>-1</itemgap>
+				<height>360</height>
 				<pagecontrol>60</pagecontrol>
-				<onup>5</onup>
-				<ondown>5</ondown>
+				<onup>450</onup>
+				<ondown>450</ondown>
 				<onleft>8000</onleft>
 				<onright>60</onright>
+				<itemlayout width="680" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>670</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>lightgrey</textcolor>
+						<selectedcolor>light</selectedcolor>
+						<aligny>center</aligny>
+					</control>
+				</itemlayout>
+				<focusedlayout width="680" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="4">button_FO.png</texture>
+						<visible>Control.HasFocus(450)</visible>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>670</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<aligny>center</aligny>
+					</control>
+				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
 				<posx>920</posx>
 				<posy>100</posy>
 				<width>20</width>
-				<height>340</height>
+				<height>360</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
 				<texturesliderbar>-</texturesliderbar>
 				<texturesliderbarfocus>-</texturesliderbarfocus>
 				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
 				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
-				<onleft>5</onleft>
-				<onright>5</onright>
+				<onleft>450</onleft>
+				<onright>450</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<include>VisibleFade</include>
-			</control>
-			<control type="button" id="7">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>680</width>
-				<height>40</height>
-				<label>-</label>
-			</control>
-			<control type="radiobutton" id="8">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>680</width>
-				<height>40</height>
-				<label>-</label>
-				<radioposx>618</radioposx>
-			</control>
-			<control type="spincontrolex" id="9">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>680</width>
-				<height>40</height>
-				<label>-</label>
-			</control>
-			<control type="image">
-				<posx>30</posx>
-				<posy>458</posy>
-				<width>900</width>
-				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
-			</control>
-			<control type="label" id="1000">
-				<posx>35</posx>
-				<posy>463</posy>
-				<width>890</width>
-				<height>30</height>
-				<label>-</label>
-				<font>font20</font>
-				<textcolor>normal</textcolor>
-				<align>center</align>
-				<haspath>true</haspath>
 			</control>
 		</control>
 	</controls>

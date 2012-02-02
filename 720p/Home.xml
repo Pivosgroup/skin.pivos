@@ -9,7 +9,7 @@
 			<height>720</height>
 			<texture background="true">$INFO[Container(5001).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
-			<fadetime>250</fadetime>
+			<fadetime>CrossFade</fadetime>
 			<colordiffuse>50FFFFFF</colordiffuse>
 			<include>WindowOpenCloseFade</include>
 			<include>VisibleFade</include>
