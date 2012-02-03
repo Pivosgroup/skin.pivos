@@ -2,6 +2,8 @@
 <addon id="skin.pivos" version="0.0.2" name="Pivos" provider-name="Pivos Technology Group, Inc.">
 	<requires>
 		<import	addon="xbmc.gui" version="3.00"/>
+		<import addon="script.favourites" version="3.2.1"/>
+		<import addon="script.globalsearch" version="0.1.7"/>
 	</requires>
 	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p"/>

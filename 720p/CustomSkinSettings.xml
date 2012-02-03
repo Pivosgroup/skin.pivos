@@ -1,5 +1,5 @@
 <window id="1111">
-	<defaultcontrol>3</defaultcontrol>
+	<defaultcontrol always="true">3</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
 		<include>SideMenu</include>
@@ -25,8 +25,8 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>470</height>
-					<itemgap>-1</itemgap>
 					<pagecontrol>-</pagecontrol>
+					<scrolltime>250</scrolltime>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<onleft>1000</onleft>
@@ -88,6 +88,14 @@
 							<label>$LOCALIZE[128]</label>
 							<onclick>-</onclick>
 						</item>
+						<item id="2">
+							<label>$LOCALIZE[1036]</label>
+							<onclick>-</onclick>
+						</item>
+						<item id="3">
+							<label>$LOCALIZE[24001]</label>
+							<onclick>-</onclick>
+						</item>
 					</content>
 				</control>
 			</control>
@@ -95,28 +103,40 @@
 				<posx>430</posx>
 				<posy>130</posy>
 				<width>775</width>
-				<height>510</height>
+				<height>492</height>
 				<include>WindowOpenCloseZoomInOut</include>
 				<control type="grouplist" id="100">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>775</width>
 					<height>510</height>
-					<pagecontrol>60</pagecontrol>
+					<itemgap>-1</itemgap>
+					<pagecontrol>199</pagecontrol>
 					<onup>9000</onup>
-					<ondown>2</ondown>
+					<ondown>100</ondown>
 					<onleft>3</onleft>
-					<onright>60</onright>
+					<onright>199</onright>
 					<visible>Container(3).Hasfocus(1)</visible>
-					<control type="button" id="101">
+					<control type="radiobutton" id="101">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
 						<height>50</height>
 						<label>$LOCALIZE[33070]</label>
-						<onclick>-</onclick>
+						<selected>Skin.HasSetting(UseCustomBackGround)</selected>
+						<onclick>Skin.ToggleSetting(UseCustomBackGround)</onclick>
 					</control>
-					<control type="radiobutton" id="102">
+					<control type="button" id="102">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>- $LOCALIZE[424]</label>
+						<label2>$INFO[Skin.String(CustomBackGround)]</label2>
+						<onclick>Skin.SetImage(CustomBackGround)</onclick>
+						<visible>Skin.HasSetting(UseCustomBackGround)</visible>
+					</control>
+					<control type="radiobutton" id="103">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
@@ -126,21 +146,190 @@
 						<onclick>Skin.ToggleSetting(NoScrollDescription)</onclick>
 					</control>
 				</control>
-				<control type="scrollbar" id="60">
+				<control type="scrollbar" id="199">
 					<posx>782</posx>
 					<posy>0</posy>
 					<width>20</width>
-					<height>510</height>
+					<height>492</height>
 					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
 					<texturesliderbar>-</texturesliderbar>
 					<texturesliderbarfocus>-</texturesliderbarfocus>
 					<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
 					<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
-					<onleft>2</onleft>
-					<onright>2</onright>
+					<onleft>100</onleft>
+					<onright>100</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<include>VisibleFade</include>
+					<visible>Container(3).Hasfocus(1)</visible>
+				</control>
+				<control type="grouplist" id="200">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>775</width>
+					<height>492</height>
+					<itemgap>-1</itemgap>
+					<pagecontrol>299</pagecontrol>
+					<onup>9000</onup>
+					<ondown>200</ondown>
+					<onleft>3</onleft>
+					<onright>299</onright>
+					<visible>Container(3).Hasfocus(2)</visible>
+					<control type="button" id="201">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[31005] 1</label>
+						<label2>$INFO[Skin.String(CustomFavourite.1.Label)]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite.1)</onclick>
+					</control>
+					<control type="button" id="202">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[31005] 2</label>
+						<label2>$INFO[Skin.String(CustomFavourite.2.Label)]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite.2)</onclick>
+					</control>
+					<control type="button" id="203">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[31005] 3</label>
+						<label2>$INFO[Skin.String(CustomFavourite.3.Label)]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite.3)</onclick>
+					</control>
+					<control type="button" id="204">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[31005] 4</label>
+						<label2>$INFO[Skin.String(CustomFavourite.4.Label)]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite.4)</onclick>
+					</control>
+					<control type="button" id="205">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[31005] 5</label>
+						<label2>$INFO[Skin.String(CustomFavourite.5.Label)]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite.5)</onclick>
+					</control>
+					<control type="button" id="206">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[31005] 6</label>
+						<label2>$INFO[Skin.String(CustomFavourite.6.Label)]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite.6)</onclick>
+					</control>
+					<control type="button" id="207">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[31005] 7</label>
+						<label2>$INFO[Skin.String(CustomFavourite.7.Label)]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite.7)</onclick>
+					</control>
+					<control type="button" id="208">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[31005] 8</label>
+						<label2>$INFO[Skin.String(CustomFavourite.8.Label)]</label2>
+						<onclick>RunScript(script.favourites,property=CustomFavourite.8)</onclick>
+					</control>
+				</control>
+				<control type="scrollbar" id="299">
+					<posx>782</posx>
+					<posy>0</posy>
+					<width>20</width>
+					<height>492</height>
+					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+					<texturesliderbar>-</texturesliderbar>
+					<texturesliderbarfocus>-</texturesliderbarfocus>
+					<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+					<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+					<onleft>200</onleft>
+					<onright>200</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<include>VisibleFade</include>
+					<visible>Container(3).Hasfocus(2)</visible>
+				</control>
+				<control type="grouplist" id="300">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>775</width>
+					<height>492</height>
+					<itemgap>-1</itemgap>
+					<pagecontrol>399</pagecontrol>
+					<onup>9000</onup>
+					<ondown>300</ondown>
+					<onleft>3</onleft>
+					<onright>399</onright>
+					<visible>Container(3).Hasfocus(3)</visible>
+					<control type="button" id="301">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.1.Label))]</label2>
+						<onclick>Skin.SetAddon(CustomAddon.1.Label,xbmc.addon.executable)</onclick>
+					</control>
+					<control type="button" id="302">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.2.Label))]</label2>
+						<onclick>Skin.SetAddon(CustomAddon.2.Label,xbmc.addon.executable)</onclick>
+					</control>
+					<control type="button" id="303">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.3.Label))]</label2>
+						<onclick>Skin.SetAddon(CustomAddon.3.Label,xbmc.addon.executable)</onclick>
+					</control>
+					<control type="button" id="304">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.4.Label))]</label2>
+						<onclick>Skin.SetAddon(CustomAddon.4.Label,xbmc.addon.executable)</onclick>
+					</control>
+				</control>
+				<control type="scrollbar" id="399">
+					<posx>782</posx>
+					<posy>0</posy>
+					<width>20</width>
+					<height>492</height>
+					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+					<texturesliderbar>-</texturesliderbar>
+					<texturesliderbarfocus>-</texturesliderbarfocus>
+					<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+					<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+					<onleft>300</onleft>
+					<onright>300</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<include>VisibleFade</include>
+					<visible>Container(3).Hasfocus(3)</visible>
 				</control>
 			</control>
 		</control>

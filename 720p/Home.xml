@@ -286,52 +286,61 @@
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
 				<onright>5001</onright>
-				<visible>Container(1000).HasFocus(5)</visible>
+				<visible>Container(1000).HasFocus(5) + !IsEmpty(Skin.String(CustomFavourite.1.Label))</visible>
 				<control type="button" id="201">
-					<label>$LOCALIZE[31005] 1</label>
+					<label>$INFO[Skin.String(CustomFavourite.1.Label)]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>$INFO[Skin.String(CustomFavourite.1.Path)]</onclick>
+					<visible>!IsEmpty(Skin.String(CustomFavourite.1.Label))</visible>
 				</control>
 				<control type="button" id="202">
-					<label>$LOCALIZE[31005] 2</label>
+					<label>$INFO[Skin.String(CustomFavourite.2.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
+					<visible>!IsEmpty(Skin.String(CustomFavourite.2.Label))</visible>
 				</control>
 				<control type="button" id="203">
-					<label>$LOCALIZE[31005] 3</label>
+					<label>$INFO[Skin.String(CustomFavourite.3.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
+					<visible>!IsEmpty(Skin.String(CustomFavourite.3.Label))</visible>
 				</control>
 				<control type="button" id="204">
-					<label>$LOCALIZE[31005] 4</label>
+					<label>$INFO[Skin.String(CustomFavourite.4.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
+					<visible>!IsEmpty(Skin.String(CustomFavourite.4.Label))</visible>
 				</control>
 				<control type="image" id="205">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
+					<visible>!IsEmpty(Skin.String(CustomFavourite.1.Label))</visible>
 				</control>
 				<control type="button" id="206">
-					<label>$LOCALIZE[31005] 5</label>
+					<label>$INFO[Skin.String(CustomFavourite.5.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
+					<visible>!IsEmpty(Skin.String(CustomFavourite.5.Label))</visible>
 				</control>
 				<control type="button" id="207">
-					<label>$LOCALIZE[31005] 6</label>
+					<label>$INFO[Skin.String(CustomFavourite.6.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
+					<visible>!IsEmpty(Skin.String(CustomFavourite.6.Label))</visible>
 				</control>
 				<control type="button" id="208">
-					<label>$LOCALIZE[31005] 7</label>
+					<label>$INFO[Skin.String(CustomFavourite.7.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
+					<visible>!IsEmpty(Skin.String(CustomFavourite.7.Label))</visible>
 				</control>
 				<control type="button" id="209">
-					<label>$LOCALIZE[31005] 8</label>
+					<label>$INFO[Skin.String(CustomFavourite.8.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
+					<visible>!IsEmpty(Skin.String(CustomFavourite.8.Label))</visible>
 				</control>
 			</control>
 			<control type="grouplist" id="200">
@@ -359,29 +368,34 @@
 					<colordiffuse>normal</colordiffuse>
 				</control>
 				<control type="button" id="203">
-					<label>$LOCALIZE[24000] 1</label>
+					<label>$INFO[System.AddonTitle(Skin.String(CustomAddon.1.Label))]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunAddon($INFO[Skin.String(CustomAddon.1.Label)])</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon.1.Label))</visible>
 				</control>
 				<control type="button" id="204">
-					<label>$LOCALIZE[24000] 2</label>
+					<label>$INFO[System.AddonTitle(Skin.String(CustomAddon.2.Label))]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunAddon($INFO[Skin.String(CustomAddon.2.Label)])</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon.2.Label))</visible>
 				</control>
 				<control type="button" id="205">
-					<label>$LOCALIZE[24000] 3</label>
+					<label>$INFO[System.AddonTitle(Skin.String(CustomAddon.3.Label))]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunAddon($INFO[Skin.String(CustomAddon.3.Label)])</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon.3.Label))</visible>
 				</control>
 				<control type="button" id="206">
-					<label>$LOCALIZE[24000] 4</label>
+					<label>$INFO[System.AddonTitle(Skin.String(CustomAddon.4.Label))]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunAddon($INFO[Skin.String(CustomAddon.4.Label)])</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon.4.Label))</visible>
 				</control>
 				<control type="button" id="207">
-					<label>$LOCALIZE[24000] 5</label>
+					<label>$INFO[System.AddonTitle(Skin.String(CustomAddon.5.Label))]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
+					<onclick>RunAddon($INFO[Skin.String(CustomAddon.5.Label)])</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon.5.Label))</visible>
 				</control>
 			</control>
 			<control type="grouplist" id="200">
@@ -467,7 +481,10 @@
 				<animation effect="slide" end="0,360" time="150" condition="Container(1000).HasFocus(6)">Conditional</animation>
 				<animation effect="slide" end="0,432" time="150" condition="Container(1000).HasFocus(7)">Conditional</animation>
 				<animation effect="slide" end="0,504" time="150" condition="Container(1000).HasFocus(8)">Conditional</animation>
+				<animation effect="fade" end="100" time="0" delay="150">Visible</animation>
+				<animation effect="fade" end="0" time="0">Hidden</animation>
 				<include>WindowOpenCloseFadeHome</include>
+				<visible>![Container(1000).HasFocus(5) + IsEmpty(Skin.String(CustomFavourite.1.Label))]</visible>
 			</control>
 		</control>
 		<include>SideMenu</include>
@@ -506,7 +523,7 @@
 					<label>$INFO[MusicPlayer.Title]</label>
 					<align>center</align>
 					<font>font18</font>
-					<textcolor>dark</textcolor>
+					<textcolor>light</textcolor>
 				</control>
 				<control type="label">
 					<posx>22</posx>

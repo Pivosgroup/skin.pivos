@@ -32,6 +32,15 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>special://skin/backgrounds/DefaultBackground.jpg</texture>
+			<visible>!Skin.HasSetting(UseCustomBackGround)</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Skin.String(CustomBackGround)]</texture>
+			<visible>Skin.HasSetting(UseCustomBackGround)</visible>
 		</control>
 	</include>
 	<include name="Fanart">
