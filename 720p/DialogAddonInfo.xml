@@ -1,5 +1,5 @@
 <window id="146">
-	<defaultcontrol always="true">6</defaultcontrol>
+	<defaultcontrol always="true">8000</defaultcontrol>
 	<coordinates>
 		<posx>195</posx>
 		<posy>108</posy>
@@ -42,7 +42,7 @@
 				<height>170</height>
 				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 			</control>
-			<control type="group">
+			<control type="group" id="8000">
 				<posx>30</posx>
 				<posy>263</posy>
 				<control type="button" id="6">

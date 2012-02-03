@@ -1,5 +1,5 @@
 <window id="140">
-	<defaultcontrol>2</defaultcontrol>
+	<defaultcontrol always="true">2</defaultcontrol>
 	<coordinates>
 		<posx>113</posx>
 		<posy>58</posy>
