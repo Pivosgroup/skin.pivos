@@ -1,0 +1,130 @@
+<window type="buttonMenu" id="111">
+	<defaultcontrol always="true">11</defaultcontrol>
+	<coordinates>
+		<posx>295</posx>
+		<posy>208</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>960</width>
+			<height>528</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>760</width>
+				<height>328</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>760</width>
+				<height>48</height>
+				<texture>header-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>14</posy>
+				<width>700</width>
+				<height>30</height>
+				<label>$LOCALIZE[13005]</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
+			<control type="image">
+				<posx>30</posx>
+				<posy>78</posy>
+				<width>170</width>
+				<height>170</height>
+				<texture diffuse="thumb-diffuse.png">IconShutdown.png</texture>
+			</control>
+			<control type="group" id="8000">
+				<posx>230</posx>
+				<posy>100</posy>
+				<control type="button" id="11">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>500</width>
+					<height>35</height>
+					<label>$LOCALIZE[13013]</label>
+					<onup>16</onup>
+					<ondown>12</ondown>
+					<onleft>11</onleft>
+					<onright>11</onright>
+					<onclick>Reset()</onclick>
+				</control>
+				<control type="button" id="12">
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>500</width>
+					<height>35</height>
+					<label>$LOCALIZE[13016]</label>
+					<onup>11</onup>
+					<ondown>13</ondown>
+					<onleft>12</onleft>
+					<onright>12</onright>
+					<onclick>Powerdown()</onclick>
+				</control>
+				<control type="button" id="13">
+					<posx>0</posx>
+					<posy>80</posy>
+					<width>500</width>
+					<height>35</height>
+					<label>$LOCALIZE[20150]</label>
+					<onup>12</onup>
+					<ondown>14</ondown>
+					<onleft>13</onleft>
+					<onright>13</onright>
+					<onclick>AlarmClock(shutdowntimer,Powerdown())</onclick>
+					<visible>!System.HasAlarm(shutdowntimer)</visible>
+				</control>
+				<control type="button" id="14">
+					<posx>0</posx>
+					<posy>80</posy>
+					<width>500</width>
+					<height>35</height>
+					<label>$LOCALIZE[20151]</label>
+					<onup>13</onup>
+					<ondown>15</ondown>
+					<onleft>14</onleft>
+					<onright>14</onright>
+					<onclick>CancelAlarm(shutdowntimer)</onclick>
+					<visible>System.HasAlarm(shutdowntimer)</visible>
+				</control>
+				<control type="button" id="15">
+					<posx>0</posx>
+					<posy>120</posy>
+					<width>500</width>
+					<height>35</height>
+					<label>$LOCALIZE[20126]</label>
+					<onup>14</onup>
+					<ondown>16</ondown>
+					<onleft>15</onleft>
+					<onright>15</onright>
+					<onclick>Dialog.Close(all,true)</onclick>
+					<onclick>System.LogOff</onclick>
+					<enable>System.Loggedon + [System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)]</enable>
+				</control>
+				<control type="togglebutton" id="16">
+					<posx>0</posx>
+					<posy>160</posy>
+					<width>500</width>
+					<height>35</height>
+					<label>$LOCALIZE[20045]</label>
+					<altlabel>$LOCALIZE[20046]</altlabel>
+					<usealttexture>System.IsMaster</usealttexture>
+					<onup>15</onup>
+					<ondown>11</ondown>
+					<onleft>16</onleft>
+					<onright>16</onright>
+					<onclick>Mastermode</onclick>
+					<enable>System.HasLocks</enable>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>
