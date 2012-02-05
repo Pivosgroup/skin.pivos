@@ -39,12 +39,13 @@
 				<posx>30</posx>
 				<posy>100</posy>
 				<width>880</width>
-				<height>330</height>
+				<height>320</height>
+				<itemgap>-1</itemgap>
 				<pagecontrol>60</pagecontrol>
-				<onleft>5</onleft>
-				<onright>60</onright>
 				<onup>5</onup>
 				<ondown>28</ondown>
+				<onleft>5</onleft>
+				<onright>60</onright>
 			</control>
 			<control type="scrollbar" id="60">
 				<posx>915</posx>
