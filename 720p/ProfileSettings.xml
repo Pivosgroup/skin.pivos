@@ -1,7 +1,7 @@
 <window id="130">
 	<defaultcontrol always="true">5</defaultcontrol>
 	<coordinates>
-		<posx>195</posx>
+		<posx>196</posx>
 		<posy>108</posy>
 	</coordinates>
 	<controls>
@@ -148,7 +148,6 @@
 				<font>font20</font>
 				<textcolor>normal</textcolor>
 				<align>center</align>
-				<haspath>true</haspath>
 			</control>
 		</control>
 	</controls>

@@ -1,15 +1,15 @@
 <window id="103">
 	<defaultcontrol always="true">300</defaultcontrol>
 	<coordinates>
-		<posx>325</posx>
+		<posx>326</posx>
 		<posy>168</posy>
 	</coordinates>
 	<controls>
 		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>960</width>
-			<height>528</height>
+			<width>700</width>
+			<height>408</height>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseZoomInOut</include>
 			<visible>!Window.IsVisible(NumericInput)</visible>

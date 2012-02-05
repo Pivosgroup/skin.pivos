@@ -1,8 +1,8 @@
 <window id="2008">
 	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
-		<posx>340</posx>
-		<posy>210</posy>
+		<posx>376</posx>
+		<posy>254</posy>
 	</coordinates>
 	<controls>
 		<control type="group">

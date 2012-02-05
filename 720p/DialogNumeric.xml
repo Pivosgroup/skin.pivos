@@ -8,8 +8,8 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>960</width>
-			<height>528</height>
+			<width>500</width>
+			<height>308</height>
 			<include>WindowOpenCloseZoomInOut</include>
 			<control type="image">
 				<posx>0</posx>
