@@ -2,7 +2,7 @@
 	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
 		<posx>212</posx>
-		<posy>108</posy>
+		<posy>96</posy>
 	</coordinates>
 	<controls>
 		<control type="group">
