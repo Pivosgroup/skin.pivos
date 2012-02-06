@@ -73,6 +73,127 @@
 		<textcolor>white</textcolor>
 		<shadowcolor>grey</shadowcolor>
 	</include>
+	<include name="NowPlayingHome">
+		<control type="group">
+			<posx>418</posx>
+			<posy>508</posy>
+			<width>300</width>
+			<height>300</height>
+			<include>VisibleFade</include>
+			<include>WindowOpenCloseFade</include>
+			<visible>Player.HasMedia</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>444</width>
+				<height>212</height>
+				<texture>playing_now_background.png</texture>
+			</control>
+			<control type="label">
+				<posx>107</posx>
+				<posy>30</posy>
+				<width>230</width>
+				<height>30</height>
+				<label>[B]$LOCALIZE[13350][/B]</label>
+				<align>center</align>
+				<font>font22</font>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="group">
+				<visible>Player.HasAudio</visible>
+				<control type="label">
+					<posx>72</posx>
+					<posy>62</posy>
+					<width>300</width>
+					<height>30</height>
+					<label>$INFO[MusicPlayer.Title]</label>
+					<align>center</align>
+					<font>font18</font>
+					<textcolor>light</textcolor>
+				</control>
+				<control type="label">
+					<posx>22</posx>
+					<posy>140</posy>
+					<width>120</width>
+					<height>30</height>
+					<label>[B]$INFO[MusicPlayer.Time][/B]</label>
+					<align>center</align>
+					<font>font30</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="group">
+					<posx>122</posx>
+					<posy>112</posy>
+					<width>90</width>
+					<height>90</height>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>90</width>
+						<height>90</height>
+						<texture diffuse="cover-diffuse.png">$INFO[MusicPlayer.Cover]</texture>
+						<animation effect="rotatey" end="-30" center="0,45" time="0" condition="true">Conditional</animation>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>89</posy>
+						<width>90</width>
+						<height>90</height>
+						<texture flipy="true" diffuse="cover-diffuse-mirror.png">$INFO[MusicPlayer.Cover]</texture>
+						<animation effect="rotatey" end="-30" center="0,45" time="0" condition="true">Conditional</animation>
+					</control>
+				</control>
+				<control type="group">
+					<posx>232</posx>
+					<posy>112</posy>
+					<width>90</width>
+					<height>90</height>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>90</width>
+						<height>90</height>
+						<texture diffuse="cover-diffuse.png">cdcase-inside.png</texture>
+						<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
+					</control>
+					<control type="image">
+						<posx>4</posx>
+						<posy>3</posy>
+						<width>80</width>
+						<height>80</height>
+						<texture diffuse="cover-diffuse.png">cd.png</texture>
+						<animation effect="rotatey" end="30" center="80,40" time="0" condition="true">Conditional</animation>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>89</posy>
+						<width>90</width>
+						<height>90</height>
+						<texture flipy="true" diffuse="cover-diffuse-mirror.png">cdcase-inside.png</texture>
+						<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
+					</control>
+					<control type="image">
+						<posx>3</posx>
+						<posy>92</posy>
+						<width>80</width>
+						<height>80</height>
+						<texture flipy="true" diffuse="cover-diffuse-mirror.png">cd.png</texture>
+						<animation effect="rotatey" end="30" center="80,40" time="0" condition="true">Conditional</animation>
+					</control>
+				</control>
+				<control type="label">
+					<posx>302</posx>
+					<posy>140</posy>
+					<width>120</width>
+					<height>30</height>
+					<label>[B]$INFO[MusicPlayer.Duration][/B]</label>
+					<align>center</align>
+					<font>font30</font>
+					<textcolor>white</textcolor>
+				</control>
+			</control>
+		</control>
+	</include>
 	<include name="ScrollLabel">
 		<control type="group">
 			<visible>Container.Scrolling</visible>
