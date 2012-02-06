@@ -1,0 +1,44 @@
+<window id="2006">
+	<controls>
+		<control type="visualisation" id="2">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+		</control>
+		<control type="group">
+			<visible>Player.ShowCodec</visible>
+			<control type="image">
+				<posx>10</posx>
+				<posy>10</posy>
+				<width>1260</width>
+				<height>140</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>40</posx>
+				<posy>50</posy>
+				<width>1200</width>
+				<height>40</height>
+				<label>$LOCALIZE[445] | $INFO[musicplayer.Codec,Codec: ,]$INFO[musicplayer.Bitrate, - Bitrate: ,kbps]$INFO[musicplayer.bitspersample, - Bits: ,bit]$INFO[musicplayer.Samplerate, - Freq.: ,kHz]$INFO[musicplayer.Channels, - Channels: ]</label>
+				<font>font13m</font>
+			</control>
+			<control type="label" id="11">
+				<posx>40</posx>
+				<posy>70</posy>
+				<width>1200</width>
+				<height>40</height>
+				<label>$LOCALIZE[131] | fps: $INFO[System.FPS] - $LOCALIZE[250] - $INFO[Visualisation.Name]</label>
+				<font>font13m</font>
+			</control>
+			<control type="label" id="12">
+				<posx>40</posx>
+				<posy>90</posy>
+				<width>1200</width>
+				<height>40</height>
+				<label>$LOCALIZE[13388] | $INFO[Visualisation.Preset]</label>
+				<font>font13m</font>
+			</control>
+		</control>
+	</controls>
+</window>
