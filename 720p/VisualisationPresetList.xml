@@ -1,0 +1,152 @@
+<window id="122">
+	<defaultcontrol always="true">8000</defaultcontrol>
+	<coordinates>
+		<posx>196</posx>
+		<posy>108</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>960</width>
+			<height>528</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>960</width>
+				<height>528</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>960</width>
+				<height>48</height>
+				<texture>header-back.png</texture>
+			</control>
+			<control type="label" id="3">
+				<posx>30</posx>
+				<posy>14</posy>
+				<width>900</width>
+				<height>30</height>
+				<label>$LOCALIZE[250]</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
+			<control type="image">
+				<posx>30</posx>
+				<posy>78</posy>
+				<width>170</width>
+				<height>170</height>
+				<texture diffuse="thumb-diffuse.png">IconsVisualization.png</texture>
+			</control>
+			<control type="group" id="8000">
+				<posx>30</posx>
+				<posy>263</posy>
+				<control type="button" id="10">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[186]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<onup>10</onup>
+					<ondown>10</ondown>
+					<onleft>2</onleft>
+					<onright>2</onright>
+					<onclick>Dialog.Close(VisualisationPresetList)</onclick>
+				</control>
+			</control>
+			<control type="list" id="2">
+				<posx>230</posx>
+				<posy>100</posy>
+				<width>680</width>
+				<height>360</height>
+				<pagecontrol>60</pagecontrol>
+				<onup>2</onup>
+				<ondown>2</ondown>
+				<onleft>8000</onleft>
+				<onright>60</onright>
+				<itemlayout width="680" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>670</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>lightgrey</textcolor>
+						<selectedcolor>light</selectedcolor>
+						<aligny>center</aligny>
+					</control>
+				</itemlayout>
+				<focusedlayout width="680" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>680</width>
+						<height>40</height>
+						<texture border="4">button_FO.png</texture>
+						<visible>Control.HasFocus(2)</visible>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>0</posy>
+						<width>670</width>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<aligny>center</aligny>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>920</posx>
+				<posy>100</posy>
+				<width>20</width>
+				<height>360</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<include>VisibleFade</include>
+			</control>
+			<control type="label" id="4">
+				<posx>35</posx>
+				<posy>250</posy>
+				<width>890</width>
+				<height>30</height>
+				<label>$LOCALIZE[13389]</label>
+				<font>font20</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+			</control>
+		</control>
+	</controls>
+</window>
