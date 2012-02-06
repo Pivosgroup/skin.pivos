@@ -1,0 +1,8 @@
+<window id="2007">
+	<controls>
+		<control type="group">
+			<include>NowPlayingHome</include>
+			<visible>Player.ShowInfo</visible>
+		</control>
+	</controls>
+</window>
