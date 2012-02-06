@@ -6,6 +6,7 @@
 		<include>Fanart</include>
 		<include>BackgroundPanel</include>
 		<include>SideMenu</include>
+		<include>TopMenuVideoPlaylist</include>
 		<include>ViewList</include>
 		<include>ScrollLabel</include>
 	</controls>

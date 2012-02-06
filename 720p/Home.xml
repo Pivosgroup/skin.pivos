@@ -248,6 +248,11 @@
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 				</control>
+				<control type="button" id="208">
+					<label>$LOCALIZE[1214]</label>
+					<include>HomeSubButton</include>
+					<onclick>ActivateWindow(MusicFiles)</onclick>
+				</control>
 			</control>
 			<control type="grouplist" id="200">
 				<posx>140</posx>

@@ -5,5 +5,30 @@
 		<include>Fanart</include>
 		<include>BackgroundPanel</include>
 		<include>SideMenu</include>
+		<include>TopMenuWeather</include>
+		<control type="group">
+			<control type="button" id="50">
+				<posx>-10</posx>
+				<posy>-10</posy>
+				<width>1</width>
+				<height>1</height>
+				<label>-</label>
+				<font>-</font>-
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onleft>1000</onleft>
+				<onright>1000</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+			</control>
+			<control type="image">
+				<posx>113</posx>
+				<posy>58</posy>
+				<width>1127</width>
+				<height>628</height>
+				<texture>background-light.png</texture>
+				<include>WindowOpenCloseFadeSettings</include>
+			</control>
+		</control>
 	</controls>
 </window>
