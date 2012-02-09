@@ -42,6 +42,20 @@
 			<texture background="true">$INFO[Skin.String(CustomBackGround)]</texture>
 			<visible>Skin.HasSetting(UseCustomBackGround)</visible>
 		</control>
+		<control type="videowindow">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>Player.HasVideo</visible>
+		</control>
+		<control type="visualisation">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>Player.HasAudio</visible>
+		</control>
 	</include>
 	<include name="Fanart">
 		<control type="image">
@@ -54,7 +68,7 @@
 			<fadetime>CrossFade</fadetime>
 			<include>WindowOpenCloseFade</include>
 			<include>VisibleFade</include>
-			<visible>!Control.IsVisible(50) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
 	</include>
 	<include name="HomeSubButton">

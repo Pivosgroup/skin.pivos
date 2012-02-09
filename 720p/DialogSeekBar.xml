@@ -44,23 +44,23 @@
 				<posx>100</posx>
 				<posy>46</posy>
 				<width>180</width>
-				<height>20</height>
+				<height>16</height>
 				<info>Player.ProgressCache</info>
-				<midtexture border="13,0,13,0">progress_cache.png</midtexture>
+				<midtexture border="9,0,9,0">progress_cache.png</midtexture>
 			</control>
 			<control type="progress">
 				<posx>100</posx>
 				<posy>46</posy>
 				<width>180</width>
-				<height>20</height>
+				<height>16</height>
 			</control>
 			<control type="progress">
 				<posx>100</posx>
 				<posy>46</posy>
 				<width>180</width>
-				<height>20</height>
+				<height>16</height>
 				<info>Player.CacheLevel</info>
-				<midtexture border="13,0,13,0">progress_buffer.png</midtexture>
+				<midtexture border="9,0,9,0">progress_buffer.png</midtexture>
 				<visible>Player.Caching</visible>
 			</control>
 			<control type="slider" id="401">

@@ -35,7 +35,7 @@
 				<posx>95</posx>
 				<posy>46</posy>
 				<width>260</width>
-				<height>20</height>
+				<height>18</height>
 				<info>Player.Volume</info>
 				<animation effect="fade" start="50" end="50" time="0" condition="Player.Passthrough">Conditional</animation>
 				<visible>true</visible>

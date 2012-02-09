@@ -80,7 +80,7 @@
 				<posx>40</posx>
 				<posy>140</posy>
 				<width>520</width>
-				<height>20</height>
+				<height>18</height>
 				<info>System.Progressbar</info>
 			</control>
 			<control type="button" id="10">
