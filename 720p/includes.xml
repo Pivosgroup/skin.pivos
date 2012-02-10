@@ -761,7 +761,7 @@
 					<radioheight>26</radioheight>
 					<selected>Window.IsVisible(MusicLibrary)</selected>
 					<enable>Library.HasContent(Music)</enable>
-					<onclick>ReplaceWindow(MusicLibrary)</onclick>
+					<onclick>ReplaceWindow(MusicFiles)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="9000">

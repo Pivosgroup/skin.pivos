@@ -537,7 +537,7 @@
 						<posy>55</posy>
 						<width>60</width>
 						<height>90</height>
-						<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="DefaultVideoCover.png" diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</itemlayout>
@@ -547,7 +547,7 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>145</height>
-						<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="DefaultVideoCover.png" diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</focusedlayout>
@@ -682,7 +682,7 @@
 						<posy>40</posy>
 						<width>60</width>
 						<height>60</height>
-						<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="DefaultAlbumCover.png" diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</itemlayout>
@@ -692,7 +692,7 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>100</height>
-						<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="DefaultAlbumCover.png" diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</focusedlayout>
@@ -784,7 +784,7 @@
 				<posy>50</posy>
 				<width>275</width>
 				<height>30</height>
-				<label>$INFO[Container(5002).ListItem.Label]</label>
+				<label>[B]$INFO[Container(5002).ListItem.Label][/B]</label>
 				<align>center</align>
 				<font>font16</font>
 				<textcolor>white</textcolor>
