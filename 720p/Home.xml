@@ -15,6 +15,19 @@
 			<include>VisibleFade</include>
 			<visible>Control.HasFocus(5001)</visible>
 		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Container(5002).ListItem.Property(FanartImage)]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>CrossFade</fadetime>
+			<colordiffuse>50FFFFFF</colordiffuse>
+			<include>WindowOpenCloseFade</include>
+			<include>VisibleFade</include>
+			<visible>Control.HasFocus(5002)</visible>
+		</control>
 		<control type="group">
 			<include>WindowOpenCloseFade</include>
 			<control type="image">
@@ -210,7 +223,7 @@
 				<onup>200</onup>
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
-				<onright>5001</onright>
+				<onright>5002</onright>
 				<visible>Container(1000).HasFocus(3)</visible>
 				<control type="button" id="201">
 					<label>$LOCALIZE[136]</label>
@@ -627,7 +640,172 @@
 			<posy>520</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>!Container(1000).HasFocus(2)</visible>
+			<visible>Container(1000).HasFocus(3)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>425</width>
+				<height>185</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>24</posx>
+				<posy>22</posy>
+				<width>100</width>
+				<height>36</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>24</posx>
+				<posy>25</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>[B]$INFO[Container(5002).ListItem.Property(Year)][/B]</label>
+				<align>center</align>
+				<font>font20</font>
+				<textcolor>light</textcolor>
+			</control>			
+			<control type="wraplist" id="5002">
+				<posx>24</posx>
+				<posy>65</posy>
+				<height>100</height>
+				<width>384</width>
+				<orientation>horizontal</orientation>
+				<scrolltime>250</scrolltime>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onleft>5002</onleft>
+				<onright>5002</onright>
+				<itemlayout width="68" height="100">
+					<control type="image">
+						<posx>0</posx>
+						<posy>40</posy>
+						<width>60</width>
+						<height>60</height>
+						<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="112" height="100">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>100</width>
+						<height>100</height>
+						<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>$INFO[Window.Property(LatestAlbum.1.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestAlbum.1.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestAlbum.1.Thumb)]</thumb>
+						<property name="Year">$INFO[Window.Property(LatestAlbum.1.Year)]</property>
+						<property name="FanartImage">$INFO[Window.Property(LatestAlbum.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestAlbum.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="2">
+						<label>$INFO[Window.Property(LatestAlbum.2.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestAlbum.2.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestAlbum.2.Thumb)]</thumb>
+						<property name="Year">$INFO[Window.Property(LatestAlbum.2.Year)]</property>
+						<property name="FanartImage">$INFO[Window.Property(LatestAlbum.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestAlbum.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="3">
+						<label>$INFO[Window.Property(LatestAlbum.3.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestAlbum.3.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
+						<property name="Year">$INFO[Window.Property(LatestAlbum.3.Year)]</property>
+						<property name="FanartImage">$INFO[Window.Property(LatestAlbum.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestAlbum.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="4">
+						<label>$INFO[Window.Property(LatestAlbum.4.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestAlbum.4.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestAlbum.4.Thumb)]</thumb>
+						<property name="Year">$INFO[Window.Property(LatestAlbum.4.Year)]</property>
+						<property name="FanartImage">$INFO[Window.Property(LatestAlbum.4.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestAlbum.4.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="5">
+						<label>$INFO[Window.Property(LatestAlbum.5.Artist)]</label>
+						<label2>$INFO[Window.Property(LatestAlbum.5.Title)]</label2>
+						<thumb>$INFO[Window.Property(LatestAlbum.5.Thumb)]</thumb>
+						<property name="Year">$INFO[Window.Property(LatestAlbum.5.Year)]</property>
+						<property name="FanartImage">$INFO[Window.Property(LatestAlbum.5.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestAlbum.5.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="group">
+				<visible>!Control.HasFocus(5002)</visible>
+				<control type="image">
+					<posx>130</posx>
+					<posy>22</posy>
+					<width>275</width>
+					<height>76</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="label">
+					<posx>130</posx>
+					<posy>22</posy>
+					<width>275</width>
+					<height>30</height>
+					<label>[B]$LOCALIZE[31004][/B]</label>
+					<align>center</align>
+					<font>font20</font>
+					<textcolor>normal</textcolor>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Control.HasFocus(5002)</visible>
+				<control type="image">
+					<posx>130</posx>
+					<posy>22</posy>
+					<width>275</width>
+					<height>76</height>
+					<texture border="4">button_FO.png</texture>
+				</control>
+				<control type="label">
+					<posx>130</posx>
+					<posy>22</posy>
+					<width>275</width>
+					<height>30</height>
+					<label>[B]$LOCALIZE[31004][/B]</label>
+					<align>center</align>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+				</control>
+			</control>			
+			<control type="label">
+				<posx>130</posx>
+				<posy>50</posy>
+				<width>275</width>
+				<height>30</height>
+				<label>$INFO[Container(5002).ListItem.Label]</label>
+				<align>center</align>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+			</control>		
+			<control type="label">
+				<posx>130</posx>
+				<posy>70</posy>
+				<width>275</width>
+				<height>30</height>
+				<label>$INFO[Container(5002).ListItem.Label2]</label>
+				<align>center</align>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+			</control>
+		</control>
+		<control type="group">
+			<posx>830</posx>
+			<posy>520</posy>
+			<include>VisibleZoomInOut</include>
+			<include>WindowOpenCloseFade</include>
+			<visible>![Container(1000).HasFocus(2) | Container(1000).HasFocus(3)]</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
