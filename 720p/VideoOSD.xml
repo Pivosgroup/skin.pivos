@@ -112,6 +112,8 @@
 				<control type="grouplist" id="900">
 					<posx>2</posx>
 					<posy>2</posy>
+					<width>240</width>
+					<height>40</height>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<onleft>805</onleft>
@@ -209,6 +211,8 @@
 				<control type="grouplist" id="800">
 					<posx>2</posx>
 					<posy>2</posy>
+					<width>200</width>
+					<height>40</height>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
 					<animation effect="slide" start="0,0" end="-40,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>

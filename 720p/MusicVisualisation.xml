@@ -110,16 +110,16 @@
 				<textcolor>light</textcolor>
 			</control>
 			<control type="progress">
-				<posx>238</posx>
+				<posx>242</posx>
 				<posy>101</posy>
-				<width>374</width>
+				<width>364</width>
 				<height>16</height>
 				<info>Player.Progress</info>
 			</control>
 			<control type="slider" id="888">
-				<posx>232</posx>
+				<posx>242</posx>
 				<posy>101</posy>
-				<width>380</width>
+				<width>364</width>
 				<height>16</height>
 				<action>seek</action>
 			</control>
