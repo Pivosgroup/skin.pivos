@@ -325,12 +325,12 @@
 						<texturenofocus>player-lyrics_NF.png</texturenofocus>
 						<alttexturefocus>player-lyrics_FO.png</alttexturefocus>
 						<alttexturenofocus>player-lyrics_NF.png</alttexturenofocus>
-						<usealttexture>IsEmpty(Skin.String(LyricScript))</usealttexture>
-						<onclick>RunScript($INFO[Skin.String(LyricScript)])</onclick>
+						<usealttexture>IsEmpty(Skin.String(LyricsScript))</usealttexture>
+						<onclick>RunScript($INFO[Skin.String(LyricsScript)])</onclick>
 						<onclick>Dialog.Close(musicosd)</onclick>
-						<altclick>Skin.SetAddon(LyricScript,xbmc.python.lyrics)</altclick>
+						<altclick>Skin.SetAddon(LyricsScript,xbmc.python.lyrics)</altclick>
 						<altclick>Dialog.Close(musicosd)</altclick>
-						<altclick>XBMC.RunScript($INFO[Skin.String(LyricScript)])</altclick>
+						<altclick>XBMC.RunScript($INFO[Skin.String(LyricsScript)])</altclick>
 					</control>
 				</control>
 			</control>

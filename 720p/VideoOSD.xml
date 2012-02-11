@@ -234,7 +234,7 @@
 						<font>-</font>
 						<texturefocus>player-audiosettings_FO.png</texturefocus>
 						<texturenofocus>player-audiosettings_NF.png</texturenofocus>
-						<onclick>ActivateWindow(OSDAusioSettings)</onclick>
+						<onclick>ActivateWindow(OSDAudioSettings)</onclick>
 					</control>
 					<control type="button" id="803">
 						<posx>0</posx>

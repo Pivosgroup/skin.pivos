@@ -3,7 +3,6 @@
 	<views>50</views>
 	<controls>
 		<include>DefaultBackground</include>
-		<include>Fanart</include>
 		<include>BackgroundPanel</include>
 		<include>SideMenu</include>
 		<include>TopMenuPrograms</include>

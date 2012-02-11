@@ -42,6 +42,30 @@
 			<texture background="true">$INFO[Skin.String(CustomBackGround)]</texture>
 			<visible>Skin.HasSetting(UseCustomBackGround)</visible>
 		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Fanart.Image]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>CrossFade</fadetime>
+			<include>WindowOpenCloseFade</include>
+			<include>VisibleFade</include>
+			<visible>!IsEmpty(Fanart.Image)</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>CrossFade</fadetime>
+			<include>WindowOpenCloseFade</include>
+			<include>VisibleFade</include>
+			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+		</control>
 		<control type="videowindow">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -55,20 +79,6 @@
 			<width>1280</width>
 			<height>720</height>
 			<visible>Player.HasAudio</visible>
-		</control>
-	</include>
-	<include name="Fanart">
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<aspectratio>scale</aspectratio>
-			<fadetime>CrossFade</fadetime>
-			<include>WindowOpenCloseFade</include>
-			<include>VisibleFade</include>
-			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
 	</include>
 	<include name="HomeSubButton">

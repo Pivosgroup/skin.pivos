@@ -89,7 +89,7 @@
 							<onclick>-</onclick>
 						</item>
 						<item id="2">
-							<label>$LOCALIZE[1036]</label>
+							<label>$LOCALIZE[513]</label>
 							<onclick>-</onclick>
 						</item>
 						<item id="3">
@@ -180,11 +180,54 @@
 						<posy>0</posy>
 						<width>775</width>
 						<height>50</height>
+						<label>$LOCALIZE[24000] 1</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.1.Label))]</label2>
+						<onclick>Skin.SetAddon(CustomAddon.1.Label,xbmc.addon.executable)</onclick>
+					</control>
+					<control type="button" id="202">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[24000] 2</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.2.Label))]</label2>
+						<onclick>Skin.SetAddon(CustomAddon.2.Label,xbmc.addon.executable)</onclick>
+					</control>
+					<control type="button" id="203">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[24000] 3</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.3.Label))]</label2>
+						<onclick>Skin.SetAddon(CustomAddon.3.Label,xbmc.addon.executable)</onclick>
+					</control>
+					<control type="button" id="204">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[24000] 4</label>
+						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.4.Label))]</label2>
+						<onclick>Skin.SetAddon(CustomAddon.4.Label,xbmc.addon.executable)</onclick>
+					</control>
+					<control type="image" id="205">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>1</height>
+						<texture>white.png</texture>
+					</control>
+					<control type="button" id="206">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
 						<label>$LOCALIZE[31005] 1</label>
 						<label2>$INFO[Skin.String(CustomFavourite.1.Label)]</label2>
 						<onclick>RunScript(script.favourites,property=CustomFavourite.1)</onclick>
 					</control>
-					<control type="button" id="202">
+					<control type="button" id="207">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
@@ -193,7 +236,7 @@
 						<label2>$INFO[Skin.String(CustomFavourite.2.Label)]</label2>
 						<onclick>RunScript(script.favourites,property=CustomFavourite.2)</onclick>
 					</control>
-					<control type="button" id="203">
+					<control type="button" id="208">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
@@ -202,7 +245,7 @@
 						<label2>$INFO[Skin.String(CustomFavourite.3.Label)]</label2>
 						<onclick>RunScript(script.favourites,property=CustomFavourite.3)</onclick>
 					</control>
-					<control type="button" id="204">
+					<control type="button" id="209">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
@@ -211,7 +254,7 @@
 						<label2>$INFO[Skin.String(CustomFavourite.4.Label)]</label2>
 						<onclick>RunScript(script.favourites,property=CustomFavourite.4)</onclick>
 					</control>
-					<control type="button" id="205">
+					<control type="button" id="210">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
@@ -220,7 +263,7 @@
 						<label2>$INFO[Skin.String(CustomFavourite.5.Label)]</label2>
 						<onclick>RunScript(script.favourites,property=CustomFavourite.5)</onclick>
 					</control>
-					<control type="button" id="206">
+					<control type="button" id="211">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
@@ -229,7 +272,7 @@
 						<label2>$INFO[Skin.String(CustomFavourite.6.Label)]</label2>
 						<onclick>RunScript(script.favourites,property=CustomFavourite.6)</onclick>
 					</control>
-					<control type="button" id="207">
+					<control type="button" id="212">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
@@ -238,7 +281,7 @@
 						<label2>$INFO[Skin.String(CustomFavourite.7.Label)]</label2>
 						<onclick>RunScript(script.favourites,property=CustomFavourite.7)</onclick>
 					</control>
-					<control type="button" id="208">
+					<control type="button" id="213">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
@@ -246,7 +289,7 @@
 						<label>$LOCALIZE[31005] 8</label>
 						<label2>$INFO[Skin.String(CustomFavourite.8.Label)]</label2>
 						<onclick>RunScript(script.favourites,property=CustomFavourite.8)</onclick>
-					</control>
+					</control>	
 				</control>
 				<control type="scrollbar" id="299">
 					<posx>782</posx>
@@ -273,45 +316,27 @@
 					<itemgap>-1</itemgap>
 					<pagecontrol>399</pagecontrol>
 					<onup>9000</onup>
-					<ondown>300</ondown>
+					<ondown>400</ondown>
 					<onleft>3</onleft>
-					<onright>399</onright>
+					<onright>499</onright>
 					<visible>Container(3).Hasfocus(3)</visible>
 					<control type="button" id="301">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
 						<height>50</height>
-						<label>$LOCALIZE[24000] 1</label>
-						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.1.Label))]</label2>
-						<onclick>Skin.SetAddon(CustomAddon.1.Label,xbmc.addon.executable)</onclick>
+						<label>$LOCALIZE[31017]</label>
+						<label2>$INFO[Skin.String(SubtitlesScript)]</label2>
+						<onclick>Skin.SetAddon(SubtitlesScript,xbmc.python.subtitles)</onclick>
 					</control>
 					<control type="button" id="302">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>775</width>
 						<height>50</height>
-						<label>$LOCALIZE[24000] 2</label>
-						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.2.Label))]</label2>
-						<onclick>Skin.SetAddon(CustomAddon.2.Label,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="303">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>775</width>
-						<height>50</height>
-						<label>$LOCALIZE[24000] 3</label>
-						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.3.Label))]</label2>
-						<onclick>Skin.SetAddon(CustomAddon.3.Label,xbmc.addon.executable)</onclick>
-					</control>
-					<control type="button" id="304">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>775</width>
-						<height>50</height>
-						<label>$LOCALIZE[24000] 4</label>
-						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.4.Label))]</label2>
-						<onclick>Skin.SetAddon(CustomAddon.4.Label,xbmc.addon.executable)</onclick>
+						<label>$LOCALIZE[31018]</label>
+						<label2>$INFO[Skin.String(LyricsScript)]</label2>
+						<onclick>Skin.SetAddon(LyricsScript,xbmc.python.lyrics)</onclick>
 					</control>
 				</control>
 				<control type="scrollbar" id="399">
