@@ -52,5 +52,168 @@
 				<font>font13m</font>
 			</control>
 		</control>
+		<control type="group">
+			<posx>283</posx>
+			<posy>548</posy>
+			<width>714</width>
+			<height>168</height>
+			<include>VisibleZoomInOut</include>
+			<include>WindowOpenCloseZoomInOut</include>
+			<visible>Player.ShowInfo + !Window.IsVisible(MusicOSD)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>714</width>
+				<height>168</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>20</posx>
+				<posy>20</posy>
+				<width>128</width>
+				<height>128</height>
+				<texture diffuse="thumb-diffuse.png">$INFO[MusicPlayer.Cover]</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="label">
+				<posx>158</posx>
+				<posy>14</posy>
+				<width>540</width>
+				<height>30</height>
+				<label>[B]$INFO[MusicPlayer.Title][/B]</label>
+				<font>font26</font>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="label">
+				<posx>158</posx>
+				<posy>46</posy>
+				<width>540</width>
+				<height>30</height>
+				<label>[B]$INFO[MusicPlayer.Artist][/B]</label>
+				<font>font22</font>
+				<textcolor>light</textcolor>
+			</control>
+			<control type="label">
+				<posx>158</posx>
+				<posy>74</posy>
+				<width>540</width>
+				<height>30</height>
+				<label>[B]$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year, (,)][/B]</label>
+				<font>font16</font>
+			</control>
+			<control type="label">
+				<posx>158</posx>
+				<posy>96</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>$INFO[MusicPlayer.Time]</label>
+				<textcolor>light</textcolor>
+			</control>
+			<control type="progress">
+				<posx>238</posx>
+				<posy>101</posy>
+				<width>374</width>
+				<height>16</height>
+				<info>Player.Progress</info>
+			</control>
+			<control type="slider" id="888">
+				<posx>232</posx>
+				<posy>101</posy>
+				<width>380</width>
+				<height>16</height>
+				<action>seek</action>
+			</control>
+			<control type="label">
+				<posx>692</posx>
+				<posy>96</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>$INFO[MusicPlayer.Duration]</label>
+				<textcolor>light</textcolor>
+				<align>right</align>
+			</control>
+			<control type="group">
+				<posx>158</posx>
+				<posy>124</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>90</width>
+					<height>24</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="label">
+					<posx>5</posx>
+					<posy>3</posy>
+					<width>80</width>
+					<height>30</height>
+					<label>$INFO[MusicPlayer.BitRate,,  kb/s]</label>
+					<font>font12m</font>
+					<align>center</align>
+				</control>
+				<control type="image">
+					<posx>95</posx>
+					<posy>0</posy>
+					<width>90</width>
+					<height>24</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="label">
+					<posx>100</posx>
+					<posy>3</posy>
+					<width>80</width>
+					<height>30</height>
+					<label>$INFO[MusicPlayer.SampleRate,, khz]</label>
+					<font>font12m</font>
+					<align>center</align>
+				</control>
+				<control type="image">
+					<posx>190</posx>
+					<posy>0</posy>
+					<width>90</width>
+					<height>24</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="label">
+					<posx>195</posx>
+					<posy>3</posy>
+					<width>80</width>
+					<height>30</height>
+					<label>$INFO[MusicPlayer.Channels,, ch.]</label>
+					<font>font12m</font>
+					<align>center</align>
+				</control>
+				<control type="image">
+					<posx>285</posx>
+					<posy>0</posy>
+					<width>90</width>
+					<height>24</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="label">
+					<posx>290</posx>
+					<posy>3</posy>
+					<width>80</width>
+					<height>30</height>
+					<label>$INFO[MusicPlayer.Codec]</label>
+					<font>font12m</font>
+					<align>center</align>
+				</control>
+				<control type="image">
+					<posx>380</posx>
+					<posy>0</posy>
+					<width>154</width>
+					<height>24</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="image">
+					<posx>405</posx>
+					<posy>4</posy>
+					<width>100</width>
+					<height>16</height>
+					<texture>$INFO[Player.StarRating]</texture>
+				</control>
+			</control>
+		</control>
 	</controls>
 </window>
