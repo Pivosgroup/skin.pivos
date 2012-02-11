@@ -46,7 +46,7 @@
 				<posy>46</posy>
 				<width>540</width>
 				<height>30</height>
-				<label>[B]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, - ][/B]</label>
+				<label>[B]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre,  -  ][/B]</label>
 				<font>font22</font>
 				<visible>VideoPlayer.Content(Movies)</visible>
 			</control>

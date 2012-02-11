@@ -98,7 +98,7 @@
 				<posy>74</posy>
 				<width>540</width>
 				<height>30</height>
-				<label>[B]$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year, (,)][/B]</label>
+				<label>[B]$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year,  (,)][/B]</label>
 				<font>font16</font>
 			</control>
 			<control type="label">
@@ -207,7 +207,7 @@
 					<texture border="4">button_alt_NF.png</texture>
 				</control>
 				<control type="image">
-					<posx>405</posx>
+					<posx>407</posx>
 					<posy>4</posy>
 					<width>100</width>
 					<height>16</height>
