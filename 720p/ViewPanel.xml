@@ -440,7 +440,7 @@
 				<posy>88</posy>
 				<width>110</width>
 				<height>30</height>
-				<label>$LOCALIZE[180]:</label>
+				<label>$LOCALIZE[2050]:</label>
 				<align>right</align>
 				<font>font12m</font>
 				<textcolor>normal</textcolor>

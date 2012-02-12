@@ -11,7 +11,7 @@
 			<posy>15</posy>
 			<width>1160</width>
 			<height>690</height>
-			<texture>background-dark.png</texture>
+			<texture border="5">background-dark.png</texture>
 			<include>WindowOpenCloseFade</include>
 		</control>
 	</include>
@@ -21,7 +21,7 @@
 			<posy>15</posy>
 			<width>1160</width>
 			<height>690</height>
-			<texture>background-dark.png</texture>
+			<texture border="5">background-dark.png</texture>
 			<include>WindowOpenCloseFadeSettings</include>
 		</control>
 	</include>
@@ -201,7 +201,7 @@
 						<posy>92</posy>
 						<width>80</width>
 						<height>80</height>
-						<texture flipy="true">cd.png</texture>
+						<texture flipy="true" diffuse="case-diffuse-mirror.png">cd.png</texture>
 						<animation effect="rotatey" end="30" center="80,40" time="0" condition="true">Conditional</animation>
 					</control>
 				</control>

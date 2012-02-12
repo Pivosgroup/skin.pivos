@@ -26,6 +26,15 @@
 		<value condition="stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,8)">mediaicons/audiocodec/dtsma71.png</value>
 		<value>mediaicons/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
 	</variable>
+	<variable name="Mpaa">
+		<value condition="SubString(ListItem.Mpaa,Rated G) | SubString(ListItem.Mpaa,Rated: G)">G</value>
+		<value condition="SubString(ListItem.Mpaa,Rated PG-13) | SubString(ListItem.Mpaa,Rated: PG-13)">PG-13</value>
+		<value condition="SubString(ListItem.Mpaa,Rated PG) | SubString(ListItem.Mpaa,Rated: PG)">PG</value>
+		<value condition="SubString(ListItem.Mpaa,Rated R) | SubString(ListItem.Mpaa,Rated: R)">R</value>
+		<value condition="SubString(ListItem.Mpaa,Rated NC-17) | SubString(ListItem.Mpaa,Rated: NC-17)">NC-17</value>
+		<value condition="IsEmpty(ListItem.Mpaa)">$LOCALIZE[31020]</value>
+		<value>$INFO[ListItem.Mpaa]</value>
+	</variable>
 	<variable name="SeekBarLabel">
 		<value condition="Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31012][/B]</value>
 		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31013][/B]</value>
@@ -74,6 +83,65 @@
 		<value condition="StringCompare(VideoPlayer.VideoCodec,MPEG1VIDEO)">MPEG1</value>
 		<value condition="StringCompare(VideoPlayer.VideoCodec,MPEG2VIDEO)">MPEG2</value>
 		<value>$INFO[VideoPlayer.VideoCodec]</value>
+	</variable>
+	<variable name="VideoInfoLabel1">
+		<value condition="Container.Content(Movies) | Container.Content(Episodes)">$LOCALIZE[20339]</value>
+		<value condition="Container.Content(TvShows)">$LOCALIZE[33054]</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[557]</value>
+	</variable>
+	<variable name="VideoInfoData1">
+		<value condition="Container.Content(Movies) | Container.Content(Episodes)">$INFO[ListItem.Director]</value>
+		<value condition="Container.Content(TvShows)">$INFO[ListItem.Property(TotalSeasons)]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Artist]</value>
+	</variable>
+	<variable name="VideoInfoLabel2">
+		<value condition="Container.Content(Movies) | Container.Content(Episodes)">$LOCALIZE[20417]</value>
+		<value condition="Container.Content(TvShows)">$LOCALIZE[20360]</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[558]</value>
+	</variable>
+	<variable name="VideoInfoData2">
+		<value condition="Container.Content(Movies) | Container.Content(Episodes)">$INFO[ListItem.Writer]</value>
+		<value condition="Container.Content(TvShows)">$INFO[ListItem.Property(TotalEpisodes)]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Album]</value>
+	</variable>
+	<variable name="VideoInfoLabel3">
+		<value condition="Container.Content(Movies) | Container.Content(TvShows) | Container.Content(MusicVideos)">$LOCALIZE[515]</value>
+		<value condition="Container.Content(Episodes)">$LOCALIZE[552]</value>
+	</variable>
+	<variable name="VideoInfoData3">
+		<value condition="Container.Content(Movies) | Container.Content(TvShows) | Container.Content(MusicVideos)">$INFO[ListItem.Genre]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Date]</value>
+	</variable>
+	<variable name="VideoInfoLabel6">
+		<value condition="!Container.Content(MusicVideos)">$LOCALIZE[563]</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[567]</value>
+	</variable>
+	<variable name="VideoInfoData6">
+		<value condition="!Container.Content(MusicVideos)">$INFO[ListItem.Rating]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.PlayCount]</value>
+	</variable>
+	<variable name="VideoInfoLabel7">
+		<value condition="Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)">$LOCALIZE[2050]</value>
+		<value condition="Container.Content(TvShows)">$LOCALIZE[20416]</value>
+	</variable>
+	<variable name="VideoInfoData7">
+		<value condition="[Container.Content(Movies) + !SubString(ListItem.Duration,min)] | Container.Content(Episodes) | Container.Content(MusicVideos)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
+		<value condition="Container.Content(Movies) + !SubString(ListItem.Duration)">$INFO[ListItem.Duration]</value>
+		<value condition="Container.Content(TvShows)">$INFO[ListItem.Premiered]</value>
+	</variable>
+	<variable name="VideoInfoLabel8">
+		<value condition="!Container.Content(MusicVideos)">$LOCALIZE[31019]</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[568]</value>
+	</variable>
+	<variable name="VideoInfoData8">
+		<value condition="!Container.Content(MusicVideos) + [SubString(ListItem.Mpaa,Rated G) | SubString(ListItem.Mpaa,Rated: G)]">G</value>
+		<value condition="!Container.Content(MusicVideos) + [SubString(ListItem.Mpaa,Rated PG-13) | SubString(ListItem.Mpaa,Rated: PG-13)]">PG-13</value>
+		<value condition="!Container.Content(MusicVideos) + [SubString(ListItem.Mpaa,Rated PG) | SubString(ListItem.Mpaa,Rated: PG)]">PG</value>
+		<value condition="!Container.Content(MusicVideos) + [SubString(ListItem.Mpaa,Rated R) | SubString(ListItem.Mpaa,Rated: R)]">R</value>
+		<value condition="!Container.Content(MusicVideos) + [SubString(ListItem.Mpaa,Rated NC-17) | SubString(ListItem.Mpaa,Rated: NC-17)]">NC-17</value>
+		<value condition="!Container.Content(MusicVideos) + IsEmpty(ListItem.Mpaa)">$LOCALIZE[31020]</value>
+		<value condition="!Container.Content(MusicVideos)">$INFO[ListItem.Mpaa]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.LastPlayed]</value>
 	</variable>
 	<variable name="WeatherDay0">
 		<value condition="StringCompare(Window(Weather).Property(Day0.Title),$LOCALIZE[11])">$LOCALIZE[41]</value>
