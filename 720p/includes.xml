@@ -155,7 +155,7 @@
 						<posy>0</posy>
 						<width>90</width>
 						<height>90</height>
-						<texture diffuse="cover-diffuse.png">$INFO[MusicPlayer.Cover]</texture>
+						<texture diffuse="case-diffuse.png">$INFO[MusicPlayer.Cover]</texture>
 						<animation effect="rotatey" end="-30" center="0,45" time="0" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
@@ -163,7 +163,7 @@
 						<posy>89</posy>
 						<width>90</width>
 						<height>90</height>
-						<texture flipy="true" diffuse="cover-diffuse-mirror.png">$INFO[MusicPlayer.Cover]</texture>
+						<texture flipy="true" diffuse="case-diffuse-mirror.png">$INFO[MusicPlayer.Cover]</texture>
 						<animation effect="rotatey" end="-30" center="0,45" time="0" condition="true">Conditional</animation>
 					</control>
 				</control>
@@ -177,7 +177,7 @@
 						<posy>0</posy>
 						<width>90</width>
 						<height>90</height>
-						<texture diffuse="cover-diffuse.png">cdcase-inside.png</texture>
+						<texture diffuse="case-diffuse.png">cdcase-inside.png</texture>
 						<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
@@ -185,7 +185,7 @@
 						<posy>3</posy>
 						<width>80</width>
 						<height>80</height>
-						<texture diffuse="cover-diffuse.png">cd.png</texture>
+						<texture>cd.png</texture>
 						<animation effect="rotatey" end="30" center="80,40" time="0" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
@@ -193,7 +193,7 @@
 						<posy>89</posy>
 						<width>90</width>
 						<height>90</height>
-						<texture flipy="true" diffuse="cover-diffuse-mirror.png">cdcase-inside.png</texture>
+						<texture flipy="true" diffuse="case-diffuse-mirror.png">cdcase-inside.png</texture>
 						<animation effect="rotatey" end="30" center="90,45" time="0" condition="true">Conditional</animation>
 					</control>
 					<control type="image">
@@ -201,7 +201,7 @@
 						<posy>92</posy>
 						<width>80</width>
 						<height>80</height>
-						<texture flipy="true" diffuse="cover-diffuse-mirror.png">cd.png</texture>
+						<texture flipy="true">cd.png</texture>
 						<animation effect="rotatey" end="30" center="80,40" time="0" condition="true">Conditional</animation>
 					</control>
 				</control>
@@ -259,7 +259,7 @@
 				<posy>0</posy>
 				<width>1127</width>
 				<height>48</height>
-				<texture>header-back.png</texture>
+				<texture border="2">header-back.png</texture>
 			</control>
 			<control type="label">
 				<posx>30</posx>

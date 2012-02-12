@@ -14,21 +14,21 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>1127</width>
+				<width>1124</width>
 				<height>628</height>
 				<texture border="18">dialog-back.png</texture>
 			</control>
 			<control type="image">
 				<posx>0</posx>
 				<posy>14</posy>
-				<width>1127</width>
+				<width>1124</width>
 				<height>48</height>
-				<texture>header-back.png</texture>
+				<texture border="2">header-back.png</texture>
 			</control>
 			<control type="label">
 				<posx>30</posx>
 				<posy>14</posy>
-				<width>1067</width>
+				<width>1064</width>
 				<height>30</height>
 				<label>$LOCALIZE[1045]</label>
 				<font>font30</font>

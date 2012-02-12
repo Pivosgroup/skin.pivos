@@ -825,11 +825,11 @@
 			</control>
 			<control type="label">
 				<posx>10</posx>
-				<posy>38</posy>
+				<posy>42</posy>
 				<width>405</width>
 				<height>30</height>
 				<label>[I]$INFO[Weather.Conditions] [/I]</label>
-				<font>font18</font>
+				<font>font14m</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
 			</control>

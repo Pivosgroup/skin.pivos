@@ -11,7 +11,7 @@
 				<posy>58</posy>
 				<width>1127</width>
 				<height>628</height>
-				<texture>background-light.png</texture>
+				<texture border="5">background-light.png</texture>
 				<include>WindowOpenCloseFade</include>
 			</control>
 			<include>SettingsHeader</include>
