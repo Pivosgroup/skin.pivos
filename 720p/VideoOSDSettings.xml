@@ -91,7 +91,6 @@
 				<onright>5</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<include>VisibleFade</include>
 			</control>
 			<control type="sliderex" id="10">
 				<posx>0</posx>

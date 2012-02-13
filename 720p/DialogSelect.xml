@@ -226,7 +226,6 @@
 				<onright>3</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<include>VisibleFade</include>
 				<visible>Control.IsVisible(3)</visible>
 			</control>
 			<control type="scrollbar" id="61">
@@ -243,7 +242,6 @@
 				<onright>6</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<include>VisibleFade</include>
 				<visible>Control.IsVisible(6)</visible>
 			</control>
 			<control type="button" id="5">

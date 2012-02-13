@@ -140,7 +140,6 @@
 				<onright>100</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<include>VisibleFade</include>
 			</control>
 			<control type="label">
 				<posx>578</posx>
@@ -262,7 +261,6 @@
 				<onright>50</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<include>VisibleFade</include>
 			</control>
 		</control>
 	</controls>

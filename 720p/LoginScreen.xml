@@ -112,7 +112,6 @@
 				<onright>52</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<include>VisibleFade</include>
 			</control>
 			<control type="image">
 				<posx>30</posx>

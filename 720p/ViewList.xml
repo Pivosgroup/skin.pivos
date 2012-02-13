@@ -107,7 +107,6 @@
 				<onright>50</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<include>VisibleFade</include>
 			</control>
 		</control>
 	</include>

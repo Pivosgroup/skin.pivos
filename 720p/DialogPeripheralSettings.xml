@@ -61,7 +61,6 @@
 				<onright>20</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<include>VisibleFade</include>
 			</control>
 			<control type="label" id="3">
 				<posx>30</posx>

@@ -140,7 +140,6 @@
 					<onright>21</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
-					<include>VisibleFade</include>
 				</control>
 			</control>
 			<control type="group">
@@ -268,7 +267,6 @@
 					<onright>20</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
-					<include>VisibleFade</include>
 				</control>
 			</control>
 		</control>

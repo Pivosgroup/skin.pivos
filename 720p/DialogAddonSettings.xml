@@ -83,7 +83,6 @@
 					<onright>10</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
-					<include>VisibleFade</include>
 				</control>
 				<control type="togglebutton" id="13">
 					<posx>0</posx>

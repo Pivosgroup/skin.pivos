@@ -247,7 +247,6 @@
 					<onright>10</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
-					<include>VisibleFade</include>
 				</control>
 				<control type="spincontrolex" id="16">
 					<posx>0</posx>
