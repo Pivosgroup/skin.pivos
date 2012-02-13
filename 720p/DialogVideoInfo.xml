@@ -190,14 +190,103 @@
 				<height>180</height>
 				<texture border="4">button_alt_NF.png</texture>
 			</control>
-			<control type="textbox">
+			<control type="textbox" id="4">
 				<posx>60</posx>
 				<posy>268</posy>
 				<width>680</width>
 				<height>150</height>
-				<label>$INFO[ListItem.Plot]</label>
 				<font>font18</font>
 				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+				<visible>!Control.IsVisible(50)</visible>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>258</posy>
+				<width>680</width>
+				<height>150</height>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture border="4">$INFO[Container(50).ListItem.Icon]</texture>
+					<aspectratio scalediffuse="true">scale</aspectratio>					
+					<visible>Control.IsVisible(50)</visible>
+				</control>
+				<control type="list" id="50">
+					<posx>180</posx>
+					<posy>10</posy>
+					<width>510</width>
+					<height>160</height>
+					<pagecontrol>60</pagecontrol>
+					<onup>50</onup>
+					<ondown>8000</ondown>
+					<onleft>8000</onleft>
+					<onright>60</onright>
+					<itemlayout width="510" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>510</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="label">
+							<posx>5</posx>
+							<posy>0</posy>
+							<width>500</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>light</selectedcolor>
+							<aligny>center</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="510" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>510</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>510</width>
+							<height>40</height>
+							<texture border="4">button_FO.png</texture>
+							<visible>Control.HasFocus(50)</visible>
+						</control>
+						<control type="label">
+							<posx>5</posx>
+							<posy>0</posy>
+							<width>500</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<aligny>center</aligny>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="scrollbar" id="60">
+					<posx>695</posx>
+					<posy>10</posy>
+					<width>20</width>
+					<height>160</height>
+					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+					<texturesliderbar>-</texturesliderbar>
+					<texturesliderbarfocus>-</texturesliderbarfocus>
+					<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+					<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+					<onleft>50</onleft>
+					<onright>8000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<include>VisibleFade</include>					
+					<visible>Control.IsVisible(50)</visible>
+				</control>
 			</control>
 			<control type="group">
 				<posx>40</posx>
@@ -400,7 +489,7 @@
 				<posy>78</posy>
 				<width>320</width>
 				<height>470</height>
-				<texture diffuse="cover-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<visible>Container.Content(Movies)</visible>
 			</control>
@@ -409,7 +498,7 @@
 				<posy>78</posy>
 				<width>320</width>
 				<height>470</height>
-				<texture diffuse="cover-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<texture diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio scalediffuse="false">keep</aspectratio>
 				<visible>Container.Content(TvShows)</visible>
 			</control>
@@ -429,6 +518,8 @@
 				<height>35</height>
 				<itemgap>5</itemgap>
 				<orientation>horizontal</orientation>
+				<onup>50</onup>
+				<ondown>50</ondown>
 				<control type="togglebutton" id="8">
 					<posx>0</posx>
 					<posy>0</posy>

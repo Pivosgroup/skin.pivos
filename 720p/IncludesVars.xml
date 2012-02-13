@@ -26,15 +26,6 @@
 		<value condition="stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,8)">mediaicons/audiocodec/dtsma71.png</value>
 		<value>mediaicons/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
 	</variable>
-	<variable name="Mpaa">
-		<value condition="SubString(ListItem.Mpaa,Rated G) | SubString(ListItem.Mpaa,Rated: G)">G</value>
-		<value condition="SubString(ListItem.Mpaa,Rated PG-13) | SubString(ListItem.Mpaa,Rated: PG-13)">PG-13</value>
-		<value condition="SubString(ListItem.Mpaa,Rated PG) | SubString(ListItem.Mpaa,Rated: PG)">PG</value>
-		<value condition="SubString(ListItem.Mpaa,Rated R) | SubString(ListItem.Mpaa,Rated: R)">R</value>
-		<value condition="SubString(ListItem.Mpaa,Rated NC-17) | SubString(ListItem.Mpaa,Rated: NC-17)">NC-17</value>
-		<value condition="IsEmpty(ListItem.Mpaa)">$LOCALIZE[31020]</value>
-		<value>$INFO[ListItem.Mpaa]</value>
-	</variable>
 	<variable name="SeekBarLabel">
 		<value condition="Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31012][/B]</value>
 		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31013][/B]</value>
