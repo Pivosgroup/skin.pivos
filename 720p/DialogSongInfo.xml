@@ -1,0 +1,444 @@
+<window id="135">
+	<defaultcontrol always="true">10</defaultcontrol>
+	<coordinates>
+		<posx>113</posx>
+		<posy>58</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1127</width>
+			<height>628</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1124</width>
+				<height>628</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>1124</width>
+				<height>48</height>
+				<texture border="2">header-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>14</posy>
+				<width>1064</width>
+				<height>30</height>
+				<label>$INFO[ListItem.Title]</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>84</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>205</width>
+					<height>161</height>
+					<texture>white.png</texture>
+					<colordiffuse>10FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1</width>
+					<height>161</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>720</posx>
+					<posy>0</posy>
+					<width>1</width>
+					<height>161</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>0</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>40</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>40FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>80</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>40FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>120</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>40FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>160</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>86</posy>
+				<control type="label">
+					<posx>200</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>30</height>
+					<label>$LOCALIZE[557]:</label>
+					<font>font24</font>
+					<textcolor>normal</textcolor>
+					<align>right</align>
+				</control>
+				<control type="label">
+					<posx>210</posx>
+					<posy>0</posy>
+					<width>510</width>
+					<height>30</height>
+					<label>[I]$INFO[ListItem.Artist] [/I]</label>
+					<font>font24</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>40</posy>
+					<width>200</width>
+					<height>30</height>
+					<label>$LOCALIZE[558]:</label>
+					<font>font24</font>
+					<textcolor>normal</textcolor>
+					<align>right</align>
+				</control>
+				<control type="label">
+					<posx>210</posx>
+					<posy>40</posy>
+					<width>510</width>
+					<height>30</height>
+					<label>[I]$INFO[ListItem.Album] [/I]</label>
+					<font>font24</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>80</posy>
+					<width>200</width>
+					<height>30</height>
+					<label>$LOCALIZE[515]:</label>
+					<font>font24</font>
+					<textcolor>normal</textcolor>
+					<align>right</align>
+				</control>
+				<control type="label">
+					<posx>210</posx>
+					<posy>80</posy>
+					<width>510</width>
+					<height>30</height>
+					<label>[I]$INFO[ListItem.Genre] [/I]</label>
+					<font>font24</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>120</posy>
+					<width>200</width>
+					<height>30</height>
+					<label>$LOCALIZE[562]:</label>
+					<font>font24</font>
+					<textcolor>normal</textcolor>
+					<align>right</align>
+				</control>
+				<control type="label">
+					<posx>210</posx>
+					<posy>120</posy>
+					<width>510</width>
+					<height>30</height>
+					<label>[I]$INFO[ListItem.Year] [/I]</label>
+					<font>font24</font>
+					<textcolor>white</textcolor>
+				</control>
+			</control>
+			<control type="image">
+				<posx>40</posx>
+				<posy>258</posy>
+				<width>720</width>
+				<height>180</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="textbox">
+				<posx>60</posx>
+				<posy>268</posy>
+				<width>680</width>
+				<height>150</height>
+				<label>$INFO[ListItem.Comment]</label>
+				<font>font18</font>
+				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>450</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>150</width>
+					<height>101</height>
+					<texture>white.png</texture>
+					<colordiffuse>10FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>582</posx>
+					<posy>0</posy>
+					<width>139</width>
+					<height>101</height>
+					<texture>white.png</texture>
+					<colordiffuse>10FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1</width>
+					<height>101</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>582</posx>
+					<posy>0</posy>
+					<width>1</width>
+					<height>101</height>
+					<texture>white.png</texture>
+					<colordiffuse>40FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>720</posx>
+					<posy>0</posy>
+					<width>1</width>
+					<height>101</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>0</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>50</posy>
+					<width>581</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>40FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>100</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>462</posy>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>150</width>
+					<height>30</height>
+					<label>$LOCALIZE[567]:</label>
+					<font>font20</font>
+					<textcolor>light</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>150</posx>
+					<posy>0</posy>
+					<width>432</width>
+					<height>30</height>
+					<label>[I]$INFO[ListItem.PlayCount] [/I]</label>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>150</width>
+					<height>30</height>
+					<label>$LOCALIZE[568]:</label>
+					<font>font20</font>
+					<textcolor>light</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>150</posx>
+					<posy>50</posy>
+					<width>432</width>
+					<height>30</height>
+					<label>[I]$INFO[ListItem.LastPlayed] [/I]</label>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="group">
+				<posx>622</posx>
+				<posy>462</posy>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>139</width>
+					<height>30</height>
+					<label>$LOCALIZE[2050]:</label>
+					<font>font20</font>
+					<textcolor>light</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>139</width>
+					<height>30</height>
+					<label>[I]$INFO[ListItem.Duration] [/I]</label>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="image">
+				<posx>776</posx>
+				<posy>153</posy>
+				<width>320</width>
+				<height>320</height>
+				<texture fallback="DefaultAlbumCover.png" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<posx>810</posx>
+				<posy>500</posy>
+				<width>150</width>
+				<height>24</height>
+				<texture>$INFO[ListItem.StarRating]</texture>
+			</control>
+			<control type="button" id="14">
+				<posx>1000</posx>
+				<posy>494</posy>
+				<width>28</width>
+				<height>40</height>
+				<texturenofocus>arrow_down_NF.png</texturenofocus>
+				<texturefocus>arrow_down_FO.png</texturefocus>
+				<onleft>15</onleft>
+				<onright>15</onright>
+				<ondown>8000</ondown>
+				<onup>8000</onup>
+				<onclick>DecreaseRating</onclick>
+			</control>
+			<control type="button" id="15">
+				<posx>1028</posx>
+				<posy>494</posy>
+				<width>28</width>
+				<height>40</height>
+				<texturenofocus>arrow_up_NF.png</texturenofocus>
+				<texturefocus>arrow_up_FO.png</texturefocus>
+				<onleft>14</onleft>
+				<onright>14</onright>
+				<ondown>8000</ondown>
+				<onup>8000</onup>
+				<onclick>IncreaseRating</onclick>
+			</control>
+			<control type="grouplist" id="8000">
+				<posx>222</posx>
+				<posy>563</posy>
+				<width>695</width>
+				<height>35</height>
+				<itemgap>5</itemgap>
+				<orientation>horizontal</orientation>
+				<onup>14</onup>
+				<ondown>14</ondown>
+				<control type="button" id="10">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[186]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				</control>
+				<control type="button" id="11">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[222]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				</control>
+				<control type="button" id="13">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[13405]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				</control>
+				<control type="button" id="12">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[10523]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>
