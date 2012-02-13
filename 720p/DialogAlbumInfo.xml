@@ -1,0 +1,603 @@
+<window id="2001">
+	<defaultcontrol always="true">5</defaultcontrol>
+	<coordinates>
+		<posx>113</posx>
+		<posy>58</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1127</width>
+			<height>628</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1124</width>
+				<height>628</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>1124</width>
+				<height>48</height>
+				<texture border="2">header-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>14</posy>
+				<width>1064</width>
+				<height>30</height>
+				<label>$INFO[ListItem.Artist]</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+				<visible>Container.Content(Artists)</visible>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>14</posy>
+				<width>1064</width>
+				<height>30</height>
+				<label>$INFO[ListItem.Album]</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+				<visible>Container.Content(Albums)</visible>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>84</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>205</width>
+					<height>161</height>
+					<texture>white.png</texture>
+					<colordiffuse>10FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1</width>
+					<height>161</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>720</posx>
+					<posy>0</posy>
+					<width>1</width>
+					<height>161</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>0</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>40</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>40FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>80</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>40FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>120</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>40FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>160</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>86</posy>
+				<control type="label">
+					<posx>200</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>30</height>
+					<label>$VAR[MusicInfoLabel1]:</label>
+					<font>font24</font>
+					<textcolor>normal</textcolor>
+					<align>right</align>
+				</control>
+				<control type="label">
+					<posx>210</posx>
+					<posy>0</posy>
+					<width>510</width>
+					<height>30</height>
+					<label>[I]$VAR[MusicInfoData1] [/I]</label>
+					<font>font24</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>40</posy>
+					<width>200</width>
+					<height>30</height>
+					<label>$VAR[MusicInfoLabel2]:</label>
+					<font>font24</font>
+					<textcolor>normal</textcolor>
+					<align>right</align>
+				</control>
+				<control type="label">
+					<posx>210</posx>
+					<posy>40</posy>
+					<width>510</width>
+					<height>30</height>
+					<label>[I]$VAR[MusicInfoData2] [/I]</label>
+					<font>font24</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>80</posy>
+					<width>200</width>
+					<height>30</height>
+					<label>$VAR[MusicInfoLabel3]:</label>
+					<font>font24</font>
+					<textcolor>normal</textcolor>
+					<align>right</align>
+				</control>
+				<control type="label">
+					<posx>210</posx>
+					<posy>80</posy>
+					<width>510</width>
+					<height>30</height>
+					<label>[I]$VAR[MusicInfoData3] [/I]</label>
+					<font>font24</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<posx>200</posx>
+					<posy>120</posy>
+					<width>200</width>
+					<height>30</height>
+					<label>$VAR[MusicInfoLabel4]:</label>
+					<font>font24</font>
+					<textcolor>normal</textcolor>
+					<align>right</align>
+				</control>
+				<control type="label">
+					<posx>210</posx>
+					<posy>120</posy>
+					<width>510</width>
+					<height>30</height>
+					<label>[I]$VAR[MusicInfoData4] [/I]</label>
+					<font>font24</font>
+					<textcolor>white</textcolor>
+				</control>
+			</control>
+			<control type="image">
+				<posx>40</posx>
+				<posy>258</posy>
+				<width>720</width>
+				<height>180</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="textbox" id="4">
+				<posx>60</posx>
+				<posy>268</posy>
+				<width>680</width>
+				<height>150</height>
+				<font>font18</font>
+				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+				<visible>!Control.IsVisible(50)</visible>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>258</posy>
+				<width>680</width>
+				<height>150</height>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(50).ListItem.Icon]</texture>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<visible>Container.Content(Artists) + Control.IsVisible(50)</visible>
+				</control>
+				<control type="list" id="50">
+					<posx>180</posx>
+					<posy>10</posy>
+					<width>510</width>
+					<height>160</height>
+					<pagecontrol>60</pagecontrol>
+					<onup>50</onup>
+					<ondown>8000</ondown>
+					<onleft>8000</onleft>
+					<onright>60</onright>
+					<visible>Container.Content(Artists)</visible>
+					<itemlayout width="510" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>510</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="label">
+							<posx>5</posx>
+							<posy>0</posy>
+							<width>500</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>light</selectedcolor>
+							<aligny>center</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="510" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>510</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>510</width>
+							<height>40</height>
+							<texture border="4">button_FO.png</texture>
+							<visible>Control.HasFocus(50)</visible>
+						</control>
+						<control type="label">
+							<posx>5</posx>
+							<posy>0</posy>
+							<width>500</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<aligny>center</aligny>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="list" id="50">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>680</width>
+					<height>160</height>
+					<pagecontrol>60</pagecontrol>
+					<onup>50</onup>
+					<ondown>8000</ondown>
+					<onleft>8000</onleft>
+					<onright>60</onright>
+					<visible>Container.Content(Albums)</visible>
+					<itemlayout width="680" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>680</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="label">
+							<posx>5</posx>
+							<posy>0</posy>
+							<width>670</width>
+							<height>40</height>
+							<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Label]</label>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>light</selectedcolor>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<posx>675</posx>
+							<posy>0</posy>
+							<width>675</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Duration]</label>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>light</selectedcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</itemlayout>
+					<focusedlayout width="680" height="40">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>680</width>
+							<height>40</height>
+							<texture border="6">button_NF.png</texture>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>680</width>
+							<height>40</height>
+							<texture border="4">button_FO.png</texture>
+							<visible>Control.HasFocus(50)</visible>
+						</control>
+						<control type="label">
+							<posx>5</posx>
+							<posy>0</posy>
+							<width>670</width>
+							<height>40</height>
+							<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Label]</label>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<aligny>center</aligny>
+						</control>
+						<control type="label">
+							<posx>675</posx>
+							<posy>0</posy>
+							<width>670</width>
+							<height>40</height>
+							<label>$INFO[ListItem.Duration]</label>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<align>right</align>
+							<aligny>center</aligny>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="scrollbar" id="60">
+					<posx>695</posx>
+					<posy>10</posy>
+					<width>20</width>
+					<height>160</height>
+					<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+					<texturesliderbar>-</texturesliderbar>
+					<texturesliderbarfocus>-</texturesliderbarfocus>
+					<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+					<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+					<onleft>50</onleft>
+					<onright>8000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Control.IsVisible(50)</visible>
+				</control>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>450</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>150</width>
+					<height>101</height>
+					<texture>white.png</texture>
+					<colordiffuse>10FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>582</posx>
+					<posy>0</posy>
+					<width>139</width>
+					<height>101</height>
+					<texture>white.png</texture>
+					<colordiffuse>10FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1</width>
+					<height>101</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>582</posx>
+					<posy>0</posy>
+					<width>1</width>
+					<height>101</height>
+					<texture>white.png</texture>
+					<colordiffuse>40FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>720</posx>
+					<posy>0</posy>
+					<width>1</width>
+					<height>101</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>0</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>50</posy>
+					<width>581</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>40FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>100</posy>
+					<width>719</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<colordiffuse>60FFFFFF</colordiffuse>
+				</control>
+			</control>
+			<control type="group">
+				<posx>40</posx>
+				<posy>462</posy>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>150</width>
+					<height>30</height>
+					<label>$VAR[MusicInfoLabel5]:</label>
+					<font>font20</font>
+					<textcolor>light</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>150</posx>
+					<posy>0</posy>
+					<width>432</width>
+					<height>30</height>
+					<label>[I]$VAR[MusicInfoData5] [/I]</label>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>150</width>
+					<height>30</height>
+					<label>$VAR[MusicInfoLabel6]:</label>
+					<font>font20</font>
+					<textcolor>light</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>150</posx>
+					<posy>50</posy>
+					<width>432</width>
+					<height>30</height>
+					<label>[I]$VAR[MusicInfoData6] [/I]</label>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="group">
+				<posx>622</posx>
+				<posy>462</posy>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>139</width>
+					<height>30</height>
+					<label>$VAR[MusicInfoLabel7]:</label>
+					<font>font20</font>
+					<textcolor>light</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<wrapmultiline>true</wrapmultiline>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>139</width>
+					<height>30</height>
+					<label>[I]$VAR[MusicInfoData7] [/I]</label>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="image">
+				<posx>776</posx>
+				<posy>153</posy>
+				<width>320</width>
+				<height>320</height>
+				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<visible>Container.Content(Artists)</visible>
+			</control>
+			<control type="image">
+				<posx>776</posx>
+				<posy>153</posy>
+				<width>320</width>
+				<height>320</height>
+				<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>Container.Content(Albums)</visible>
+			</control>
+			<control type="grouplist" id="8000">
+				<posx>222</posx>
+				<posy>563</posy>
+				<width>695</width>
+				<height>35</height>
+				<itemgap>5</itemgap>
+				<orientation>horizontal</orientation>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<control type="button" id="5">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[206]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				</control>
+				<control type="button" id="6">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[184]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				</control>
+				<control type="button" id="10">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[13405]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				</control>
+				<control type="button" id="12">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>170</width>
+					<height>35</height>
+					<label>$LOCALIZE[20413]</label>
+					<font>font16m</font>
+					<align>center</align>
+					<textcolor>lightgrey</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="4">button_FO.png</texturefocus>
+					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>
