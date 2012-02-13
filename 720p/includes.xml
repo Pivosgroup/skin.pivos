@@ -352,7 +352,7 @@
 								<effect type="zoom" start="100" end="80" time="200" center="auto"/>
 								<effect type="fade" start="100" end="70" time="200"/>
 							</animation>
-							<visible>ControlGroup(200).HasFocus</visible>
+							<visible>ControlGroup(200).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003)</visible>
 						</control>
 					</focusedlayout>
 					<content>

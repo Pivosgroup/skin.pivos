@@ -20,13 +20,13 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture background="true">$INFO[Container(5002).ListItem.Property(FanartImage)]</texture>
+			<texture background="true">$INFO[Container(5003).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>CrossFade</fadetime>
 			<colordiffuse>50FFFFFF</colordiffuse>
 			<include>WindowOpenCloseFade</include>
 			<include>VisibleFade</include>
-			<visible>Control.HasFocus(5002)</visible>
+			<visible>Control.HasFocus(5003)</visible>
 		</control>
 		<control type="group">
 			<include>WindowOpenCloseFade</include>
@@ -223,7 +223,7 @@
 				<onup>200</onup>
 				<ondown>200</ondown>
 				<onleft>1000</onleft>
-				<onright>5002</onright>
+				<onright>5003</onright>
 				<visible>Container(1000).HasFocus(3)</visible>
 				<control type="button" id="201">
 					<label>$LOCALIZE[136]</label>
@@ -512,7 +512,7 @@
 			<posy>520</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>Container(1000).HasFocus(2)</visible>
+			<visible>[Container(1000).HasFocus(2) + !Control.HasFocus(206)] | Control.HasFocus(5001)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -527,10 +527,10 @@
 				<width>384</width>
 				<orientation>horizontal</orientation>
 				<scrolltime>250</scrolltime>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
+				<onup>200</onup>
+				<ondown>200</ondown>
 				<onleft>5001</onleft>
-				<onright>5001</onright>
+				<onright>5002</onright>
 				<itemlayout width="68" height="145">
 					<control type="image">
 						<posx>0</posx>
@@ -640,6 +640,171 @@
 			<posy>520</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
+			<visible>[Container(1000).HasFocus(2) + Control.HasFocus(206)] | Control.HasFocus(5002)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>425</width>
+				<height>185</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>24</posx>
+				<posy>22</posy>
+				<width>100</width>
+				<height>36</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>24</posx>
+				<posy>25</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>[B]$INFO[Container(5002).ListItem.Property(Number)][/B]</label>
+				<align>center</align>
+				<font>font20</font>
+				<textcolor>light</textcolor>
+			</control>
+			<control type="wraplist" id="5002">
+				<posx>24</posx>
+				<posy>65</posy>
+				<height>100</height>
+				<width>384</width>
+				<orientation>horizontal</orientation>
+				<scrolltime>250</scrolltime>
+				<onup>200</onup>
+				<ondown>200</ondown>
+				<onleft>5002</onleft>
+				<onright>5002</onright>
+				<itemlayout width="68" height="100">
+					<control type="image">
+						<posx>0</posx>
+						<posy>40</posy>
+						<width>60</width>
+						<height>60</height>
+						<texture fallback="DefaultVideoCover.png" diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="112" height="100">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>100</width>
+						<height>100</height>
+						<texture fallback="DefaultVideoCover.png" diffuse="thumb-diffuse.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label>
+						<label2>$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label2>
+						<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
+						<property name="Number">$INFO[Window.Property(LatestEpisode.1.EpisodeNo)]</property>
+						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.1.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestEpisode.1.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="2">
+						<label>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label>
+						<label2>$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label2>
+						<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
+						<property name="Number">$INFO[Window.Property(LatestEpisode.2.EpisodeNo)]</property>
+						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.2.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestEpisode.2.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="3">
+						<label>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label>
+						<label2>$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label2>
+						<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
+						<property name="Number">$INFO[Window.Property(LatestEpisode.3.EpisodeNo)]</property>
+						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.3.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestEpisode.3.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="4">
+						<label>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label>
+						<label2>$INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label2>
+						<thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
+						<property name="Number">$INFO[Window.Property(LatestEpisode.4.EpisodeNo)]</property>
+						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.4.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestEpisode.4.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+					<item id="5">
+						<label>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label>
+						<label2>$INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label2>
+						<thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
+						<property name="Number">$INFO[Window.Property(LatestEpisode.5.EpisodeNo)]</property>
+						<property name="FanartImage">$INFO[Window.Property(LatestEpisode.5.Fanart)]</property>
+						<onclick>$INFO[Window.Property(LatestEpisode.5.Path),PlayMedia(&quot;,&quot;)]</onclick>
+					</item>
+				</content>
+			</control>
+			<control type="group">
+				<visible>!Control.HasFocus(5002)</visible>
+				<control type="image">
+					<posx>130</posx>
+					<posy>22</posy>
+					<width>275</width>
+					<height>76</height>
+					<texture border="4">button_alt_NF.png</texture>
+				</control>
+				<control type="label">
+					<posx>130</posx>
+					<posy>22</posy>
+					<width>275</width>
+					<height>30</height>
+					<label>[B]$LOCALIZE[31004][/B]</label>
+					<align>center</align>
+					<font>font20</font>
+					<textcolor>normal</textcolor>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Control.HasFocus(5002)</visible>
+				<control type="image">
+					<posx>130</posx>
+					<posy>22</posy>
+					<width>275</width>
+					<height>76</height>
+					<texture border="4">button_FO.png</texture>
+				</control>
+				<control type="label">
+					<posx>130</posx>
+					<posy>22</posy>
+					<width>275</width>
+					<height>30</height>
+					<label>[B]$LOCALIZE[31004][/B]</label>
+					<align>center</align>
+					<font>font20</font>
+					<textcolor>white</textcolor>
+				</control>
+			</control>
+			<control type="label">
+				<posx>130</posx>
+				<posy>50</posy>
+				<width>275</width>
+				<height>30</height>
+				<label>[B]$INFO[Container(5002).ListItem.Label][/B]</label>
+				<align>center</align>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+			</control>
+			<control type="label">
+				<posx>130</posx>
+				<posy>70</posy>
+				<width>275</width>
+				<height>30</height>
+				<label>$INFO[Container(5002).ListItem.Label2]</label>
+				<align>center</align>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+			</control>
+		</control>
+		<control type="group">
+			<posx>830</posx>
+			<posy>520</posy>
+			<include>VisibleZoomInOut</include>
+			<include>WindowOpenCloseFade</include>
 			<visible>Container(1000).HasFocus(3)</visible>
 			<control type="image">
 				<posx>0</posx>
@@ -660,12 +825,12 @@
 				<posy>25</posy>
 				<width>100</width>
 				<height>30</height>
-				<label>[B]$INFO[Container(5002).ListItem.Property(Year)][/B]</label>
+				<label>[B]$INFO[Container(5003).ListItem.Property(Year)][/B]</label>
 				<align>center</align>
 				<font>font20</font>
 				<textcolor>light</textcolor>
 			</control>
-			<control type="wraplist" id="5002">
+			<control type="wraplist" id="5003">
 				<posx>24</posx>
 				<posy>65</posy>
 				<height>100</height>
@@ -674,8 +839,8 @@
 				<scrolltime>250</scrolltime>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
-				<onleft>5002</onleft>
-				<onright>5002</onright>
+				<onleft>5003</onleft>
+				<onright>5003</onright>
 				<itemlayout width="68" height="100">
 					<control type="image">
 						<posx>0</posx>
@@ -740,7 +905,7 @@
 				</content>
 			</control>
 			<control type="group">
-				<visible>!Control.HasFocus(5002)</visible>
+				<visible>!Control.HasFocus(5003)</visible>
 				<control type="image">
 					<posx>130</posx>
 					<posy>22</posy>
@@ -760,7 +925,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Control.HasFocus(5002)</visible>
+				<visible>Control.HasFocus(5003)</visible>
 				<control type="image">
 					<posx>130</posx>
 					<posy>22</posy>
@@ -784,7 +949,7 @@
 				<posy>50</posy>
 				<width>275</width>
 				<height>30</height>
-				<label>[B]$INFO[Container(5002).ListItem.Label][/B]</label>
+				<label>[B]$INFO[Container(5003).ListItem.Label][/B]</label>
 				<align>center</align>
 				<font>font16</font>
 				<textcolor>white</textcolor>
@@ -794,7 +959,7 @@
 				<posy>70</posy>
 				<width>275</width>
 				<height>30</height>
-				<label>$INFO[Container(5002).ListItem.Label2]</label>
+				<label>$INFO[Container(5003).ListItem.Label2]</label>
 				<align>center</align>
 				<font>font16</font>
 				<textcolor>white</textcolor>
