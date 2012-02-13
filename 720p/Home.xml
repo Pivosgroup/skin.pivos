@@ -623,7 +623,7 @@
 					<font>font20</font>
 					<textcolor>white</textcolor>
 				</control>
-			</control>			
+			</control>
 			<control type="label">
 				<posx>130</posx>
 				<posy>46</posy>
@@ -664,7 +664,7 @@
 				<align>center</align>
 				<font>font20</font>
 				<textcolor>light</textcolor>
-			</control>			
+			</control>
 			<control type="wraplist" id="5002">
 				<posx>24</posx>
 				<posy>65</posy>
@@ -778,7 +778,7 @@
 					<font>font20</font>
 					<textcolor>white</textcolor>
 				</control>
-			</control>			
+			</control>
 			<control type="label">
 				<posx>130</posx>
 				<posy>50</posy>
@@ -788,7 +788,7 @@
 				<align>center</align>
 				<font>font16</font>
 				<textcolor>white</textcolor>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>130</posx>
 				<posy>70</posy>

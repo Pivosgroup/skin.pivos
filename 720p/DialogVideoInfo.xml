@@ -210,7 +210,7 @@
 					<width>160</width>
 					<height>160</height>
 					<texture diffuse="thumb-diffuse.png">$INFO[Container(50).ListItem.Icon]</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>					
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<visible>Control.IsVisible(50)</visible>
 				</control>
 				<control type="list" id="50">
@@ -284,7 +284,6 @@
 					<onright>8000</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
-					<include>VisibleFade</include>					
 					<visible>Control.IsVisible(50)</visible>
 				</control>
 			</control>

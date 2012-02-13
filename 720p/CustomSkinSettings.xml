@@ -289,7 +289,7 @@
 						<label>$LOCALIZE[31005] 8</label>
 						<label2>$INFO[Skin.String(CustomFavourite.8.Label)]</label2>
 						<onclick>RunScript(script.favourites,property=CustomFavourite.8)</onclick>
-					</control>	
+					</control>
 				</control>
 				<control type="scrollbar" id="299">
 					<posx>782</posx>

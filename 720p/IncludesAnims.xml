@@ -70,7 +70,8 @@
 		<animation type="WindowClose">
 			<effect type="fade" start="100" end="0" time="150"/>
 		</animation>
-	</include>	<include name="WindowOpenCloseFadeSettings">
+	</include>
+	<include name="WindowOpenCloseFadeSettings">
 		<animation type="WindowOpen" condition="![Window.Previous(AppearanceSettings) | Window.Previous(VideosSettings) | Window.Previous(MusicSettings) | Window.Previous(PicturesSettings) | Window.Previous(WeatherSettings) | Window.Previous(NetworkSettings) | Window.Previous(SystemSettings)]">
 			<effect type="fade" start="0" end="100" time="400"/>
 		</animation>
