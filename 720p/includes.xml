@@ -592,6 +592,227 @@
 				<height>185</height>
 				<texture border="18">dialog-back.png</texture>
 			</control>
+			<control type="image">
+				<posx>130</posx>
+				<posy>22</posy>
+				<width>275</width>
+				<height>40</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>130</posx>
+				<posy>26</posy>
+				<width>275</width>
+				<height>30</height>
+				<label>[B]$LOCALIZE[13350][/B]</label>
+				<align>center</align>
+				<font>font20</font>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="image">
+				<posx>24</posx>
+				<posy>20</posy>
+				<width>100</width>
+				<height>145</height>
+				<texture fallback="DefaultVideoCover.png" diffuse="thumb-diffuse.png">$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>Player.HasVideo + VideoPlayer.Content(Movies)</visible>
+			</control>
+			<control type="image">
+				<posx>24</posx>
+				<posy>22</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture fallback="DefaultVideoCover.png" diffuse="thumb-diffuse.png">$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<visible>Player.HasVideo + !VideoPlayer.Content(Movies)</visible>
+			</control>
+			<control type="image">
+				<posx>24</posx>
+				<posy>22</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture fallback="DefaultAlbumCover.png" diffuse="thumb-diffuse.png">$INFO[MusicPlayer.Cover]</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>Player.HasAudio</visible>
+			</control>
+			<control type="image">
+				<posx>24</posx>
+				<posy>128</posy>
+				<width>100</width>
+				<height>36</height>
+				<texture border="4">button_alt_NF.png</texture>
+				<visible>Player.HasAudio | [Player.HasVideo + !VideoPlayer.Content(Movies)]</visible>
+			</control>
+			<control type="label">
+				<posx>24</posx>
+				<posy>136</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>[B]$INFO[VideoPlayer.Premiered][/B]</label>
+				<align>center</align>
+				<font>font14</font>
+				<textcolor>light</textcolor>
+				<visible>Player.HasVideo + !VideoPlayer.Content(Movies)</visible>
+			</control>
+			<control type="label">
+				<posx>24</posx>
+				<posy>131</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>[B]$INFO[MusicPlayer.Year][/B]</label>
+				<align>center</align>
+				<font>font20</font>
+				<textcolor>light</textcolor>
+				<visible>Player.HasAudio</visible>
+			</control>
+			<control type="group">
+				<posx>136</posx>
+				<posy>66</posy>
+				<visible>Player.HasVideo</visible>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>263</width>
+					<height>30</height>
+					<label>[B]$INFO[VideoPlayer.Title][/B]</label>
+					<font>font18</font>
+					<textcolor>light</textcolor>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>25</posy>
+					<width>263</width>
+					<height>30</height>
+					<label>[B]$INFO[VideoPlayer.Genre][/B]</label>
+					<font>font16</font>
+					<textcolor>white</textcolor>
+					<visible>VideoPlayer.Content(Movies)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>48</posy>
+					<width>263</width>
+					<height>30</height>
+					<label>$INFO[VideoPlayer.Year]</label>
+					<font>font16</font>
+					<textcolor>lightgrey</textcolor>
+					<visible>VideoPlayer.Content(Movies)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>25</posy>
+					<width>263</width>
+					<height>30</height>
+					<label>[B]$INFO[VideoPlayer.TvShowTitle][/B]</label>
+					<font>font16</font>
+					<textcolor>white</textcolor>
+					<visible>VideoPlayer.Content(Episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>48</posy>
+					<width>263</width>
+					<height>30</height>
+					<label>$LOCALIZE[20373]: $INFO[VideoPlayer.Season]  -  $LOCALIZE[20359]: $INFO[VideoPlayer.Episode]</label>
+					<font>font16</font>
+					<textcolor>lightgrey</textcolor>
+					<visible>VideoPlayer.Content(Episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>25</posy>
+					<width>263</width>
+					<height>30</height>
+					<label>[B]$INFO[VideoPlayer.Artist][/B]</label>
+					<font>font16</font>
+					<textcolor>white</textcolor>
+					<visible>VideoPlayer.Content(MusicVideos)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>48</posy>
+					<width>263</width>
+					<height>30</height>
+					<label>$INFO[VideoPlayer.Genre]</label>
+					<font>font16</font>
+					<textcolor>lightgrey</textcolor>
+					<visible>VideoPlayer.Content(MusicVideos)</visible>
+				</control>
+			</control>
+			<control type="group">
+				<posx>136</posx>
+				<posy>66</posy>
+				<visible>Player.HasAudio</visible>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>263</width>
+					<height>30</height>
+					<label>[B]$INFO[MusicPlayer.Title][/B]</label>
+					<font>font18</font>
+					<textcolor>light</textcolor>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>25</posy>
+					<width>263</width>
+					<height>30</height>
+					<label>[B]$INFO[MusicPlayer.Artist][/B]</label>
+					<font>font16</font>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>48</posy>
+					<width>263</width>
+					<height>30</height>
+					<label>$INFO[MusicPlayer.Album]</label>
+					<font>font16</font>
+					<textcolor>lightgrey</textcolor>
+				</control>
+			</control>
+			<control type="image">
+				<posx>130</posx>
+				<posy>142</posy>
+				<width>275</width>
+				<height>1</height>
+				<texture>white.png</texture>
+				<colordiffuse>30FFFFFF</colordiffuse>
+			</control>
+			<control type="label">
+				<posx>130</posx>
+				<posy>144</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>$INFO[VideoPlayer.Time]</label>
+				<font>font16</font>
+				<textcolor>light</textcolor>
+			</control>
+			<control type="progress">
+				<posx>196</posx>
+				<posy>148</posy>
+				<width>140</width>
+				<height>16</height>
+				<info>Player.Progress</info>
+			</control>
+			<control type="slider" id="888">
+				<posx>196</posx>
+				<posy>148</posy>
+				<width>140</width>
+				<height>16</height>
+				<action>seek</action>
+			</control>
+			<control type="label">
+				<posx>404</posx>
+				<posy>144</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>$INFO[VideoPlayer.Duration]</label>
+				<font>font16</font>
+				<textcolor>light</textcolor>
+				<align>right</align>
+			</control>
 		</control>
 	</include>
 	<include name="RecentFanart">
@@ -651,9 +872,9 @@
 			</control>
 			<control type="wraplist" id="5001">
 				<posx>24</posx>
-				<posy>20</posy>
-				<height>145</height>
+				<posy>22</posy>
 				<width>384</width>
+				<height>143</height>
 				<orientation>horizontal</orientation>
 				<scrolltime>250</scrolltime>
 				<preloaditems>2</preloaditems>
@@ -661,22 +882,22 @@
 				<ondown>200</ondown>
 				<onleft>5001</onleft>
 				<onright>5002</onright>
-				<itemlayout width="68" height="145">
+				<itemlayout width="68" height="143">
 					<control type="image">
 						<posx>0</posx>
-						<posy>55</posy>
+						<posy>53</posy>
 						<width>60</width>
 						<height>90</height>
 						<texture fallback="DefaultVideoCover.png" diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Thumb]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout width="112" height="145">
+				<focusedlayout width="112" height="143">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>100</width>
-						<height>145</height>
+						<height>143</height>
 						<texture fallback="DefaultVideoCover.png" diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Thumb]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
@@ -800,8 +1021,8 @@
 			<control type="wraplist" id="5002">
 				<posx>24</posx>
 				<posy>65</posy>
-				<height>100</height>
 				<width>384</width>
+				<height>100</height>
 				<orientation>horizontal</orientation>
 				<scrolltime>250</scrolltime>
 				<preloaditems>2</preloaditems>
@@ -968,8 +1189,8 @@
 			<control type="wraplist" id="5003">
 				<posx>24</posx>
 				<posy>65</posy>
-				<height>100</height>
 				<width>384</width>
+				<height>100</height>
 				<orientation>horizontal</orientation>
 				<scrolltime>250</scrolltime>
 				<preloaditems>2</preloaditems>
