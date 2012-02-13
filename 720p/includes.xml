@@ -99,27 +99,46 @@
 	</include>
 	<include name="HomeHeader">
 		<control type="group">
+			<posx>835</posx>
+			<posy>12</posy>
 			<include>WindowOpenCloseFade</include>
 			<control type="image">
-				<posx>795</posx>
-				<posy>10</posy>
-				<width>470</width>
-				<height>64</height>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>425</width>
+				<height>50</height>
 				<texture border="4">button_alt_NF.png</texture>
 			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>425</width>
+				<height>28</height>
+				<texture border="2">header-back.png</texture>
+			</control>
 			<control type="grouplist">
-				<posx>350</posx>
-				<posy>10</posy>
-				<width>900</width>
+				<posx>0</posx>
+				<posy>-2</posy>
+				<width>415</width>
 				<height>30</height>
 				<align>right</align>
 				<orientation>horizontal</orientation>
 				<control type="label">
 					<width min="10" max="110">auto</width>
 					<height>30</height>
-					<label>[B]$INFO[Weather.Temperature]    [/B]</label>
+					<label>[B]$INFO[Weather.Temperature][/B]</label>
 					<font>font22</font>
-					<textcolor>lightgrey</textcolor>
+					<textcolor>white</textcolor>
+				</control>
+				<control type="group">
+					<width>10</width>
+					<control type="image">
+						<posx>0</posx>
+						<posy>12</posy>
+						<width>10</width>
+						<height>10</height>
+						<texture>scrollbar_nib_FO.png</texture>
+					</control>
 				</control>
 				<control type="label">
 					<width min="10" max="230">auto</width>
@@ -143,21 +162,13 @@
 					<height>30</height>
 					<label>[B]$INFO[System.Time][/B]</label>
 					<font>font22</font>
-					<textcolor>grey</textcolor>
+					<textcolor>light</textcolor>
 				</control>
 			</control>
-			<control type="image">
-				<posx>933</posx>
-				<posy>45</posy>
-				<width>316</width>
-				<height>1</height>
-				<texture>white.png</texture>
-				<colordiffuse>light</colordiffuse>
-			</control>
 			<control type="label">
-				<posx>1246</posx>
-				<posy>46</posy>
-				<width>800</width>
+				<posx>415</posx>
+				<posy>26</posy>
+				<width>415</width>
 				<height>30</height>
 				<label>[I]$LOCALIZE[31001] $INFO[System.ProfileName] [/I]</label>
 				<align>right</align>
