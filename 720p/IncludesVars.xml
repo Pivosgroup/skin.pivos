@@ -26,6 +26,78 @@
 		<value condition="stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,8)">mediaicons/audiocodec/dtsma71.png</value>
 		<value>mediaicons/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
 	</variable>
+	<variable name="MusicInfoLabel1">
+		<value condition="Container.Content(Artists)">$LOCALIZE[515]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[]</value>
+	</variable>
+	<variable name="MusicInfoData1">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
+		<value condition="Container.Content(Albums)">$INFO[]</value>
+	</variable>
+	<variable name="MusicInfoLabel2">
+		<value condition="Container.Content(Artists)">$LOCALIZE[175]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[]</value>
+	</variable>
+	<variable name="MusicInfoData2">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Mood)]</value>
+		<value condition="Container.Content(Albums)">$INFO[]</value>
+	</variable>
+	<variable name="MusicInfoLabel3">
+		<value condition="Container.Content(Artists)">$LOCALIZE[176]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[]</value>
+	</variable>
+	<variable name="MusicInfoData3">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Style)]</value>
+		<value condition="Container.Content(Albums)">$INFO[]</value>
+	</variable>
+	<variable name="MusicInfoLabel4">
+		<value condition="Container.Content(Artists)">$LOCALIZE[21892]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[]</value>
+	</variable>
+	<variable name="MusicInfoData4">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Instrument)]</value>
+		<value condition="Container.Content(Albums)">$INFO[]</value>
+	</variable>
+	<variable name="MusicInfoLabel5">
+		<value condition="Container.Content(Artists)">$LOCALIZE[21893]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[]</value>
+	</variable>
+	<variable name="MusicInfoData5">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Born)]</value>
+		<value condition="Container.Content(Albums)">$INFO[]</value>
+	</variable>
+	<variable name="MusicInfoLabel6">
+		<value condition="Container.Content(Artists)">$LOCALIZE[21897]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[]</value>
+	</variable>
+	<variable name="MusicInfoData6">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Died)]</value>
+		<value condition="Container.Content(Albums)">$INFO[]</value>
+	</variable>
+	<variable name="MusicInfoLabel7">
+		<value condition="Container.Content(Artists)">$LOCALIZE[21894]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[]</value>
+	</variable>
+	<variable name="MusicInfoData7">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Fromed)]</value>
+		<value condition="Container.Content(Albums)">$INFO[]</value>
+	</variable>
+	<variable name="MusicInfoLabel8">
+		<value condition="Container.Content(Artists)">$LOCALIZE[21896]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[]</value>
+	</variable>
+	<variable name="MusicInfoData8">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Disbanded)]</value>
+		<value condition="Container.Content(Albums)">$INFO[]</value>
+	</variable>
+	<variable name="MusicInfoLabel9">
+		<value condition="Container.Content(Artists)">$LOCALIZE[21898]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[]</value>
+	</variable>
+	<variable name="MusicInfoData9">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_YearsActive)]</value>
+		<value condition="Container.Content(Albums)">$INFO[]</value>
+	</variable>
 	<variable name="SeekBarLabel">
 		<value condition="Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31012][/B]</value>
 		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31013][/B]</value>

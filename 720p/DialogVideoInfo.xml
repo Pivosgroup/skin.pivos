@@ -209,8 +209,8 @@
 					<posy>10</posy>
 					<width>160</width>
 					<height>160</height>
-					<texture border="4">$INFO[Container(50).ListItem.Icon]</texture>
-					<aspectratio scalediffuse="true">scale</aspectratio>					
+					<texture diffuse="thumb-diffuse.png">$INFO[Container(50).ListItem.Icon]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>					
 					<visible>Control.IsVisible(50)</visible>
 				</control>
 				<control type="list" id="50">
