@@ -1,12 +1,13 @@
 <window id="2">
 	<defaultcontrol always="true">50</defaultcontrol>
-	<views>50</views>
+	<views>50,51</views>
 	<controls>
 		<include>DefaultBackground</include>
 		<include>BackgroundPanel</include>
 		<include>SideMenu</include>
 		<include>TopMenuPictures</include>
 		<include>ViewList</include>
+		<include>ViewPanelPictures</include>
 		<include>ScrollLabel</include>
 	</controls>
 </window>
