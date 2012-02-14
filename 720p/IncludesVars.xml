@@ -86,6 +86,52 @@
 		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_YearsActive)]</value>
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Rating)]</value>
 	</variable>
+	<variable name="PanelMusicLabel1">
+		<value condition="Container.Content(Artists)">$LOCALIZE[557]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[557]</value>
+		<value condition="Container.Content(Songs)">$LOCALIZE[557]</value>
+	</variable>
+	<variable name="PanelMusicData1">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Artist]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Artist]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Artist]</value>
+	</variable>
+	<variable name="PanelMusicLabel2">
+		<value condition="Container.Content(Artists)">$LOCALIZE[515]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[515]</value>
+		<value condition="Container.Content(Songs)">$LOCALIZE[558]</value>
+	</variable>
+	<variable name="PanelMusicData2">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Genre]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Album]</value>
+	</variable>
+	<variable name="PanelMusicLabel3">
+		<value condition="Container.Content(Artists)">$LOCALIZE[176]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[21899]</value>
+		<value condition="Container.Content(Songs)">$LOCALIZE[515]</value>
+	</variable>
+	<variable name="PanelMusicData3">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Style)]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Label)]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Genre]</value>
+	</variable>
+
+	<variable name="PanelMusicData4">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Description)]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Description)]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Comment]</value>
+	</variable>
+	<variable name="PanelMusicLabel5">
+		<value condition="Container.Content(Artists)">$LOCALIZE[21898]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[563]</value>
+		<value condition="Container.Content(Songs)">$LOCALIZE[563]</value>
+	</variable>
+	<variable name="PanelMusicData5">
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_YearsActive)]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Rating]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Rating]</value>
+	</variable>
 	<variable name="SeekBarLabel">
 		<value condition="Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31012][/B]</value>
 		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31013][/B]</value>

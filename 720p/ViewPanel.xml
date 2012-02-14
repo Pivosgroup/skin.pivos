@@ -504,6 +504,285 @@
 			</control>
 		</control>
 	</include>
+	<include name="ViewPanelMusic">
+		<control type="group">
+			<posx>113</posx>
+			<posy>58</posy>
+			<width>1124</width>
+			<height>628</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<visible>Control.IsVisible(51)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1124</width>
+				<height>628</height>
+				<texture border="5">background-light.png</texture>
+			</control>
+			<control type="panel" id="51">
+				<posx>6</posx>
+				<posy>12</posy>
+				<width>1116</width>
+				<height>546</height>
+				<viewtype label="21371">icon</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<preloaditems>4</preloaditems>
+				<onleft>1000</onleft>
+				<onright>60</onright>
+				<onup>9000</onup>
+				<ondown>51</ondown>
+				<orientation>vertical</orientation>
+				<itemlayout width="182" height="182" condition="![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)]">
+					<control type="image">
+						<posx>11</posx>
+						<posy>11</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout width="182" height="182" condition="![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)]">
+					<control type="image">
+						<posx>11</posx>
+						<posy>11</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="120" end="130" center="auto" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<itemlayout width="182" height="182" condition="Container.Content(Artists)">
+					<control type="image">
+						<posx>11</posx>
+						<posy>11</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="182" height="182" condition="Container.Content(Artists)">
+					<control type="image">
+						<posx>11</posx>
+						<posy>11</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="120" end="130" center="auto" time="300" tween="back" easing="out"/>
+						</animation>
+						<visible>Container.Content(Artists)</visible>
+					</control>
+				</focusedlayout>
+				<itemlayout width="182" height="182" condition="Container.Content(Albums) | Container.Content(Songs)">
+					<control type="image">
+						<posx>11</posx>
+						<posy>11</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="182" height="182" condition="Container.Content(Albums) | Container.Content(Songs)">
+					<control type="image">
+						<posx>11</posx>
+						<posy>11</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="120" end="130" center="auto" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>1102</posx>
+				<posy>23</posy>
+				<width>20</width>
+				<height>524</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onleft>51</onleft>
+				<onright>51</onright>
+				<showonepage>false</showonepage>
+				<orientation>horizontal</orientation>
+				<include>VisibleFade</include>
+			</control>
+			<control type="image">
+				<posx>112</posx>
+				<posy>575</posy>
+				<width>900</width>
+				<height>40</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>122</posx>
+				<posy>578</posy>
+				<width>880</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font24</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+			</control>
+		</control>
+		<control type="group">
+			<posx>103</posx>
+			<posy>600</posy>
+			<width>1177</width>
+			<height>110</height>
+			<animation effect="slide" start="0,120" end="0,0" time="300">Visible</animation>
+			<animation effect="slide" start="0,0" end="0,120" time="300">Hidden</animation>
+			<visible>Control.IsVisible(51) + Control.HasFocus(51) + !StringCompare(ListItem.Label,..) + !Window.IsVisible(ContextMenu) + !Window.IsVisible(MusicInformation) + !Window.IsVisible(SongInformation) + [Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + System.IdleTime(2)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1177</width>
+				<height>120</height>
+				<texture border="0,4,0,0">info_background.png</texture>
+			</control>
+			<control type="label">
+				<posx>100</posx>
+				<posy>37</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>$VAR[PanelMusicLabel1]:</label>
+				<align>right</align>
+				<font>font12m</font>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="label">
+				<posx>105</posx>
+				<posy>37</posy>
+				<width>200</width>
+				<height>30</height>
+				<label>$VAR[PanelMusicData1]</label>
+				<font>font14</font>
+				<textcolor>light</textcolor>
+			</control>
+			<control type="label">
+				<posx>100</posx>
+				<posy>62</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>$VAR[PanelMusicLabel2]</label>
+				<align>right</align>
+				<font>font12m</font>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="label">
+				<posx>105</posx>
+				<posy>62</posy>
+				<width>200</width>
+				<height>30</height>
+				<label>$VAR[PanelMusicData2]</label>
+				<font>font14</font>
+				<textcolor>light</textcolor>
+			</control>
+			<control type="label">
+				<posx>100</posx>
+				<posy>87</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>$VAR[PanelMusicLabel3]</label>
+				<align>right</align>
+				<font>font12m</font>
+				<textcolor>normal</textcolor>
+			</control>
+			<control type="label">
+				<posx>105</posx>
+				<posy>87</posy>
+				<width>200</width>
+				<height>30</height>
+				<label>$VAR[PanelMusicData3]</label>
+				<font>font14</font>
+				<textcolor>light</textcolor>
+			</control>
+			<control type="image">
+				<posx>310</posx>
+				<posy>35</posy>
+				<width>1</width>
+				<height>75</height>
+				<texture>white.png</texture>
+				<colordiffuse>60FFFFFF</colordiffuse>
+			</control>
+			<control type="image">
+				<posx>335</posx>
+				<posy>35</posy>
+				<width>680</width>
+				<height>75</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="textbox">
+				<posx>345</posx>
+				<posy>36</posy>
+				<width>660</width>
+				<height>70</height>
+				<label>$VAR[PanelMusicData4]</label>
+				<font>font16</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+				<autoscroll time="3000" delay="11000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+			</control>
+			<control type="image">
+				<posx>1040</posx>
+				<posy>35</posy>
+				<width>1</width>
+				<height>75</height>
+				<texture>white.png</texture>
+				<colordiffuse>60FFFFFF</colordiffuse>
+			</control>
+			<control type="label">
+				<posx>1055</posx>
+				<posy>45</posy>
+				<width>100</width>
+				<height>30</height>
+				<label>$VAR[PanelMusicLabel5]:</label>
+				<font>font16</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+			</control>
+			<control type="label">
+				<posx>1045</posx>
+				<posy>68</posy>
+				<width>120</width>
+				<height>40</height>
+				<label>$VAR[PanelMusicData5]</label>
+				<font>font20m</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+				<visible>Container.Content(Artists)</visible>
+			</control>
+			<control type="label">
+				<posx>1055</posx>
+				<posy>68</posy>
+				<width>100</width>
+				<height>40</height>
+				<label>$VAR[PanelMusicData5]</label>
+				<font>font24m</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+				<wrapmultiline>true</wrapmultiline>
+				<visible>!Container.Content(Artists)</visible>
+			</control>
+		</control>
+	</include>
 	<include name="ViewPanelAddons">
 		<control type="group">
 			<posx>113</posx>
@@ -562,7 +841,7 @@
 						<bordertexture border="24">thumb-back.png</bordertexture>
 						<bordersize>14</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="130" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="120" end="130" center="auto" time="300" tween="back" easing="out"/>
 						</animation>
 					</control>
 					<control type="image">
@@ -572,7 +851,7 @@
 						<height>40</height>
 						<texture>OverlayError.png</texture>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="130" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="120" end="130" center="auto" time="300" tween="back" easing="out"/>
 						</animation>
 						<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
 					</control>
@@ -619,7 +898,7 @@
 			<height>110</height>
 			<animation effect="slide" start="0,120" end="0,0" time="300">Visible</animation>
 			<animation effect="slide" start="0,0" end="0,120" time="300">Hidden</animation>
-			<visible>Control.IsVisible(51) + Control.HasFocus(51) + !StringCompare(ListItem.Label,..) + !window.IsVisible(ContextMenu) + !window.IsVisible(AddonInformation) + !window.IsVisible(AddonSettings) + !Window.IsVisible(TextViewer) + System.IdleTime(2)</visible>
+			<visible>Control.IsVisible(51) + Control.HasFocus(51) + !StringCompare(ListItem.Label,..) + !Window.IsVisible(ContextMenu) + !Window.IsVisible(AddonInformation) + !Window.IsVisible(AddonSettings) + !Window.IsVisible(TextViewer) + System.IdleTime(2)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
