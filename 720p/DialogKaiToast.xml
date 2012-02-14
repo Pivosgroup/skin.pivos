@@ -18,37 +18,33 @@
 				<texture border="18">dialog-back.png</texture>
 			</control>
 			<control type="image" id="400">
-				<posx>22</posx>
-				<posy>16</posy>
-				<width>64</width>
-				<height>64</height>
-				<aspectratio>keep</aspectratio>
+				<posx>30</posx>
+				<posy>20</posy>
+				<width>50</width>
+				<height>50</height>
 				<texture>kai-warn.png</texture>
 			</control>
 			<control type="image" id="403">
-				<posx>22</posx>
-				<posy>16</posy>
-				<width>64</width>
-				<height>64</height>
-				<aspectratio>keep</aspectratio>
+				<posx>30</posx>
+				<posy>20</posy>
+				<width>50</width>
+				<height>50</height>
 				<texture>kai-info.png</texture>
 				<visible>false</visible>
 			</control>
 			<control type="image" id="404">
-				<posx>22</posx>
-				<posy>16</posy>
-				<width>64</width>
-				<height>64</height>
-				<aspectratio>keep</aspectratio>
+				<posx>30</posx>
+				<posy>20</posy>
+				<width>50</width>
+				<height>50</height>
 				<texture>kai-warn.png</texture>
 				<visible>false</visible>
 			</control>
 			<control type="image" id="405">
-				<posx>22</posx>
-				<posy>16</posy>
-				<width>64</width>
-				<height>64</height>
-				<aspectratio>keep</aspectratio>
+				<posx>30</posx>
+				<posy>20</posy>
+				<width>50</width>
+				<height>50</height>
 				<texture>kai-error.png</texture>
 				<visible>false</visible>
 			</control>

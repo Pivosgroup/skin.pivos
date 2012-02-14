@@ -1,22 +1,22 @@
 <includes>
-	<include name="ViewPanelVideo">
+	<include name="ViewPanelPoster">
 		<control type="group">
-			<posx>115</posx>
-			<posy>60</posy>
-			<width>1120</width>
-			<height>624</height>
+			<posx>113</posx>
+			<posy>58</posy>
+			<width>1124</width>
+			<height>628</height>
 			<include>WindowOpenCloseZoomInOut</include>
 			<visible>Control.IsVisible(51)</visible>
 			<control type="image">
-				<posx>-2</posx>
-				<posy>-2</posy>
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>1124</width>
 				<height>628</height>
 				<texture border="5">background-light.png</texture>
 			</control>
 			<control type="panel" id="51">
-				<posx>0</posx>
-				<posy>0</posy>
+				<posx>2</posx>
+				<posy>2</posy>
 				<width>1120</width>
 				<height>624</height>
 				<viewtype label="21371">icon</viewtype>
@@ -281,8 +281,8 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>0</posx>
-				<posy>625</posy>
+				<posx>2</posx>
+				<posy>627</posy>
 				<width>1120</width>
 				<height>20</height>
 				<texturesliderbackground border="10,0,10,0">scrollbar_back.png</texturesliderbackground>
@@ -506,24 +506,24 @@
 	</include>
 	<include name="ViewPanelAddons">
 		<control type="group">
-			<posx>115</posx>
-			<posy>60</posy>
-			<width>1120</width>
-			<height>624</height>
+			<posx>113</posx>
+			<posy>58</posy>
+			<width>1124</width>
+			<height>628</height>
 			<include>WindowOpenCloseZoomInOut</include>
 			<visible>Control.IsVisible(51)</visible>
 			<control type="image">
-				<posx>-2</posx>
-				<posy>-2</posy>
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>1124</width>
 				<height>628</height>
 				<texture border="5">background-light.png</texture>
 			</control>
 			<control type="panel" id="51">
-				<posx>2</posx>
-				<posy>0</posy>
+				<posx>6</posx>
+				<posy>12</posy>
 				<width>1116</width>
-				<height>624</height>
+				<height>546</height>
 				<viewtype label="21371">icon</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
@@ -533,23 +533,13 @@
 				<onup>9000</onup>
 				<ondown>51</ondown>
 				<orientation>vertical</orientation>
-				<itemlayout width="182" height="208">
-					<control type="label">
-						<posx>91</posx>
-						<posy>180</posy>
-						<width>180</width>
-						<height>30</height>
-						<label background="true">$INFO[ListItem.label]</label>
-						<font>font18</font>
-						<textcolor>white</textcolor>
-						<align>center</align>
-					</control>
+				<itemlayout width="182" height="182">
 					<control type="image">
 						<posx>11</posx>
 						<posy>11</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" diffuse="thumb-diffuse.png" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 					<control type="image">
@@ -561,23 +551,13 @@
 						<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout width="182" height="208">
-					<control type="label">
-						<posx>91</posx>
-						<posy>180</posy>
-						<width>180</width>
-						<height>30</height>
-						<label background="true">$INFO[ListItem.label]</label>
-						<font>font18</font>
-						<textcolor>normal</textcolor>
-						<align>center</align>
-					</control>
+				<focusedlayout width="182" height="182">
 					<control type="image">
 						<posx>11</posx>
 						<posy>11</posy>
 						<width>160</width>
 						<height>160</height>
-						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" diffuse="thumb-diffuse.png" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<bordertexture border="24">thumb-back.png</bordertexture>
 						<bordersize>14</bordersize>
@@ -599,10 +579,10 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>1100</posx>
-				<posy>12</posy>
+				<posx>1102</posx>
+				<posy>23</posy>
 				<width>20</width>
-				<height>600</height>
+				<height>524</height>
 				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
 				<texturesliderbar>-</texturesliderbar>
 				<texturesliderbarfocus>-</texturesliderbarfocus>
@@ -614,6 +594,23 @@
 				<orientation>horizontal</orientation>
 				<include>VisibleFade</include>
 			</control>
+			<control type="image">
+				<posx>112</posx>
+				<posy>575</posy>
+				<width>900</width>
+				<height>40</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>122</posx>
+				<posy>578</posy>
+				<width>880</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font24</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+			</control>
 		</control>
 		<control type="group">
 			<posx>103</posx>
@@ -622,7 +619,7 @@
 			<height>110</height>
 			<animation effect="slide" start="0,120" end="0,0" time="300">Visible</animation>
 			<animation effect="slide" start="0,0" end="0,120" time="300">Hidden</animation>
-			<visible>Control.IsVisible(51) + Control.HasFocus(51) + !StringCompare(ListItem.Label,..) + !ListItem.IsFolder + !window.IsVisible(AddonInformation) + !window.IsVisible(AddonSettings) + !Window.IsVisible(TextViewer) + System.IdleTime(2)</visible>
+			<visible>Control.IsVisible(51) + Control.HasFocus(51) + !StringCompare(ListItem.Label,..) + !window.IsVisible(ContextMenu) + !window.IsVisible(AddonInformation) + !window.IsVisible(AddonSettings) + !Window.IsVisible(TextViewer) + System.IdleTime(2)</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -704,11 +701,11 @@
 			</control>
 			<control type="textbox">
 				<posx>345</posx>
-				<posy>40</posy>
+				<posy>36</posy>
 				<width>660</width>
-				<height>60</height>
+				<height>70</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
-				<font>font14</font>
+				<font>font16</font>
 				<textcolor>light</textcolor>
 				<align>center</align>
 				<autoscroll time="3000" delay="11000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>

@@ -8,5 +8,6 @@
 		<include>TopMenuAddons</include>
 		<include>ViewList</include>
 		<include>ViewPanelAddons</include>
+		<include>ScrollLabel</include>
 	</controls>
 </window>
