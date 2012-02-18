@@ -401,6 +401,7 @@
 				<onleft>51</onleft>
 				<onright>51</onright>
 				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
 			</control>
 			<control type="image">
 				<posx>112</posx>
@@ -886,8 +887,7 @@
 				<onleft>51</onleft>
 				<onright>51</onright>
 				<showonepage>false</showonepage>
-				<orientation>horizontal</orientation>
-				<include>VisibleFade</include>
+				<orientation>vertical</orientation>
 			</control>
 			<control type="image">
 				<posx>112</posx>
@@ -1116,8 +1116,7 @@
 				<onleft>51</onleft>
 				<onright>51</onright>
 				<showonepage>false</showonepage>
-				<orientation>horizontal</orientation>
-				<include>VisibleFade</include>
+				<orientation>vertical</orientation>
 			</control>
 			<control type="image">
 				<posx>112</posx>
@@ -1361,8 +1360,7 @@
 				<onleft>51</onleft>
 				<onright>51</onright>
 				<showonepage>false</showonepage>
-				<orientation>horizontal</orientation>
-				<include>VisibleFade</include>
+				<orientation>vertical</orientation>
 			</control>
 			<control type="image">
 				<posx>112</posx>
