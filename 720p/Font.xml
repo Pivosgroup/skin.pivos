@@ -81,6 +81,11 @@
 			<size>18</size>
 		</font>
 		<font>
+			<name>font20m</name>
+			<filename>menu.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
 			<name>font24m</name>
 			<filename>menu.ttf</filename>
 			<size>24</size>
@@ -89,6 +94,11 @@
 			<name>font30m</name>
 			<filename>menu.ttf</filename>
 			<size>30</size>
+		</font>
+		<font>
+			<name>font50m</name>
+			<filename>menu.ttf</filename>
+			<size>50</size>
 		</font>
 	</fontset>
 	<fontset id="XBMC" idlock="31000" unicode="true">

@@ -22,4 +22,9 @@
 	<string id="31019">Rated</string>
 	<string id="31020">Unrated</string>
 	<string id="31021">Prefer Posters</string>
+	<string id="31022">Wind Speed</string>
+	<string id="31023">Wind Direction</string>
+	<string id="31024">Pressure</string>
+	<string id="31025">Visibility</string>
+	<string id="31026">MoonPhase</string>
 </strings>
