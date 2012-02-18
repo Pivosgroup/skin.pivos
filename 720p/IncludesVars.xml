@@ -116,7 +116,6 @@
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Label)]</value>
 		<value condition="Container.Content(Songs)">$INFO[ListItem.Genre]</value>
 	</variable>
-
 	<variable name="PanelMusicData4">
 		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Description)]</value>
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Description)]</value>
@@ -132,14 +131,87 @@
 		<value condition="Container.Content(Albums)">$INFO[ListItem.Rating]</value>
 		<value condition="Container.Content(Songs)">$INFO[ListItem.Rating]</value>
 	</variable>
-	<variable name="PanelPicturesData1">
-		<value condition="substring(Listitem.Filename,.bmp,right)">BMP</value>
-		<value condition="substring(Listitem.Filename,.gif,right)">GIF</value>
-		<value condition="substring(Listitem.Filename,.jpg,right) | substring(Listitem.Filename,.jpeg,right)">JPEG</value>
-		<value condition="substring(Listitem.Filename,.png,right)">PNG</value>
-		<value condition="substring(Listitem.Filename,.tga,right)">TGA</value>
-		<value condition="substring(Listitem.Filename,.tiff,right)">TIFF</value>
-		<value condition="substring(Listitem.Filename,.wmf,right)">WMF</value>
+	<variable name="PanelVideosLabel1">
+		<value condition="Container.Content(Movies)">$LOCALIZE[20339]</value>
+		<value condition="Container.Content(TVShows)">$LOCALIZE[31019]</value>
+		<value condition="Container.Content(Seasons)">$LOCALIZE[20364]</value>
+		<value condition="Container.Content(Episodes)">$LOCALIZE[20339]</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[557]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$LOCALIZE[20339]</value>
+	</variable>
+	<variable name="PanelVideosData1">
+		<value condition="Container.Content(Movies)">$INFO[ListItem.Director]</value>
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Mpaa]</value>
+		<value condition="Container.Content(Seasons)">$INFO[ListItem.TVShowTitle]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Director]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Artist]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$INFO[ListItem.Director]</value>
+	</variable>
+	<variable name="PanelVideosLabel2">
+		<value condition="Container.Content(Movies)">$LOCALIZE[515]</value>
+		<value condition="Container.Content(TVShows)">$LOCALIZE[515]</value>
+		<value condition="Container.Content(Seasons)">$LOCALIZE[515]</value>
+		<value condition="Container.Content(Episodes)">$LOCALIZE[20417]</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[558]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$LOCALIZE[515]</value>
+	</variable>
+	<variable name="PanelVideosData2">
+		<value condition="Container.Content(Movies)">$INFO[ListItem.Genre]</value>
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Genre]</value>
+		<value condition="Container.Content(Seasons)">$INFO[ListItem.Genre]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Writer]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Album]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$INFO[ListItem.Genre]	</value>
+	</variable>
+	<variable name="PanelVideosLabel3">
+		<value condition="Container.Content(Movies)">$LOCALIZE[572]</value>
+		<value condition="Container.Content(TVShows)">$LOCALIZE[572]</value>
+		<value condition="Container.Content(Seasons)">$LOCALIZE[572]</value>
+		<value condition="Container.Content(Episodes)">$LOCALIZE[572]</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[515]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$LOCALIZE[572]</value>
+	</variable>
+	<variable name="PanelVideosData3">
+		<value condition="Container.Content(Movies)">$INFO[ListItem.Studio]</value>
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Studio]</value>
+		<value condition="Container.Content(Seasons)">$INFO[ListItem.Studio]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Studio]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Genre]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$INFO[ListItem.Studio]</value>
+	</variable>
+	<variable name="PanelVideosLabel4">
+		<value condition="Container.Content(Movies)">$LOCALIZE[2050]</value>
+		<value condition="Container.Content(TVShows)">$LOCALIZE[20416]</value>
+		<value condition="Container.Content(Seasons)">$LOCALIZE[31019]</value>
+		<value condition="Container.Content(Episodes)">$LOCALIZE[2050]</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[572]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$LOCALIZE[2050]</value>
+	</variable>
+	<variable name="PanelVideosData4">
+		<value condition="Container.Content(Movies) + !SubString(ListItem.Duration,min)">$INFO[ListItem.Duration] $LOCALIZE[12391]</value>
+		<value condition="Container.Content(Movies) + SubString(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Premiered]</value>
+		<value condition="Container.Content(Seasons)">$INFO[ListItem.Mpaa]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Duration] $LOCALIZE[12391]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Studio]</value>
+		<value condition="Window.IsVisible(VideoPlaylist) + !SubString(ListItem.Duration,min)">$INFO[ListItem.Duration] $LOCALIZE[12391]</value>
+		<value condition="Window.IsVisible(VideoPlaylist) + SubString(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
+	</variable>
+	<variable name="PanelVideosData5">
+		<value condition="Container.Content(Movies)">$INFO[ListItem.Year]</value>
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Year]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Year]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Year]</value>
+	</variable>
+	<variable name="PanelVideosLabel6">
+		<value condition="Container.Content(Movies)">$LOCALIZE[563]</value>
+		<value condition="Container.Content(TVShows)">$LOCALIZE[563]</value>
+		<value condition="Container.Content(Episodes)">$LOCALIZE[563]</value>
+	</variable>
+	<variable name="PanelVideosData6">
+		<value condition="Container.Content(Movies)">$INFO[ListItem.Rating]</value>
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Rating]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Rating]</value>
 	</variable>
 	<variable name="SeekBarLabel">
 		<value condition="Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31012][/B]</value>

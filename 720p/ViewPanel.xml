@@ -17,285 +17,407 @@
 			<control type="panel" id="51">
 				<posx>2</posx>
 				<posy>2</posy>
-				<width>1120</width>
-				<height>624</height>
+				<width>1088</width>
+				<height>570</height>
 				<viewtype label="21371">icon</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<preloaditems>4</preloaditems>
-				<onleft>1000</onleft>
-				<onright>51</onright>
 				<onup>9000</onup>
-				<ondown>60</ondown>
-				<orientation>horizontal</orientation>
-				<itemlayout width="140" height="208">
+				<ondown>51</ondown>
+				<onleft>1000</onleft>
+				<onright>60</onright>
+				<orientation>vertical</orientation>
+				<itemlayout width="180" height="190" condition="!Container.Content(Movies) + ![Container.Content(TVShows) + !Skin.HasSetting(PreferPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Window.IsVisible(VideoPlaylist)">
+					<control type="image">
+						<posx>20</posx>
+						<posy>15</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout width="180" height="190" condition="!Container.Content(Movies) + ![Container.Content(TVShows) + !Skin.HasSetting(PreferPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Window.IsVisible(VideoPlaylist)">
+					<control type="image">
+						<posx>6</posx>
+						<posy>1</posy>
+						<width>188</width>
+						<height>188</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="110" center="auto" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<itemlayout width="136" height="190" condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>140</width>
-						<height>208</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<width>136</width>
+						<height>190</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</itemlayout>
+				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(1)">
+					<control type="image">
+						<posx>-4</posx>
+						<posy>0</posy>
+						<width>136</width>
+						<height>190</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(1)">
+					<control type="image">
+						<posx>-4</posx>
+						<posy>0</posy>
+						<width>136</width>
+						<height>190</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="8,0" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="8,0" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(0)">
+					<control type="image">
+						<posx>-4</posx>
+						<posy>0</posy>
+						<width>136</width>
+						<height>190</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="0,13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="0,13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(1)">
+					<control type="image">
+						<posx>-4</posx>
+						<posy>0</posy>
+						<width>136</width>
+						<height>190</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-2,0" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-2,0" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(2)">
+					<control type="image">
+						<posx>-4</posx>
+						<posy>0</posy>
+						<width>136</width>
+						<height>190</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="0,-13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="0,-13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(0)">
+					<control type="image">
+						<posx>-4</posx>
+						<posy>0</posy>
+						<width>136</width>
+						<height>190</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="8,13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="8,13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(0)">
+					<control type="image">
+						<posx>-4</posx>
+						<posy>0</posy>
+						<width>136</width>
+						<height>190</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-2,13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-2,13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(2)">
+					<control type="image">
+						<posx>-4</posx>
+						<posy>0</posy>
+						<width>136</width>
+						<height>190</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-2,-13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-2,-13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(2)">
+					<control type="image">
+						<posx>-4</posx>
+						<posy>0</posy>
+						<width>136</width>
+						<height>190</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordertexture border="24">thumb-back.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="8,-13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="8,-13" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+				</focusedlayout>
+				<itemlayout width="544" height="114" condition="Container.Content(TVShows) + !Skin.HasSetting(PreferPosters)">
+					<control type="image">
+						<posx>7</posx>
+						<posy>5</posy>
+						<width>532</width>
+						<height>104</height>
+						<texture background="true" diffuse="banner-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout width="148" height="208" condition="![Container.Column(0) | Container.Column(7)] + Container.Row(1)">
+				<focusedlayout width="544" height="114" condition="Container.Content(TVShows) + !Skin.HasSetting(PreferPosters)">
 					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>148</width>
-						<height>208</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<posx>-7</posx>
+						<posy>-9</posy>
+						<width>560</width>
+						<height>132</height>
+						<texture background="true" diffuse="banner-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="24">thumb-back.png</bordertexture>
 						<bordersize>14</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="103" center="auto" time="300" tween="back" easing="out"/>
 						</animation>
-					</control>
-					<control type="image">
-						<posx>115</posx>
-						<posy>190</posy>
-						<width>30</width>
-						<height>30</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-						</animation>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</focusedlayout>
-				<focusedlayout width="148" height="208" condition="Container.Column(0) + Container.Row(1)">
+				<itemlayout width="272" height="190" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
 					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>148</width>
-						<height>208</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<posx>5</posx>
+						<posy>10</posy>
+						<width>262</width>
+						<height>170</height>
+						<texture background="true" diffuse="video-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="272" height="190" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
+					<control type="image">
+						<posx>-9</posx>
+						<posy>-4</posy>
+						<width>290</width>
+						<height>198</height>
+						<texture background="true" diffuse="video-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="24">thumb-back.png</bordertexture>
 						<bordersize>14</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="10,0" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="103" center="auto" time="300" tween="back" easing="out"/>
 						</animation>
-					</control>
-					<control type="image">
-						<posx>115</posx>
-						<posy>190</posy>
-						<width>30</width>
-						<height>30</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="10,0" time="300" tween="back" easing="out"/>
-						</animation>
+						<aspectratio scalediffuse="false">scale</aspectratio>
 					</control>
 				</focusedlayout>
-				<focusedlayout width="148" height="208" condition="![Container.Column(0) | Container.Column(7)] + Container.Row(0)">
+				<itemlayout width="180" height="190" condition="Window.IsVisible(VideoPlaylist)">
 					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>148</width>
-						<height>208</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<posx>20</posx>
+						<posy>15</posy>
+						<width>160</width>
+						<height>160</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="true">keep</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="180" height="190" condition="Window.IsVisible(VideoPlaylist)">
+					<control type="image">
+						<posx>6</posx>
+						<posy>1</posy>
+						<width>188</width>
+						<height>188</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="24">thumb-back.png</bordertexture>
 						<bordersize>14</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="0,16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-					<control type="image">
-						<posx>115</posx>
-						<posy>190</posy>
-						<width>30</width>
-						<height>30</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="0,16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-				</focusedlayout>
-				<focusedlayout width="148" height="208" condition="Container.Column(7) + Container.Row(1)">
-					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>148</width>
-						<height>208</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<bordertexture border="24">thumb-back.png</bordertexture>
-						<bordersize>14</bordersize>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-10,0" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-					<control type="image">
-						<posx>115</posx>
-						<posy>190</posy>
-						<width>30</width>
-						<height>30</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-10,0" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-				</focusedlayout>
-				<focusedlayout width="148" height="208" condition="![Container.Column(0) | Container.Column(7)] + Container.Row(2)">
-					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>148</width>
-						<height>208</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<bordertexture border="24">thumb-back.png</bordertexture>
-						<bordersize>14</bordersize>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="0,-16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-					<control type="image">
-						<posx>115</posx>
-						<posy>190</posy>
-						<width>30</width>
-						<height>30</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="0,-16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-				</focusedlayout>
-				<focusedlayout width="148" height="208" condition="Container.Column(0) + Container.Row(0)">
-					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>148</width>
-						<height>208</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<bordertexture border="24">thumb-back.png</bordertexture>
-						<bordersize>14</bordersize>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="10,16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-					<control type="image">
-						<posx>115</posx>
-						<posy>190</posy>
-						<width>30</width>
-						<height>30</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="10,16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-				</focusedlayout>
-				<focusedlayout width="148" height="208" condition="Container.Column(7) + Container.Row(0)">
-					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>148</width>
-						<height>208</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<bordertexture border="24">thumb-back.png</bordertexture>
-						<bordersize>14</bordersize>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-10,16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-					<control type="image">
-						<posx>115</posx>
-						<posy>190</posy>
-						<width>30</width>
-						<height>30</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-10,16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-				</focusedlayout>
-				<focusedlayout width="148" height="208" condition="Container.Column(7) + Container.Row(2)">
-					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>148</width>
-						<height>208</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<bordertexture border="24">thumb-back.png</bordertexture>
-						<bordersize>14</bordersize>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-10,-16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-					<control type="image">
-						<posx>115</posx>
-						<posy>190</posy>
-						<width>30</width>
-						<height>30</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-10,-16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-				</focusedlayout>
-				<focusedlayout width="148" height="208" condition="Container.Column(0) + Container.Row(2)">
-					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>148</width>
-						<height>208</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<bordertexture border="24">thumb-back.png</bordertexture>
-						<bordersize>14</bordersize>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="10,-16" time="300" tween="back" easing="out"/>
-						</animation>
-					</control>
-					<control type="image">
-						<posx>115</posx>
-						<posy>190</posy>
-						<width>30</width>
-						<height>30</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="10,-16" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="110" center="auto" time="300" tween="back" easing="out"/>
+						<aspectratio scalediffuse="true">keep</aspectratio>
 						</animation>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>2</posx>
-				<posy>627</posy>
-				<width>1120</width>
-				<height>20</height>
-				<texturesliderbackground border="10,0,10,0">scrollbar_back.png</texturesliderbackground>
+				<posx>1100</posx>
+				<posy>2</posy>
+				<width>20</width>
+				<height>570</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
 				<texturesliderbar>-</texturesliderbar>
 				<texturesliderbarfocus>-</texturesliderbarfocus>
-				<textureslidernib>scrollbar_nib.png_NF</textureslidernib>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
 				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
-				<onup>51</onup>
-				<ondown>51</ondown>
+				<onleft>51</onleft>
+				<onright>51</onright>
 				<showonepage>false</showonepage>
-				<orientation>horizontal</orientation>
-				<include>VisibleFade</include>
-				<visible allowhiddenfocus="true">Control.IsVisible(51) + Control.HasFocus(60)</visible>
+			</control>
+			<control type="image">
+				<posx>112</posx>
+				<posy>580</posy>
+				<width>900</width>
+				<height>40</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>122</posx>
+				<posy>583</posy>
+				<width>880</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font24</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
 			</control>
 		</control>
 		<control type="group">
@@ -313,37 +435,106 @@
 				<height>120</height>
 				<texture border="0,4,0,0">info_background.png</texture>
 			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>25</posy>
-				<width>64</width>
-				<height>48</height>
-				<texture fallback="mediaicon-resolution.png">mediaicons/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
-				<colordiffuse>light</colordiffuse>
+			<control type="group">
+				<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
+				<control type="image">
+					<posx>10</posx>
+					<posy>25</posy>
+					<width>64</width>
+					<height>48</height>
+					<texture fallback="mediaicon-resolution.png">mediaicons/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+					<colordiffuse>light</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>70</posx>
+					<posy>25</posy>
+					<width>64</width>
+					<height>48</height>
+					<texture fallback="mediaicon-aspectratio.png">mediaicons/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+					<colordiffuse>light</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>70</posy>
+					<width>64</width>
+					<height>48</height>
+					<texture fallback="mediaicon-videocodec.png">mediaicons/videocodec/$INFO[ListItem.VideoCodec,,.png]</texture>
+					<colordiffuse>light</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>70</posx>
+					<posy>70</posy>
+					<width>64</width>
+					<height>48</height>
+					<texture fallback="mediaicon-audiocodec.png">$VAR[MediaIconAudioCodec]</texture>
+					<colordiffuse>light</colordiffuse>
+				</control>
 			</control>
-			<control type="image">
-				<posx>70</posx>
-				<posy>25</posy>
-				<width>64</width>
-				<height>48</height>
-				<texture fallback="mediaicon-aspectratio.png">mediaicons/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
-				<colordiffuse>light</colordiffuse>
+			<control type="group">
+				<visible>Container.Content(TVShows)</visible>
+				<control type="label">
+					<posx>10</posx>
+					<posy>30</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$LOCALIZE[33054]:</label>
+					<textcolor>normal</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>50</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$INFO[ListItem.Property(TotalSeasons)]</label>
+					<textcolor>light</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>70</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$LOCALIZE[20360]:</label>
+					<textcolor>normal</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>90</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$INFO[ListItem.Property(TotalEpisodes)]</label>
+					<textcolor>light</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
 			</control>
-			<control type="image">
-				<posx>10</posx>
-				<posy>70</posy>
-				<width>64</width>
-				<height>48</height>
-				<texture fallback="mediaicon-videocodec.png">mediaicons/videocodec/$INFO[ListItem.VideoCodec,,.png]</texture>
-				<colordiffuse>light</colordiffuse>
-			</control>
-			<control type="image">
-				<posx>70</posx>
-				<posy>70</posy>
-				<width>64</width>
-				<height>48</height>
-				<texture fallback="mediaicon-audiocodec.png">$VAR[MediaIconAudioCodec]</texture>
-				<colordiffuse>light</colordiffuse>
+			<control type="group">
+				<visible>Container.Content(Seasons)</visible>
+				<control type="label">
+					<posx>10</posx>
+					<posy>50</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$LOCALIZE[20360]:</label>
+					<textcolor>normal</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>70</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$INFO[ListItem.Property(TotalEpisodes)]</label>
+					<textcolor>light</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
 			</control>
 			<control type="image">
 				<posx>140</posx>
@@ -383,7 +574,7 @@
 				<posy>72</posy>
 				<width>110</width>
 				<height>30</height>
-				<label>$LOCALIZE[20339]:</label>
+				<label>$VAR[PanelVideosLabel1]:</label>
 				<align>right</align>
 				<font>font12m</font>
 				<textcolor>normal</textcolor>
@@ -393,7 +584,7 @@
 				<posy>72</posy>
 				<width>300</width>
 				<height>30</height>
-				<label>$INFO[ListItem.Director]</label>
+				<label>$VAR[PanelVideosData1]</label>
 				<font>font14</font>
 				<textcolor>light</textcolor>
 			</control>
@@ -402,7 +593,7 @@
 				<posy>88</posy>
 				<width>110</width>
 				<height>30</height>
-				<label>$LOCALIZE[515]:</label>
+				<label>$VAR[PanelVideosLabel2]:</label>
 				<align>right</align>
 				<font>font12m</font>
 				<textcolor>normal</textcolor>
@@ -412,7 +603,7 @@
 				<posy>88</posy>
 				<width>300</width>
 				<height>30</height>
-				<label>$INFO[ListItem.Genre]</label>
+				<label>$VAR[PanelVideosData2]</label>
 				<font>font14</font>
 				<textcolor>light</textcolor>
 			</control>
@@ -421,7 +612,7 @@
 				<posy>72</posy>
 				<width>110</width>
 				<height>30</height>
-				<label>$LOCALIZE[572]:</label>
+				<label>$VAR[PanelVideosLabel3]:</label>
 				<align>right</align>
 				<font>font12m</font>
 				<textcolor>normal</textcolor>
@@ -431,7 +622,7 @@
 				<posy>72</posy>
 				<width>300</width>
 				<height>30</height>
-				<label>$INFO[ListItem.Studio]</label>
+				<label>$VAR[PanelVideosData3]</label>
 				<font>font14</font>
 				<textcolor>light</textcolor>
 			</control>
@@ -440,7 +631,7 @@
 				<posy>88</posy>
 				<width>110</width>
 				<height>30</height>
-				<label>$LOCALIZE[2050]:</label>
+				<label>$VAR[PanelVideosLabel4]:</label>
 				<align>right</align>
 				<font>font12m</font>
 				<textcolor>normal</textcolor>
@@ -450,20 +641,9 @@
 				<posy>88</posy>
 				<width>300</width>
 				<height>30</height>
-				<label>$INFO[ListItem.Duration] $LOCALIZE[12391]</label>
+				<label>$VAR[PanelVideosData4]</label>
 				<font>font14</font>
 				<textcolor>light</textcolor>
-				<visible>!SubString(ListItem.Duration,min)</visible>
-			</control>
-			<control type="label">
-				<posx>705</posx>
-				<posy>88</posy>
-				<width>300</width>
-				<height>30</height>
-				<label>$INFO[ListItem.Duration]</label>
-				<font>font14</font>
-				<textcolor>light</textcolor>
-				<visible>SubString(ListItem.Duration,min)</visible>
 			</control>
 			<control type="image">
 				<posx>1040</posx>
@@ -473,34 +653,119 @@
 				<texture>white.png</texture>
 				<colordiffuse>60FFFFFF</colordiffuse>
 			</control>
-			<control type="label">
-				<posx>1043</posx>
-				<posy>30</posy>
-				<width>125</width>
-				<height>30</height>
-				<label>[B]$INFO[ListItem.Year][/B]</label>
-				<align>center</align>
-				<font>font30m</font>
-				<textcolor>normal</textcolor>
+			<control type="group">
+				<visible>!Container.Content(Seasons) + !Window.IsVisible(VideoPlaylist)</visible>
+				<control type="label">
+					<posx>1043</posx>
+					<posy>30</posy>
+					<width>125</width>
+					<height>30</height>
+					<label>[B]$VAR[PanelVideosData5][/B]</label>
+					<align>center</align>
+					<font>font30m</font>
+					<textcolor>normal</textcolor>
+				</control>
 			</control>
-			<control type="label">
-				<posx>1105</posx>
-				<posy>85</posy>
-				<width>60</width>
-				<height>20</height>
-				<label>$LOCALIZE[563]</label>
-				<font>font16</font>
-				<textcolor>light</textcolor>
-				<align>right</align>
+			<control type="group">
+				<visible>!Container.Content(Seasons) + !Container.Content(MusicVideos) + !Window.IsVisible(VideoPlaylist)</visible>
+				<control type="label">
+					<posx>1105</posx>
+					<posy>85</posy>
+					<width>60</width>
+					<height>20</height>
+					<label>$VAR[PanelVideosLabel6]</label>
+					<font>font16</font>
+					<textcolor>light</textcolor>
+					<align>right</align>
+				</control>
+				<control type="label">
+					<posx>1110</posx>
+					<posy>74</posy>
+					<width>70</width>
+					<height>40</height>
+					<label>[B]$VAR[PanelVideosData6][/B]</label>
+					<font>font24m</font>
+					<textcolor>light</textcolor>
+				</control>
 			</control>
-			<control type="label">
-				<posx>1110</posx>
-				<posy>74</posy>
-				<width>70</width>
-				<height>40</height>
-				<label>[B]$INFO[ListItem.Rating][/B]</label>
-				<font>font24m</font>
-				<textcolor>light</textcolor>
+			<control type="group">
+				<visible>Container.Content(Seasons)</visible>
+				<control type="label">
+					<posx>1045</posx>
+					<posy>30</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$LOCALIZE[16102]:</label>
+					<textcolor>normal</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>1045</posx>
+					<posy>50</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$INFO[ListItem.Property(WatchedEpisodes)]</label>
+					<textcolor>light</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>1045</posx>
+					<posy>70</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$LOCALIZE[16101]:</label>
+					<textcolor>normal</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>1045</posx>
+					<posy>90</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+					<textcolor>light</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.Content(MusicVideos)</visible>
+				<control type="label">
+					<posx>1045</posx>
+					<posy>70</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$INFO[ListItem.Duration]</label>
+					<textcolor>light</textcolor>
+					<font>font22</font>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<posx>1045</posx>
+					<posy>90</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>$LOCALIZE[12391]</label>
+					<textcolor>light</textcolor>
+					<font>font16</font>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Window.IsVisible(VideoPlaylist)</visible>
+				<control type="label">
+					<posx>1045</posx>
+					<posy>50</posy>
+					<width>130</width>
+					<height>30</height>
+					<label>[B]$INFO[ListItem.Year][/B]</label>
+					<textcolor>light</textcolor>
+					<font>font30m</font>
+					<align>center</align>
+				</control>
 			</control>
 		</control>
 	</include>
@@ -528,10 +793,10 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<preloaditems>4</preloaditems>
-				<onleft>1000</onleft>
-				<onright>60</onright>
 				<onup>9000</onup>
 				<ondown>51</ondown>
+				<onleft>1000</onleft>
+				<onright>60</onright>
 				<orientation>vertical</orientation>
 				<itemlayout width="182" height="182" condition="![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)]">
 					<control type="image">
@@ -807,10 +1072,10 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<preloaditems>4</preloaditems>
-				<onleft>1000</onleft>
-				<onright>60</onright>
 				<onup>9000</onup>
 				<ondown>51</ondown>
+				<onleft>1000</onleft>
+				<onright>60</onright>
 				<orientation>vertical</orientation>
 				<itemlayout width="182" height="182">
 					<control type="image">
@@ -963,7 +1228,7 @@
 				<posx>345</posx>
 				<posy>46</posy>
 				<width>660</width>
-				<height>70</height>
+				<height>30</height>
 				<label>$LOCALIZE[21820]: $INFO[ListItem.PictureDateTime]</label>
 				<font>font18</font>
 				<textcolor>light</textcolor>
@@ -973,7 +1238,7 @@
 				<posx>345</posx>
 				<posy>74</posy>
 				<width>660</width>
-				<height>70</height>
+				<height>30</height>
 				<label>$LOCALIZE[21805]: $INFO[ListItem.PictureResolution]</label>
 				<font>font18</font>
 				<textcolor>light</textcolor>
@@ -1033,10 +1298,10 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<preloaditems>4</preloaditems>
-				<onleft>1000</onleft>
-				<onright>60</onright>
 				<onup>9000</onup>
 				<ondown>51</ondown>
+				<onleft>1000</onleft>
+				<onright>60</onright>
 				<orientation>vertical</orientation>
 				<itemlayout width="182" height="182">
 					<control type="image">
