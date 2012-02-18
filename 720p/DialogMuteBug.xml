@@ -27,7 +27,7 @@
 				<width>260</width>
 				<height>30</height>
 				<label>[B]$LOCALIZE[31011][/B]</label>
-				<font>font16c</font>
+				<font>font16</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
 			</control>

@@ -25,7 +25,7 @@
 				<width>330</width>
 				<height>30</height>
 				<label>$VAR[SeekBarLabel]</label>
-				<font>font16c</font>
+				<font>font16</font>
 				<align>center</align>
 				<textcolor>light</textcolor>
 			</control>

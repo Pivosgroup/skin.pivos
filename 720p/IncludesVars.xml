@@ -1,4 +1,92 @@
 <includes>
+	<variable name="ListLabel1">
+		<value condition="Container.Content(Movies)">$LOCALIZE[20339]</value>
+		<value condition="Container.Content(TVShows)">$LOCALIZE[33054]</value>
+		<value condition="Container.Content(Seasons)">$LOCALIZE[572]</value>
+		<value condition="Container.Content(Episodes)">$LOCALIZE[20339]</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[557]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$LOCALIZE[20339]</value>
+		<value condition="Container.Content(Artists)">$LOCALIZE[515]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[557]</value>
+		<value condition="Container.Content(Songs)">$LOCALIZE[557]</value>
+		<value condition="Container.Content(Addons)">$LOCALIZE[560]</value>
+	</variable>
+	<variable name="ListData1">
+		<value condition="Container.Content(Movies)">$INFO[ListItem.Director]</value>
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Property(TotalSeasons)]</value>
+		<value condition="Container.Content(Seasons)">$INFO[ListItem.Studio]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Director]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Artist]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$INFO[ListItem.Director]</value>
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Artist]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Artist]</value>
+		<value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.ID)]</value>
+	</variable>
+	<variable name="ListLabel2">
+		<value condition="Container.Content(Movies)">$LOCALIZE[20417]</value>
+		<value condition="Container.Content(TVShows)">$LOCALIZE[20360]</value>
+		<value condition="Container.Content(Seasons)">$LOCALIZE[20360]</value>
+		<value condition="Container.Content(Episodes)">$LOCALIZE[20417]</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[558]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$LOCALIZE[20417]</value>
+		<value condition="Container.Content(Artists)">$LOCALIZE[176]</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[515]</value>
+		<value condition="Container.Content(Songs)">$LOCALIZE[558]</value>
+		<value condition="Container.Content(Addons)">$LOCALIZE[564]</value>
+	</variable>
+	<variable name="ListData2">
+		<value condition="Container.Content(Movies)">$INFO[ListItem.Writer]</value>
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Property(TotalEpisodes)]</value>
+		<value condition="Container.Content(Seasons)">$INFO[ListItem.Property(TotalEpisodes)]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Writer]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Album]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$INFO[ListItem.Writer]</value>
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Style)]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Genre]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Album]</value>
+		<value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Type)]</value>
+	</variable>
+	<variable name="ListLabel3">
+		<value condition="Container.Content(Movies)">$LOCALIZE[562]:</value>
+		<value condition="Container.Content(TVShows)">$LOCALIZE[562]:</value>
+		<value condition="Container.Content(Seasons)">$LOCALIZE[31019]:</value>
+		<value condition="Container.Content(Episodes)">$LOCALIZE[562]:</value>
+		<value condition="Container.Content(MusicVideos)">$LOCALIZE[562]:</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$LOCALIZE[562]:</value>
+		<value condition="Container.Content(Artists)">$LOCALIZE[21898]:</value>
+		<value condition="Container.Content(Albums)">$LOCALIZE[562]:</value>
+		<value condition="Container.Content(Songs)">$LOCALIZE[562]:</value>
+		<value condition="Container.Content(Addons)">$LOCALIZE[24051]</value>
+	</variable>
+	<variable name="ListData3">
+		<value condition="Container.Content(Movies)">$INFO[ListItem.Year]</value>
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Year]</value>
+		<value condition="Container.Content(Seasons)">$INFO[ListItem.Mpaa]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Year]</value>
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Year]</value>
+		<value condition="Window.IsVisible(VideoPlaylist)">$INFO[ListItem.Year]</value>
+		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_YearsActive)]</value>
+		<value condition="Container.Content(Albums)">$INFO[ListItem.Year]</value>
+		<value condition="Container.Content(Songs)">$INFO[ListItem.Year]</value>
+		<value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Version)]</value>
+	</variable>
+	<variable name="ListLabel4">
+		<value condition="Container.Content(TVShows)">$LOCALIZE[16102]</value>
+		<value condition="Container.Content(Seasons)">$LOCALIZE[16102]</value>
+	</variable>
+	<variable name="ListData4">
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Property(WatchedEpisodes)]</value>
+		<value condition="Container.Content(Seasons)">$INFO[ListItem.Property(WatchedEpisodes)]</value>
+	</variable>
+	<variable name="ListLabel5">
+		<value condition="Container.Content(TVShows)">$LOCALIZE[16101]</value>
+		<value condition="Container.Content(Seasons)">$LOCALIZE[16101]</value>
+	</variable>
+	<variable name="ListData5">
+		<value condition="Container.Content(TVShows)">$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
+		<value condition="Container.Content(Seasons)">$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
+	</variable>
 	<variable name="MediaIconAudioCodec">
 		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,1)">mediaicons/audiocodec/dd10.png</value>
 		<value condition="[stringcompare(ListItem.AudioCodec,ac3) | stringcompare(ListItem.AudioCodec,ac-3)] + stringcompare(ListItem.AudioChannels,2)">mediaicons/audiocodec/dd20.png</value>

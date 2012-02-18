@@ -51,11 +51,6 @@
 			<size>30</size>
 		</font>
 		<font>
-			<name>font16c</name>
-			<filename>default.ttf</filename>
-			<size>16</size>
-		</font>
-		<font>
 			<name>font12m</name>
 			<filename>menu.ttf</filename>
 			<size>12</size>
