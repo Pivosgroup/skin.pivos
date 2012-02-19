@@ -13,7 +13,7 @@
 			</control>
 			<control type="label">
 				<posx>30</posx>
-				<posy>50</posy>
+				<posy>52</posy>
 				<width>1115</width>
 				<height>30</height>
 				<label>[B]$INFO[ListItem.Title][/B]</label>
@@ -64,7 +64,7 @@
 				<ondown>60</ondown>
 				<onleft>1000</onleft>
 				<onright>52</onright>
-				<itemlayout width="235" height="360" condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Artists) + !Container.Content(Addons) + !Window.IsVisible(Pictures)">
+				<itemlayout width="235" height="360" condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Container.Content(Artists) + !Container.Content(Addons) + !Window.IsVisible(Pictures)">
 					<control type="image">
 						<posx>12</posx>
 						<posy>59</posy>
@@ -85,7 +85,7 @@
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout width="235" height="360" condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Artists) + !Container.Content(Addons) + !Window.IsVisible(Pictures)">
+				<focusedlayout width="235" height="360" condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Container.Content(Artists) + !Container.Content(Addons) + !Window.IsVisible(Pictures)">
 					<control type="image">
 						<posx>12</posx>
 						<posy>59</posy>
@@ -154,6 +154,53 @@
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<animation effect="zoom" start="41,230,153,210" end="14,220,207,290" time="250">Focus</animation>
 						<animation effect="zoom" start="14,220,207,290" end="41,230,153,210" time="250">UnFocus</animation>
+					</control>
+				</focusedlayout>
+
+				<itemlayout width="235" height="360" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
+					<control type="image">
+						<posx>12</posx>
+						<posy>134</posy>
+						<width>211</width>
+						<height>136</height>
+						<texture background="true" diffuse="video-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="21">thumb-shadow.png</bordertexture>						
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="false" aligny="bottom">scale</aspectratio>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>230</posy>
+						<width>211</width>
+						<height>119</height>
+						<texture background="true" diffuse="video-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="false" aligny="bottom">scale</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="235" height="360" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
+					<control type="image">
+						<posx>12</posx>
+						<posy>134</posy>
+						<width>211</width>
+						<height>136</height>
+						<texture background="true" diffuse="video-diffuse.png" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="21">thumb-shadow.png</bordertexture>						
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="false" aligny="bottom">scale</aspectratio>
+						<animation effect="zoom" start="12,134,211,136" end="-53,72,341,209" time="250">Focus</animation>
+						<animation effect="zoom" start="-53,72,341,209" end="12,134,211,136" time="250">UnFocus</animation>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>230</posy>
+						<width>211</width>
+						<height>119</height>
+						<texture background="true" diffuse="video-diffuse-reverse.png" fallback="DefaultAddon.png" flipy="true">$INFO[ListItem.Icon]</texture>
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="false" aligny="bottom">scale</aspectratio>
+						<animation effect="zoom" start="12,230,211,136" end="-53,219,341,209" time="250">Focus</animation>
+						<animation effect="zoom" start="-53,219,341,209" end="12,230,211,136" time="250">UnFocus</animation>
 					</control>
 				</focusedlayout>
 				<itemlayout width="235" height="360" condition="Container.Content(Artists)">
