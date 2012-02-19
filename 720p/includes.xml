@@ -2,6 +2,7 @@
 	<include file="defaults.xml"/>
 	<include file="IncludesAnims.xml"/>
 	<include file="IncludesVars.xml"/>
+	<include file="ViewFanart.xml"/>
 	<include file="ViewList.xml"/>
 	<include file="ViewPanel.xml"/>
 	<constant name="CrossFade">250</constant>
@@ -12,7 +13,9 @@
 			<width>1160</width>
 			<height>690</height>
 			<texture border="5">background-dark.png</texture>
+			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
+			<visible>!Control.IsVisible(52)</visible>
 		</control>
 	</include>
 	<include name="BackgroundPanelSettings">

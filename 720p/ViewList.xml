@@ -19,8 +19,9 @@
 				<posy>38</posy>
 				<width>560</width>
 				<height>540</height>
-				<pagecontrol>60</pagecontrol>
+				<viewtype label="535">list</viewtype>
 				<preloaditems>2</preloaditems>
+				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
 				<ondown>50</ondown>
 				<onleft>1000</onleft>

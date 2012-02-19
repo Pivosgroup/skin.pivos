@@ -20,9 +20,9 @@
 				<width>1088</width>
 				<height>570</height>
 				<viewtype label="21371">icon</viewtype>
-				<pagecontrol>60</pagecontrol>
-				<scrolltime>200</scrolltime>
+				<scrolltime>250</scrolltime>
 				<preloaditems>4</preloaditems>
+				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
 				<ondown>51</ondown>
 				<onleft>1000</onleft>
@@ -791,9 +791,9 @@
 				<width>1116</width>
 				<height>546</height>
 				<viewtype label="21371">icon</viewtype>
-				<pagecontrol>60</pagecontrol>
-				<scrolltime>200</scrolltime>
+				<scrolltime>250</scrolltime>
 				<preloaditems>4</preloaditems>
+				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
 				<ondown>51</ondown>
 				<onleft>1000</onleft>
@@ -1069,9 +1069,9 @@
 				<width>1116</width>
 				<height>546</height>
 				<viewtype label="21371">icon</viewtype>
-				<pagecontrol>60</pagecontrol>
-				<scrolltime>200</scrolltime>
+				<scrolltime>250</scrolltime>
 				<preloaditems>4</preloaditems>
+				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
 				<ondown>51</ondown>
 				<onleft>1000</onleft>
@@ -1294,9 +1294,9 @@
 				<width>1116</width>
 				<height>546</height>
 				<viewtype label="21371">icon</viewtype>
-				<pagecontrol>60</pagecontrol>
-				<scrolltime>200</scrolltime>
+				<scrolltime>250</scrolltime>
 				<preloaditems>4</preloaditems>
+				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
 				<ondown>51</ondown>
 				<onleft>1000</onleft>
