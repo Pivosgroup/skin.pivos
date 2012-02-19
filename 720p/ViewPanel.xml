@@ -5,6 +5,7 @@
 			<posy>58</posy>
 			<width>1124</width>
 			<height>628</height>
+			<include>ViewFade</include>
 			<include>WindowOpenCloseZoomInOut</include>
 			<visible>Control.IsVisible(51)</visible>
 			<control type="image">
@@ -776,6 +777,7 @@
 			<posy>58</posy>
 			<width>1124</width>
 			<height>628</height>
+			<include>ViewFade</include>
 			<include>WindowOpenCloseZoomInOut</include>
 			<visible>Control.IsVisible(51)</visible>
 			<control type="image">
@@ -1054,6 +1056,7 @@
 			<posy>58</posy>
 			<width>1124</width>
 			<height>628</height>
+			<include>ViewFade</include>
 			<include>WindowOpenCloseZoomInOut</include>
 			<visible>Control.IsVisible(51)</visible>
 			<control type="image">
@@ -1279,6 +1282,7 @@
 			<posy>58</posy>
 			<width>1124</width>
 			<height>628</height>
+			<include>ViewFade</include>
 			<include>WindowOpenCloseZoomInOut</include>
 			<visible>Control.IsVisible(51)</visible>
 			<control type="image">

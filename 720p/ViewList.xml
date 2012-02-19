@@ -5,6 +5,7 @@
 			<posy>60</posy>
 			<width>1120</width>
 			<height>624</height>
+			<include>ViewFade</include>
 			<include>WindowOpenCloseZoomInOut</include>
 			<visible>Control.IsVisible(50)</visible>
 			<control type="image">
