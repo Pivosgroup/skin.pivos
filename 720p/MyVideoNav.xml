@@ -6,9 +6,9 @@
 		<include>BackgroundPanel</include>
 		<include>SideMenu</include>
 		<include>TopMenuVideo</include>
+		<include>ViewFanart</include>
 		<include>ViewList</include>
 		<include>ViewPanelPoster</include>
-		<include>ViewFanart</include>
 		<include>ScrollLabel</include>
 	</controls>
 </window>
