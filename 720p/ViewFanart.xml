@@ -64,7 +64,7 @@
 				<ondown>60</ondown>
 				<onleft>1000</onleft>
 				<onright>52</onright>
-				<itemlayout width="235" height="360" condition="!Container.Content(Movies) + !Container.Content(Artists)">
+				<itemlayout width="235" height="360" condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Artists) + !Container.Content(Addons) + !Window.IsVisible(Pictures)">
 					<control type="image">
 						<posx>12</posx>
 						<posy>59</posy>
@@ -85,7 +85,7 @@
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout width="235" height="360" condition="!Container.Content(Movies) + !Container.Content(Artists)">
+				<focusedlayout width="235" height="360" condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Artists) + !Container.Content(Addons) + !Window.IsVisible(Pictures)">
 					<control type="image">
 						<posx>12</posx>
 						<posy>59</posy>
@@ -106,11 +106,11 @@
 						<texture background="true" diffuse="thumb-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
 						<bordersize>20</bordersize>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<animation effect="zoom" start="12,230,211,211" end="-33,220,301,301" time="250">Focus</animation>
-						<animation effect="zoom" start="-33,220,301,301" end="12,230,211,211" time="250">UnFocus</animation>
+						<animation effect="zoom" start="12,230,211,211" end="-33,222,301,301" time="250">Focus</animation>
+						<animation effect="zoom" start="-33,222,301,301" end="12,230,211,211" time="250">UnFocus</animation>
 					</control>
 				</focusedlayout>
-				<itemlayout width="235" height="360" condition="Container.Content(Movies)">
+				<itemlayout width="235" height="360" condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)">
 					<control type="image">
 						<posx>41</posx>
 						<posy>60</posy>
@@ -131,7 +131,7 @@
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout width="235" height="360" condition="Container.Content(Movies)">
+				<focusedlayout width="235" height="360" condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)">
 					<control type="image">
 						<posx>41</posx>
 						<posy>60</posy>
@@ -200,6 +200,98 @@
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<animation effect="zoom" start="12,230,211,211" end="-33,220,301,301" time="250">Focus</animation>
 						<animation effect="zoom" start="-33,220,301,301" end="12,230,211,211" time="250">UnFocus</animation>
+					</control>
+				</focusedlayout>
+				<itemlayout width="235" height="360" condition="Container.Content(Addons)">
+					<control type="image">
+						<posx>12</posx>
+						<posy>59</posy>
+						<width>211</width>
+						<height>211</height>
+						<texture background="true" diffuse="thumb-diffuse.png" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="21">thumb-shadow.png</bordertexture>						
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>230</posy>
+						<width>211</width>
+						<height>211</height>
+						<texture background="true" diffuse="thumb-diffuse-reverse.png" fallback="DefaultAddon.png" flipy="true">$INFO[ListItem.Icon]</texture>
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="235" height="360" condition="Container.Content(Addons)">
+					<control type="image">
+						<posx>12</posx>
+						<posy>59</posy>
+						<width>211</width>
+						<height>211</height>
+						<texture background="true" diffuse="thumb-diffuse.png" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="21">thumb-shadow.png</bordertexture>						
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation effect="zoom" start="12,59,211,211" end="-33,-21,301,301" time="250">Focus</animation>
+						<animation effect="zoom" start="-33,-21,301,301" end="12,59,211,211" time="250">UnFocus</animation>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>230</posy>
+						<width>211</width>
+						<height>211</height>
+						<texture background="true" diffuse="thumb-diffuse-reverse.png" fallback="DefaultAddon.png" flipy="true">$INFO[ListItem.Icon]</texture>
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation effect="zoom" start="12,230,211,211" end="-33,222,301,301" time="250">Focus</animation>
+						<animation effect="zoom" start="-33,222,301,301" end="12,230,211,211" time="250">UnFocus</animation>
+					</control>
+				</focusedlayout>
+				<itemlayout width="235" height="360" condition="Window.IsVisible(Pictures)">
+					<control type="image">
+						<posx>12</posx>
+						<posy>59</posy>
+						<width>211</width>
+						<height>211</height>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="21">thumb-shadow.png</bordertexture>						
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>230</posy>
+						<width>211</width>
+						<height>211</height>
+						<texture background="true" diffuse="thumb-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="235" height="360" condition="Window.IsVisible(Pictures)">
+					<control type="image">
+						<posx>12</posx>
+						<posy>59</posy>
+						<width>211</width>
+						<height>211</height>
+						<texture background="true" diffuse="thumb-diffuse.png" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="21">thumb-shadow.png</bordertexture>						
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
+						<animation effect="zoom" start="12,59,211,211" end="-33,-21,301,301" time="250">Focus</animation>
+						<animation effect="zoom" start="-33,-21,301,301" end="12,59,211,211" time="250">UnFocus</animation>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>230</posy>
+						<width>211</width>
+						<height>211</height>
+						<texture background="true" diffuse="thumb-diffuse-reverse.png" fallback="DefaultAddon.png" flipy="true">$INFO[ListItem.Icon]</texture>
+						<bordersize>20</bordersize>
+						<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
+						<animation effect="zoom" start="12,230,211,211" end="-33,222,301,301" time="250">Focus</animation>
+						<animation effect="zoom" start="-33,222,301,301" end="12,230,211,211" time="250">UnFocus</animation>
 					</control>
 				</focusedlayout>
 			</control>

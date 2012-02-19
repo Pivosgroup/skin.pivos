@@ -69,6 +69,18 @@
 			<include>VisibleFade</include>
 			<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[ListItem.Icon]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>CrossFade</fadetime>
+			<include>WindowOpenCloseFade</include>
+			<include>VisibleFade</include>
+			<visible>Window.IsVisible(Pictures) + !StringCompare(ListItem.Label,..)</visible>
+		</control>
 		<control type="videowindow">
 			<posx>0</posx>
 			<posy>0</posy>

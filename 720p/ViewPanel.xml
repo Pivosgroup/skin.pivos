@@ -28,7 +28,7 @@
 				<onleft>1000</onleft>
 				<onright>60</onright>
 				<orientation>vertical</orientation>
-				<itemlayout width="180" height="190" condition="!Container.Content(Movies) + ![Container.Content(TVShows) + !Skin.HasSetting(PreferPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Window.IsVisible(VideoPlaylist)">
+				<itemlayout width="180" height="190" condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Window.IsVisible(VideoPlaylist)">
 					<control type="image">
 						<posx>20</posx>
 						<posy>15</posy>
@@ -37,7 +37,7 @@
 						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 					</control>
 				</itemlayout>
-				<focusedlayout width="180" height="190" condition="!Container.Content(Movies) + ![Container.Content(TVShows) + !Skin.HasSetting(PreferPosters)] + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Window.IsVisible(VideoPlaylist)">
+				<focusedlayout width="180" height="190" condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Window.IsVisible(VideoPlaylist)">
 					<control type="image">
 						<posx>6</posx>
 						<posy>1</posy>
