@@ -114,6 +114,33 @@
 		<value condition="stringcompare(ListItem.AudioCodec,dtshd_ma) + stringcompare(ListItem.AudioChannels,8)">mediaicons/audiocodec/dtsma71.png</value>
 		<value>mediaicons/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
 	</variable>
+	<variable name="MediaIconAudioCodecSearch">
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),ac3) | stringcompare(Container(100).ListItem.Property(AudioCodec),ac-3)] + stringcompare(Container(100).ListItem.Property(AudioChannels),1)">mediaicons/audiocodec/dd10.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),ac3) | stringcompare(Container(100).ListItem.Property(AudioCodec),ac-3)] + stringcompare(Container(100).ListItem.Property(AudioChannels),2)">mediaicons/audiocodec/dd20.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),ac3) | stringcompare(Container(100).ListItem.Property(AudioCodec),ac-3)] + stringcompare(Container(100).ListItem.Property(AudioChannels),3)">mediaicons/audiocodec/dd30.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),ac3) | stringcompare(Container(100).ListItem.Property(AudioCodec),ac-3)] + stringcompare(Container(100).ListItem.Property(AudioChannels),5)">mediaicons/audiocodec/dd50.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),ac3) | stringcompare(Container(100).ListItem.Property(AudioCodec),ac-3)] + stringcompare(Container(100).ListItem.Property(AudioChannels),6)">mediaicons/audiocodec/dd51.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),ac3) | stringcompare(Container(100).ListItem.Property(AudioCodec),ac-3)] + stringcompare(Container(100).ListItem.Property(AudioChannels),7)">mediaicons/audiocodec/dd61.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),ac3) | stringcompare(Container(100).ListItem.Property(AudioCodec),ac-3)] + stringcompare(Container(100).ListItem.Property(AudioChannels),8)">mediaicons/audiocodec/dd71.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),dca) | stringcompare(Container(100).ListItem.Property(AudioCodec),dts)] + stringcompare(Container(100).ListItem.Property(AudioChannels),1)">mediaicons/audiocodec/dts10.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),dca) | stringcompare(Container(100).ListItem.Property(AudioCodec),dts)] + stringcompare(Container(100).ListItem.Property(AudioChannels),2)">mediaicons/audiocodec/dts20.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),dca) | stringcompare(Container(100).ListItem.Property(AudioCodec),dts)] + stringcompare(Container(100).ListItem.Property(AudioChannels),4)">mediaicons/audiocodec/dts40.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),dca) | stringcompare(Container(100).ListItem.Property(AudioCodec),dts)] + stringcompare(Container(100).ListItem.Property(AudioChannels),6)">mediaicons/audiocodec/dts51.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),dca) | stringcompare(Container(100).ListItem.Property(AudioCodec),dts)] + stringcompare(Container(100).ListItem.Property(AudioChannels),7)">mediaicons/audiocodec/dts61.png</value>
+		<value condition="[stringcompare(Container(100).ListItem.Property(AudioCodec),dca) | stringcompare(Container(100).ListItem.Property(AudioCodec),dts)] + stringcompare(Container(100).ListItem.Property(AudioChannels),8)">mediaicons/audiocodec/dts71.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_hra) + ![stringcompare(Container(100).ListItem.Property(AudioChannels),6) | stringcompare(Container(100).ListItem.Property(AudioChannels),7) | stringcompare(Container(100).ListItem.Property(AudioChannels),8)]">mediaicons/audiocodec/dtshra.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_hra) + stringcompare(Container(100).ListItem.Property(AudioChannels),6)">mediaicons/audiocodec/dtshra51.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_hra) + stringcompare(Container(100).ListItem.Property(AudioChannels),7)">mediaicons/audiocodec/dtshra61.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_hra) + stringcompare(Container(100).ListItem.Property(AudioChannels),8)">mediaicons/audiocodec/dtshra71.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_ma) + ![stringcompare(Container(100).ListItem.Property(AudioChannels),3) | stringcompare(Container(100).ListItem.Property(AudioChannels),4) | stringcompare(Container(100).ListItem.Property(AudioChannels),5) | stringcompare(Container(100).ListItem.Property(AudioChannels),6) | stringcompare(Container(100).ListItem.Property(AudioChannels),7) | stringcompare(Container(100).ListItem.Property(AudioChannels),8)]">mediaicons/audiocodec/dtsma.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_ma) + stringcompare(Container(100).ListItem.Property(AudioChannels),3)">mediaicons/audiocodec/dtsma30.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_ma) + stringcompare(Container(100).ListItem.Property(AudioChannels),4)">mediaicons/audiocodec/dtsma40.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_ma) + stringcompare(Container(100).ListItem.Property(AudioChannels),5)">mediaicons/audiocodec/dtsma50.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_ma) + stringcompare(Container(100).ListItem.Property(AudioChannels),6)">mediaicons/audiocodec/dtsma51.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_ma) + stringcompare(Container(100).ListItem.Property(AudioChannels),7)">mediaicons/audiocodec/dtsma61.png</value>
+		<value condition="stringcompare(Container(100).ListItem.Property(AudioCodec),dtshd_ma) + stringcompare(Container(100).ListItem.Property(AudioChannels),8)">mediaicons/audiocodec/dtsma71.png</value>
+		<value>mediaicons/audiocodec/$INFO[Container(100).ListItem.Property(AudioCodec),,.png]</value>
+	</variable>
 	<variable name="MusicInfoLabel1">
 		<value condition="Container.Content(Artists)">$LOCALIZE[515]</value>
 		<value condition="Container.Content(Albums)">$LOCALIZE[557]</value>
