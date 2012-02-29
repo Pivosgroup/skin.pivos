@@ -1,6 +1,7 @@
 <includes>
 	<include file="defaults.xml"/>
 	<include file="IncludesAnims.xml"/>
+	<include file="IncludesGlobalSearch.xml"/>
 	<include file="IncludesVars.xml"/>
 	<include file="ViewFanart.xml"/>
 	<include file="ViewList.xml"/>
@@ -221,16 +222,19 @@
 				<control type="button" id="201">
 					<label>$LOCALIZE[20342]</label>
 					<include>HomeSubButton</include>
+					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,movies=true)</onclick>
 				</control>
 				<control type="button" id="202">
 					<label>$LOCALIZE[20343]</label>
 					<include>HomeSubButton</include>
+					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,tvshows=true)</onclick>
 				</control>
 				<control type="button" id="203">
 					<label>$LOCALIZE[20389]</label>
 					<include>HomeSubButton</include>
+					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,musicvideos=true)</onclick>
 				</control>
 				<control type="image" id="204">
@@ -242,16 +246,19 @@
 				<control type="button" id="205">
 					<label>$LOCALIZE[133]</label>
 					<include>HomeSubButton</include>
+					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,artists=true)</onclick>
 				</control>
 				<control type="button" id="206">
 					<label>$LOCALIZE[132]</label>
 					<include>HomeSubButton</include>
+					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,albums=true)</onclick>
 				</control>
 				<control type="button" id="207">
 					<label>$LOCALIZE[134]</label>
 					<include>HomeSubButton</include>
+					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,songs=true)</onclick>
 				</control>
 			</control>
@@ -1491,6 +1498,7 @@
 							<label>-</label>
 							<icon>home_search_NF.png</icon>
 							<property name="Icon_Focus">home_search_FO.png</property>
+							<onclick>SetProperty(globalsearch,all)</onclick>
 							<onclick>RunScript(script.globalsearch)</onclick>
 						</item>
 						<item id="2">
