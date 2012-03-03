@@ -160,7 +160,6 @@
 				<onright>3</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-				<visible>Control.IsVisible(3)</visible>
 			</control>
 		</control>
 	</controls>
