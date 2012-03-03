@@ -1,0 +1,167 @@
+<window id="141">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<coordinates>
+		<posx>396</posx>
+		<posy>87</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>560</width>
+			<height>570</height>
+			<include>WindowOpenCloseZoomInOut</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>560</width>
+				<height>570</height>
+				<texture border="18">dialog-back.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>14</posy>
+				<width>560</width>
+				<height>48</height>
+				<texture border="2">header-back.png</texture>
+			</control>
+			<control type="label" id="1">
+				<posx>30</posx>
+				<posy>14</posy>
+				<width>500</width>
+				<height>30</height>
+				<label>$LOCALIZE[1046]</label>
+				<font>font30</font>
+				<textcolor>light</textcolor>
+				<align>center</align>
+			</control>
+			<control type="list" id="3">
+				<posx>30</posx>
+				<posy>80</posy>
+				<width>480</width>
+				<height>440</height>
+				<pagecontrol>60</pagecontrol>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<onleft>60</onleft>
+				<onright>60</onright>
+				<itemlayout width="480" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>480</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>10</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>$INFO[ListItem.Property(signal),ap-signal,.png]</texture>
+					</control>
+					<control type="label">
+						<posx>40</posx>
+						<posy>0</posy>
+						<width>365</width>
+						<height>40</height>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font16m</font>
+						<textcolor>lightgrey</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<aligny>center</aligny>
+					</control>
+					<control type="image">
+						<posx>410</posx>
+						<posy>10</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>ap-lock.png</texture>
+						<visible>!IsEmpty(ListItem.Property(encryption))</visible>
+					</control>
+					<control type="image">
+						<posx>445</posx>
+						<posy>10</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>$INFO[ListItem.Property(state),,.png]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout width="480" height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>480</width>
+						<height>40</height>
+						<texture border="6">button_NF.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>480</width>
+						<height>40</height>
+						<texture border="4">button_alt_FO.png</texture>
+						<visible>!Control.HasFocus(3)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>480</width>
+						<height>40</height>
+						<texture border="4">button_FO.png</texture>
+						<visible>Control.HasFocus(3)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>10</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>$INFO[ListItem.Property(signal),ap-signal,.png]</texture>
+					</control>
+					<control type="label">
+						<posx>40</posx>
+						<posy>0</posy>
+						<width>365</width>
+						<height>40</height>
+						<label>[B]$INFO[ListItem.Label][/B]</label>
+						<font>font16m</font>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<aligny>center</aligny>
+					</control>
+					<control type="image">
+						<posx>410</posx>
+						<posy>10</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>ap-lock.png</texture>
+						<visible>!IsEmpty(ListItem.Property(encryption))</visible>
+					</control>
+					<control type="image">
+						<posx>445</posx>
+						<posy>10</posy>
+						<width>20</width>
+						<height>20</height>
+						<texture>$INFO[ListItem.Property(state),,.png]</texture>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>520</posx>
+				<posy>80</posy>
+				<width>20</width>
+				<height>440</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onleft>3</onleft>
+				<onright>3</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(3)</visible>
+			</control>
+		</control>
+	</controls>
+</window>
