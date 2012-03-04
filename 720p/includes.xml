@@ -30,13 +30,16 @@
 		</control>
 	</include>
 	<include name="DefaultBackground">
-		<control type="image">
+		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>special://skin/backgrounds/DefaultBackground.jpg</texture>
-			<visible>!Skin.HasSetting(UseCustomBackGround)</visible>
+			<imagepath fallback="special://skin/backgrounds/DefaultBackground.jpg" diffuse="background-diffuse.png">$INFO[Skin.String(CustomBackGround)]</imagepath>
+			<aspectratio scalediffuse="false">scale</aspectratio>
+			<timeperimage>5000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>FadeTime</fadetime>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -115,27 +118,27 @@
 	</include>
 	<include name="HomeHeader">
 		<control type="group">
-			<posx>835</posx>
+			<posx>842</posx>
 			<posy>12</posy>
 			<include>WindowOpenCloseFade</include>
 			<control type="image">
 				<posx>0</posx>
-				<posy>0</posy>
-				<width>425</width>
-				<height>50</height>
+				<posy>-2</posy>
+				<width>411</width>
+				<height>54</height>
 				<texture border="4">button_alt_NF.png</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>425</width>
-				<height>28</height>
+				<posx>5</posx>
+				<posy>-2</posy>
+				<width>401</width>
+				<height>30</height>
 				<texture border="2">header-back.png</texture>
 			</control>
 			<control type="grouplist">
 				<posx>0</posx>
 				<posy>-2</posy>
-				<width>415</width>
+				<width>401</width>
 				<height>30</height>
 				<align>right</align>
 				<orientation>horizontal</orientation>
@@ -157,7 +160,7 @@
 					</control>
 				</control>
 				<control type="label">
-					<width min="10" max="230">auto</width>
+					<width min="10" max="215">auto</width>
 					<height>30</height>
 					<label>[B]$INFO[System.Date][/B]</label>
 					<font>font22</font>
@@ -182,9 +185,9 @@
 				</control>
 			</control>
 			<control type="label">
-				<posx>415</posx>
+				<posx>401</posx>
 				<posy>26</posy>
-				<width>415</width>
+				<width>401</width>
 				<height>30</height>
 				<label>[I]$LOCALIZE[31001] $INFO[System.ProfileName] [/I]</label>
 				<align>right</align>
@@ -202,7 +205,6 @@
 				<width>218</width>
 				<height>720</height>
 				<texture>home_menu_background.png</texture>
-				<colordiffuse>90FFFFFF</colordiffuse>
 				<include>WindowOpenCloseSlideHome</include>
 				<visible>Window.IsVisible(Home)</visible>
 			</control>
@@ -857,10 +859,9 @@
 			<texture background="true">$INFO[Container(5001).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>CrossFade</fadetime>
-			<colordiffuse>50FFFFFF</colordiffuse>
 			<include>WindowOpenCloseFade</include>
 			<include>VisibleFade</include>
-			<visible>Control.HasFocus(5001)</visible>
+			<visible>Control.HasFocus(5001) + !Player.HasMedia</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -870,10 +871,9 @@
 			<texture background="true">$INFO[Container(5002).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>CrossFade</fadetime>
-			<colordiffuse>50FFFFFF</colordiffuse>
 			<include>WindowOpenCloseFade</include>
 			<include>VisibleFade</include>
-			<visible>Control.HasFocus(5002)</visible>
+			<visible>Control.HasFocus(5002) + !Player.HasMedia</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -883,10 +883,9 @@
 			<texture background="true">$INFO[Container(5003).ListItem.Property(FanartImage)]</texture>
 			<aspectratio>scale</aspectratio>
 			<fadetime>CrossFade</fadetime>
-			<colordiffuse>50FFFFFF</colordiffuse>
 			<include>WindowOpenCloseFade</include>
 			<include>VisibleFade</include>
-			<visible>Control.HasFocus(5003)</visible>
+			<visible>Control.HasFocus(5003) + !Player.HasMedia</visible>
 		</control>
 	</include>
 	<include name="RecentMovies">
@@ -1421,7 +1420,6 @@
 				<width>105</width>
 				<height>720</height>
 				<texture>home_icon_background.png</texture>
-				<colordiffuse>E0FFFFFF</colordiffuse>
 			</control>
 			<control type="group">
 				<posx>20</posx>
@@ -1505,43 +1503,43 @@
 							<label>-</label>
 							<icon>home_video_NF.png</icon>
 							<property name="Icon_Focus">home_video_FO.png</property>
-							<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+							<onclick>ReplaceWindow(Videos,MovieTitles,return)</onclick>
 						</item>
 						<item id="3">
 							<label>-</label>
 							<icon>home_music_NF.png</icon>
 							<property name="Icon_Focus">home_music_FO.png</property>
-							<onclick>ActivateWindow(Music)</onclick>
+							<onclick>ReplaceWindow(Music)</onclick>
 						</item>
 						<item id="4">
 							<label>-</label>
 							<icon>home_pictures_NF.png</icon>
 							<property name="Icon_Focus">home_pictures_FO.png</property>
-							<onclick>ActivateWindow(Pictures)</onclick>
+							<onclick>ReplaceWindow(Pictures)</onclick>
 						</item>
 						<item id="5">
 							<label>-</label>
 							<icon>home_favourites_NF.png</icon>
 							<property name="Icon_Focus">home_favourites_FO.png</property>
-							<onclick>ActivateWindow(Favourites)</onclick>
+							<onclick>ReplaceWindow(Favourites)</onclick>
 						</item>
 						<item id="6">
 							<label>-</label>
 							<icon>home_addons_NF.png</icon>
 							<property name="Icon_Focus">home_addons_FO.png</property>
-							<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+							<onclick>ReplaceWindow(Programs,Addons,return)</onclick>
 						</item>
 						<item id="7">
 							<label>-</label>
 							<icon>home_weather_NF.png</icon>
 							<property name="Icon_Focus">home_weather_FO.png</property>
-							<onclick>ActivateWindow(Weather)</onclick>
+							<onclick>ReplaceWindow(Weather)</onclick>
 						</item>
 						<item id="8">
 							<label>-</label>
 							<icon>home_settings_NF.png</icon>
 							<property name="Icon_Focus">home_settings_FO.png</property>
-							<onclick>ActivateWindow(AppearanceSettings)</onclick>
+							<onclick>ReplaceWindow(AppearanceSettings)</onclick>
 						</item>
 					</content>
 				</control>

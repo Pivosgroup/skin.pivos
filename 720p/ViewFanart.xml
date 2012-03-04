@@ -15,12 +15,12 @@
 			</control>
 			<control type="label">
 				<posx>180</posx>
-				<posy>52</posy>
+				<posy>50</posy>
 				<width>815</width>
 				<height>30</height>
 				<label>[B]$INFO[ListItem.Title][/B]</label>
 				<font>font30</font>
-				<textcolor>white</textcolor>
+				<textcolor>normal</textcolor>
 				<align>center</align>
 			</control>
 			<control type="label">
@@ -30,7 +30,7 @@
 				<height>30</height>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<font>font30</font>
-				<textcolor>white</textcolor>
+				<textcolor>normal</textcolor>
 				<align>center</align>
 				<visible>IsEmpty(ListItem.Title)</visible>
 			</control>
