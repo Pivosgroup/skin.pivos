@@ -27,4 +27,6 @@
 	<string id="31024">Pressure</string>
 	<string id="31025">Visibility</string>
 	<string id="31026">Moon Phase</string>
+	<string id="31027">Single Image</string>
+	<string id="31028">Multi Image</string>
 </strings>
