@@ -210,6 +210,8 @@
 					<control type="group">
 						<posx>0</posx>
 						<posy>0</posy>
+						<width>40</width>
+						<height>40</height>
 						<control type="image">
 							<posx>-40</posx>
 							<posy>0</posy>

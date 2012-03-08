@@ -16,7 +16,10 @@
 			<texture border="5">background-dark.png</texture>
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>!Control.IsVisible(52)</visible>
+			<animation type="Conditional" condition="Control.IsVisible(52)">
+				<effect type="zoom" start="105,15,1160,690" end="105,15,1160,83" time="200"/>
+				<effect type="fade" start="100" end="70" time="200"/>
+			</animation>
 		</control>
 	</include>
 	<include name="BackgroundPanelSettings">
@@ -127,11 +130,12 @@
 				<width>411</width>
 				<height>54</height>
 				<texture border="4">button_alt_NF.png</texture>
+				<colordiffuse>A0FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
-				<posx>5</posx>
+				<posx>0</posx>
 				<posy>-2</posy>
-				<width>401</width>
+				<width>411</width>
 				<height>30</height>
 				<texture border="2">header-back.png</texture>
 			</control>
@@ -205,6 +209,7 @@
 				<width>218</width>
 				<height>720</height>
 				<texture>home_menu_background.png</texture>
+				<colordiffuse>A0FFFFFF</colordiffuse>
 				<include>WindowOpenCloseSlideHome</include>
 				<visible>Window.IsVisible(Home)</visible>
 			</control>

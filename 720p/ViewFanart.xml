@@ -9,14 +9,14 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>50</posy>
-				<width>1175</width>
+				<width>1160</width>
 				<height>48</height>
 				<texture border="2">header-back.png</texture>
 			</control>
 			<control type="label">
 				<posx>180</posx>
 				<posy>50</posy>
-				<width>815</width>
+				<width>800</width>
 				<height>30</height>
 				<label>[B]$INFO[ListItem.Title][/B]</label>
 				<font>font30</font>
