@@ -4,6 +4,7 @@
 	<include file="IncludesGlobalSearch.xml"/>
 	<include file="IncludesVars.xml"/>
 	<include file="ViewFanart.xml"/>
+	<include file="ViewInfo.xml"/>
 	<include file="ViewList.xml"/>
 	<include file="ViewPanel.xml"/>
 	<constant name="CrossFade">250</constant>
@@ -17,7 +18,11 @@
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
 			<animation type="Conditional" condition="Control.IsVisible(52)">
-				<effect type="zoom" start="105,15,1160,690" end="105,15,1160,83" time="200"/>
+				<effect type="zoom" start="105,15,1160,690" end="105,15,1160,83" time="0"/>
+				<effect type="fade" start="100" end="70" time="200"/>
+			</animation>
+			<animation type="Conditional" condition="Control.IsVisible(53)">
+				<effect type="zoom" start="105,15,1160,690" end="105,15,1160,45" time="0"/>
 				<effect type="fade" start="100" end="70" time="200"/>
 			</animation>
 		</control>

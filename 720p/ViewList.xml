@@ -40,7 +40,7 @@
 						<posy>5</posy>
 						<width>50</width>
 						<height>50</height>
-						<texture background="true" diffuse="thumb-diffuse">$INFO[ListItem.Icon]</texture>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>!Container.Content(Addons)</visible>
 					</control>
@@ -49,7 +49,7 @@
 						<posy>5</posy>
 						<width>50</width>
 						<height>50</height>
-						<texture background="true" diffuse="thumb-diffuse" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" diffuse="thumb-diffuse.png" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>Container.Content(Addons)</visible>
 					</control>
@@ -177,7 +177,7 @@
 						<posy>5</posy>
 						<width>50</width>
 						<height>50</height>
-						<texture background="true" diffuse="thumb-diffuse">$INFO[ListItem.Icon]</texture>
+						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>!Container.Content(Addons)</visible>
 					</control>
@@ -186,7 +186,7 @@
 						<posy>5</posy>
 						<width>50</width>
 						<height>50</height>
-						<texture background="true" diffuse="thumb-diffuse" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" diffuse="thumb-diffuse.png" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>Container.Content(Addons)</visible>
 					</control>

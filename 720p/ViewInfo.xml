@@ -1,0 +1,157 @@
+<includes>
+	<include name="ViewInfo">
+		<control type="list" id="53">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1052</width>
+			<height>375</height>
+			<viewtype label="31029">icon</viewtype>
+			<preloaditems>2</preloaditems>
+			<orientation>horizontal</orientation>
+			<pagecontrol>60</pagecontrol>
+			<hitrect x="0" y="300" w="375" h="375"/>
+			<onup>9000</onup>
+			<ondown>60</ondown>
+			<onleft>1000</onleft>
+			<onright>53</onright>
+			<itemlayout width="375" height="375"/>
+			<focusedlayout width="375" height="375">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>375</width>
+					<height>375</height>
+					<texture></texture>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="image">
+			<posx>105</posx>
+			<posy>620</posy>
+			<width>1175</width>
+			<height>140</height>
+			<texture>floor.png</texture>
+			<include>ViewFade</include>
+			<include>WindowOpenCloseFade</include>
+			<visible>Control.IsVisible(53)</visible>
+		</control>
+		<control type="group">
+			<posx>105</posx>
+			<posy>0</posy>
+			<width>1120</width>
+			<height>624</height>
+			<include>ViewFade</include>
+			<include>WindowOpenCloseZoomInOut</include>
+			<visible>Control.IsVisible(53) + Container.Content(Movies)</visible>
+			<control type="image">
+				<posx>850</posx>
+				<posy>75</posy>
+				<width>310</width>
+				<height>315</height>
+				<texture border="4">button_alt_NF.png</texture>
+				<colordiffuse>60000000</colordiffuse>
+				<visible>![IsEmpty(ListItem.Plot) + IsEmpty(ListItem.PlotOutline) + IsEmpty(ListItem.TagLine)]</visible>
+			</control>
+			<control type="textbox">
+				<posx>860</posx>
+				<posy>80</posy>
+				<width>290</width>
+				<height>305</height>
+				<label>$INFO[ListItem.Plot]</label>
+				<font>font18</font>
+				<shadowcolor>black</shadowcolor>
+				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+			</control>
+			<control type="textbox">
+				<posx>860</posx>
+				<posy>80</posy>
+				<width>290</width>
+				<height>305</height>
+				<label>$INFO[ListItem.PlotOutline]</label>
+				<font>font18</font>
+				<shadowcolor>black</shadowcolor>
+				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+				<visible>IsEmpty(ListItem.Plot)</visible>
+			</control>
+			<control type="textbox">
+				<posx>860</posx>
+				<posy>80</posy>
+				<width>290</width>
+				<height>305</height>
+				<label>$INFO[ListItem.TagLine]</label>
+				<font>font18</font>
+				<shadowcolor>black</shadowcolor>
+				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+				<visible>IsEmpty(ListItem.Plot) + IsEmpty(ListItem.PlotOutline)</visible>
+			</control>
+			<control type="image">
+				<posx>20</posx>
+				<posy>370</posy>
+				<width>250</width>
+				<height>375</height>
+				<texture background="true" diffuse="poster-diffuse-angle.png">$INFO[ListItem.Icon]</texture>
+				<bordertexture border="21">poster-shadow.png</bordertexture>						
+				<bordersize>20</bordersize>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>20</posx>
+				<posy>705</posy>
+				<width>250</width>
+				<height>375</height>
+				<texture background="true" diffuse="poster-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
+				<bordersize>20</bordersize>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="label">
+				<posx>275</posx>
+				<posy>640</posy>
+				<width>780</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Title][/B]</label>
+				<font>font30</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>40000000</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>275</posx>
+				<posy>640</posy>
+				<width>780</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font30</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>40000000</shadowcolor>
+				<visible>IsEmpty(ListItem.Title)</visible>
+			</control>
+			<control type="label">
+				<posx>1150</posx>
+				<posy>640</posy>
+				<width>90</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Year][/B]</label>
+				<font>font30</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>40000000</shadowcolor>
+				<align>right</align>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>318</posx>
+				<posy>695</posy>
+				<width>540</width>
+				<height>20</height>
+				<texturesliderbackground border="10,0,10,0">scrollbar_back.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onup>53</onup>
+				<ondown>53</ondown>
+				<showonepage>false</showonepage>
+				<orientation>horizontal</orientation>
+			</control>
+		</control>
+	</include>
+</includes>

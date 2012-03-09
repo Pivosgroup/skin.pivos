@@ -948,7 +948,7 @@
 				<posy>62</posy>
 				<width>100</width>
 				<height>30</height>
-				<label>$VAR[PanelMusicLabel2]</label>
+				<label>$VAR[PanelMusicLabel2]:</label>
 				<align>right</align>
 				<font>font12m</font>
 				<textcolor>normal</textcolor>
@@ -967,7 +967,7 @@
 				<posy>87</posy>
 				<width>100</width>
 				<height>30</height>
-				<label>$VAR[PanelMusicLabel3]</label>
+				<label>$VAR[PanelMusicLabel3]:</label>
 				<align>right</align>
 				<font>font12m</font>
 				<textcolor>normal</textcolor>
@@ -1178,7 +1178,7 @@
 				<posy>62</posy>
 				<width>100</width>
 				<height>30</height>
-				<label>$LOCALIZE[552]</label>
+				<label>$LOCALIZE[552]:</label>
 				<align>right</align>
 				<font>font12m</font>
 				<textcolor>normal</textcolor>
@@ -1197,7 +1197,7 @@
 				<posy>87</posy>
 				<width>100</width>
 				<height>30</height>
-				<label>$LOCALIZE[553]</label>
+				<label>$LOCALIZE[553]:</label>
 				<align>right</align>
 				<font>font12m</font>
 				<textcolor>normal</textcolor>
