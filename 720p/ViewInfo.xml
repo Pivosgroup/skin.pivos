@@ -1,15 +1,15 @@
 <includes>
 	<include name="ViewInfo">
 		<control type="list" id="53">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1052</width>
+			<posx>105</posx>
+			<posy>172</posy>
+			<width>1175</width>
 			<height>375</height>
 			<viewtype label="31029">icon</viewtype>
 			<preloaditems>2</preloaditems>
 			<orientation>horizontal</orientation>
 			<pagecontrol>60</pagecontrol>
-			<hitrect x="0" y="300" w="375" h="375"/>
+			<hitrect x="105" y="400" w="250" h="250"/>
 			<onup>9000</onup>
 			<ondown>60</ondown>
 			<onleft>1000</onleft>
@@ -93,6 +93,7 @@
 				<bordertexture border="21">poster-shadow.png</bordertexture>						
 				<bordersize>20</bordersize>
 				<aspectratio scalediffuse="false">scale</aspectratio>
+				<fadetime>CrossFade</fadetime>
 				<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
@@ -103,7 +104,15 @@
 				<texture background="true" diffuse="poster-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
 				<bordersize>20</bordersize>
 				<aspectratio scalediffuse="false">scale</aspectratio>
+				<fadetime>CrossFade</fadetime>
 				<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>220</posx>
+				<posy>660</posy>
+				<width>30</width>
+				<height>30</height>
+				<texture>$INFO[ListItem.Overlay]</texture>
 			</control>
 			<control type="label">
 				<posx>275</posx>
