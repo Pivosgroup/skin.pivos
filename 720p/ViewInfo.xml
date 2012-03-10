@@ -15,8 +15,8 @@
 			<onleft condition="Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoPlaylist)">1002</onleft>
 			<onleft condition="Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist)">10032</onleft>
 			<onright>53</onright>
-			<itemlayout width="375" height="375"/>
-			<focusedlayout width="375" height="375">
+			<itemlayout width="200" height="375"/>
+			<focusedlayout width="200" height="375">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>

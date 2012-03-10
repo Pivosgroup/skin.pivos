@@ -22,18 +22,35 @@
 				<effect type="fade" start="100" end="70" time="200"/>
 			</animation>
 			<animation type="Conditional" condition="Control.IsVisible(53)">
-				<effect type="zoom" start="100,15,1165,690" end="100,15,1165,45" time="0"/>
+				<effect type="zoom" start="100,15,1165,690" end="100,15,1165,38" time="0"/>
 				<effect type="fade" start="100" end="70" time="200"/>
 			</animation>
+		</control>
+		<control type="image">
+			<posx>100</posx>
+			<posy>15</posy>
+			<width>1165</width>
+			<height>5</height>
+			<texture>panel-bar.png</texture>
+			<include>VisibleFade</include>
+			<include>WindowOpenCloseFade</include>
 		</control>
 	</include>
 	<include name="BackgroundPanelSettings">
 		<control type="image">
-			<posx>105</posx>
+			<posx>100</posx>
 			<posy>15</posy>
-			<width>1160</width>
+			<width>1165</width>
 			<height>690</height>
 			<texture border="5">background-dark.png</texture>
+			<include>WindowOpenCloseFadeSettings</include>
+		</control>
+		<control type="image">
+			<posx>100</posx>
+			<posy>15</posy>
+			<width>1165</width>
+			<height>5</height>
+			<texture>panel-bar.png</texture>
 			<include>WindowOpenCloseFadeSettings</include>
 		</control>
 	</include>
@@ -91,7 +108,7 @@
 			<fadetime>CrossFade</fadetime>
 			<include>WindowOpenCloseFade</include>
 			<include>VisibleFade</include>
-			<visible>Window.IsVisible(Pictures) + !StringCompare(ListItem.Label,..)</visible>
+			<visible>Window.IsVisible(Pictures) + !ListItem.IsFolder + !StringCompare(ListItem.Label,..)</visible>
 		</control>
 		<control type="videowindow">
 			<posx>0</posx>
@@ -1735,618 +1752,325 @@
 	</include>
 	<include name="TopMenuAddons">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include>WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>home_FO.png</texturefocus>
-				<texturenofocus>home_NF.png</texturenofocus>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>1006</onleft>
-				<onright>9000</onright>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
+				<width>1125</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<control type="group" id="3001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
+				<onleft>1006</onleft>
+				<onright>6</onright>
 				<control type="button" id="2">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-				<control type="group" id="3003">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[103]</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-				<control type="group" id="3005">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[31002]</label>
 					<altlabel>$LOCALIZE[31003]</altlabel>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="4">button_FO.png</alttexturefocus>
-					<alttexturenofocus border="4">button_alt_NF.png</alttexturenofocus>
-				</control>
-				<control type="group" id="3007">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<alttexturenofocus>-</alttexturenofocus>
 				</control>
 				<control type="radiobutton" id="5">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[24063]</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
-				</control>
-				<control type="group" id="3009">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 				</control>
 				<control type="radiobutton" id="6">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[25000]</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 				</control>
 			</control>
 		</control>
 	</include>
 	<include name="TopMenuMusicLibrary">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include>WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>options_FO.png</texturefocus>
-				<texturenofocus>options_NF.png</texturenofocus>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>1003</onleft>
-				<onright>9000</onright>
-				<onclick>Skin.ToggleSetting(MusicLibraryOptions)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
+				<width>1125</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
+				<onleft>1003</onleft>
+				<onright>16</onright>
 				<visible>!Skin.HasSetting(MusicLibraryOptions)</visible>
-				<control type="group" id="3001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
 				<control type="button" id="2">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3002">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3003">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[31002]</label>
 					<altlabel>$LOCALIZE[31003]</altlabel>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="4">button_FO.png</alttexturefocus>
-					<alttexturenofocus border="4">button_alt_NF.png</alttexturenofocus>
+					<alttexturenofocus>-</alttexturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3004">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="edit" id="19">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[587]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3005">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="radiobutton" id="20">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[29800]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 					<selected>Window.IsVisible(MusicLibrary)</selected>
 					<enable>Library.HasContent(Music)</enable>
 					<onclick>ReplaceWindow(MusicFiles)</onclick>
 				</control>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
-				<itemgap>0</itemgap>
-				<orientation>horizontal</orientation>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<visible>Skin.HasSetting(MusicLibraryOptions)</visible>
-				<control type="group" id="3006">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
 				<control type="button" id="8">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[137]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
-				<control type="group" id="3007">
+				<control type="radiobutton" id="16">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
-				<control type="radiobutton" id="20">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[589]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 				</control>
 			</control>
 		</control>
 	</include>
 	<include name="TopMenuMusicFiles">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include>WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>home_FO.png</texturefocus>
-				<texturenofocus>home_NF.png</texturenofocus>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>1003</onleft>
-				<onright>9000</onright>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
+				<width>1125</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<control type="group" id="3001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
+				<onleft>1003</onleft>
+				<onright>20</onright>
 				<control type="button" id="2">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3002">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3003">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[31002]</label>
 					<altlabel>$LOCALIZE[31003]</altlabel>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="4">button_FO.png</alttexturefocus>
-					<alttexturenofocus border="4">button_alt_NF.png</alttexturenofocus>
+					<alttexturenofocus>-</alttexturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3004">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="edit" id="19">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[587]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3005">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="radiobutton" id="20">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[29800]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 					<selected>Window.IsVisible(MusicLibrary)</selected>
 					<enable>Library.HasContent(Music)</enable>
 					<onclick>ReplaceWindow(MusicLibrary)</onclick>
@@ -2356,176 +2080,90 @@
 	</include>
 	<include name="TopMenuMusicPlaylist">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include>WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>home_FO.png</texturefocus>
-				<texturenofocus>home_NF.png</texturenofocus>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>1003</onleft>
-				<onright>9000</onright>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
+				<width>1125</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<control type="group" id="3001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
+				<onleft>1003</onleft>
+				<onright>20</onright>
 				<control type="button" id="2">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-				<control type="group" id="3003">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="21">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[190]</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-				<control type="group" id="3004">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="22">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[192]</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>ReplaceWindow(Music)</onclick>
-				</control>
-				<control type="group" id="3005">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="26">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-				<control type="group" id="3006">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="radiobutton" id="20">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[191]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 					<onclick>-</onclick>
 				</control>
 			</control>
@@ -2533,370 +2171,182 @@
 	</include>
 	<include name="TopMenuMusicPlaylistEditor">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include>WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>home_FO.png</texturefocus>
-				<texturenofocus>home_NF.png</texturenofocus>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>1003</onleft>
-				<onright>9000</onright>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
+				<width>1125</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<control type="group" id="3001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
+				<onleft>1003</onleft>
+				<onright>8</onright>
 				<control type="button" id="6">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[502]</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-				<control type="group" id="3003">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="7">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[190]</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-				<control type="group" id="3004">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="8">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[192]</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 			</control>
 		</control>
 	</include>
 	<include name="TopMenuPictures">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include>WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>options_FO.png</texturefocus>
-				<texturenofocus>options_NF.png</texturenofocus>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>1004</onleft>
-				<onright>9000</onright>
-				<onclick>Skin.ToggleSetting(PictureOptions)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
+				<width>1125</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
+				<onleft>1004</onleft>
+				<onright>9</onright>
 				<visible>!Skin.HasSetting(PictureOptions)</visible>
-				<control type="group" id="3001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
 				<control type="button" id="2">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3002">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3003">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[31002]</label>
 					<altlabel>$LOCALIZE[31003]</altlabel>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="4">button_FO.png</alttexturefocus>
-					<alttexturenofocus border="4">button_alt_NF.png</alttexturenofocus>
+					<alttexturenofocus>-</alttexturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3004">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="6">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[108]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3005">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="7">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[361]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1130</width>
-				<height>30</height>
-				<itemgap>0</itemgap>
-				<orientation>horizontal</orientation>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<visible>Skin.HasSetting(PictureOptions)</visible>
-				<control type="group" id="3006">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="edit" id="19">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[587]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3007">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="radiobutton" id="9">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[13319]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 					<onclick>-</onclick>
 				</control>
 			</control>
@@ -2904,151 +2354,76 @@
 	</include>
 	<include name="TopMenuPrograms">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include>WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>home_FO.png</texturefocus>
-				<texturenofocus>home_NF.png</texturenofocus>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>1006</onleft>
-				<onright>9000</onright>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
+				<width>1125</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<control type="group" id="3001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
+				<onleft>1006</onleft>
+				<onright>19</onright>
 				<control type="button" id="2">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3002">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3003">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[31002]</label>
 					<altlabel>$LOCALIZE[31003]</altlabel>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="4">button_FO.png</alttexturefocus>
-					<alttexturenofocus border="4">button_alt_NF.png</alttexturenofocus>
+					<alttexturenofocus>-</alttexturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3004">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="edit" id="19">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[587]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
 			</control>
@@ -3056,238 +2431,119 @@
 	</include>
 	<include name="TopMenuSettings">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include condition="Window.IsVisible(AppearanceSettings) | Window.IsVisible(VideosSettings) | Window.IsVisible(MusicSettings) | Window.IsVisible(PicturesSettings) | Window.IsVisible(WeatherSettings) | Window.IsVisible(NetworkSettings) | Window.IsVisible(SystemSettings)">WindowOpenCloseFadeSettings</include>
 			<include condition="![Window.IsVisible(AppearanceSettings) | Window.IsVisible(VideosSettings) | Window.IsVisible(MusicSettings) | Window.IsVisible(PicturesSettings) | Window.IsVisible(WeatherSettings) | Window.IsVisible(NetworkSettings) | Window.IsVisible(SystemSettings)]">WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>home_FO.png</texturefocus>
-				<texturenofocus>home_NF.png</texturenofocus>
-				<onup condition="!Window.IsVisible(FileManager)">3</onup>
-				<onup condition="Window.IsVisible(FileManager)">20</onup>
-				<ondown condition="!Window.IsVisible(FileManager)">3</ondown>
-				<ondown condition="Window.IsVisible(FileManager)">20</ondown>
-				<onleft>1008</onleft>
-				<onright>9000</onright>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
+				<width>1127</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup condition="!Window.IsVisible(FileManager)">3</onup>
 				<onup condition="Window.IsVisible(FileManager)">20</onup>
 				<ondown condition="!Window.IsVisible(FileManager)">3</ondown>
 				<ondown condition="Window.IsVisible(FileManager)">20</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<control type="group" id="3001">
+				<onleft>1008</onleft>
+				<onright>3007</onright>
+				<control type="button" id="3001">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
-				<control type="button" id="3002">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>148</width>
-					<height>26</height>
+					<width>161</width>
+					<height>31</height>
 					<label>$LOCALIZE[480]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(AppearanceSettings)</onclick>
 				</control>
-				<control type="group" id="3003">
+				<control type="button" id="3002">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
-				<control type="button" id="3004">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>148</width>
-					<height>26</height>
+					<width>161</width>
+					<height>31</height>
 					<label>$LOCALIZE[157]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(VideosSettings)</onclick>
 				</control>
-				<control type="group" id="3005">
+				<control type="button" id="3003">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
-				<control type="button" id="3006">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>148</width>
-					<height>26</height>
+					<width>161</width>
+					<height>31</height>
 					<label>$LOCALIZE[2]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(MusicSettings)</onclick>
 				</control>
-				<control type="group" id="3007">
+				<control type="button" id="3004">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
-				<control type="button" id="3008">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>148</width>
-					<height>26</height>
+					<width>161</width>
+					<height>31</height>
 					<label>$LOCALIZE[1]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(PicturesSettings)</onclick>
 				</control>
-				<control type="group" id="3009">
+				<control type="button" id="3005">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
-				<control type="button" id="3010">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>148</width>
-					<height>26</height>
+					<width>161</width>
+					<height>31</height>
 					<label>$LOCALIZE[8]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(WeatherSettings)</onclick>
 				</control>
-				<control type="group" id="3011">
+				<control type="button" id="3006">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
-				<control type="button" id="3012">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>148</width>
-					<height>26</height>
+					<width>161</width>
+					<height>31</height>
 					<label>$LOCALIZE[705]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(NetworkSettings)</onclick>
 				</control>
-				<control type="group" id="3013">
+				<control type="button" id="3007">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
-				<control type="button" id="3014">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>148</width>
-					<height>26</height>
+					<width>161</width>
+					<height>31</height>
 					<label>$LOCALIZE[13000]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(SystemSettings)</onclick>
 				</control>
 			</control>
@@ -3295,340 +2551,180 @@
 	</include>
 	<include name="TopMenuVideo">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include>WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>options_FO.png</texturefocus>
-				<texturenofocus>options_NF.png</texturenofocus>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>1002</onleft>
-				<onright>9000</onright>
-				<onclick>Skin.ToggleSetting(VideoOptions)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1130</width>
-				<height>30</height>
+				<width>1125</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
+				<onleft>1002</onleft>
+				<onright>11</onright>
 				<visible>!Skin.HasSetting(VideoOptions)</visible>
-				<control type="group" id="3001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
 				<control type="button" id="2">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3002">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3003">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[31002]</label>
 					<altlabel>$LOCALIZE[31003]</altlabel>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="4">button_FO.png</alttexturefocus>
-					<alttexturenofocus border="4">button_alt_NF.png</alttexturenofocus>
+					<alttexturenofocus>-</alttexturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3004">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="10">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3005">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="8">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[137]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1130</width>
-				<height>30</height>
-				<itemgap>0</itemgap>
-				<orientation>horizontal</orientation>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<visible>Skin.HasSetting(VideoOptions)</visible>
-				<control type="group" id="3006">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="radiobutton" id="7">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3007">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="radiobutton" id="17">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[20411]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3008">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="radiobutton" id="16">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[589]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3009">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="edit" id="19">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[587]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3010">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="radiobutton" id="11">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[12333]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 					<onclick>Xbmc.MasterMode</onclick>
 					<selected>System.IsMaster</selected>
 					<enable>System.HasLocks</enable>
@@ -3638,176 +2734,90 @@
 	</include>
 	<include name="TopMenuVideoPlaylist">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include>WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>home_FO.png</texturefocus>
-				<texturenofocus>home_NF.png</texturenofocus>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>1002</onleft>
-				<onright>9000</onright>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
+				<width>1125</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<control type="group" id="3001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
+				<onleft>1002</onleft>
+				<onright>20</onright>
 				<control type="button" id="2">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-				<control type="group" id="3003">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="21">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[190]</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-				<control type="group" id="3004">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="22">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[192]</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>ReplaceWindow(Video)</onclick>
-				</control>
-				<control type="group" id="3005">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="26">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-				</control>
-				<control type="group" id="3006">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="radiobutton" id="20">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>$LOCALIZE[191]</label>
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<radioposx>170</radioposx>
-					<radiowidth>36</radiowidth>
-					<radioheight>26</radioheight>
+					<align>center</align>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<textureradioon>radio_small_FO.png</textureradioon>
+					<textureradiooff>radio_small_NF.png</textureradiooff>
+					<texturenofocus>-</texturenofocus>
+					<radioposx>10</radioposx>
+					<radiowidth>16</radiowidth>
+					<radioheight>16</radioheight>
 					<onclick>-</onclick>
 				</control>
 			</control>
@@ -3815,103 +2825,60 @@
 	</include>
 	<include name="TopMenuWeather">
 		<control type="group">
-			<posx>115</posx>
-			<posy>24</posy>
-			<width>64</width>
-			<height>600</height>
+			<posx>113</posx>
+			<posy>20</posy>
 			<include>WindowOpenCloseFade</include>
-			<control type="button" id="3000">
+			<control type="grouplist" id="9000">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>26</width>
-				<height>26</height>
-				<label>-</label>
-				<font>font16m</font>
-				<textcolor>lightgrey</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus>home_FO.png</texturefocus>
-				<texturenofocus>home_NF.png</texturenofocus>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>1007</onleft>
-				<onright>9000</onright>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-			<control type="grouplist" id="9000">
-				<posx>26</posx>
-				<posy>0</posy>
-				<width>1133</width>
-				<height>30</height>
+				<width>1125</width>
+				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>3000</onleft>
-				<onright>9000</onright>
-				<control type="group" id="3001">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
-				</control>
+				<onleft>1007</onleft>
+				<onright>2</onright>
 				<control type="spincontrolex" id="3">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>-</font>
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
-					<spinwidth>21</spinwidth>
-					<spinheight>30</spinheight>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<textureup>arrow_up_small_NF.png</textureup>
+					<textureupfocus>arrow_up_small_FO.png</textureupfocus>
+					<texturedown>arrow_down_small_NF.png</texturedown>
+					<texturedownfocus>arrow_down_small_FO.png</texturedownfocus>
+					<spinwidth>16</spinwidth>
+					<spinheight>16</spinheight>
 					<onclick>-</onclick>
-				</control>
-				<control type="group" id="3002">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>9</width>
-					<height>26</height>
-					<control type="image">
-						<posx>4</posx>
-						<posy>0</posy>
-						<width>1</width>
-						<height>26</height>
-						<texture>white.png</texture>
-						<colordiffuse>80FFFFFF</colordiffuse>
-					</control>
 				</control>
 				<control type="button" id="2">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>210</width>
-					<height>26</height>
+					<width>225</width>
+					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
 			</control>
 			<control type="label">
 				<posx>41</posx>
 				<posy>0</posy>
-				<width>210</width>
-				<height>26</height>
+				<width>225</width>
+				<height>31</height>
 				<label>$LOCALIZE[21873]</label>
 				<font>font16m</font>
 				<textcolor>lightgrey</textcolor>
@@ -3920,8 +2887,8 @@
 			<control type="label">
 				<posx>41</posx>
 				<posy>0</posy>
-				<width>210</width>
-				<height>26</height>
+				<width>225</width>
+				<height>31</height>
 				<label>$LOCALIZE[21873]</label>
 				<font>font16m</font>
 				<textcolor>white</textcolor>
