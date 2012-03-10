@@ -8,14 +8,14 @@
 			<visible>Control.IsVisible(52)</visible>
 			<control type="image">
 				<posx>0</posx>
-				<posy>50</posy>
+				<posy>51</posy>
 				<width>1160</width>
-				<height>48</height>
+				<height>47</height>
 				<texture border="2">header-back.png</texture>
 			</control>
 			<control type="label">
 				<posx>180</posx>
-				<posy>50</posy>
+				<posy>53</posy>
 				<width>800</width>
 				<height>30</height>
 				<label>[B]$INFO[ListItem.Title][/B]</label>
@@ -42,9 +42,9 @@
 				<texture>$INFO[ListItem.Overlay]</texture>
 			</control>
 			<control type="image">
-				<posx>0</posx>
+				<posx>-5</posx>
 				<posy>650</posy>
-				<width>1175</width>
+				<width>1180</width>
 				<height>140</height>
 				<texture>floor.png</texture>
 			</control>

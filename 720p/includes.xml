@@ -11,20 +11,35 @@
 	<include name="BackgroundPanel">
 		<control type="image">
 			<posx>100</posx>
-			<posy>15</posy>
-			<width>1165</width>
-			<height>690</height>
-			<texture border="5">background-dark.png</texture>
+			<posy>7</posy>
+			<width>1173</width>
+			<height>706</height>
+			<texture border="13">background-dark.png</texture>
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
-			<animation type="Conditional" condition="Control.IsVisible(52)">
-				<effect type="zoom" start="100,15,1165,690" end="100,15,1165,83" time="0"/>
-				<effect type="fade" start="100" end="70" time="200"/>
-			</animation>
-			<animation type="Conditional" condition="Control.IsVisible(53)">
-				<effect type="zoom" start="100,15,1165,690" end="100,15,1165,38" time="0"/>
-				<effect type="fade" start="100" end="70" time="200"/>
-			</animation>
+			<visible>![Control.IsVisible(52) | Control.IsVisible(53)]</visible>
+		</control>
+		<control type="image">
+			<posx>100</posx>
+			<posy>7</posy>
+			<width>1173</width>
+			<height>99</height>
+			<texture border="13">background-dark.png</texture>
+			<include>VisibleFade</include>
+			<include>WindowOpenCloseFade</include>
+			<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
+			<visible>Control.IsVisible(52)</visible>
+		</control>
+		<control type="image">
+			<posx>100</posx>
+			<posy>7</posy>
+			<width>1173</width>
+			<height>53</height>
+			<texture border="13">background-dark.png</texture>
+			<include>VisibleFade</include>
+			<include>WindowOpenCloseFade</include>
+			<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
+			<visible>Control.IsVisible(53)</visible>
 		</control>
 		<control type="image">
 			<posx>100</posx>
@@ -39,10 +54,10 @@
 	<include name="BackgroundPanelSettings">
 		<control type="image">
 			<posx>100</posx>
-			<posy>15</posy>
-			<width>1165</width>
-			<height>690</height>
-			<texture border="5">background-dark.png</texture>
+			<posy>7</posy>
+			<width>1173</width>
+			<height>706</height>
+			<texture border="13">background-dark.png</texture>
 			<include>WindowOpenCloseFadeSettings</include>
 		</control>
 		<control type="image">

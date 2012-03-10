@@ -15,6 +15,23 @@
 				<height>628</height>
 				<texture border="5">background-light.png</texture>
 			</control>
+			<control type="image">
+				<posx>112</posx>
+				<posy>580</posy>
+				<width>900</width>
+				<height>40</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>122</posx>
+				<posy>583</posy>
+				<width>880</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font24</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+			</control>
 			<control type="panel" id="51">
 				<posx>2</posx>
 				<posy>2</posy>
@@ -365,23 +382,6 @@
 				<onright>51</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-			</control>
-			<control type="image">
-				<posx>112</posx>
-				<posy>580</posy>
-				<width>900</width>
-				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
-			</control>
-			<control type="label">
-				<posx>122</posx>
-				<posy>583</posy>
-				<width>880</width>
-				<height>30</height>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<font>font24</font>
-				<textcolor>normal</textcolor>
-				<align>center</align>
 			</control>
 		</control>
 		<control type="group">
@@ -749,6 +749,23 @@
 				<height>628</height>
 				<texture border="5">background-light.png</texture>
 			</control>
+			<control type="image">
+				<posx>112</posx>
+				<posy>575</posy>
+				<width>900</width>
+				<height>40</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>122</posx>
+				<posy>578</posy>
+				<width>880</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font24</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+			</control>
 			<control type="panel" id="51">
 				<posx>6</posx>
 				<posy>12</posy>
@@ -852,23 +869,6 @@
 				<onright>51</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-			</control>
-			<control type="image">
-				<posx>112</posx>
-				<posy>575</posy>
-				<width>900</width>
-				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
-			</control>
-			<control type="label">
-				<posx>122</posx>
-				<posy>578</posy>
-				<width>880</width>
-				<height>30</height>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<font>font24</font>
-				<textcolor>normal</textcolor>
-				<align>center</align>
 			</control>
 		</control>
 		<control type="group">
@@ -1028,6 +1028,23 @@
 				<height>628</height>
 				<texture border="5">background-light.png</texture>
 			</control>
+			<control type="image">
+				<posx>112</posx>
+				<posy>575</posy>
+				<width>900</width>
+				<height>40</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>122</posx>
+				<posy>578</posy>
+				<width>880</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font24</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+			</control>
 			<control type="panel" id="51">
 				<posx>6</posx>
 				<posy>12</posy>
@@ -1082,23 +1099,6 @@
 				<onright>51</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-			</control>
-			<control type="image">
-				<posx>112</posx>
-				<posy>575</posy>
-				<width>900</width>
-				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
-			</control>
-			<control type="label">
-				<posx>122</posx>
-				<posy>578</posy>
-				<width>880</width>
-				<height>30</height>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<font>font24</font>
-				<textcolor>normal</textcolor>
-				<align>center</align>
 			</control>
 		</control>
 		<control type="group">
@@ -1254,6 +1254,23 @@
 				<height>628</height>
 				<texture border="5">background-light.png</texture>
 			</control>
+			<control type="image">
+				<posx>112</posx>
+				<posy>575</posy>
+				<width>900</width>
+				<height>40</height>
+				<texture border="4">button_alt_NF.png</texture>
+			</control>
+			<control type="label">
+				<posx>122</posx>
+				<posy>578</posy>
+				<width>880</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font24</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+			</control>
 			<control type="panel" id="51">
 				<posx>6</posx>
 				<posy>12</posy>
@@ -1324,23 +1341,6 @@
 				<onright>51</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
-			</control>
-			<control type="image">
-				<posx>112</posx>
-				<posy>575</posy>
-				<width>900</width>
-				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
-			</control>
-			<control type="label">
-				<posx>122</posx>
-				<posy>578</posy>
-				<width>880</width>
-				<height>30</height>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<font>font24</font>
-				<textcolor>normal</textcolor>
-				<align>center</align>
 			</control>
 		</control>
 		<control type="group">

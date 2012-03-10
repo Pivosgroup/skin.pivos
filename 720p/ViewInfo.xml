@@ -27,9 +27,9 @@
 			</focusedlayout>
 		</control>
 		<control type="image">
-			<posx>105</posx>
+			<posx>100</posx>
 			<posy>620</posy>
-			<width>1175</width>
+			<width>1180</width>
 			<height>140</height>
 			<texture>floor.png</texture>
 			<include>ViewFade</include>
