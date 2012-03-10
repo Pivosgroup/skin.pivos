@@ -67,9 +67,6 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-						</animation>
 					</control>
 				</itemlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(1)">
@@ -92,9 +89,6 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(1)">
@@ -118,10 +112,6 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="8,0" time="300" tween="back" easing="out"/>
-						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(0)">
@@ -145,10 +135,6 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="0,13" time="300" tween="back" easing="out"/>
-						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(1)">
@@ -172,10 +158,6 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-2,0" time="300" tween="back" easing="out"/>
-						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(2)">
@@ -199,10 +181,6 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="0,-13" time="300" tween="back" easing="out"/>
-						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(0)">
@@ -226,10 +204,6 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="8,13" time="300" tween="back" easing="out"/>
-						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(0)">
@@ -253,10 +227,6 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-2,13" time="300" tween="back" easing="out"/>
-						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(2)">
@@ -280,10 +250,6 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-2,-13" time="300" tween="back" easing="out"/>
-						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(2)">
@@ -307,10 +273,6 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="8,-13" time="300" tween="back" easing="out"/>
-						</animation>
 					</control>
 				</focusedlayout>
 				<itemlayout width="544" height="114" condition="Container.Content(TVShows) + !Skin.HasSetting(PreferPosters)">
@@ -1344,9 +1306,6 @@
 						<width>40</width>
 						<height>40</height>
 						<texture>OverlayError.png</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="120" end="130" center="auto" time="300" tween="back" easing="out"/>
-						</animation>
 						<visible>!IsEmpty(ListItem.Property(Addon.Broken))</visible>
 					</control>
 				</focusedlayout>

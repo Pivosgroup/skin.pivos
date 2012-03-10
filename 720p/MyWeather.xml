@@ -14,9 +14,7 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<onleft>1007</onleft>
-			<onright>1007</onright>
 			<onup>9000</onup>
-			<ondown>9000</ondown>
 		</control>
 		<control type="group">
 			<posx>113</posx>
