@@ -3,7 +3,6 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>BackgroundPanel</include>
-		<include>SideMenu</include>
 		<include>TopMenuSettings</include>
 		<control type="group">
 			<control type="image">
@@ -30,7 +29,7 @@
 					<scrolltime>250</scrolltime>
 					<onup>9000</onup>
 					<ondown>3</ondown>
-					<onleft>1000</onleft>
+					<onleft>1008</onleft>
 					<onright>2</onright>
 					<itemlayout width="250" height="50">
 						<control type="image">
@@ -468,5 +467,6 @@
 				</control>
 			</control>
 		</control>
+		<include>SideMenu</include>
 	</controls>
 </window>

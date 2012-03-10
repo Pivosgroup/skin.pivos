@@ -26,7 +26,7 @@
 				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
 				<ondown>51</ondown>
-				<onleft>1000</onleft>
+				<onleft>1002</onleft>
 				<onright>60</onright>
 				<orientation>vertical</orientation>
 				<itemlayout width="180" height="190" condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Window.IsVisible(VideoPlaylist)">
@@ -798,7 +798,7 @@
 				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
 				<ondown>51</ondown>
-				<onleft>1000</onleft>
+				<onleft>1003</onleft>
 				<onright>60</onright>
 				<orientation>vertical</orientation>
 				<itemlayout width="182" height="182" condition="![Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)]">
@@ -1077,7 +1077,7 @@
 				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
 				<ondown>51</ondown>
-				<onleft>1000</onleft>
+				<onleft>1004</onleft>
 				<onright>60</onright>
 				<orientation>vertical</orientation>
 				<itemlayout width="182" height="182">
@@ -1303,7 +1303,7 @@
 				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
 				<ondown>51</ondown>
-				<onleft>1000</onleft>
+				<onleft>1006</onleft>
 				<onright>60</onright>
 				<orientation>vertical</orientation>
 				<itemlayout width="182" height="182">

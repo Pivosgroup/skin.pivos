@@ -1,5 +1,5 @@
 <window id="0">
-	<defaultcontrol always="true">1000</defaultcontrol>
+	<defaultcontrol>1002</defaultcontrol>
 	<controls>
 		<include>DefaultBackground</include>
 		<include>RecentFanart</include>

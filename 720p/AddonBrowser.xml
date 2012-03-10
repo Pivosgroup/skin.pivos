@@ -4,11 +4,11 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>BackgroundPanel</include>
-		<include>SideMenu</include>
 		<include>TopMenuAddons</include>
 		<include>ViewFanart</include>
 		<include>ViewList</include>
 		<include>ViewPanelAddons</include>
 		<include>ScrollLabel</include>
+		<include>SideMenu</include>
 	</controls>
 </window>

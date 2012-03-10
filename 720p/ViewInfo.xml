@@ -12,7 +12,8 @@
 			<hitrect x="105" y="400" w="250" h="250"/>
 			<onup>9000</onup>
 			<ondown>60</ondown>
-			<onleft>1000</onleft>
+			<onleft condition="Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoPlaylist)">1002</onleft>
+			<onleft condition="Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist)">10032</onleft>
 			<onright>53</onright>
 			<itemlayout width="375" height="375"/>
 			<focusedlayout width="375" height="375">

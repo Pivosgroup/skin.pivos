@@ -3,7 +3,6 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>BackgroundPanel</include>
-		<include>SideMenu</include>
 		<include>TopMenuWeather</include>
 		<control type="button" id="50">
 			<posx>-10</posx>
@@ -14,8 +13,8 @@
 			<font>-</font>-
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<onleft>1000</onleft>
-			<onright>1000</onright>
+			<onleft>1007</onleft>
+			<onright>1007</onright>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
 		</control>
@@ -755,5 +754,6 @@
 				</control>
 			</control>
 		</control>
+		<include>SideMenu</include>
 	</controls>
 </window>

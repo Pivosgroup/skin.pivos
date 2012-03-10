@@ -25,7 +25,10 @@
 				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft condition="Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoPlaylist)">1002</onleft>
+				<onleft condition="Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist)">10032</onleft>
+				<onleft condition="Window.IsVisible(Pictures)">1004</onleft>
+				<onleft condition="Window.IsVisible(AddonBrowser) | Window.IsVisible(Programs)">1006</onleft>
 				<onright>60</onright>
 				<itemlayout width="560" height="60">
 					<control type="image">

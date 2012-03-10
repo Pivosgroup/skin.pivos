@@ -3,7 +3,6 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>BackgroundPanel</include>
-		<include>SideMenu</include>
 		<include>TopMenuSettings</include>
 		<control type="group">
 			<control type="image">
@@ -30,7 +29,7 @@
 					<include>WindowOpenCloseZoomInOut</include>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
-					<onleft>1000</onleft>
+					<onleft>1008</onleft>
 					<onright>2</onright>
 					<control type="button" id="4">
 						<posx>0</posx>
@@ -183,5 +182,6 @@
 				</control>
 			</control>
 		</control>
+		<include>SideMenu</include>
 	</controls>
 </window>

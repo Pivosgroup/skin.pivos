@@ -10,19 +10,19 @@
 	<constant name="CrossFade">250</constant>
 	<include name="BackgroundPanel">
 		<control type="image">
-			<posx>105</posx>
+			<posx>100</posx>
 			<posy>15</posy>
-			<width>1160</width>
+			<width>1165</width>
 			<height>690</height>
 			<texture border="5">background-dark.png</texture>
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
 			<animation type="Conditional" condition="Control.IsVisible(52)">
-				<effect type="zoom" start="105,15,1160,690" end="105,15,1160,83" time="0"/>
+				<effect type="zoom" start="100,15,1165,690" end="100,15,1165,83" time="0"/>
 				<effect type="fade" start="100" end="70" time="200"/>
 			</animation>
 			<animation type="Conditional" condition="Control.IsVisible(53)">
-				<effect type="zoom" start="105,15,1160,690" end="105,15,1160,45" time="0"/>
+				<effect type="zoom" start="100,15,1165,690" end="100,15,1165,45" time="0"/>
 				<effect type="fade" start="100" end="70" time="200"/>
 			</animation>
 		</control>
@@ -110,7 +110,7 @@
 	</include>
 	<include name="HomeSubButton">
 		<width>170</width>
-		<height>26</height>
+		<height>24</height>
 		<font>font14m</font>
 		<textcolor>white</textcolor>
 		<focusedcolor>normal</focusedcolor>
@@ -209,7 +209,7 @@
 		<control type="group">
 			<include>WindowOpenCloseSlideHome</include>
 			<control type="image">
-				<posx>105</posx>
+				<posx>100</posx>
 				<posy>0</posy>
 				<width>218</width>
 				<height>720</height>
@@ -218,386 +218,386 @@
 				<include>WindowOpenCloseSlideHome</include>
 				<visible>Window.IsVisible(Home)</visible>
 			</control>
-			<control type="grouplist" id="200">
-				<posx>140</posx>
-				<posy>57</posy>
+			<control type="grouplist" id="2001">
+				<posx>135</posx>
+				<posy>63</posy>
 				<width>170</width>
 				<height>300</height>
 				<orientation>vertical</orientation>
 				<include>SubMenuFade</include>
 				<include>WindowOpenCloseFadeHome</include>
-				<onup>200</onup>
-				<ondown>200</ondown>
-				<onleft>1000</onleft>
+				<onup>2001</onup>
+				<ondown>2001</ondown>
+				<onleft>1001</onleft>
 				<onright>5001</onright>
-				<visible>Container(1000).HasFocus(1)</visible>
-				<control type="button" id="201">
+				<visible>Control.HasFocus(1001) | ControlGroup(2001).HasFocus</visible>
+				<control type="button" id="2101">
 					<label>$LOCALIZE[20342]</label>
 					<include>HomeSubButton</include>
 					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,movies=true)</onclick>
 				</control>
-				<control type="button" id="202">
+				<control type="button" id="2102">
 					<label>$LOCALIZE[20343]</label>
 					<include>HomeSubButton</include>
 					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,tvshows=true)</onclick>
 				</control>
-				<control type="button" id="203">
+				<control type="button" id="2103">
 					<label>$LOCALIZE[20389]</label>
 					<include>HomeSubButton</include>
 					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,musicvideos=true)</onclick>
 				</control>
-				<control type="image" id="204">
+				<control type="image" id="2104">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
 				</control>
-				<control type="button" id="205">
+				<control type="button" id="2105">
 					<label>$LOCALIZE[133]</label>
 					<include>HomeSubButton</include>
 					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,artists=true)</onclick>
 				</control>
-				<control type="button" id="206">
+				<control type="button" id="2106">
 					<label>$LOCALIZE[132]</label>
 					<include>HomeSubButton</include>
 					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,albums=true)</onclick>
 				</control>
-				<control type="button" id="207">
+				<control type="button" id="2107">
 					<label>$LOCALIZE[134]</label>
 					<include>HomeSubButton</include>
 					<onclick>SetProperty(globalsearch,single)</onclick>
 					<onclick>RunScript(script.globalsearch,songs=true)</onclick>
 				</control>
 			</control>
-			<control type="grouplist" id="200">
-				<posx>140</posx>
-				<posy>129</posy>
+			<control type="grouplist" id="2002">
+				<posx>135</posx>
+				<posy>139</posy>
 				<width>170</width>
 				<height>300</height>
 				<orientation>vertical</orientation>
 				<include>SubMenuFade</include>
 				<include>WindowOpenCloseFadeHome</include>
-				<onup>200</onup>
-				<ondown>200</ondown>
-				<onleft>1000</onleft>
+				<onup>2002</onup>
+				<ondown>2002</ondown>
+				<onleft>1002</onleft>
 				<onright>5001</onright>
-				<visible>Container(1000).HasFocus(2)</visible>
-				<control type="button" id="201">
+				<visible>Control.HasFocus(1002) | ControlGroup(2002).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002)</visible>
+				<control type="button" id="2201">
 					<label>$LOCALIZE[136]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 				</control>
-				<control type="button" id="202">
+				<control type="button" id="2202">
 					<label>$LOCALIZE[589]</label>
 					<include>HomeSubButton</include>
 					<onclick>PlayerControl(Partymode(Video))</onclick>
 				</control>
-				<control type="button" id="203">
+				<control type="button" id="2203">
 					<label>$LOCALIZE[31004]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
 				</control>
-				<control type="image" id="204">
+				<control type="image" id="2204">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
 				</control>
-				<control type="button" id="205">
+				<control type="button" id="2205">
 					<label>$LOCALIZE[3]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(Videos)</onclick>
 				</control>
-				<control type="button" id="206">
+				<control type="button" id="2206">
 					<label>$LOCALIZE[20343]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
 				</control>
-				<control type="button" id="207">
+				<control type="button" id="2207">
 					<label>$LOCALIZE[20389]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 				</control>
-				<control type="button" id="208">
+				<control type="button" id="2208">
 					<label>$LOCALIZE[1037]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 				</control>
 			</control>
-			<control type="grouplist" id="200">
-				<posx>140</posx>
-				<posy>201</posy>
+			<control type="grouplist" id="2003">
+				<posx>135</posx>
+				<posy>215</posy>
 				<width>170</width>
 				<height>300</height>
 				<orientation>vertical</orientation>
 				<include>SubMenuFade</include>
 				<include>WindowOpenCloseFadeHome</include>
-				<onup>200</onup>
-				<ondown>200</ondown>
-				<onleft>1000</onleft>
+				<onup>2003</onup>
+				<ondown>2003</ondown>
+				<onleft>1003</onleft>
 				<onright>5003</onright>
-				<visible>Container(1000).HasFocus(3)</visible>
-				<control type="button" id="201">
+				<visible>Control.HasFocus(1003) | ControlGroup(2003).HasFocus | Control.HasFocus(5003)</visible>
+				<control type="button" id="2301">
 					<label>$LOCALIZE[136]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 				</control>
-				<control type="button" id="202">
+				<control type="button" id="2302">
 					<label>$LOCALIZE[589]</label>
 					<include>HomeSubButton</include>
 					<onclick>PlayerControl(Partymode(Music))</onclick>
 				</control>
-				<control type="button" id="203">
+				<control type="button" id="2303">
 					<label>$LOCALIZE[31004]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</onclick>
 				</control>
-				<control type="image" id="204">
+				<control type="image" id="2304">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
 				</control>
-				<control type="button" id="205">
+				<control type="button" id="2305">
 					<label>$LOCALIZE[133]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 				</control>
-				<control type="button" id="206">
+				<control type="button" id="2306">
 					<label>$LOCALIZE[132]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 				</control>
-				<control type="button" id="207">
+				<control type="button" id="2307">
 					<label>$LOCALIZE[134]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 				</control>
-				<control type="button" id="208">
+				<control type="button" id="2308">
 					<label>$LOCALIZE[1214]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(MusicFiles)</onclick>
 				</control>
 			</control>
-			<control type="grouplist" id="200">
-				<posx>140</posx>
-				<posy>273</posy>
+			<control type="grouplist" id="2004">
+				<posx>135</posx>
+				<posy>291</posy>
 				<width>170</width>
 				<height>300</height>
 				<orientation>vertical</orientation>
 				<include>SubMenuFade</include>
 				<include>WindowOpenCloseFadeHome</include>
-				<onup>200</onup>
-				<ondown>200</ondown>
-				<onleft>1000</onleft>
+				<onup>2004</onup>
+				<ondown>2004</ondown>
+				<onleft>1004</onleft>
 				<onright>5001</onright>
-				<visible>Container(1000).HasFocus(4)</visible>
-				<control type="button" id="201">
+				<visible>Control.HasFocus(1004) | ControlGroup(2004).HasFocus</visible>
+				<control type="button" id="2401">
 					<label>$LOCALIZE[1039]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 				</control>
-				<control type="image" id="202">
+				<control type="image" id="2402">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
 				</control>
 			</control>
-			<control type="grouplist" id="200">
-				<posx>140</posx>
-				<posy>345</posy>
+			<control type="grouplist" id="2005">
+				<posx>135</posx>
+				<posy>367</posy>
 				<width>170</width>
 				<height>300</height>
 				<orientation>vertical</orientation>
 				<include>SubMenuFade</include>
 				<include>WindowOpenCloseFadeHome</include>
-				<onup>200</onup>
-				<ondown>200</ondown>
-				<onleft>1000</onleft>
+				<onup>2005</onup>
+				<ondown>2005</ondown>
+				<onleft>1005</onleft>
 				<onright>5001</onright>
-				<visible>Container(1000).HasFocus(5) + !IsEmpty(Skin.String(CustomFavourite.1.Label))</visible>
-				<control type="button" id="201">
+				<visible>[Control.HasFocus(1005) + !IsEmpty(Skin.String(CustomFavourite.1.Label))] | ControlGroup(2005).HasFocus</visible>
+				<control type="button" id="2501">
 					<label>$INFO[Skin.String(CustomFavourite.1.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>$INFO[Skin.String(CustomFavourite.1.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.1.Label))</visible>
 				</control>
-				<control type="button" id="202">
+				<control type="button" id="2502">
 					<label>$INFO[Skin.String(CustomFavourite.2.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.2.Label))</visible>
 				</control>
-				<control type="button" id="203">
+				<control type="button" id="2503">
 					<label>$INFO[Skin.String(CustomFavourite.3.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.3.Label))</visible>
 				</control>
-				<control type="button" id="204">
+				<control type="button" id="2504">
 					<label>$INFO[Skin.String(CustomFavourite.4.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.4.Label))</visible>
 				</control>
-				<control type="image" id="205">
+				<control type="image" id="2505">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.1.Label))</visible>
 				</control>
-				<control type="button" id="206">
+				<control type="button" id="2506">
 					<label>$INFO[Skin.String(CustomFavourite.5.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.5.Label))</visible>
 				</control>
-				<control type="button" id="207">
+				<control type="button" id="2507">
 					<label>$INFO[Skin.String(CustomFavourite.6.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.6.Label))</visible>
 				</control>
-				<control type="button" id="208">
+				<control type="button" id="2508">
 					<label>$INFO[Skin.String(CustomFavourite.7.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.7.Label))</visible>
 				</control>
-				<control type="button" id="209">
+				<control type="button" id="2509">
 					<label>$INFO[Skin.String(CustomFavourite.8.Label)]</label>
 					<include>HomeSubButton</include>
 					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.8.Label))</visible>
 				</control>
 			</control>
-			<control type="grouplist" id="200">
-				<posx>140</posx>
-				<posy>417</posy>
+			<control type="grouplist" id="2006">
+				<posx>135</posx>
+				<posy>443</posy>
 				<width>170</width>
 				<height>300</height>
 				<orientation>vertical</orientation>
 				<include>SubMenuFade</include>
 				<include>WindowOpenCloseFadeHome</include>
-				<onup>200</onup>
-				<ondown>200</ondown>
-				<onleft>1000</onleft>
+				<onup>2006</onup>
+				<ondown>2006</ondown>
+				<onleft>1006</onleft>
 				<onright>5001</onright>
-				<visible>Container(1000).HasFocus(6)</visible>
-				<control type="button" id="201">
+				<visible>Control.HasFocus(1006) | ControlGroup(2006).HasFocus</visible>
+				<control type="button" id="2601">
 					<label>$LOCALIZE[24033]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(AddonBrowser)</onclick>
 				</control>
-				<control type="image" id="202">
+				<control type="image" id="2602">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
 				</control>
-				<control type="button" id="203">
+				<control type="button" id="2603">
 					<label>$INFO[System.AddonTitle(Skin.String(CustomAddon.1.Label))]</label>
 					<include>HomeSubButton</include>
 					<onclick>RunAddon($INFO[Skin.String(CustomAddon.1.Label)])</onclick>
 					<visible>!IsEmpty(Skin.String(CustomAddon.1.Label))</visible>
 				</control>
-				<control type="button" id="204">
+				<control type="button" id="2604">
 					<label>$INFO[System.AddonTitle(Skin.String(CustomAddon.2.Label))]</label>
 					<include>HomeSubButton</include>
 					<onclick>RunAddon($INFO[Skin.String(CustomAddon.2.Label)])</onclick>
 					<visible>!IsEmpty(Skin.String(CustomAddon.2.Label))</visible>
 				</control>
-				<control type="button" id="205">
+				<control type="button" id="2605">
 					<label>$INFO[System.AddonTitle(Skin.String(CustomAddon.3.Label))]</label>
 					<include>HomeSubButton</include>
 					<onclick>RunAddon($INFO[Skin.String(CustomAddon.3.Label)])</onclick>
 					<visible>!IsEmpty(Skin.String(CustomAddon.3.Label))</visible>
 				</control>
-				<control type="button" id="206">
+				<control type="button" id="2606">
 					<label>$INFO[System.AddonTitle(Skin.String(CustomAddon.4.Label))]</label>
 					<include>HomeSubButton</include>
 					<onclick>RunAddon($INFO[Skin.String(CustomAddon.4.Label)])</onclick>
 					<visible>!IsEmpty(Skin.String(CustomAddon.4.Label))</visible>
 				</control>
-				<control type="button" id="207">
+				<control type="button" id="2607">
 					<label>$INFO[System.AddonTitle(Skin.String(CustomAddon.5.Label))]</label>
 					<include>HomeSubButton</include>
 					<onclick>RunAddon($INFO[Skin.String(CustomAddon.5.Label)])</onclick>
 					<visible>!IsEmpty(Skin.String(CustomAddon.5.Label))</visible>
 				</control>
 			</control>
-			<control type="grouplist" id="200">
-				<posx>140</posx>
-				<posy>489</posy>
+			<control type="grouplist" id="2007">
+				<posx>135</posx>
+				<posy>519</posy>
 				<width>170</width>
 				<height>300</height>
 				<orientation>vertical</orientation>
 				<include>SubMenuFade</include>
 				<include>WindowOpenCloseFadeHome</include>
-				<onup>200</onup>
-				<ondown>200</ondown>
-				<onleft>1000</onleft>
+				<onup>2007</onup>
+				<ondown>2007</ondown>
+				<onleft>1007</onleft>
 				<onright>5001</onright>
-				<visible>Container(1000).HasFocus(7)</visible>
-				<control type="button" id="201">
+				<visible>Control.HasFocus(1007) | ControlGroup(2007).HasFocus</visible>
+				<control type="button" id="2701">
 					<label>$LOCALIZE[31006]</label>
 					<include>HomeSubButton</include>
 					<onclick>Weather.Refresh</onclick>
 				</control>
-				<control type="image" id="202">
+				<control type="image" id="2702">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
 				</control>
-				<control type="button" id="203">
+				<control type="button" id="2703">
 					<label>$LOCALIZE[31007]</label>
 					<include>HomeSubButton</include>
 					<onclick>Weather.LocationNext</onclick>
 				</control>
 			</control>
-			<control type="grouplist" id="200">
-				<posx>140</posx>
-				<posy>561</posy>
+			<control type="grouplist" id="2008">
+				<posx>135</posx>
+				<posy>595</posy>
 				<width>170</width>
 				<height>300</height>
 				<orientation>vertical</orientation>
 				<include>SubMenuFade</include>
 				<include>WindowOpenCloseFadeHome</include>
-				<onup>200</onup>
-				<ondown>200</ondown>
-				<onleft>1000</onleft>
+				<onup>2008</onup>
+				<ondown>2008</ondown>
+				<onleft>1008</onleft>
 				<onright>5001</onright>
-				<visible>Container(1000).HasFocus(8)</visible>
-				<control type="button" id="201">
+				<visible>Control.HasFocus(1008) | ControlGroup(2008).HasFocus</visible>
+				<control type="button" id="2801">
 					<label>$LOCALIZE[130]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
 				</control>
-				<control type="button" id="202">
+				<control type="button" id="2802">
 					<label>$LOCALIZE[10003]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(FileManager)</onclick>
 				</control>
-				<control type="image" id="203">
+				<control type="image" id="2803">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
 				</control>
-				<control type="button" id="204">
+				<control type="button" id="2804">
 					<label>$LOCALIZE[13200]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(Profiles)</onclick>
 				</control>
-				<control type="button" id="205">
+				<control type="button" id="2805">
 					<label>$LOCALIZE[20077]</label>
 					<include>HomeSubButton</include>
 					<onclick>ActivateWindow(1111)</onclick>
@@ -605,21 +605,21 @@
 			</control>
 			<control type="image">
 				<posx>110</posx>
-				<posy>62</posy>
+				<posy>67</posy>
 				<width>20</width>
 				<height>20</height>
 				<texture>$VAR[SubMenuArrow]</texture>
-				<animation effect="slide" end="0,72" time="150" condition="Container(1000).HasFocus(2)">Conditional</animation>
-				<animation effect="slide" end="0,144" time="150" condition="Container(1000).HasFocus(3)">Conditional</animation>
-				<animation effect="slide" end="0,216" time="150" condition="Container(1000).HasFocus(4)">Conditional</animation>
-				<animation effect="slide" end="0,288" time="150" condition="Container(1000).HasFocus(5)">Conditional</animation>
-				<animation effect="slide" end="0,360" time="150" condition="Container(1000).HasFocus(6)">Conditional</animation>
-				<animation effect="slide" end="0,432" time="150" condition="Container(1000).HasFocus(7)">Conditional</animation>
-				<animation effect="slide" end="0,504" time="150" condition="Container(1000).HasFocus(8)">Conditional</animation>
-				<animation effect="fade" end="100" time="0" delay="150">Visible</animation>
+				<animation effect="slide" end="0,76" time="100" condition="Control.HasFocus(1002) | ControlGroup(2002).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002)">Conditional</animation>
+				<animation effect="slide" end="0,152" time="100" condition="Control.HasFocus(1003) | ControlGroup(2003).HasFocus | Control.HasFocus(5003)">Conditional</animation>
+				<animation effect="slide" end="0,228" time="100" condition="Control.HasFocus(1004) | ControlGroup(2004).HasFocus">Conditional</animation>
+				<animation effect="slide" end="0,304" time="100" condition="Control.HasFocus(1005) | ControlGroup(2005).HasFocus">Conditional</animation>
+				<animation effect="slide" end="0,380" time="100" condition="Control.HasFocus(1006) | ControlGroup(2006).HasFocus">Conditional</animation>
+				<animation effect="slide" end="0,456" time="100" condition="Control.HasFocus(1007) | ControlGroup(2007).HasFocus">Conditional</animation>
+				<animation effect="slide" end="0,532" time="100" condition="Control.HasFocus(1008) | ControlGroup(2008).HasFocus">Conditional</animation>
+				<animation effect="fade" end="100" time="0" delay="100">Visible</animation>
 				<animation effect="fade" end="0" time="0">Hidden</animation>
 				<include>WindowOpenCloseFadeHome</include>
-				<visible>![Container(1000).HasFocus(5) + IsEmpty(Skin.String(CustomFavourite.1.Label))]</visible>
+				<visible>![Control.HasFocus(1005) + IsEmpty(Skin.String(CustomFavourite.1.Label))]</visible>
 			</control>
 		</control>
 	</include>
@@ -904,7 +904,7 @@
 			<posy>525</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>[[Container(1000).HasFocus(2) + !Control.HasFocus(206)] | Control.HasFocus(5001)] + !Player.HasMedia</visible>
+			<visible>[Control.HasFocus(1002) | ControlGroup(2002).HasFocus | Control.HasFocus(5001)] + !Control.HasFocus(2206) + !Player.HasMedia</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -920,8 +920,8 @@
 				<orientation>horizontal</orientation>
 				<scrolltime>250</scrolltime>
 				<preloaditems>2</preloaditems>
-				<onup>200</onup>
-				<ondown>200</ondown>
+				<onup>2002</onup>
+				<ondown>2002</ondown>
 				<onleft>5001</onleft>
 				<onright>5002</onright>
 				<itemlayout width="68" height="143">
@@ -1035,7 +1035,7 @@
 			<posy>525</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>[[Container(1000).HasFocus(2) + Control.HasFocus(206)] | Control.HasFocus(5002)] + !Player.HasMedia</visible>
+			<visible>[[ControlGroup(2002).HasFocus + Control.HasFocus(2206)] | Control.HasFocus(5002)] + !Player.HasMedia</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -1068,8 +1068,8 @@
 				<orientation>horizontal</orientation>
 				<scrolltime>250</scrolltime>
 				<preloaditems>2</preloaditems>
-				<onup>200</onup>
-				<ondown>200</ondown>
+				<onup>2002</onup>
+				<ondown>2002</ondown>
 				<onleft>5002</onleft>
 				<onright>5002</onright>
 				<itemlayout width="68" height="100">
@@ -1203,7 +1203,7 @@
 			<posy>525</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>Container(1000).HasFocus(3) + !Player.HasMedia</visible>
+			<visible>[Control.HasFocus(1003) | ControlGroup(2003).HasFocus | Control.HasFocus(5003)] + !Player.HasMedia</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -1236,8 +1236,8 @@
 				<orientation>horizontal</orientation>
 				<scrolltime>250</scrolltime>
 				<preloaditems>2</preloaditems>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
+				<onup>2003</onup>
+				<ondown>2003</ondown>
 				<onleft>5003</onleft>
 				<onright>5003</onright>
 				<itemlayout width="68" height="100">
@@ -1427,131 +1427,308 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>105</width>
+				<width>110</width>
 				<height>720</height>
 				<texture>home_icon_background.png</texture>
 			</control>
-			<control type="group">
-				<posx>20</posx>
-				<posy>42</posy>
-				<width>64</width>
-				<height>600</height>
-				<control type="list" id="1000">
+			<control type="image">
+				<posx>0</posx>
+				<posy>15</posy>
+				<width>100</width>
+				<height>5</height>
+				<texture>menu-bar.png</texture>
+			</control>
+			<control type="grouplist">
+				<posx>0</posx>
+				<posy>37</posy>
+				<width>100</width>
+				<height>720</height>
+				<orientation>vertical</orientation>
+				<itemgap>75</itemgap>
+				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>64</width>
-					<height>600</height>
-					<orientation>vertical</orientation>
-					<onup>1000</onup>
-					<ondown>1000</ondown>
+					<width>100</width>
+					<height>1</height>
+					<texture>menu-seperator.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>1</height>
+					<texture>menu-seperator.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>1</height>
+					<texture>menu-seperator.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>1</height>
+					<texture>menu-seperator.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>1</height>
+					<texture>menu-seperator.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>1</height>
+					<texture>menu-seperator.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>1</height>
+					<texture>menu-seperator.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>1</height>
+					<texture>menu-seperator.png</texture>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>1</height>
+					<texture>menu-seperator.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<posx>0</posx>
+				<posy>42</posy>
+				<width>64</width>
+				<height>602</height>
+				<control type="button" id="1001">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>70</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>home_search_FO.png</texturefocus>
+					<texturenofocus>home_search_NF.png</texturenofocus>
+					<onup>1008</onup>
+					<ondown>1002</ondown>
 					<onleft>5001</onleft>
-					<onright condition="Window.IsVisible(Home)">200</onright>
+					<onright condition="Window.IsVisible(Home)">2001</onright>
 					<onright condition="Window.IsVisible(FileManager)">20</onright>
 					<onright condition="Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)">50</onright>
 					<onright condition="![Window.IsVisible(Home) | Window.IsVisible(FileManager) | Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)]">3</onright>
-					<itemlayout width="64" height="72">
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>64</width>
-							<height>64</height>
-							<texture>$INFO[ListItem.Icon]</texture>
-							<animation effect="zoom" end="80" center="auto" condition="true">Conditional</animation>
-						</control>
-					</itemlayout>
-					<focusedlayout width="64" height="72">
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>64</width>
-							<height>64</height>
-							<texture>$INFO[ListItem.Icon]</texture>
-							<animation effect="zoom" start="80" end="100" time="200" center="auto">Focus</animation>
-							<animation effect="zoom" start="100" end="80" time="200" center="auto">UnFocus</animation>
-						</control>
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>64</width>
-							<height>64</height>
-							<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
-							<animation type="Focus">
-								<effect type="zoom" start="80" end="100" time="200" center="auto"/>
-								<effect type="fade" start="0" end="100" time="200"/>
-							</animation>
-							<animation type="UnFocus">
-								<effect type="zoom" start="100" end="80" time="200" center="auto"/>
-								<effect type="fade" start="100" end="0" time="200"/>
-							</animation>
-						</control>
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>64</width>
-							<height>64</height>
-							<texture>$INFO[ListItem.Property(Icon_Focus)]</texture>
-							<animation type="Hidden" condition="Window.IsVisible(Home)">
-								<effect type="zoom" start="80" end="100" time="200" center="auto"/>
-								<effect type="fade" start="70" end="100" time="200"/>
-							</animation>
-							<animation type="Visible" condition="Window.IsVisible(Home)">
-								<effect type="zoom" start="100" end="80" time="200" center="auto"/>
-								<effect type="fade" start="100" end="70" time="200"/>
-							</animation>
-							<visible>ControlGroup(200).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003)</visible>
-						</control>
-					</focusedlayout>
-					<content>
-						<item id="1">
-							<label>-</label>
-							<icon>home_search_NF.png</icon>
-							<property name="Icon_Focus">home_search_FO.png</property>
-							<onclick>SetProperty(globalsearch,all)</onclick>
-							<onclick>RunScript(script.globalsearch)</onclick>
-						</item>
-						<item id="2">
-							<label>-</label>
-							<icon>home_video_NF.png</icon>
-							<property name="Icon_Focus">home_video_FO.png</property>
-							<onclick>ReplaceWindow(Videos,MovieTitles,return)</onclick>
-						</item>
-						<item id="3">
-							<label>-</label>
-							<icon>home_music_NF.png</icon>
-							<property name="Icon_Focus">home_music_FO.png</property>
-							<onclick>ReplaceWindow(Music)</onclick>
-						</item>
-						<item id="4">
-							<label>-</label>
-							<icon>home_pictures_NF.png</icon>
-							<property name="Icon_Focus">home_pictures_FO.png</property>
-							<onclick>ReplaceWindow(Pictures)</onclick>
-						</item>
-						<item id="5">
-							<label>-</label>
-							<icon>home_favourites_NF.png</icon>
-							<property name="Icon_Focus">home_favourites_FO.png</property>
-							<onclick>ReplaceWindow(Favourites)</onclick>
-						</item>
-						<item id="6">
-							<label>-</label>
-							<icon>home_addons_NF.png</icon>
-							<property name="Icon_Focus">home_addons_FO.png</property>
-							<onclick>ReplaceWindow(Programs,Addons,return)</onclick>
-						</item>
-						<item id="7">
-							<label>-</label>
-							<icon>home_weather_NF.png</icon>
-							<property name="Icon_Focus">home_weather_FO.png</property>
-							<onclick>ReplaceWindow(Weather)</onclick>
-						</item>
-						<item id="8">
-							<label>-</label>
-							<icon>home_settings_NF.png</icon>
-							<property name="Icon_Focus">home_settings_FO.png</property>
-							<onclick>ReplaceWindow(AppearanceSettings)</onclick>
-						</item>
-					</content>
+					<onclick>RunScript(script.globalsearch)</onclick>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>70</height>
+					<texture>home_search_FO.png</texture>
+					<colordiffuse>80FFFFFF</colordiffuse>
+					<visible>ControlGroup(2001).HasFocus</visible>
+				</control>
+				<control type="button" id="1002">
+					<posx>0</posx>
+					<posy>76</posy>
+					<width>100</width>
+					<height>70</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>home_video_FO.png</texturefocus>
+					<texturenofocus>home_video_NF.png</texturenofocus>
+					<onup>1001</onup>
+					<ondown>1003</ondown>
+					<onleft>5001</onleft>
+					<onright condition="Window.IsVisible(Home)">2002</onright>
+					<onright condition="Window.IsVisible(FileManager)">20</onright>
+					<onright condition="Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)">50</onright>
+					<onright condition="![Window.IsVisible(Home) | Window.IsVisible(FileManager) | Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)]">3</onright>
+					<onclick>ReplaceWindow(Videos,MovieTitles,return)</onclick>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>76</posy>
+					<width>100</width>
+					<height>70</height>
+					<texture>home_video_FO.png</texture>
+					<colordiffuse>80FFFFFF</colordiffuse>
+					<visible>ControlGroup(2002).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002) | [!Control.HasFocus(1002) + [Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoPlaylist)]]</visible>
+				</control>
+				<control type="button" id="1003">
+					<posx>0</posx>
+					<posy>152</posy>
+					<width>100</width>
+					<height>70</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>home_music_FO.png</texturefocus>
+					<texturenofocus>home_music_NF.png</texturenofocus>
+					<onup>1002</onup>
+					<ondown>1004</ondown>
+					<onleft>5001</onleft>
+					<onright condition="Window.IsVisible(Home)">2003</onright>
+					<onright condition="Window.IsVisible(FileManager)">20</onright>
+					<onright condition="Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)">50</onright>
+					<onright condition="![Window.IsVisible(Home) | Window.IsVisible(FileManager) | Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)]">3</onright>
+					<onclick>ReplaceWindow(Music)</onclick>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>152</posy>
+					<width>100</width>
+					<height>70</height>
+					<texture>home_music_FO.png</texture>
+					<colordiffuse>80FFFFFF</colordiffuse>
+					<visible>ControlGroup(2003).HasFocus | Control.HasFocus(5003) | [!Control.HasFocus(1003) + [Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(MusicFiles)]]</visible>
+				</control>
+				<control type="button" id="1004">
+					<posx>0</posx>
+					<posy>228</posy>
+					<width>100</width>
+					<height>70</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>home_pictures_FO.png</texturefocus>
+					<texturenofocus>home_pictures_NF.png</texturenofocus>
+					<onup>1003</onup>
+					<ondown>1005</ondown>
+					<onleft>5001</onleft>
+					<onright condition="Window.IsVisible(Home)">2004</onright>
+					<onright condition="Window.IsVisible(FileManager)">20</onright>
+					<onright condition="Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)">50</onright>
+					<onright condition="![Window.IsVisible(Home) | Window.IsVisible(FileManager) | Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)]">3</onright>
+					<onclick>ReplaceWindow(Pictures)</onclick>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>228</posy>
+					<width>100</width>
+					<height>70</height>
+					<texture>home_pictures_FO.png</texture>
+					<colordiffuse>80FFFFFF</colordiffuse>
+					<visible>ControlGroup(2004).HasFocus | [!Control.HasFocus(1004) + Window.IsVisible(Pictures)]</visible>
+				</control>
+				<control type="button" id="1005">
+					<posx>0</posx>
+					<posy>304</posy>
+					<width>100</width>
+					<height>70</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>home_favourites_FO.png</texturefocus>
+					<texturenofocus>home_favourites_NF.png</texturenofocus>
+					<onup>1004</onup>
+					<ondown>1006</ondown>
+					<onleft>5001</onleft>
+					<onright condition="Window.IsVisible(Home)">2005</onright>
+					<onright condition="Window.IsVisible(FileManager)">20</onright>
+					<onright condition="Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)">50</onright>
+					<onright condition="![Window.IsVisible(Home) | Window.IsVisible(FileManager) | Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)]">3</onright>
+					<onclick>ReplaceWindow(Favourites)</onclick>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>304</posy>
+					<width>100</width>
+					<height>70</height>
+					<texture>home_favourites_FO.png</texture>
+					<colordiffuse>80FFFFFF</colordiffuse>
+					<visible>ControlGroup(2005).HasFocus</visible>
+				</control>
+				<control type="button" id="1006">
+					<posx>0</posx>
+					<posy>380</posy>
+					<width>100</width>
+					<height>70</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>home_addons_FO.png</texturefocus>
+					<texturenofocus>home_addons_NF.png</texturenofocus>
+					<onup>1005</onup>
+					<ondown>1007</ondown>
+					<onleft>5001</onleft>
+					<onright condition="Window.IsVisible(Home)">2006</onright>
+					<onright condition="Window.IsVisible(FileManager)">20</onright>
+					<onright condition="Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)">50</onright>
+					<onright condition="![Window.IsVisible(Home) | Window.IsVisible(FileManager) | Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)]">3</onright>
+					<onclick>ReplaceWindow(Programs,Addons,return)</onclick>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>380</posy>
+					<width>100</width>
+					<height>70</height>
+					<texture>home_addons_FO.png</texture>
+					<colordiffuse>80FFFFFF</colordiffuse>
+					<visible>ControlGroup(2006).HasFocus | [!Control.HasFocus(1006) + [Window.IsVisible(AddonBrowser) | Window.IsVisible(Programs)]]</visible>
+				</control>
+				<control type="button" id="1007">
+					<posx>0</posx>
+					<posy>456</posy>
+					<width>100</width>
+					<height>70</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>home_weather_FO.png</texturefocus>
+					<onup>1006</onup>
+					<ondown>1008</ondown>
+					<onleft>5001</onleft>
+					<onright condition="Window.IsVisible(Home)">2007</onright>
+					<onright condition="Window.IsVisible(FileManager)">20</onright>
+					<onright condition="Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)">50</onright>
+					<onright condition="![Window.IsVisible(Home) | Window.IsVisible(FileManager) | Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)]">3</onright>
+					<texturenofocus>home_weather_NF.png</texturenofocus>
+					<onclick>ReplaceWindow(Weather)</onclick>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>456</posy>
+					<width>100</width>
+					<height>70</height>
+					<texture>home_weather_FO.png</texture>
+					<colordiffuse>80FFFFFF</colordiffuse>
+					<visible>ControlGroup(2007).HasFocus | [!Control.HasFocus(1007) + Window.IsVisible(Weather)]</visible>
+				</control>
+				<control type="button" id="1008">
+					<posx>0</posx>
+					<posy>532</posy>
+					<width>100</width>
+					<height>70</height>
+					<label>-</label>
+					<font>-</font>
+					<texturefocus>home_settings_FO.png</texturefocus>
+					<texturenofocus>home_settings_NF.png</texturenofocus>
+					<onup>1007</onup>
+					<ondown>1001</ondown>
+					<onleft>5001</onleft>
+					<onright condition="Window.IsVisible(Home)">2008</onright>
+					<onright condition="Window.IsVisible(FileManager)">20</onright>
+					<onright condition="Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)">50</onright>
+					<onright condition="![Window.IsVisible(Home) | Window.IsVisible(FileManager) | Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)]">3</onright>
+					<onclick>ReplaceWindow(AppearanceSettings)</onclick>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>532</posy>
+					<width>100</width>
+					<height>70</height>
+					<texture>home_settings_FO.png</texture>
+					<colordiffuse>80FFFFFF</colordiffuse>
+					<visible>ControlGroup(2008).HasFocus | [!Control.HasFocus(1008) + [Window.IsVisible(1111) | Window.IsVisible(FileManager) | Window.IsVisible(SystemInfo) | Window.IsVisible(Profiles) | Window.IsVisible(PicturesSettings) | Window.IsVisible(WeatherSettings) | Window.IsVisible(MusicSettings) | Window.IsVisible(SystemSettings) | Window.IsVisible(VideosSettings) | Window.IsVisible(NetworkSettings) | Window.IsVisible(AppearanceSettings)]]</visible>
 				</control>
 			</control>
 		</control>
@@ -1576,7 +1753,7 @@
 				<texturenofocus>home_NF.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft>1006</onleft>
 				<onright>9000</onright>
 				<onclick>ActivateWindow(Home)</onclick>
 			</control>
@@ -1758,7 +1935,7 @@
 				<texturenofocus>options_NF.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft>1003</onleft>
 				<onright>9000</onright>
 				<onclick>Skin.ToggleSetting(MusicLibraryOptions)</onclick>
 			</control>
@@ -2013,7 +2190,7 @@
 				<texturenofocus>home_NF.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft>1003</onleft>
 				<onright>9000</onright>
 				<onclick>ActivateWindow(Home)</onclick>
 			</control>
@@ -2197,7 +2374,7 @@
 				<texturenofocus>home_NF.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft>1003</onleft>
 				<onright>9000</onright>
 				<onclick>ActivateWindow(Home)</onclick>
 			</control>
@@ -2374,7 +2551,7 @@
 				<texturenofocus>home_NF.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft>1003</onleft>
 				<onright>9000</onright>
 				<onclick>ActivateWindow(Home)</onclick>
 			</control>
@@ -2493,7 +2670,7 @@
 				<texturenofocus>options_NF.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft>1004</onleft>
 				<onright>9000</onright>
 				<onclick>Skin.ToggleSetting(PictureOptions)</onclick>
 			</control>
@@ -2745,7 +2922,7 @@
 				<texturenofocus>home_NF.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft>1006</onleft>
 				<onright>9000</onright>
 				<onclick>ActivateWindow(Home)</onclick>
 			</control>
@@ -2900,7 +3077,7 @@
 				<onup condition="Window.IsVisible(FileManager)">20</onup>
 				<ondown condition="!Window.IsVisible(FileManager)">3</ondown>
 				<ondown condition="Window.IsVisible(FileManager)">20</ondown>
-				<onleft>1000</onleft>
+				<onleft>1008</onleft>
 				<onright>9000</onright>
 				<onclick>ActivateWindow(Home)</onclick>
 			</control>
@@ -3136,7 +3313,7 @@
 				<texturenofocus>options_NF.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft>1002</onleft>
 				<onright>9000</onright>
 				<onclick>Skin.ToggleSetting(VideoOptions)</onclick>
 			</control>
@@ -3479,7 +3656,7 @@
 				<texturenofocus>home_NF.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft>1002</onleft>
 				<onright>9000</onright>
 				<onclick>ActivateWindow(Home)</onclick>
 			</control>
@@ -3656,7 +3833,7 @@
 				<texturenofocus>home_NF.png</texturenofocus>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>1000</onleft>
+				<onleft>1007</onleft>
 				<onright>9000</onright>
 				<onclick>ActivateWindow(Home)</onclick>
 			</control>
@@ -3758,7 +3935,7 @@
 			<posy>525</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>![Container(1000).HasFocus(2) | Container(1000).HasFocus(3)] + !Player.HasMedia</visible>
+			<visible>![Control.HasFocus(1002) | Control.HasFocus(1003) | ControlGroup(2002).HasFocus | ControlGroup(2003).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003)] + !Player.HasMedia</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>

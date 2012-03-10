@@ -29,8 +29,8 @@
 					<itemgap>-1</itemgap>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
-					<onleft>1000</onleft>
-					<onright>1000</onright>
+					<onleft>1008</onleft>
+					<onright>1008</onright>
 					<control type="button" id="95">
 						<posx>5</posx>
 						<posy>0</posy>

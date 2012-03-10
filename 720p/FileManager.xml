@@ -3,7 +3,6 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<include>BackgroundPanelSettings</include>
-		<include>SideMenu</include>
 		<include>TopMenuSettings</include>
 		<control type="group">
 			<control type="image">
@@ -41,7 +40,7 @@
 					<preloaditems>2</preloaditems>
 					<onup>9000</onup>
 					<ondown>20</ondown>
-					<onleft>1000</onleft>
+					<onleft>1008</onleft>
 					<onright>60</onright>
 					<itemlayout width="520" height="40">
 						<control type="image">
@@ -270,5 +269,6 @@
 				</control>
 			</control>
 		</control>
+		<include>SideMenu</include>
 	</controls>
 </window>
