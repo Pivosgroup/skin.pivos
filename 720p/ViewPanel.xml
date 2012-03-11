@@ -37,7 +37,7 @@
 				<posy>2</posy>
 				<width>1088</width>
 				<height>570</height>
-				<viewtype label="21371">icon</viewtype>
+				<viewtype label="31030">icon</viewtype>
 				<scrolltime>250</scrolltime>
 				<preloaditems>4</preloaditems>
 				<pagecontrol>60</pagecontrol>
@@ -88,16 +88,16 @@
 				</itemlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(1)">
 					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>136</width>
-						<height>190</height>
+						<posx>-14</posx>
+						<posy>-14</posy>
+						<width>164</width>
+						<height>218</height>
 						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
 						</animation>
 					</control>
 					<control type="image">
@@ -106,21 +106,26 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation effect="slide" start="0,0" end="24,38" time="0" condition="true">Conditional</animation>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(1)">
 					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>136</width>
-						<height>190</height>
+						<posx>0</posx>
+						<posy>-14</posy>
+						<width>164</width>
+						<height>218</height>
 						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
+						<animation effect="slide" start="0,0" end="-14,0" time="0" condition="true">Conditional</animation>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="8,0" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="23,0" time="300" tween="back" easing="out"/>
 						</animation>
 					</control>
 					<control type="image">
@@ -129,21 +134,27 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation effect="slide" start="0,0" end="24,38" time="0" condition="true">Conditional</animation>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="23,0" time="300" tween="back" easing="out"/>
+						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(0)">
 					<control type="image">
-						<posx>-4</posx>
+						<posx>-14</posx>
 						<posy>0</posy>
-						<width>136</width>
-						<height>190</height>
+						<width>164</width>
+						<height>218</height>
 						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
+						<animation effect="slide" start="0,0" end="0,-14" time="0" condition="true">Conditional</animation>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="0,13" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="0,32" time="300" tween="back" easing="out"/>
 						</animation>
 					</control>
 					<control type="image">
@@ -152,21 +163,27 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation effect="slide" start="0,0" end="24,38" time="0" condition="true">Conditional</animation>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="0,32" time="300" tween="back" easing="out"/>
+						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(1)">
 					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>136</width>
-						<height>190</height>
+						<posx>-28</posx>
+						<posy>-14</posy>
+						<width>164</width>
+						<height>218</height>
 						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
+						<animation effect="slide" start="0,0" end="14,0" time="0" condition="true">Conditional</animation>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-2,0" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-23,0" time="300" tween="back" easing="out"/>
 						</animation>
 					</control>
 					<control type="image">
@@ -175,21 +192,27 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation effect="slide" start="0,0" end="24,38" time="0" condition="true">Conditional</animation>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-23,0" time="300" tween="back" easing="out"/>
+						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(2)">
 					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>136</width>
-						<height>190</height>
+						<posx>-14</posx>
+						<posy>-28</posy>
+						<width>164</width>
+						<height>218</height>
 						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
+						<animation effect="slide" start="0,0" end="0,14" time="0" condition="true">Conditional</animation>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="0,-13" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="0,-32" time="300" tween="back" easing="out"/>
 						</animation>
 					</control>
 					<control type="image">
@@ -198,21 +221,27 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation effect="slide" start="0,0" end="24,38" time="0" condition="true">Conditional</animation>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="0,-32" time="300" tween="back" easing="out"/>
+						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(0)">
 					<control type="image">
-						<posx>-4</posx>
+						<posx>0</posx>
 						<posy>0</posy>
-						<width>136</width>
-						<height>190</height>
+						<width>164</width>
+						<height>218</height>
 						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
+						<animation effect="slide" start="0,0" end="-14,-14" time="0" condition="true">Conditional</animation>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="8,13" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="23,32" time="300" tween="back" easing="out"/>
 						</animation>
 					</control>
 					<control type="image">
@@ -221,21 +250,27 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation effect="slide" start="0,0" end="24,38" time="0" condition="true">Conditional</animation>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="23,32" time="300" tween="back" easing="out"/>
+						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(0)">
 					<control type="image">
-						<posx>-4</posx>
+						<posx>-28</posx>
 						<posy>0</posy>
-						<width>136</width>
-						<height>190</height>
+						<width>164</width>
+						<height>218</height>
 						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
+						<animation effect="slide" start="0,0" end="14,-14" time="0" condition="true">Conditional</animation>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-2,13" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-23,32" time="300" tween="back" easing="out"/>
 						</animation>
 					</control>
 					<control type="image">
@@ -244,21 +279,27 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation effect="slide" start="0,0" end="24,38" time="0" condition="true">Conditional</animation>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-23,32" time="300" tween="back" easing="out"/>
+						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(2)">
 					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>136</width>
-						<height>190</height>
+						<posx>-28</posx>
+						<posy>-28</posy>
+						<width>164</width>
+						<height>218</height>
 						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
+						<animation effect="slide" start="0,0" end="14,14" time="0" condition="true">Conditional</animation>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="-2,-13" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-23,-32" time="300" tween="back" easing="out"/>
 						</animation>
 					</control>
 					<control type="image">
@@ -267,21 +308,27 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation effect="slide" start="0,0" end="24,38" time="0" condition="true">Conditional</animation>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="-23,-32" time="300" tween="back" easing="out"/>
+						</animation>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(2)">
 					<control type="image">
-						<posx>-4</posx>
-						<posy>0</posy>
-						<width>136</width>
-						<height>190</height>
+						<posx>0</posx>
+						<posy>-28</posy>
+						<width>164</width>
+						<height>218</height>
 						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
+						<animation effect="slide" start="0,0" end="-14,14" time="0" condition="true">Conditional</animation>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="116" end="140" center="auto" time="300" tween="back" easing="out"/>
-							<effect type="slide" start="0,0" end="8,-13" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="23,-32" time="300" tween="back" easing="out"/>
 						</animation>
 					</control>
 					<control type="image">
@@ -290,6 +337,11 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation effect="slide" start="0,0" end="24,38" time="0" condition="true">Conditional</animation>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="150" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="slide" start="0,0" end="23,-32" time="300" tween="back" easing="out"/>
+						</animation>
 					</control>
 				</focusedlayout>
 				<itemlayout width="544" height="114" condition="Container.Content(TVShows) + !Skin.HasSetting(PreferPosters)">
@@ -771,7 +823,7 @@
 				<posy>12</posy>
 				<width>1116</width>
 				<height>546</height>
-				<viewtype label="21371">icon</viewtype>
+				<viewtype label="31030">icon</viewtype>
 				<scrolltime>250</scrolltime>
 				<preloaditems>4</preloaditems>
 				<pagecontrol>60</pagecontrol>
@@ -1050,7 +1102,7 @@
 				<posy>12</posy>
 				<width>1116</width>
 				<height>546</height>
-				<viewtype label="21371">icon</viewtype>
+				<viewtype label="31030">icon</viewtype>
 				<scrolltime>250</scrolltime>
 				<preloaditems>4</preloaditems>
 				<pagecontrol>60</pagecontrol>
@@ -1276,7 +1328,7 @@
 				<posy>12</posy>
 				<width>1116</width>
 				<height>546</height>
-				<viewtype label="21371">icon</viewtype>
+				<viewtype label="31030">icon</viewtype>
 				<scrolltime>250</scrolltime>
 				<preloaditems>4</preloaditems>
 				<pagecontrol>60</pagecontrol>
