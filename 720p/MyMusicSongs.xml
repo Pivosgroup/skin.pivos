@@ -1,6 +1,6 @@
 <window id="501">
 	<defaultcontrol always="true">50</defaultcontrol>
-	<views>50,51,52,53</views>
+	<views>50,51,52,53,54</views>
 	<controls>
 		<include>DefaultBackground</include>
 		<include>BackgroundPanel</include>
@@ -9,6 +9,7 @@
 		<include>ViewList</include>
 		<include>ViewInfo</include>
 		<include>ViewPanelMusic</include>
+		<include>ViewCoverFlow</include>
 		<include>ScrollLabel</include>
 		<include>SideMenu</include>
 	</controls>

@@ -1,0 +1,588 @@
+<includes>
+	<include name="ViewCoverFlow">
+		<control type="group">
+			<posx>105</posx>
+			<posy>0</posy>
+			<include>ViewFade</include>
+			<include>WindowOpenCloseFade</include>
+			<visible>Control.IsVisible(54)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>51</posy>
+				<width>1160</width>
+				<height>47</height>
+				<texture border="2">label-back.png</texture>
+			</control>
+			<control type="label">
+				<posx>180</posx>
+				<posy>53</posy>
+				<width>800</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Title][/B]</label>
+				<font>font30</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+			</control>
+			<control type="label">
+				<posx>180</posx>
+				<posy>53</posy>
+				<width>800</width>
+				<height>30</height>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<font>font30</font>
+				<textcolor>normal</textcolor>
+				<align>center</align>
+				<visible>IsEmpty(ListItem.Title)</visible>
+			</control>
+			<control type="image">
+				<posx>-5</posx>
+				<posy>580</posy>
+				<width>1180</width>
+				<height>180</height>
+				<texture>floor.png</texture>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>90</posx>
+				<posy>698</posy>
+				<width>1000</width>
+				<height>20</height>
+				<texturesliderbackground border="10,0,10,0">scrollbar_back.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onup>54</onup>
+				<ondown>54</ondown>
+				<showonepage>false</showonepage>
+				<orientation>horizontal</orientation>
+				<include>VisibleFade</include>
+				<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<posx>130</posx>
+			<posy>380</posy>
+			<include>ViewFade</include>
+			<include>WindowOpenCloseFade</include>
+			<control type="group" id="5401">
+				<visible>Control.IsVisible(54) + Container.OnNext</visible>
+				<animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
+				<control type="group">
+					<posx>0</posx>
+					<visible>Container.OnNext</visible>
+					<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+					<animation effect="rotatey" center="0" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(-4).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>100</posx>
+					<animation effect="rotatey" center="100" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>200</posx>
+					<animation effect="rotatey" center="200" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>900</posx>
+					<visible>!Container.OnNext</visible>
+					<animation effect="fade" start="0" end="100" delay="0" time="250" reversible="false">Visible</animation>
+					<animation effect="rotatey" center="1218" start="74" end="74" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>800</posx>
+					<animation effect="rotatey" center="1118" start="74" end="74" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>700</posx>
+					<animation effect="rotatey" center="1018" start="74" end="74" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>Container.OnNext</visible>
+					<animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
+					<control type="group">
+						<posx>600</posx>
+						<visible>Container.OnNext</visible>
+						<animation effect="rotatey" center="918" start="0" end="-74" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
+						<animation effect="rotatey" center="918" start="74" end="74" time="0" condition="true">Conditional</animation>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>318</width>
+							<height>318</height>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+							<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>318</posy>
+							<width>318</width>
+							<height>318</height>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+							<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						</control>
+					</control>
+					<control type="group">
+						<posx>400</posx>
+						<visible>Container.OnNext</visible>
+						<animation effect="rotatey" center="400" start="0" end="-65" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>318</width>
+							<height>318</height>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+							<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>318</posy>
+							<width>318</width>
+							<height>318</height>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+							<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+						</control>
+					</control>
+				</control>
+			</control>
+			<control type="group" id="5402">
+				<visible>Control.IsVisible(54) + Container.OnPrevious</visible>
+				<animation effect="slide" end="100,0" time="250" reversible="false">Hidden</animation>
+				<control type="group">
+					<posx>-100</posx>
+					<visible>!Container.OnPrevious</visible>
+					<animation effect="fade" start="0" end="100" time="250" reversible="false">Visible</animation>
+					<animation effect="rotatey" center="-100" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>0</posx>
+					<animation effect="rotatey" center="0" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>100</posx>
+					<animation effect="rotatey" center="100" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>800</posx>
+					<visible>Container.OnPrevious</visible>
+					<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+					<animation effect="rotatey" center="1118" start="74" end="74" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(4).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(4).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>700</posx>
+					<animation effect="rotatey" center="1018" start="74" end="74" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>600</posx>
+					<animation effect="rotatey" center="918" start="74" end="74" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>Container.OnPrevious</visible>
+					<animation effect="slide" end="100,0" time="250" reversible="false">Hidden</animation>
+					<control type="group">
+						<posx>200</posx>
+						<visible>Container.OnPrevious</visible>
+						<animation effect="rotatey" center="200" start="0" end="65" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
+						<animation effect="rotatey" center="200" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>318</width>
+							<height>318</height>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+							<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>318</posy>
+							<width>318</width>
+							<height>318</height>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+							<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+						</control>
+					</control>
+					<control type="group">
+						<posx>400</posx>
+						<visible>Container.OnPrevious</visible>
+						<animation effect="rotatey" center="718" start="0" end="74" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>318</width>
+							<height>318</height>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+							<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(1).Icon]</texture>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>318</posy>
+							<width>318</width>
+							<height>318</height>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+							<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+						</control>
+					</control>
+				</control>
+			</control>
+			<control type="group" id="5400">
+				<visible>Control.IsVisible(54) + !Control.IsVisible(5401) + !Control.IsVisible(5402)</visible>
+				<control type="group">
+					<posx>0</posx>
+					<animation effect="rotatey" center="0" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(-3).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>100</posx>
+					<animation effect="rotatey" center="100" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(-2).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>200</posx>
+					<animation effect="rotatey" center="200,0" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(-1).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>800</posx>
+					<animation effect="rotatey" center="1118" start="74" end="74" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(3).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>700</posx>
+					<animation effect="rotatey" center="1018" start="74" end="74" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(2).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>600</posx>
+					<animation effect="rotatey" center="918,0" start="74" end="74" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(1).Icon]</texture>
+					</control>
+				</control>
+				<control type="group">
+					<posx>400</posx>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture diffuse="thumb-diffuse-angle.png" background="true">$INFO[ListItem(0).Icon]</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>318</posy>
+						<width>318</width>
+						<height>318</height>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="thumb-diffuse-reverse.png" background="true">$INFO[ListItem(0).Icon]</texture>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control type="wraplist" id="54">
+			<posx>-424</posx>
+			<posy>345</posy>
+			<width>2226</width>
+			<height>318</height>
+			<viewtype label="31031">icon</viewtype>
+			<preloaditems>2</preloaditems>
+			<orientation>horizontal</orientation>
+			<pagecontrol>60</pagecontrol>
+			<hitrect x="490" y="370" w="318" h="318"/>
+			<focusposition>3</focusposition>
+			<onup>9000</onup>
+			<ondown>60</ondown>
+			<onleft>54</onleft>
+			<onright>54</onright>
+			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(AddonBrowser)</visible>
+			<itemlayout width="318" height="318"/>
+			<focusedlayout width="318" height="318">
+				<control type="image">
+					<posx>34</posx>
+					<posy>28</posy>
+					<width>318</width>
+					<height>318</height>
+					<texture></texture>
+				</control>
+			</focusedlayout>
+		</control>
+	</include>
+</includes>

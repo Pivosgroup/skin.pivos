@@ -7,6 +7,7 @@
 	<include file="ViewInfo.xml"/>
 	<include file="ViewList.xml"/>
 	<include file="ViewPanel.xml"/>
+	<include file="ViewCoverflow.xml"/>
 	<constant name="CrossFade">250</constant>
 	<include name="BackgroundPanel">
 		<control type="image">
@@ -17,7 +18,7 @@
 			<texture border="13">background-dark.png</texture>
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>![Control.IsVisible(52) | Control.IsVisible(53)]</visible>
+			<visible>![Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54)]</visible>
 		</control>
 		<control type="image">
 			<posx>100</posx>
@@ -28,7 +29,7 @@
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
 			<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
-			<visible>Control.IsVisible(52)</visible>
+			<visible>Control.IsVisible(52) | Control.IsVisible(54)</visible>
 		</control>
 		<control type="image">
 			<posx>100</posx>
@@ -1788,7 +1789,7 @@
 					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -1801,7 +1802,7 @@
 					<height>31</height>
 					<label>$LOCALIZE[103]</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -1815,7 +1816,7 @@
 					<label>$LOCALIZE[31002]</label>
 					<altlabel>$LOCALIZE[31003]</altlabel>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -1830,7 +1831,6 @@
 					<height>31</height>
 					<label>$LOCALIZE[24063]</label>
 					<font>font16m</font>
-					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
@@ -1849,7 +1849,6 @@
 					<height>31</height>
 					<label>$LOCALIZE[25000]</label>
 					<font>font16m</font>
-					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
@@ -1860,6 +1859,7 @@
 					<radioposx>10</radioposx>
 					<radiowidth>16</radiowidth>
 					<radioheight>16</radioheight>
+
 				</control>
 			</control>
 		</control>
@@ -2116,7 +2116,7 @@
 					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -2129,7 +2129,7 @@
 					<height>31</height>
 					<label>$LOCALIZE[190]</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -2142,7 +2142,7 @@
 					<height>31</height>
 					<label>$LOCALIZE[192]</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -2156,7 +2156,7 @@
 					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -2207,7 +2207,7 @@
 					<height>31</height>
 					<label>$LOCALIZE[502]</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -2220,7 +2220,7 @@
 					<height>31</height>
 					<label>$LOCALIZE[190]</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -2233,7 +2233,7 @@
 					<height>31</height>
 					<label>$LOCALIZE[192]</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -2770,7 +2770,7 @@
 					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -2783,7 +2783,7 @@
 					<height>31</height>
 					<label>$LOCALIZE[190]</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -2796,7 +2796,7 @@
 					<height>31</height>
 					<label>$LOCALIZE[192]</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
@@ -2810,7 +2810,7 @@
 					<height>31</height>
 					<label>-</label>
 					<font>font16m</font>
-					<align>left</align>
+					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
