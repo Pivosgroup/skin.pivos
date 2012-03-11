@@ -1,12 +1,13 @@
 <window id="501">
 	<defaultcontrol always="true">50</defaultcontrol>
-	<views>50,51,52</views>
+	<views>50,51,52,53</views>
 	<controls>
 		<include>DefaultBackground</include>
 		<include>BackgroundPanel</include>
 		<include>TopMenuMusicFiles</include>
 		<include>ViewFanart</include>
 		<include>ViewList</include>
+		<include>ViewInfo</include>
 		<include>ViewPanelMusic</include>
 		<include>ScrollLabel</include>
 		<include>SideMenu</include>

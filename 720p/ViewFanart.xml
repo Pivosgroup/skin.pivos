@@ -223,7 +223,7 @@
 						<texture background="true" diffuse="video-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="21">video-shadow.png</bordertexture>						
 						<bordersize>20</bordersize>
-						<aspectratio scalediffuse="false" aligny="bottom">scale</aspectratio>
+						<aspectratio scalediffuse="false">scale</aspectratio>
 					</control>
 					<control type="image">
 						<posx>12</posx>
@@ -232,7 +232,7 @@
 						<height>136</height>
 						<texture background="true" diffuse="video-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
 						<bordersize>20</bordersize>
-						<aspectratio scalediffuse="false" aligny="bottom">scale</aspectratio>
+						<aspectratio scalediffuse="false">scale</aspectratio>
 					</control>
 				</itemlayout>
 				<focusedlayout width="235" height="360" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
@@ -244,7 +244,7 @@
 						<texture background="true" diffuse="video-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="21">video-shadow.png</bordertexture>						
 						<bordersize>20</bordersize>
-						<aspectratio scalediffuse="false" aligny="bottom">scale</aspectratio>
+						<aspectratio scalediffuse="false">scale</aspectratio>
 						<animation effect="zoom" start="12,134,211,136" end="-53,72,341,209" time="250">Focus</animation>
 						<animation effect="zoom" start="-53,72,341,209" end="12,134,211,136" time="250">UnFocus</animation>
 					</control>
@@ -255,7 +255,7 @@
 						<height>136</height>
 						<texture background="true" diffuse="video-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
 						<bordersize>20</bordersize>
-						<aspectratio scalediffuse="false" aligny="bottom">scale</aspectratio>
+						<aspectratio scalediffuse="false">scale</aspectratio>
 						<animation effect="zoom" start="12,230,211,136" end="-53,219,341,209" time="250">Focus</animation>
 						<animation effect="zoom" start="-53,219,341,209" end="12,230,211,136" time="250">UnFocus</animation>
 					</control>
@@ -407,7 +407,7 @@
 						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="21">thumb-shadow.png</bordertexture>						
 						<bordersize>20</bordersize>
-						<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
+						<aspectratio scalediffuse="true">keep</aspectratio>
 					</control>
 					<control type="image">
 						<posx>12</posx>
@@ -416,7 +416,7 @@
 						<height>211</height>
 						<texture background="true" diffuse="thumb-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
 						<bordersize>20</bordersize>
-						<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
+						<aspectratio scalediffuse="true">keep</aspectratio>
 					</control>
 				</itemlayout>
 				<focusedlayout width="235" height="360" condition="Window.IsVisible(Pictures)">
@@ -428,7 +428,7 @@
 						<texture background="true" diffuse="thumb-diffuse.png" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="21">thumb-shadow.png</bordertexture>						
 						<bordersize>20</bordersize>
-						<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
+						<aspectratio scalediffuse="true">keep</aspectratio>
 						<animation effect="zoom" start="12,59,211,211" end="-33,-21,301,301" time="250">Focus</animation>
 						<animation effect="zoom" start="-33,-21,301,301" end="12,59,211,211" time="250">UnFocus</animation>
 					</control>
@@ -439,7 +439,7 @@
 						<height>211</height>
 						<texture background="true" diffuse="thumb-diffuse-reverse.png" fallback="DefaultAddon.png" flipy="true">$INFO[ListItem.Icon]</texture>
 						<bordersize>20</bordersize>
-						<aspectratio scalediffuse="true" aligny="bottom">keep</aspectratio>
+						<aspectratio scalediffuse="true">keep</aspectratio>
 						<animation effect="zoom" start="12,230,211,211" end="-33,222,301,301" time="250">Focus</animation>
 						<animation effect="zoom" start="-33,222,301,301" end="12,230,211,211" time="250">UnFocus</animation>
 					</control>

@@ -32,6 +32,21 @@
 				<textcolor>normal</textcolor>
 				<align>center</align>
 			</control>
+			<control type="scrollbar" id="60">
+				<posx>1100</posx>
+				<posy>2</posy>
+				<width>20</width>
+				<height>570</height>
+				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
+				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
+				<onleft>51</onleft>
+				<onright>51</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			</control>
 			<control type="panel" id="51">
 				<posx>2</posx>
 				<posy>2</posy>
@@ -69,7 +84,7 @@
 						</animation>
 					</control>
 				</focusedlayout>
-				<itemlayout width="136" height="190" condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)">
+				<itemlayout width="136" height="190" condition="Container.Content(Movies)">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -86,7 +101,7 @@
 						<texture>$INFO[ListItem.Overlay]</texture>
 					</control>
 				</itemlayout>
-				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(1)">
+				<focusedlayout width="136" height="190" condition="Container.Content(Movies) + ![Container.Column(0) | Container.Column(7)] + Container.Row(1)">
 					<control type="image">
 						<posx>-14</posx>
 						<posy>-14</posy>
@@ -112,7 +127,7 @@
 						</animation>
 					</control>
 				</focusedlayout>
-				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(1)">
+				<focusedlayout width="136" height="190" condition="Container.Content(Movies) + Container.Column(0) + Container.Row(1)">
 					<control type="image">
 						<posx>0</posx>
 						<posy>-14</posy>
@@ -141,7 +156,7 @@
 						</animation>
 					</control>
 				</focusedlayout>
-				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(0)">
+				<focusedlayout width="136" height="190" condition="Container.Content(Movies) + ![Container.Column(0) | Container.Column(7)] + Container.Row(0)">
 					<control type="image">
 						<posx>-14</posx>
 						<posy>0</posy>
@@ -170,7 +185,7 @@
 						</animation>
 					</control>
 				</focusedlayout>
-				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(1)">
+				<focusedlayout width="136" height="190" condition="Container.Content(Movies) + Container.Column(7) + Container.Row(1)">
 					<control type="image">
 						<posx>-28</posx>
 						<posy>-14</posy>
@@ -199,7 +214,7 @@
 						</animation>
 					</control>
 				</focusedlayout>
-				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + ![Container.Column(0) | Container.Column(7)] + Container.Row(2)">
+				<focusedlayout width="136" height="190" condition="Container.Content(Movies) + ![Container.Column(0) | Container.Column(7)] + Container.Row(2)">
 					<control type="image">
 						<posx>-14</posx>
 						<posy>-28</posy>
@@ -228,7 +243,7 @@
 						</animation>
 					</control>
 				</focusedlayout>
-				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(0)">
+				<focusedlayout width="136" height="190" condition="Container.Content(Movies) + Container.Column(0) + Container.Row(0)">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -257,7 +272,7 @@
 						</animation>
 					</control>
 				</focusedlayout>
-				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(0)">
+				<focusedlayout width="136" height="190" condition="Container.Content(Movies) + Container.Column(7) + Container.Row(0)">
 					<control type="image">
 						<posx>-28</posx>
 						<posy>0</posy>
@@ -286,7 +301,7 @@
 						</animation>
 					</control>
 				</focusedlayout>
-				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(7) + Container.Row(2)">
+				<focusedlayout width="136" height="190" condition="Container.Content(Movies) + Container.Column(7) + Container.Row(2)">
 					<control type="image">
 						<posx>-28</posx>
 						<posy>-28</posy>
@@ -315,7 +330,7 @@
 						</animation>
 					</control>
 				</focusedlayout>
-				<focusedlayout width="136" height="190" condition="[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)] + Container.Column(0) + Container.Row(2)">
+				<focusedlayout width="136" height="190" condition="Container.Content(Movies) + Container.Column(0) + Container.Row(2)">
 					<control type="image">
 						<posx>0</posx>
 						<posy>-28</posy>
@@ -353,6 +368,13 @@
 						<texture background="true" diffuse="banner-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
+					<control type="image">
+						<posx>500</posx>
+						<posy>70</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+					</control>
 				</itemlayout>
 				<focusedlayout width="544" height="114" condition="Container.Content(TVShows) + !Skin.HasSetting(PreferPosters)">
 					<control type="image">
@@ -364,9 +386,55 @@
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="103" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="105" center="auto" time="300" tween="back" easing="out"/>
 						</animation>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+					<control type="image">
+						<posx>500</posx>
+						<posy>70</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+					</control>
+				</focusedlayout>
+				<itemlayout width="136" height="190" condition="[Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)">
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>126</width>
+						<height>180</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout width="136" height="190" condition="[Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)">
+					<control type="image">
+						<posx>-9</posx>
+						<posy>-9</posy>
+						<width>154</width>
+						<height>208</height>
+						<texture background="true" diffuse="poster-diffuse.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="18">thumb-glow.png</bordertexture>
+						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="116" center="auto" time="300" tween="back" easing="out"/>
+						</animation>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+					<control type="image">
+						<posx>100</posx>
+						<posy>150</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
 					</control>
 				</focusedlayout>
 				<itemlayout width="272" height="190" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
@@ -377,6 +445,13 @@
 						<height>170</height>
 						<texture background="true" diffuse="video-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+					<control type="image">
+						<posx>230</posx>
+						<posy>140</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout width="272" height="190" condition="Container.Content(Episodes) | Container.Content(MusicVideos)">
@@ -389,9 +464,16 @@
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="103" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="109" center="auto" time="300" tween="back" easing="out"/>
 						</animation>
 						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+					<control type="image">
+						<posx>230</posx>
+						<posy>140</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
 					</control>
 				</focusedlayout>
 				<itemlayout width="180" height="190" condition="Window.IsVisible(VideoPlaylist)">
@@ -414,26 +496,11 @@
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" start="100" end="110" center="auto" time="300" tween="back" easing="out"/>
+							<effect type="zoom" start="100" end="125" center="auto" time="300" tween="back" easing="out"/>
 						<aspectratio scalediffuse="true">keep</aspectratio>
 						</animation>
 					</control>
 				</focusedlayout>
-			</control>
-			<control type="scrollbar" id="60">
-				<posx>1100</posx>
-				<posy>2</posy>
-				<width>20</width>
-				<height>570</height>
-				<texturesliderbackground border="0,10,0,10">scrollbar_back2.png</texturesliderbackground>
-				<texturesliderbar>-</texturesliderbar>
-				<texturesliderbarfocus>-</texturesliderbarfocus>
-				<textureslidernib>scrollbar_nib_NF.png</textureslidernib>
-				<textureslidernibfocus>scrollbar_nib_FO.png</textureslidernibfocus>
-				<onleft>51</onleft>
-				<onright>51</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
 			</control>
 		</control>
 		<control type="group">

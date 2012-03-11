@@ -303,13 +303,13 @@
 		<value condition="Window.IsVisible(VideoPlaylist)">$LOCALIZE[2050]</value>
 	</variable>
 	<variable name="PanelVideosData4">
-		<value condition="Container.Content(Movies) + !SubString(ListItem.Duration,min)">$INFO[ListItem.Duration] $LOCALIZE[12391]</value>
+		<value condition="Container.Content(Movies) + !SubString(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="Container.Content(Movies) + SubString(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
 		<value condition="Container.Content(TVShows)">$INFO[ListItem.Premiered]</value>
 		<value condition="Container.Content(Seasons)">$INFO[ListItem.Mpaa]</value>
-		<value condition="Container.Content(Episodes)">$INFO[ListItem.Duration] $LOCALIZE[12391]</value>
+		<value condition="Container.Content(Episodes)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Studio]</value>
-		<value condition="Window.IsVisible(VideoPlaylist) + !SubString(ListItem.Duration,min)">$INFO[ListItem.Duration] $LOCALIZE[12391]</value>
+		<value condition="Window.IsVisible(VideoPlaylist) + !SubString(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="Window.IsVisible(VideoPlaylist) + SubString(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
 	</variable>
 	<variable name="PanelVideosData5">
@@ -419,7 +419,7 @@
 	</variable>
 	<variable name="VideoInfoData7">
 		<value condition="[Container.Content(Movies) + !SubString(ListItem.Duration,min)] | Container.Content(Episodes) | Container.Content(MusicVideos)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
-		<value condition="Container.Content(Movies) + !SubString(ListItem.Duration)">$INFO[ListItem.Duration]</value>
+		<value condition="Container.Content(Movies) + SubString(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
 		<value condition="Container.Content(TvShows)">$INFO[ListItem.Premiered]</value>
 	</variable>
 	<variable name="VideoInfoLabel8">

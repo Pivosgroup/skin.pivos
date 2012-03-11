@@ -15,6 +15,7 @@
 			<onleft condition="Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoPlaylist)">1002</onleft>
 			<onleft condition="Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist)">10032</onleft>
 			<onright>53</onright>
+			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(MusicVideos) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
 			<itemlayout width="200" height="375"/>
 			<focusedlayout width="200" height="375">
 				<control type="image">
@@ -43,7 +44,7 @@
 			<height>624</height>
 			<include>ViewFade</include>
 			<include>WindowOpenCloseZoomInOut</include>
-			<visible>Control.IsVisible(53) + Container.Content(Movies)</visible>
+			<visible>Control.IsVisible(53)</visible>
 			<control type="image">
 				<posx>850</posx>
 				<posy>75</posy>
@@ -51,7 +52,7 @@
 				<height>315</height>
 				<texture border="6">button_alt_NF.png</texture>
 				<colordiffuse>60000000</colordiffuse>
-				<visible>![IsEmpty(ListItem.Plot) + IsEmpty(ListItem.PlotOutline) + IsEmpty(ListItem.TagLine)]</visible>
+				<visible>[Container.Content(Movies) + ![IsEmpty(ListItem.Plot) + IsEmpty(ListItem.PlotOutline) + IsEmpty(ListItem.TagLine)]] | [[Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Plot)] | [Container.Content(Seasons) + !IsEmpty(Container.ShowPlot)] | [Container.Content(Artists) + !IsEmpty(ListItem.Property(Artist_Description))] | [Container.Content(Albums) + !IsEmpty(ListItem.Property(Album_Description))]</visible>
 			</control>
 			<control type="textbox">
 				<posx>860</posx>
@@ -62,6 +63,7 @@
 				<font>font18</font>
 				<shadowcolor>black</shadowcolor>
 				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="textbox">
 				<posx>860</posx>
@@ -72,7 +74,7 @@
 				<font>font18</font>
 				<shadowcolor>black</shadowcolor>
 				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
-				<visible>IsEmpty(ListItem.Plot)</visible>
+				<visible>Container.Content(Movies) + IsEmpty(ListItem.Plot)</visible>
 			</control>
 			<control type="textbox">
 				<posx>860</posx>
@@ -83,30 +85,172 @@
 				<font>font18</font>
 				<shadowcolor>black</shadowcolor>
 				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
-				<visible>IsEmpty(ListItem.Plot) + IsEmpty(ListItem.PlotOutline)</visible>
+				<visible>Container.Content(Movies) + IsEmpty(ListItem.Plot) + IsEmpty(ListItem.PlotOutline)</visible>
 			</control>
-			<control type="image">
-				<posx>20</posx>
-				<posy>370</posy>
-				<width>250</width>
-				<height>375</height>
-				<texture background="true" diffuse="poster-diffuse-angle.png">$INFO[ListItem.Icon]</texture>
-				<bordertexture border="21">poster-shadow.png</bordertexture>						
-				<bordersize>20</bordersize>
-				<aspectratio scalediffuse="false">scale</aspectratio>
-				<fadetime>CrossFade</fadetime>
-				<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+			<control type="textbox">
+				<posx>860</posx>
+				<posy>80</posy>
+				<width>290</width>
+				<height>300</height>
+				<label>$INFO[Container.ShowPlot]</label>
+				<font>font18</font>
+				<shadowcolor>black</shadowcolor>
+				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+				<visible>Container.Content(Seasons)</visible>
 			</control>
-			<control type="image">
-				<posx>20</posx>
-				<posy>705</posy>
-				<width>250</width>
-				<height>375</height>
-				<texture background="true" diffuse="poster-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
-				<bordersize>20</bordersize>
-				<aspectratio scalediffuse="false">scale</aspectratio>
-				<fadetime>CrossFade</fadetime>
-				<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+			<control type="textbox">
+				<posx>860</posx>
+				<posy>80</posy>
+				<width>290</width>
+				<height>300</height>
+				<label>$INFO[ListItem.Property(Artist_Description)]</label>
+				<font>font18</font>
+				<shadowcolor>black</shadowcolor>
+				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+				<visible>Container.Content(Artists)</visible>
+			</control>
+			<control type="textbox">
+				<posx>860</posx>
+				<posy>80</posy>
+				<width>290</width>
+				<height>300</height>
+				<label>$INFO[ListItem.Property(Album_Description)]</label>
+				<font>font18</font>
+				<shadowcolor>black</shadowcolor>
+				<autoscroll time="3000" delay="20000" repeat="5000">!Skin.HasSetting(NoScrollDescription)</autoscroll>
+				<visible>Container.Content(Albums)</visible>
+			</control>
+			<control type="group">
+				<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(PreferPosters)] | Container.Content(Seasons)</visible>
+				<control type="image">
+					<posx>20</posx>
+					<posy>370</posy>
+					<width>250</width>
+					<height>375</height>
+					<texture border="21">poster-shadow.png</texture>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>20</posx>
+					<posy>370</posy>
+					<width>250</width>
+					<height>375</height>
+					<texture background="true" diffuse="poster-diffuse-angle.png">$INFO[ListItem.Icon]</texture>	
+					<bordersize>20</bordersize>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>CrossFade</fadetime>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>20</posx>
+					<posy>705</posy>
+					<width>250</width>
+					<height>375</height>
+					<texture background="true" diffuse="poster-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
+					<bordersize>20</bordersize>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>CrossFade</fadetime>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.Content(TVShows) + !Skin.HasSetting(PreferPosters)</visible>
+				<control type="image">
+					<posx>0</posx>
+					<posy>650</posy>
+					<width>320</width>
+					<height>100</height>
+					<texture border="21">banner-shadow.png</texture>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>650</posy>
+					<width>320</width>
+					<height>100</height>
+					<texture background="true" diffuse="banner-diffuse-angle.png">$INFO[ListItem.Icon]</texture>	
+					<bordersize>20</bordersize>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<fadetime>CrossFade</fadetime>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>710</posy>
+					<width>320</width>
+					<height>100</height>
+					<texture background="true" diffuse="banner-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
+					<bordersize>20</bordersize>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<fadetime>CrossFade</fadetime>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+				<control type="image">
+					<posx>0</posx>
+					<posy>537</posy>
+					<width>280</width>
+					<height>208</height>
+					<texture border="21">video-shadow.png</texture>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>537</posy>
+					<width>280</width>
+					<height>208</height>
+					<texture background="true" diffuse="video-diffuse-angle.png">$INFO[ListItem.Icon]</texture>	
+					<bordersize>20</bordersize>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>CrossFade</fadetime>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>704</posy>
+					<width>280</width>
+					<height>208</height>
+					<texture background="true" diffuse="video-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
+					<bordersize>20</bordersize>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>CrossFade</fadetime>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)</visible>
+				<control type="image">
+					<posx>10</posx>
+					<posy>420</posy>
+					<width>270</width>
+					<height>320</height>
+					<texture border="21">thumb-shadow.png</texture>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>420</posy>
+					<width>270</width>
+					<height>320</height>
+					<texture background="true" diffuse="thumb-diffuse-angle.png">$INFO[ListItem.Icon]</texture>	
+					<bordersize>20</bordersize>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>CrossFade</fadetime>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>700</posy>
+					<width>270</width>
+					<height>320</height>
+					<texture background="true" diffuse="thumb-diffuse-reverse.png" flipy="true">$INFO[ListItem.Icon]</texture>
+					<bordersize>20</bordersize>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>CrossFade</fadetime>
+					<animation effect="rotatey" start="-50" end="-50" center="0,0" time="0" condition="true">Conditional</animation>
+				</control>
 			</control>
 			<control type="image">
 				<posx>220</posx>
@@ -161,6 +305,43 @@
 				<ondown>53</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
+			</control>
+			<control type="group">
+				<posx>920</posx>
+				<posy>676</posy>
+				<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>53</width>
+					<height>40</height>
+					<texture fallback="mediaicon-resolution.png">mediaicons/resolution/$INFO[ListItem.VideoResolution,,.png]</texture>
+					<colordiffuse>lightgrey</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>60</posx>
+					<posy>0</posy>
+					<width>53</width>
+					<height>40</height>
+					<texture fallback="mediaicon-aspectratio.png">mediaicons/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
+					<colordiffuse>lightgrey</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>120</posx>
+					<posy>0</posy>
+					<width>53</width>
+					<height>40</height>
+					<texture fallback="mediaicon-videocodec.png">mediaicons/videocodec/$INFO[ListItem.VideoCodec,,.png]</texture>
+					<colordiffuse>lightgrey</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>180</posx>
+					<posy>0</posy>
+					<width>53</width>
+					<height>40</height>
+					<texture fallback="mediaicon-audiocodec.png">$VAR[MediaIconAudioCodec]</texture>
+					<colordiffuse>lightgrey</colordiffuse>
+				</control>
 			</control>
 		</control>
 	</include>

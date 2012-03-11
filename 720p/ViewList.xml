@@ -411,6 +411,13 @@
 					<visible>Container.Content(Addons) + IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				</control>
 				<control type="image">
+					<posx>1050</posx>
+					<posy>290</posy>
+					<width>30</width>
+					<height>30</height>
+					<texture>$INFO[ListItem.Overlay]</texture>
+				</control>
+				<control type="image">
 					<posx>665</posx>
 					<posy>355</posy>
 					<width>400</width>
