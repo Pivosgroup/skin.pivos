@@ -107,7 +107,7 @@
 					<posy>0</posy>
 					<width>244</width>
 					<height>44</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="grouplist" id="900">
 					<posx>2</posx>
@@ -197,7 +197,7 @@
 					<posy>0</posy>
 					<width>164</width>
 					<height>44</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 					<visible>!VideoPlayer.HasMenu</visible>
 				</control>
 				<control type="image">
@@ -205,7 +205,7 @@
 					<posy>0</posy>
 					<width>204</width>
 					<height>44</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 					<visible>VideoPlayer.HasMenu</visible>
 				</control>
 				<control type="grouplist" id="800">

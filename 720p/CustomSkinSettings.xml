@@ -10,7 +10,7 @@
 				<posy>58</posy>
 				<width>1127</width>
 				<height>628</height>
-				<texture border="5">background-light.png</texture>
+				<texture border="6">background-light.png</texture>
 				<include>WindowOpenCloseFade</include>
 			</control>
 			<include>SettingsHeader</include>
@@ -62,7 +62,7 @@
 							<posy>0</posy>
 							<width>250</width>
 							<height>50</height>
-							<texture border="4">button_alt_FO.png</texture>
+							<texture border="6">button_alt_FO.png</texture>
 							<visible>!Control.HasFocus(3)</visible>
 						</control>
 						<control type="image">
@@ -70,7 +70,7 @@
 							<posy>0</posy>
 							<width>250</width>
 							<height>50</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(3)</visible>
 						</control>
 						<control type="label">
@@ -179,8 +179,8 @@
 						<align>center</align>
 						<textcolor>lightgrey</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<texturefocus border="4">button_FO.png</texturefocus>
-						<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+						<texturefocus border="6">button_FO.png</texturefocus>
+						<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 						<onclick>Skin.Reset(CustomBackGround)</onclick>
 					</control>
 					<control type="button" id="202">
@@ -193,8 +193,8 @@
 						<align>center</align>
 						<textcolor>lightgrey</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<texturefocus border="4">button_FO.png</texturefocus>
-						<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+						<texturefocus border="6">button_FO.png</texturefocus>
+						<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 						<onclick>Skin.SetImage(CustomBackGround)</onclick>
 					</control>
 					<control type="button" id="203">
@@ -207,8 +207,8 @@
 						<align>center</align>
 						<textcolor>lightgrey</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<texturefocus border="4">button_FO.png</texturefocus>
-						<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+						<texturefocus border="6">button_FO.png</texturefocus>
+						<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 						<onclick>Skin.SetPath(CustomBackGround)</onclick>
 					</control>
 				</control>
@@ -232,7 +232,7 @@
 						<posy>500</posy>
 						<width>775</width>
 						<height>40</height>
-						<texture border="4">button_alt_NF.png</texture>
+						<texture border="6">button_alt_NF.png</texture>
 					</control>
 					<control type="label">
 						<posx>10</posx>

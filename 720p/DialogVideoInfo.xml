@@ -188,7 +188,7 @@
 				<posy>258</posy>
 				<width>720</width>
 				<height>180</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="textbox" id="4">
 				<posx>60</posx>
@@ -255,7 +255,7 @@
 							<posy>0</posy>
 							<width>510</width>
 							<height>40</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 						</control>
 						<control type="label">
@@ -529,11 +529,11 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 					<altlabel>$LOCALIZE[1024]</altlabel>
-					<alttexturefocus border="4">button_FO.png</alttexturefocus>
-					<alttexturenofocus border="4">button_alt_NF.png</alttexturenofocus>
+					<alttexturefocus border="6">button_FO.png</alttexturefocus>
+					<alttexturenofocus border="6">button_alt_NF.png</alttexturenofocus>
 					<usealttexture>Container.Content(TVShows)</usealttexture>
 				</control>
 				<control type="button" id="5">
@@ -546,8 +546,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 				<control type="button" id="6">
 					<posx>0</posx>
@@ -559,8 +559,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 				<control type="button" id="10">
 					<posx>0</posx>
@@ -572,8 +572,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 				<control type="button" id="12">
 					<posx>0</posx>
@@ -585,8 +585,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 				<control type="button" id="11">
 					<posx>0</posx>
@@ -598,8 +598,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 			</control>
 		</control>

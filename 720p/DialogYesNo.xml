@@ -74,7 +74,7 @@
 				<height>35</height>
 				<label>$LOCALIZE[107]</label>
 				<align>center</align>
-				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				<onleft>10</onleft>
 				<onright>10</onright>
 				<onup>11</onup>
@@ -87,7 +87,7 @@
 				<height>35</height>
 				<label>$LOCALIZE[106]</label>
 				<align>center</align>
-				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				<onleft>11</onleft>
 				<onright>11</onright>
 				<onup>10</onup>

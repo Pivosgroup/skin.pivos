@@ -100,7 +100,7 @@
 						<posy>0</posy>
 						<width>480</width>
 						<height>40</height>
-						<texture border="4">button_alt_FO.png</texture>
+						<texture border="6">button_alt_FO.png</texture>
 						<visible>!Control.HasFocus(3)</visible>
 					</control>
 					<control type="image">
@@ -108,7 +108,7 @@
 						<posy>0</posy>
 						<width>480</width>
 						<height>40</height>
-						<texture border="4">button_FO.png</texture>
+						<texture border="6">button_FO.png</texture>
 						<visible>Control.HasFocus(3)</visible>
 					</control>
 					<control type="image">

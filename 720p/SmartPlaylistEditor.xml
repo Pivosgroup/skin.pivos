@@ -55,8 +55,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 					<onup>21</onup>
 					<ondown>14</ondown>
 					<onleft>22</onleft>
@@ -72,8 +72,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 					<onup>13</onup>
 					<ondown>15</ondown>
 					<onleft>22</onleft>
@@ -89,8 +89,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 					<onup>14</onup>
 					<ondown>20</ondown>
 					<onleft>22</onleft>
@@ -106,8 +106,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 					<onup>15</onup>
 					<ondown>21</ondown>
 					<onleft>22</onleft>
@@ -123,8 +123,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 					<onup>20</onup>
 					<ondown>13</ondown>
 					<onleft>22</onleft>
@@ -218,7 +218,7 @@
 							<posy>0</posy>
 							<width>845</width>
 							<height>40</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(10)</visible>
 						</control>
 						<control type="label">

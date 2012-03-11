@@ -78,7 +78,7 @@
 						<posy>0</posy>
 						<width>410</width>
 						<height>40</height>
-						<texture border="4">button_FO.png</texture>
+						<texture border="6">button_FO.png</texture>
 						<visible>Control.HasFocus(20)</visible>
 					</control>
 					<control type="label">
@@ -194,7 +194,7 @@
 				<height>35</height>
 				<label>$LOCALIZE[186]</label>
 				<align>center</align>
-				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				<onup>20</onup>
 				<ondown>20</ondown>
 				<onleft>11</onleft>
@@ -207,7 +207,7 @@
 				<height>35</height>
 				<label>$LOCALIZE[5]</label>
 				<align>center</align>
-				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				<onup>20</onup>
 				<ondown>20</ondown>
 				<onleft>10</onleft>

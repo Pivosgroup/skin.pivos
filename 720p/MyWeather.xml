@@ -27,7 +27,7 @@
 				<posy>0</posy>
 				<width>1124</width>
 				<height>628</height>
-				<texture border="5">background-light.png</texture>
+				<texture border="6">background-light.png</texture>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -54,7 +54,7 @@
 					<posy>0</posy>
 					<width>375</width>
 					<height>296</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="label">
 					<posx>10</posx>
@@ -165,7 +165,7 @@
 					<posy>0</posy>
 					<width>375</width>
 					<height>296</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="label">
 					<posx>20</posx>
@@ -250,7 +250,7 @@
 					<posy>0</posy>
 					<width>296</width>
 					<height>296</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
@@ -275,7 +275,7 @@
 						<posy>0</posy>
 						<width>140</width>
 						<height>220</height>
-						<texture border="4">button_alt_NF.png</texture>
+						<texture border="6">button_alt_NF.png</texture>
 					</control>
 					<control type="label">
 						<posx>5</posx>
@@ -344,7 +344,7 @@
 						<posy>0</posy>
 						<width>140</width>
 						<height>220</height>
-						<texture border="4">button_alt_NF.png</texture>
+						<texture border="6">button_alt_NF.png</texture>
 					</control>
 					<control type="label">
 						<posx>5</posx>
@@ -413,7 +413,7 @@
 						<posy>0</posy>
 						<width>140</width>
 						<height>220</height>
-						<texture border="4">button_alt_NF.png</texture>
+						<texture border="6">button_alt_NF.png</texture>
 					</control>
 					<control type="label">
 						<posx>5</posx>
@@ -482,7 +482,7 @@
 						<posy>0</posy>
 						<width>140</width>
 						<height>220</height>
-						<texture border="4">button_alt_NF.png</texture>
+						<texture border="6">button_alt_NF.png</texture>
 					</control>
 					<control type="label">
 						<posx>5</posx>
@@ -551,7 +551,7 @@
 						<posy>0</posy>
 						<width>140</width>
 						<height>220</height>
-						<texture border="4">button_alt_NF.png</texture>
+						<texture border="6">button_alt_NF.png</texture>
 					</control>
 					<control type="label">
 						<posx>5</posx>
@@ -620,7 +620,7 @@
 						<posy>0</posy>
 						<width>140</width>
 						<height>220</height>
-						<texture border="4">button_alt_NF.png</texture>
+						<texture border="6">button_alt_NF.png</texture>
 					</control>
 					<control type="label">
 						<posx>5</posx>
@@ -689,7 +689,7 @@
 						<posy>0</posy>
 						<width>140</width>
 						<height>220</height>
-						<texture border="4">button_alt_NF.png</texture>
+						<texture border="6">button_alt_NF.png</texture>
 					</control>
 					<control type="label">
 						<posx>5</posx>

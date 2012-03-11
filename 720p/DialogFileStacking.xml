@@ -75,7 +75,7 @@
 						<posy>0</posy>
 						<width>38</width>
 						<height>30</height>
-						<texture border="4">button_alt_FO.png</texture>
+						<texture border="6">button_alt_FO.png</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout width="40" height="30">
@@ -84,7 +84,7 @@
 						<posy>0</posy>
 						<width>38</width>
 						<height>30</height>
-						<texture border="4">button_FO.png</texture>
+						<texture border="6">button_FO.png</texture>
 					</control>
 				</focusedlayout>
 			</control>

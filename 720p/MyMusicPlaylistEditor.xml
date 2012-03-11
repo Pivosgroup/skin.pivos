@@ -17,7 +17,7 @@
 				<posy>-2</posy>
 				<width>1125</width>
 				<height>628</height>
-				<texture border="5">background-light.png</texture>
+				<texture border="6">background-light.png</texture>
 			</control>
 			<control type="label">
 				<posx>28</posx>
@@ -92,7 +92,7 @@
 						<posy>0</posy>
 						<width>510</width>
 						<height>40</height>
-						<texture border="4">button_FO.png</texture>
+						<texture border="6">button_FO.png</texture>
 						<visible>Control.HasFocus(50)</visible>
 					</control>
 					<control type="image">
@@ -213,7 +213,7 @@
 						<posy>0</posy>
 						<width>510</width>
 						<height>40</height>
-						<texture border="4">button_FO.png</texture>
+						<texture border="6">button_FO.png</texture>
 						<visible>Control.HasFocus(100)</visible>
 					</control>
 					<control type="image">

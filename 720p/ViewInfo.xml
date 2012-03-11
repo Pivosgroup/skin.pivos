@@ -49,7 +49,7 @@
 				<posy>75</posy>
 				<width>310</width>
 				<height>315</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 				<colordiffuse>60000000</colordiffuse>
 				<visible>![IsEmpty(ListItem.Plot) + IsEmpty(ListItem.PlotOutline) + IsEmpty(ListItem.TagLine)]</visible>
 			</control>
@@ -57,7 +57,7 @@
 				<posx>860</posx>
 				<posy>80</posy>
 				<width>290</width>
-				<height>305</height>
+				<height>300</height>
 				<label>$INFO[ListItem.Plot]</label>
 				<font>font18</font>
 				<shadowcolor>black</shadowcolor>
@@ -67,7 +67,7 @@
 				<posx>860</posx>
 				<posy>80</posy>
 				<width>290</width>
-				<height>305</height>
+				<height>300</height>
 				<label>$INFO[ListItem.PlotOutline]</label>
 				<font>font18</font>
 				<shadowcolor>black</shadowcolor>
@@ -78,7 +78,7 @@
 				<posx>860</posx>
 				<posy>80</posy>
 				<width>290</width>
-				<height>305</height>
+				<height>300</height>
 				<label>$INFO[ListItem.TagLine]</label>
 				<font>font18</font>
 				<shadowcolor>black</shadowcolor>

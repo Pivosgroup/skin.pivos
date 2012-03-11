@@ -55,8 +55,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 					<onup>19</onup>
 					<ondown>18</ondown>
 					<onleft>10</onleft>
@@ -72,8 +72,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 					<onup>12</onup>
 					<ondown>19</ondown>
 					<onleft>10</onleft>
@@ -89,8 +89,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 					<onup>18</onup>
 					<ondown>12</ondown>
 					<onleft>10</onleft>

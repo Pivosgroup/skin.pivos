@@ -40,7 +40,7 @@
 				<posy>86</posy>
 				<width>720</width>
 				<height>465</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="list" id="5">
 				<posx>60</posx>
@@ -162,8 +162,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 					<onclick>Dialog.Close(PictureInfo)</onclick>
 				</control>
 			</control>

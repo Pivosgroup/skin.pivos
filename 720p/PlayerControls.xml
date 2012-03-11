@@ -150,7 +150,7 @@
 					<posy>0</posy>
 					<width>400</width>
 					<height>44</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="grouplist" id="900">
 					<posx>40</posx>

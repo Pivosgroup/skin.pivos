@@ -84,7 +84,7 @@
 				<posy>2</posy>
 				<width>400</width>
 				<height>110</height>
-				<texture border="4">button_FO.png</texture>
+				<texture border="6">button_FO.png</texture>
 				<colordiffuse>CFFFFFFF</colordiffuse>
 				<visible>Control.HasFocus(111)</visible>
 			</control>
@@ -219,7 +219,7 @@
 				<posy>2</posy>
 				<width>400</width>
 				<height>110</height>
-				<texture border="4">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
+				<texture border="6">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
 				<visible>Control.HasFocus(121)</visible>
 			</control>
 			<control type="image">
@@ -312,7 +312,7 @@
 				<posy>2</posy>
 				<width>400</width>
 				<height>110</height>
-				<texture border="4">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
+				<texture border="6">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
 				<visible>Control.HasFocus(131)</visible>
 			</control>
 			<control type="image">
@@ -405,7 +405,7 @@
 				<posy>2</posy>
 				<width>400</width>
 				<height>110</height>
-				<texture border="4">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
+				<texture border="6">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
 				<visible>Control.HasFocus(141)</visible>
 			</control>
 			<control type="image">
@@ -518,7 +518,7 @@
 				<posy>2</posy>
 				<width>400</width>
 				<height>110</height>
-				<texture border="4">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
+				<texture border="6">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
 				<visible>Control.HasFocus(151)</visible>
 			</control>
 			<control type="image">
@@ -623,7 +623,7 @@
 				<posy>2</posy>
 				<width>400</width>
 				<height>110</height>
-				<texture border="4">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
+				<texture border="6">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
 				<visible>Control.HasFocus(161)</visible>
 			</control>
 			<control type="image">
@@ -709,7 +709,7 @@
 				<posy>2</posy>
 				<width>400</width>
 				<height>110</height>
-				<texture border="4">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
+				<texture border="6">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
 				<visible>Control.HasFocus(171)</visible>
 			</control>
 			<control type="image">
@@ -806,7 +806,7 @@
 				<posy>2</posy>
 				<width>400</width>
 				<height>110</height>
-				<texture border="4">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
+				<texture border="6">button_FO.png</texture><colordiffuse>CFFFFFFF</colordiffuse>
 				<visible>Control.HasFocus(181)</visible>
 			</control>
 			<control type="image">

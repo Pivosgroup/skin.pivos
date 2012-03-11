@@ -166,8 +166,8 @@
 				<posy>-2</posy>
 				<width>411</width>
 				<height>54</height>
-				<texture border="4">button_alt_NF.png</texture>
-				<colordiffuse>A0FFFFFF</colordiffuse>
+				<texture border="6">button_alt_NF.png</texture>
+				<colordiffuse>B0FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -674,7 +674,7 @@
 				<posy>22</posy>
 				<width>275</width>
 				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="label">
 				<posx>130</posx>
@@ -718,7 +718,7 @@
 				<posy>128</posy>
 				<width>100</width>
 				<height>36</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 				<visible>Player.HasAudio | [Player.HasVideo + !VideoPlayer.Content(Movies)]</visible>
 			</control>
 			<control type="label">
@@ -1016,7 +1016,7 @@
 					<posy>22</posy>
 					<width>275</width>
 					<height>47</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="label">
 					<posx>130</posx>
@@ -1036,7 +1036,7 @@
 					<posy>22</posy>
 					<width>275</width>
 					<height>47</height>
-					<texture border="4">button_FO.png</texture>
+					<texture border="6">button_FO.png</texture>
 				</control>
 				<control type="label">
 					<posx>130</posx>
@@ -1080,7 +1080,7 @@
 				<posy>22</posy>
 				<width>100</width>
 				<height>36</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="label">
 				<posx>24</posx>
@@ -1174,7 +1174,7 @@
 					<posy>22</posy>
 					<width>275</width>
 					<height>76</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="label">
 					<posx>130</posx>
@@ -1194,7 +1194,7 @@
 					<posy>22</posy>
 					<width>275</width>
 					<height>76</height>
-					<texture border="4">button_FO.png</texture>
+					<texture border="6">button_FO.png</texture>
 				</control>
 				<control type="label">
 					<posx>130</posx>
@@ -1248,7 +1248,7 @@
 				<posy>22</posy>
 				<width>100</width>
 				<height>36</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="label">
 				<posx>24</posx>
@@ -1342,7 +1342,7 @@
 					<posy>22</posy>
 					<width>275</width>
 					<height>76</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="label">
 					<posx>130</posx>
@@ -1362,7 +1362,7 @@
 					<posy>22</posy>
 					<width>275</width>
 					<height>76</height>
-					<texture border="4">button_FO.png</texture>
+					<texture border="6">button_FO.png</texture>
 				</control>
 				<control type="label">
 					<posx>130</posx>
@@ -1791,7 +1791,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="3">
@@ -1804,7 +1804,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="togglebutton" id="4">
@@ -1818,9 +1818,9 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<alttexturefocus border="4">button_FO.png</alttexturefocus>
+					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 				</control>
 				<control type="radiobutton" id="5">
@@ -1834,7 +1834,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -1853,7 +1853,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -1891,7 +1891,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -1905,7 +1905,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -1920,9 +1920,9 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<alttexturefocus border="4">button_FO.png</alttexturefocus>
+					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -1935,7 +1935,7 @@
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -1949,7 +1949,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -1970,7 +1970,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -1984,7 +1984,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -2021,7 +2021,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2035,7 +2035,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2050,9 +2050,9 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<alttexturefocus border="4">button_FO.png</alttexturefocus>
+					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2065,7 +2065,7 @@
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2079,7 +2079,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -2119,7 +2119,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="21">
@@ -2132,7 +2132,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="22">
@@ -2145,7 +2145,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>ReplaceWindow(Music)</onclick>
 				</control>
@@ -2159,7 +2159,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="radiobutton" id="20">
@@ -2172,7 +2172,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -2210,7 +2210,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="7">
@@ -2223,7 +2223,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="8">
@@ -2236,7 +2236,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 			</control>
@@ -2269,7 +2269,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2283,7 +2283,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2298,9 +2298,9 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<alttexturefocus border="4">button_FO.png</alttexturefocus>
+					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2314,7 +2314,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2328,7 +2328,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2341,7 +2341,7 @@
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2355,7 +2355,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -2393,7 +2393,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2407,7 +2407,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2422,9 +2422,9 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<alttexturefocus border="4">button_FO.png</alttexturefocus>
+					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2437,7 +2437,7 @@
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2473,7 +2473,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(AppearanceSettings)</onclick>
 				</control>
@@ -2487,7 +2487,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(VideosSettings)</onclick>
 				</control>
@@ -2501,7 +2501,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(MusicSettings)</onclick>
 				</control>
@@ -2515,7 +2515,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(PicturesSettings)</onclick>
 				</control>
@@ -2529,7 +2529,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(WeatherSettings)</onclick>
 				</control>
@@ -2543,7 +2543,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(NetworkSettings)</onclick>
 				</control>
@@ -2557,7 +2557,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="5">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<onclick>ReplaceWindow(SystemSettings)</onclick>
 				</control>
@@ -2591,7 +2591,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2605,7 +2605,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2620,9 +2620,9 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<alttexturefocus border="4">button_FO.png</alttexturefocus>
+					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2636,7 +2636,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2650,7 +2650,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="radiobutton" id="7">
@@ -2663,7 +2663,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -2682,7 +2682,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -2701,7 +2701,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -2719,7 +2719,7 @@
 					<font>font16m</font>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2733,7 +2733,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -2773,7 +2773,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="21">
@@ -2786,7 +2786,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="button" id="22">
@@ -2799,7 +2799,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>ReplaceWindow(Video)</onclick>
 				</control>
@@ -2813,7 +2813,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
 				<control type="radiobutton" id="20">
@@ -2826,7 +2826,7 @@
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<textureradioon>radio_small_FO.png</textureradioon>
 					<textureradiooff>radio_small_NF.png</textureradiooff>
 					<texturenofocus>-</texturenofocus>
@@ -2864,7 +2864,7 @@
 					<align>left</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<textureup>arrow_up_small_NF.png</textureup>
 					<textureupfocus>arrow_up_small_FO.png</textureupfocus>
@@ -2884,7 +2884,7 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">topmenu-button_FO.png</texturefocus>
+					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<onclick>-</onclick>
 				</control>
@@ -2953,7 +2953,7 @@
 					<posy>0</posy>
 					<width>86</width>
 					<height>100</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="image">
 					<posx>5</posx>
@@ -2981,7 +2981,7 @@
 					<posy>0</posy>
 					<width>70</width>
 					<height>100</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -3030,7 +3030,7 @@
 					<posy>0</posy>
 					<width>70</width>
 					<height>100</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -3079,7 +3079,7 @@
 					<posy>0</posy>
 					<width>70</width>
 					<height>100</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="label">
 					<posx>0</posx>
@@ -3128,7 +3128,7 @@
 					<posy>0</posy>
 					<width>70</width>
 					<height>100</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="label">
 					<posx>0</posx>

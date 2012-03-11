@@ -10,7 +10,7 @@
 				<posy>58</posy>
 				<width>1127</width>
 				<height>628</height>
-				<texture border="5">background-light.png</texture>
+				<texture border="6">background-light.png</texture>
 				<include>WindowOpenCloseFadeSettings</include>
 			</control>
 			<include>SettingsHeader</include>
@@ -75,7 +75,7 @@
 			<label>-</label>
 			<texturefocus border="6">button_alt_FO.png</texturefocus>
 			<texturenofocus border="6">button_NF.png</texturenofocus>
-			<alttexturefocus border="4">button_FO.png</alttexturefocus>
+			<alttexturefocus border="6">button_FO.png</alttexturefocus>
 			<alttexturenofocus border="6">button_NF.png</alttexturenofocus>
 			<usealttexture>ControlGroup(3).HasFocus</usealttexture>
 		</control>

@@ -10,7 +10,7 @@
 				<posy>58</posy>
 				<width>1127</width>
 				<height>628</height>
-				<texture border="5">background-light.png</texture>
+				<texture border="6">background-light.png</texture>
 				<include>WindowOpenCloseFadeSettings</include>
 			</control>
 			<include>SettingsHeader</include>
@@ -92,7 +92,7 @@
 							<posy>0</posy>
 							<width>520</width>
 							<height>40</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(20)</visible>
 						</control>
 						<control type="image">
@@ -219,7 +219,7 @@
 							<posy>0</posy>
 							<width>520</width>
 							<height>40</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(21)</visible>
 						</control>
 						<control type="image">

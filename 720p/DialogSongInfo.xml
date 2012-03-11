@@ -188,7 +188,7 @@
 				<posy>258</posy>
 				<width>720</width>
 				<height>180</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="textbox">
 				<posx>60</posx>
@@ -396,8 +396,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 				<control type="button" id="11">
 					<posx>0</posx>
@@ -409,8 +409,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 				<control type="button" id="13">
 					<posx>0</posx>
@@ -422,8 +422,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 				<control type="button" id="12">
 					<posx>0</posx>
@@ -435,8 +435,8 @@
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
 					<focusedcolor>white</focusedcolor>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 			</control>
 		</control>

@@ -80,7 +80,7 @@
 						<posy>0</posy>
 						<width>480</width>
 						<height>40</height>
-						<texture border="4">button_alt_FO.png</texture>
+						<texture border="6">button_alt_FO.png</texture>
 						<visible>!Control.HasFocus(3)</visible>
 					</control>
 					<control type="image">
@@ -88,7 +88,7 @@
 						<posy>0</posy>
 						<width>480</width>
 						<height>40</height>
-						<texture border="4">button_FO.png</texture>
+						<texture border="6">button_FO.png</texture>
 						<visible>Control.HasFocus(3)</visible>
 					</control>
 					<control type="label">
@@ -168,7 +168,7 @@
 						<posy>0</posy>
 						<width>480</width>
 						<height>80</height>
-						<texture border="4">button_alt_FO.png</texture>
+						<texture border="6">button_alt_FO.png</texture>
 						<visible>!Control.HasFocus(6)</visible>
 					</control>
 					<control type="image">
@@ -176,7 +176,7 @@
 						<posy>0</posy>
 						<width>480</width>
 						<height>80</height>
-						<texture border="4">button_FO.png</texture>
+						<texture border="6">button_FO.png</texture>
 						<visible>Control.HasFocus(6)</visible>
 					</control>
 					<control type="image">
@@ -254,8 +254,8 @@
 				<align>center</align>
 				<textcolor>lightgrey</textcolor>
 				<focusedcolor>white</focusedcolor>
-				<texturefocus border="4">button_FO.png</texturefocus>
-				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<texturefocus border="6">button_FO.png</texturefocus>
+				<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				<onup>6</onup>
 				<ondown>6</ondown>
 			</control>

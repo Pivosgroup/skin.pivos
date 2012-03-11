@@ -13,7 +13,7 @@
 				<posy>-2</posy>
 				<width>1125</width>
 				<height>628</height>
-				<texture border="5">background-light.png</texture>
+				<texture border="6">background-light.png</texture>
 			</control>
 			<control type="list" id="50">
 				<posx>28</posx>
@@ -172,7 +172,7 @@
 						<posy>0</posy>
 						<width>560</width>
 						<height>60</height>
-						<texture border="4">button_FO.png</texture>
+						<texture border="6">button_FO.png</texture>
 						<visible>Control.HasFocus(50)</visible>
 					</control>
 					<control type="image">
@@ -317,7 +317,7 @@
 				<posy>70</posy>
 				<width>470</width>
 				<height>480</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="group">
 				<visible>!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Container.Content(Artists) + !Container.Content(Albums) + !Container.Content(Songs) + ![Container.Content(Addons) + !IsEmpty(Container.FolderPath)] + !Window.IsVisible(VideoPlaylist)</visible>

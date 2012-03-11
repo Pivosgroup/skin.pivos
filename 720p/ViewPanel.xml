@@ -13,14 +13,14 @@
 				<posy>0</posy>
 				<width>1124</width>
 				<height>628</height>
-				<texture border="5">background-light.png</texture>
+				<texture border="6">background-light.png</texture>
 			</control>
 			<control type="image">
 				<posx>112</posx>
 				<posy>580</posy>
 				<width>900</width>
 				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="label">
 				<posx>122</posx>
@@ -393,11 +393,11 @@
 			<animation effect="slide" start="0,0" end="0,120" time="300">Hidden</animation>
 			<visible>Control.IsVisible(51) + Control.HasFocus(51) + !IsEmpty(ListItem.Title) + !Window.IsVisible(ContextMenu) + !Window.IsVisible(MovieInformation) + System.IdleTime(2)</visible>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1177</width>
-				<height>120</height>
-				<texture border="0,4,0,0">info_background.png</texture>
+				<posx>-5</posx>
+				<posy>15</posy>
+				<width>1182</width>
+				<height>110</height>
+				<texture border="0,8,0,0">info_background.png</texture>
 			</control>
 			<control type="group">
 				<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
@@ -523,7 +523,7 @@
 				<posy>70</posy>
 				<width>850</width>
 				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="image">
 				<posx>590</posx>
@@ -747,14 +747,14 @@
 				<posy>0</posy>
 				<width>1124</width>
 				<height>628</height>
-				<texture border="5">background-light.png</texture>
+				<texture border="6">background-light.png</texture>
 			</control>
 			<control type="image">
 				<posx>112</posx>
 				<posy>575</posy>
 				<width>900</width>
 				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="label">
 				<posx>122</posx>
@@ -956,7 +956,7 @@
 				<posy>35</posy>
 				<width>680</width>
 				<height>75</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="textbox">
 				<posx>345</posx>
@@ -1026,14 +1026,14 @@
 				<posy>0</posy>
 				<width>1124</width>
 				<height>628</height>
-				<texture border="5">background-light.png</texture>
+				<texture border="6">background-light.png</texture>
 			</control>
 			<control type="image">
 				<posx>112</posx>
 				<posy>575</posy>
 				<width>900</width>
 				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="label">
 				<posx>122</posx>
@@ -1186,7 +1186,7 @@
 				<posy>35</posy>
 				<width>680</width>
 				<height>75</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="label">
 				<posx>345</posx>
@@ -1252,14 +1252,14 @@
 				<posy>0</posy>
 				<width>1125</width>
 				<height>628</height>
-				<texture border="5">background-light.png</texture>
+				<texture border="6">background-light.png</texture>
 			</control>
 			<control type="image">
 				<posx>112</posx>
 				<posy>575</posy>
 				<width>900</width>
 				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="label">
 				<posx>122</posx>
@@ -1428,7 +1428,7 @@
 				<posy>35</posy>
 				<width>680</width>
 				<height>75</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="textbox">
 				<posx>345</posx>

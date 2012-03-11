@@ -83,7 +83,7 @@
 						<posy>0</posy>
 						<width>680</width>
 						<height>40</height>
-						<texture border="4">button_FO.png</texture>
+						<texture border="6">button_FO.png</texture>
 						<visible>Control.HasFocus(52)</visible>
 					</control>
 					<control type="label">
@@ -118,7 +118,7 @@
 				<posy>458</posy>
 				<width>900</width>
 				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="label">
 				<posx>35</posx>

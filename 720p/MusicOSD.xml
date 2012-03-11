@@ -78,7 +78,7 @@
 					<posy>0</posy>
 					<width>324</width>
 					<height>44</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 					<visible>!Player.CanRecord</visible>
 				</control>
 				<control type="image">
@@ -86,7 +86,7 @@
 					<posy>0</posy>
 					<width>364</width>
 					<height>44</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 					<visible>Player.CanRecord</visible>
 				</control>
 				<control type="grouplist" id="900">
@@ -277,7 +277,7 @@
 					<posy>0</posy>
 					<width>164</width>
 					<height>44</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="grouplist" id="800">
 					<posx>2</posx>

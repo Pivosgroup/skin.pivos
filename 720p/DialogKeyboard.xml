@@ -653,7 +653,7 @@
 				<posy>345</posy>
 				<width>640</width>
 				<height>40</height>
-				<texture border="4">button_alt_NF.png</texture>
+				<texture border="6">button_alt_NF.png</texture>
 			</control>
 			<control type="label" id="310">
 				<posx>35</posx>

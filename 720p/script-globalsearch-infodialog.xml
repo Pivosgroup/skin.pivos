@@ -80,7 +80,7 @@
 					<posy>425</posy>
 					<width>244</width>
 					<height>48</height>
-					<texture border="4">button_alt_NF.png</texture>
+					<texture border="6">button_alt_NF.png</texture>
 				</control>
 				<control type="image">
 					<posx>108</posx>
@@ -163,7 +163,7 @@
 							<posy>0</posy>
 							<width>800</width>
 							<height>30</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(110)</visible>
 						</control>
 						<control type="label">
@@ -309,7 +309,7 @@
 							<posy>0</posy>
 							<width>800</width>
 							<height>30</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(120)</visible>
 						</control>
 						<control type="label">
@@ -437,7 +437,7 @@
 							<posy>0</posy>
 							<width>800</width>
 							<height>30</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(130)</visible>
 						</control>
 						<control type="label">
@@ -535,7 +535,7 @@
 							<posy>0</posy>
 							<width>800</width>
 							<height>30</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(140)</visible>
 						</control>
 						<control type="label">
@@ -669,7 +669,7 @@
 							<posy>0</posy>
 							<width>800</width>
 							<height>30</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(150)</visible>
 						</control>
 						<control type="label">
@@ -797,7 +797,7 @@
 							<posy>0</posy>
 							<width>800</width>
 							<height>30</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(160)</visible>
 						</control>
 						<control type="label">
@@ -925,7 +925,7 @@
 							<posy>0</posy>
 							<width>800</width>
 							<height>30</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(170)</visible>
 						</control>
 						<control type="label">
@@ -1059,7 +1059,7 @@
 							<posy>0</posy>
 							<width>800</width>
 							<height>30</height>
-							<texture border="4">button_FO.png</texture>
+							<texture border="6">button_FO.png</texture>
 							<visible>Control.HasFocus(180)</visible>
 						</control>
 						<control type="label">
@@ -1224,24 +1224,24 @@
 					<height>35</height>
 					<label>$LOCALIZE[186]</label>
 					<align>center</align>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 				<control type="button" id="192">
 					<width>170</width>
 					<height>35</height>
 					<label>-</label>
 					<align>center</align>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 				<control type="button" id="193">
 					<width>170</width>
 					<height>35</height>
 					<label>-</label>
 					<align>center</align>
-					<texturefocus border="4">button_FO.png</texturefocus>
-					<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+					<texturefocus border="6">button_FO.png</texturefocus>
+					<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				</control>
 			</control>
 		</control>

@@ -92,7 +92,7 @@
 					<label>-</label>
 					<texturefocus border="6">button_alt_FO.png</texturefocus>
 					<texturenofocus border="6">button_NF.png</texturenofocus>
-					<alttexturefocus border="4">button_FO.png</alttexturefocus>
+					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus border="6">button_NF.png</alttexturenofocus>
 					<usealttexture>!ControlGroup(2).HasFocus</usealttexture>
 				</control>
@@ -150,7 +150,7 @@
 				<height>35</height>
 				<label>$LOCALIZE[186]</label>
 				<align>center</align>
-				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				<onup>2</onup>
 				<ondown>2</ondown>
 				<onleft>12</onleft>
@@ -163,7 +163,7 @@
 				<height>35</height>
 				<label>$LOCALIZE[222]</label>
 				<align>center</align>
-				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				<onup>2</onup>
 				<ondown>2</ondown>
 				<onleft>10</onleft>
@@ -176,7 +176,7 @@
 				<height>35</height>
 				<label>$LOCALIZE[409]</label>
 				<align>center</align>
-				<texturenofocus border="4">button_alt_NF.png</texturenofocus>
+				<texturenofocus border="6">button_alt_NF.png</texturenofocus>
 				<onup>2</onup>
 				<ondown>2</ondown>
 				<onleft>11</onleft>

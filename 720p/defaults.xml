@@ -10,7 +10,7 @@
 		<focusedcolor>white</focusedcolor>
 		<selectedcolor>light</selectedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturefocus border="6">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -27,7 +27,7 @@
 		<textcolor>lightgrey</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturefocus border="6">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -68,7 +68,7 @@
 		<textcolor>lightgrey</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturefocus border="6">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -111,7 +111,7 @@
 		<textcolor>lightgrey</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturefocus border="6">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -131,7 +131,7 @@
 		<textcolor>lightgrey</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturefocus border="6">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -164,9 +164,9 @@
 		<textcolor>lightgrey</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey</disabledcolor>
-		<texturefocus border="4">button_FO.png</texturefocus>
+		<texturefocus border="6">button_FO.png</texturefocus>
 		<texturenofocus border="6">button_NF.png</texturenofocus>
-		<alttexturefocus border="4">button_FO.png</alttexturefocus>
+		<alttexturefocus border="6">button_FO.png</alttexturefocus>
 		<alttexturenofocus border="6">button_NF.png</alttexturenofocus>
 		<textoffsetx>5</textoffsetx>
 		<textoffsety>0</textoffsety>
