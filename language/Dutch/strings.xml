@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<strings>
+	<string id="31000">Standaard</string>
+	<string id="31001">Welkom,</string>
+	<string id="31002">Sorteer: Oplopend</string>
+	<string id="31003">Sorteer: Aflopend</string>
+	<string id="31004">Recent Toegevoegd</string>
+	<string id="31005">Favoriet</string>
+	<string id="31006">Ververs Weer</string>
+	<string id="31007">Wijzig Locatie</string>
+	<string id="31008">Hi</string>
+	<string id="31009">Lo</string>
+	<string id="31010">Bezig...</string>
+	<string id="31011">Volume gedempt</string>
+	<string id="31012">Spelen</string>
+	<string id="31013">Gepauzeerd</string>
+	<string id="31014">Vooruit</string>
+	<string id="31015">Terug</string>
+	<string id="31016">creëer</string>
+	<string id="31017">Selecteer ondertitel addon</string>
+	<string id="31018">Selecteer songtext addon</string>
+	<string id="31019">Beoordeling</string>
+	<string id="31020">Onbeoordeeld</string>
+	<string id="31021">Prefereer Posters</string>
+	<string id="31022">Wind Snelheid</string>
+	<string id="31023">Wind Richting</string>
+	<string id="31024">Druk</string>
+	<string id="31025">Zicht</string>
+	<string id="31026">Maanstand</string>
+	<string id="31027">Enkele Afbeelding</string>
+	<string id="31028">Meerdere Afbeeldingen</string>
+	<string id="31029">Info</string>
+	<string id="31030">Paneel</string>
+	<string id="31031">Coverflow</string>
+</strings>
