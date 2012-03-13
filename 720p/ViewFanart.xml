@@ -69,6 +69,7 @@
 				<orientation>horizontal</orientation>
 				<focusposition>2</focusposition>
 				<pagecontrol>60</pagecontrol>
+				<hitrect x="470" y="435" w="235" h="360"/>
 				<onup>9000</onup>
 				<ondown>60</ondown>
 				<onleft condition="Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoPlaylist)">1002</onleft>

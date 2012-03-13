@@ -149,7 +149,7 @@
 		<focusedcolor>normal</focusedcolor>
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<hitrect x="-50" y="-6" w="320" h="36"/>
+		<hitrect x="-50" y="-6" w="1210" h="36"/>
 	</include>
 	<include name="KeyButton">
 		<align>center</align>
@@ -653,7 +653,7 @@
 				<animation effect="fade" end="100" time="0" delay="100">Visible</animation>
 				<animation effect="fade" end="0" time="0">Hidden</animation>
 				<include>WindowOpenCloseFadeHome</include>
-				<visible>![Control.HasFocus(1005) + IsEmpty(Skin.String(CustomFavourite.1.Label))]</visible>
+				<visible>![Control.HasFocus(1005) + IsEmpty(Skin.String(CustomFavourite.1.Label))] + [Control.HasFocus(1001) | Control.HasFocus(1002) | Control.HasFocus(1003) | Control.HasFocus(1004) | Control.HasFocus(1005) | Control.HasFocus(1006) | Control.HasFocus(1007) | Control.HasFocus(1008) | ControlGroup(2001).HasFocus | ControlGroup(2002).HasFocus | ControlGroup(2003).HasFocus | ControlGroup(2004).HasFocus | ControlGroup(2005).HasFocus | ControlGroup(2006).HasFocus | ControlGroup(2007).HasFocus | ControlGroup(2008).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003)]</visible>
 			</control>
 		</control>
 	</include>
@@ -954,6 +954,7 @@
 				<orientation>horizontal</orientation>
 				<scrolltime>250</scrolltime>
 				<preloaditems>2</preloaditems>
+				<hitrect x="0" y="0" w="450" h="174"/>
 				<onup>2002</onup>
 				<ondown>2002</ondown>
 				<onleft>5001</onleft>
@@ -1557,6 +1558,7 @@
 					<font>-</font>
 					<texturefocus>home_search_FO.png</texturefocus>
 					<texturenofocus>home_search_NF.png</texturenofocus>
+					<hitrect x="0" y="-44" w="100" h="116"/>
 					<onup>1008</onup>
 					<ondown>1002</ondown>
 					<onleft>5001</onleft>
@@ -1584,6 +1586,7 @@
 					<font>-</font>
 					<texturefocus>home_video_FO.png</texturefocus>
 					<texturenofocus>home_video_NF.png</texturenofocus>
+					<hitrect x="0" y="72" w="100" h="76"/>
 					<onup>1001</onup>
 					<ondown>1003</ondown>
 					<onleft>5001</onleft>
@@ -1611,6 +1614,7 @@
 					<font>-</font>
 					<texturefocus>home_music_FO.png</texturefocus>
 					<texturenofocus>home_music_NF.png</texturenofocus>
+					<hitrect x="0" y="148" w="100" h="76"/>
 					<onup>1002</onup>
 					<ondown>1004</ondown>
 					<onleft>5001</onleft>
@@ -1638,6 +1642,7 @@
 					<font>-</font>
 					<texturefocus>home_pictures_FO.png</texturefocus>
 					<texturenofocus>home_pictures_NF.png</texturenofocus>
+					<hitrect x="0" y="224" w="100" h="76"/>
 					<onup>1003</onup>
 					<ondown>1005</ondown>
 					<onleft>5001</onleft>
@@ -1665,6 +1670,7 @@
 					<font>-</font>
 					<texturefocus>home_favourites_FO.png</texturefocus>
 					<texturenofocus>home_favourites_NF.png</texturenofocus>
+					<hitrect x="0" y="300" w="100" h="76"/>
 					<onup>1004</onup>
 					<ondown>1006</ondown>
 					<onleft>5001</onleft>
@@ -1692,6 +1698,7 @@
 					<font>-</font>
 					<texturefocus>home_addons_FO.png</texturefocus>
 					<texturenofocus>home_addons_NF.png</texturenofocus>
+					<hitrect x="0" y="374" w="100" h="76"/>
 					<onup>1005</onup>
 					<ondown>1007</ondown>
 					<onleft>5001</onleft>
@@ -1718,6 +1725,8 @@
 					<label>-</label>
 					<font>-</font>
 					<texturefocus>home_weather_FO.png</texturefocus>
+					<texturenofocus>home_weather_NF.png</texturenofocus>
+					<hitrect x="0" y="452" w="100" h="76"/>
 					<onup>1006</onup>
 					<ondown>1008</ondown>
 					<onleft>5001</onleft>
@@ -1725,7 +1734,6 @@
 					<onright condition="Window.IsVisible(FileManager)">20</onright>
 					<onright condition="Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)">50</onright>
 					<onright condition="![Window.IsVisible(Home) | Window.IsVisible(FileManager) | Window.IsVisible(AddonBrowser) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicPlaylist) | Window.IsVisible(MusicPlaylistEditor) | Window.IsVisible(Pictures) | Window.IsVisible(Programs) | Window.IsVisible(Videos) | Window.IsVisible(VideoPlaylist) | Window.IsVisible(Weather)]">3</onright>
-					<texturenofocus>home_weather_NF.png</texturenofocus>
 					<onclick>ReplaceWindow(Weather)</onclick>
 				</control>
 				<control type="image">
@@ -1746,6 +1754,7 @@
 					<font>-</font>
 					<texturefocus>home_settings_FO.png</texturefocus>
 					<texturenofocus>home_settings_NF.png</texturenofocus>
+					<hitrect x="0" y="528" w="100" h="268"/>
 					<onup>1007</onup>
 					<ondown>1001</ondown>
 					<onleft>5001</onleft>

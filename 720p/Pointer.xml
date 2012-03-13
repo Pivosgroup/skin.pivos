@@ -5,5 +5,33 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
+		<control type="image" id="1">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>28</width>
+			<height>28</height>
+			<texture>cursor.png</texture>
+		</control>
+		<control type="image" id="2">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>28</width>
+			<height>28</height>
+			<texture>cursor.png</texture>
+		</control>
+		<control type="image" id="3">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>28</width>
+			<height>28</height>
+			<texture>cursor.png</texture>
+		</control>
+		<control type="image" id="4">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>28</width>
+			<height>28</height>
+			<texture>cursor.png</texture>
+		</control>
 	</controls>
 </window>
