@@ -9,7 +9,7 @@
 		<include>ViewList</include>
 		<include>ViewInfo</include>
 		<include>ViewPanelMusic</include>
-		<include>ViewCoverFlow</include>
+		<include>ViewCoverFlowThumb</include>
 		<include>ScrollLabel</include>
 		<include>SideMenu</include>
 	</controls>

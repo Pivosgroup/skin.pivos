@@ -8,7 +8,7 @@
 		<include>ViewFanart</include>
 		<include>ViewList</include>
 		<include>ViewPanelPictures</include>
-		<include>ViewCoverFlow</include>
+		<include>ViewCoverFlowThumb</include>
 		<include>ScrollLabel</include>
 		<include>SideMenu</include>
 	</controls>

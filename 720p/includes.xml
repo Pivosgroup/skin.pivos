@@ -18,7 +18,7 @@
 			<texture border="13">background-dark.png</texture>
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>![Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54)]</visible>
+			<visible>![Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56)]</visible>
 		</control>
 		<control type="image">
 			<posx>100</posx>
@@ -29,7 +29,7 @@
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
 			<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
-			<visible>Control.IsVisible(52) | Control.IsVisible(54)</visible>
+			<visible>Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56)</visible>
 		</control>
 		<control type="image">
 			<posx>100</posx>
@@ -149,6 +149,7 @@
 		<focusedcolor>normal</focusedcolor>
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
+		<hitrect x="-50" y="-6" w="320" h="36"/>
 	</include>
 	<include name="KeyButton">
 		<align>center</align>
