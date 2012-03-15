@@ -284,7 +284,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[24000] 1</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.1.Label))]</label2>
-						<onclick>Skin.SetAddon(CustomAddon.1.Label,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetAddon(CustomAddon.1.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="303">
 						<posx>0</posx>
@@ -293,7 +293,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[24000] 2</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.2.Label))]</label2>
-						<onclick>Skin.SetAddon(CustomAddon.2.Label,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetAddon(CustomAddon.2.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="304">
 						<posx>0</posx>
@@ -302,7 +302,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[24000] 3</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.3.Label))]</label2>
-						<onclick>Skin.SetAddon(CustomAddon.3.Label,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetAddon(CustomAddon.3.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="button" id="305">
 						<posx>0</posx>
@@ -311,7 +311,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[24000] 4</label>
 						<label2>$INFO[System.AddonTitle(Skin.String(CustomAddon.4.Label))]</label2>
-						<onclick>Skin.SetAddon(CustomAddon.4.Label,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetAddon(CustomAddon.4.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 					</control>
 					<control type="image" id="306">
 						<posx>0</posx>
