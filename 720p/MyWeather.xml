@@ -71,7 +71,7 @@
 					<width>195</width>
 					<height>30</height>
 					<label>[I]$INFO[Window(Weather).Property(Updated)] [/I]</label>
-					<font>font16m</font>
+					<font>font14m</font>
 					<textcolor>lightgrey</textcolor>
 					<align>center</align>
 				</control>
@@ -107,7 +107,7 @@
 					<posy>90</posy>
 					<width>345</width>
 					<height>30</height>
-					<label>$LOCALIZE[402]: [COLOR=white]$INFO[Window(Weather).Property(Current.FeelsLike)][/COLOR]</label>
+					<label>$LOCALIZE[402]: [COLOR=white]$INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<font>font20</font>
 					<textcolor>light</textcolor>
 				</control>
@@ -143,7 +143,7 @@
 					<posy>210</posy>
 					<width>345</width>
 					<height>30</height>
-					<label>$LOCALIZE[405]: [COLOR=white]$INFO[Window(Weather).Property(Current.DewPoint)][/COLOR]</label>
+					<label>$LOCALIZE[405]: [COLOR=white]$INFO[Window(Weather).Property(Current.DewPoint)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<font>font20</font>
 					<textcolor>light</textcolor>
 				</control>
