@@ -189,7 +189,7 @@
 					<width min="10" max="110">auto</width>
 					<height>30</height>
 					<label>[B]$INFO[Weather.Temperature][/B]</label>
-					<font>font22</font>
+					<font>font20</font>
 					<textcolor>white</textcolor>
 				</control>
 				<control type="group">
@@ -206,7 +206,7 @@
 					<width min="10" max="215">auto</width>
 					<height>30</height>
 					<label>[B]$INFO[System.Date][/B]</label>
-					<font>font22</font>
+					<font>font20</font>
 					<textcolor>lightgrey</textcolor>
 				</control>
 				<control type="group">
@@ -223,7 +223,7 @@
 					<width min="10" max="150">auto</width>
 					<height>30</height>
 					<label>[B]$INFO[System.Time][/B]</label>
-					<font>font22</font>
+					<font>font20</font>
 					<textcolor>light</textcolor>
 				</control>
 			</control>
