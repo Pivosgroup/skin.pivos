@@ -196,7 +196,7 @@
 					<width>10</width>
 					<control type="image">
 						<posx>0</posx>
-						<posy>12</posy>
+						<posy>10</posy>
 						<width>10</width>
 						<height>10</height>
 						<texture>scrollbar_nib_FO.png</texture>
@@ -213,7 +213,7 @@
 					<width>10</width>
 					<control type="image">
 						<posx>0</posx>
-						<posy>12</posy>
+						<posy>10</posy>
 						<width>10</width>
 						<height>10</height>
 						<texture>scrollbar_nib_FO.png</texture>
@@ -660,6 +660,7 @@
 				<animation effect="slide" end="0,532" time="100" condition="Control.HasFocus(1008) | ControlGroup(2008).HasFocus">Conditional</animation>
 				<animation effect="fade" end="100" time="0" delay="100">Visible</animation>
 				<animation effect="fade" end="0" time="0">Hidden</animation>
+				<animation effect="fade" start="100" end="50" time="100" condition="![ControlGroup(2001).HasFocus | ControlGroup(2002).HasFocus | ControlGroup(2003).HasFocus | ControlGroup(2004).HasFocus | ControlGroup(2005).HasFocus | ControlGroup(2006).HasFocus | ControlGroup(2007).HasFocus | ControlGroup(2008).HasFocus]">Conditional</animation>
 				<include>WindowOpenCloseFadeHome</include>
 				<visible>![Control.HasFocus(1005) + IsEmpty(Skin.String(CustomFavourite.1.Label))] + [Control.HasFocus(1001) | Control.HasFocus(1002) | Control.HasFocus(1003) | Control.HasFocus(1004) | Control.HasFocus(1005) | Control.HasFocus(1006) | Control.HasFocus(1007) | Control.HasFocus(1008) | ControlGroup(2001).HasFocus | ControlGroup(2002).HasFocus | ControlGroup(2003).HasFocus | ControlGroup(2004).HasFocus | ControlGroup(2005).HasFocus | ControlGroup(2006).HasFocus | ControlGroup(2007).HasFocus | ControlGroup(2008).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003)]</visible>
 			</control>
