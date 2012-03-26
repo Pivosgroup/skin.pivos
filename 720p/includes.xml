@@ -324,45 +324,45 @@
 				<animation effect="fade" start="100" end="50" time="100" condition="!ControlGroup(2002).HasFocus">Conditional</animation>
 				<visible>Control.HasFocus(1002) | ControlGroup(2002).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002)</visible>
 				<control type="button" id="2201">
-					<label>$LOCALIZE[136]</label>
+					<label>$LOCALIZE[20343]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
+					<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
 				</control>
 				<control type="button" id="2202">
-					<label>$LOCALIZE[589]</label>
+					<label>$LOCALIZE[20389]</label>
 					<include>HomeSubButton</include>
-					<onclick>PlayerControl(Partymode(Video))</onclick>
+					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 				</control>
 				<control type="button" id="2203">
-					<label>$LOCALIZE[31004]</label>
+					<label>$LOCALIZE[1037]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 				</control>
-				<control type="image" id="2204">
+				<control type="button" id="2204">
+					<label>$LOCALIZE[3]</label>
+					<include>HomeSubButton</include>
+					<onclick>ActivateWindow(Videos)</onclick>
+				</control>
+				<control type="image" id="2205">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
 				</control>
-				<control type="button" id="2205">
-					<label>$LOCALIZE[3]</label>
-					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(Videos)</onclick>
-				</control>
 				<control type="button" id="2206">
-					<label>$LOCALIZE[20343]</label>
+					<label>$LOCALIZE[136]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
+					<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 				</control>
 				<control type="button" id="2207">
-					<label>$LOCALIZE[20389]</label>
+					<label>$LOCALIZE[589]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
+					<onclick>PlayerControl(Partymode(Video))</onclick>
 				</control>
 				<control type="button" id="2208">
-					<label>$LOCALIZE[1037]</label>
+					<label>$LOCALIZE[31004]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+					<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="2003">
@@ -380,45 +380,45 @@
 				<animation effect="fade" start="100" end="50" time="100" condition="!ControlGroup(2003).HasFocus">Conditional</animation>
 				<visible>Control.HasFocus(1003) | ControlGroup(2003).HasFocus | Control.HasFocus(5003)</visible>
 				<control type="button" id="2301">
-					<label>$LOCALIZE[136]</label>
+					<label>$LOCALIZE[133]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
 				</control>
 				<control type="button" id="2302">
-					<label>$LOCALIZE[589]</label>
+					<label>$LOCALIZE[132]</label>
 					<include>HomeSubButton</include>
-					<onclick>PlayerControl(Partymode(Music))</onclick>
+					<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 				</control>
 				<control type="button" id="2303">
-					<label>$LOCALIZE[31004]</label>
+					<label>$LOCALIZE[134]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
 				</control>
-				<control type="image" id="2304">
+				<control type="button" id="2304">
+					<label>$LOCALIZE[1214]</label>
+					<include>HomeSubButton</include>
+					<onclick>ActivateWindow(MusicFiles)</onclick>
+				</control>
+				<control type="image" id="2305">
 					<width>150</width>
 					<height>2</height>
 					<texture>white.png</texture>
 					<colordiffuse>normal</colordiffuse>
 				</control>
-				<control type="button" id="2305">
-					<label>$LOCALIZE[133]</label>
-					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
-				</control>
 				<control type="button" id="2306">
-					<label>$LOCALIZE[132]</label>
+					<label>$LOCALIZE[136]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
 				</control>
 				<control type="button" id="2307">
-					<label>$LOCALIZE[134]</label>
+					<label>$LOCALIZE[589]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
+					<onclick>PlayerControl(Partymode(Music))</onclick>
 				</control>
 				<control type="button" id="2308">
-					<label>$LOCALIZE[1214]</label>
+					<label>$LOCALIZE[31004]</label>
 					<include>HomeSubButton</include>
-					<onclick>ActivateWindow(MusicFiles)</onclick>
+					<onclick>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="2004">
@@ -946,7 +946,7 @@
 			<posy>525</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>[Control.HasFocus(1002) | ControlGroup(2002).HasFocus | Control.HasFocus(5001)] + !Control.HasFocus(2206) + !Player.HasMedia</visible>
+			<visible>[Control.HasFocus(1002) | ControlGroup(2002).HasFocus | Control.HasFocus(5001)] + !Control.HasFocus(2201) + !Player.HasMedia</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -1078,7 +1078,7 @@
 			<posy>525</posy>
 			<include>VisibleZoomInOut</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>[[ControlGroup(2002).HasFocus + Control.HasFocus(2206)] | Control.HasFocus(5002)] + !Player.HasMedia</visible>
+			<visible>[[ControlGroup(2002).HasFocus + Control.HasFocus(2201)] | Control.HasFocus(5002)] + !Player.HasMedia</visible>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
