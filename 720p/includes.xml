@@ -264,6 +264,7 @@
 				<ondown>2001</ondown>
 				<onleft>1001</onleft>
 				<onright>5001</onright>
+				<animation effect="fade" start="100" end="50" time="100" condition="!ControlGroup(2001).HasFocus">Conditional</animation>
 				<visible>Control.HasFocus(1001) | ControlGroup(2001).HasFocus</visible>
 				<control type="button" id="2101">
 					<label>$LOCALIZE[20342]</label>
@@ -320,6 +321,7 @@
 				<ondown>2002</ondown>
 				<onleft>1002</onleft>
 				<onright>5001</onright>
+				<animation effect="fade" start="100" end="50" time="100" condition="!ControlGroup(2002).HasFocus">Conditional</animation>
 				<visible>Control.HasFocus(1002) | ControlGroup(2002).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002)</visible>
 				<control type="button" id="2201">
 					<label>$LOCALIZE[136]</label>
@@ -375,6 +377,7 @@
 				<ondown>2003</ondown>
 				<onleft>1003</onleft>
 				<onright>5003</onright>
+				<animation effect="fade" start="100" end="50" time="100" condition="!ControlGroup(2003).HasFocus">Conditional</animation>
 				<visible>Control.HasFocus(1003) | ControlGroup(2003).HasFocus | Control.HasFocus(5003)</visible>
 				<control type="button" id="2301">
 					<label>$LOCALIZE[136]</label>
@@ -430,6 +433,7 @@
 				<ondown>2004</ondown>
 				<onleft>1004</onleft>
 				<onright>5001</onright>
+				<animation effect="fade" start="100" end="50" time="100" condition="!ControlGroup(2004).HasFocus">Conditional</animation>
 				<visible>Control.HasFocus(1004) | ControlGroup(2004).HasFocus</visible>
 				<control type="button" id="2401">
 					<label>$LOCALIZE[1039]</label>
@@ -455,6 +459,7 @@
 				<ondown>2005</ondown>
 				<onleft>1005</onleft>
 				<onright>5001</onright>
+				<animation effect="fade" start="100" end="50" time="100" condition="!ControlGroup(2005).HasFocus">Conditional</animation>
 				<visible>[Control.HasFocus(1005) + !IsEmpty(Skin.String(CustomFavourite.1.Label))] | ControlGroup(2005).HasFocus</visible>
 				<control type="button" id="2501">
 					<label>$INFO[Skin.String(CustomFavourite.1.Label)]</label>
@@ -524,6 +529,7 @@
 				<ondown>2006</ondown>
 				<onleft>1006</onleft>
 				<onright>5001</onright>
+				<animation effect="fade" start="100" end="50" time="100" condition="!ControlGroup(2006).HasFocus">Conditional</animation>
 				<visible>Control.HasFocus(1006) | ControlGroup(2006).HasFocus</visible>
 				<control type="button" id="2601">
 					<label>$LOCALIZE[24033]</label>
@@ -579,6 +585,7 @@
 				<ondown>2007</ondown>
 				<onleft>1007</onleft>
 				<onright>5001</onright>
+				<animation effect="fade" start="100" end="50" time="100" condition="!ControlGroup(2007).HasFocus">Conditional</animation>
 				<visible>Control.HasFocus(1007) | ControlGroup(2007).HasFocus</visible>
 				<control type="button" id="2701">
 					<label>$LOCALIZE[31006]</label>
@@ -609,6 +616,7 @@
 				<ondown>2008</ondown>
 				<onleft>1008</onleft>
 				<onright>5001</onright>
+				<animation effect="fade" start="100" end="50" time="100" condition="!ControlGroup(2008).HasFocus">Conditional</animation>
 				<visible>Control.HasFocus(1008) | ControlGroup(2008).HasFocus</visible>
 				<control type="button" id="2801">
 					<label>$LOCALIZE[130]</label>
