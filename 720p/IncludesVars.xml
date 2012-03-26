@@ -363,8 +363,8 @@
 		<value condition="Window.IsVisible(1111)">$LOCALIZE[20077]</value>
 	</variable>
 	<variable name="SubMenuArrow">
-		<value condition="![ControlGroup(2001).HasFocus | ControlGroup(2002).HasFocus | ControlGroup(2003).HasFocus | ControlGroup(2004).HasFocus | ControlGroup(2005).HasFocus | ControlGroup(2006).HasFocus | ControlGroup(2007).HasFocus | ControlGroup(2008).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003)]">arrow_right_NF.png</value>
-		<value condition="ControlGroup(2001).HasFocus | ControlGroup(2002).HasFocus | ControlGroup(2003).HasFocus | ControlGroup(2004).HasFocus | ControlGroup(2005).HasFocus | ControlGroup(2006).HasFocus | ControlGroup(2007).HasFocus | ControlGroup(2008).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003)">arrow_right_FO.png</value>
+		<value condition="![ControlGroup(2001).HasFocus | ControlGroup(2002).HasFocus | ControlGroup(2003).HasFocus | ControlGroup(2004).HasFocus | ControlGroup(2005).HasFocus | ControlGroup(2006).HasFocus | ControlGroup(2007).HasFocus | ControlGroup(2008).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003)]">scrollbar_nib_alt_NF.png</value>
+		<value condition="ControlGroup(2001).HasFocus | ControlGroup(2002).HasFocus | ControlGroup(2003).HasFocus | ControlGroup(2004).HasFocus | ControlGroup(2005).HasFocus | ControlGroup(2006).HasFocus | ControlGroup(2007).HasFocus | ControlGroup(2008).HasFocus | Control.HasFocus(5001) | Control.HasFocus(5002) | Control.HasFocus(5003)">scrollbar_nib_FO.png</value>
 	</variable>
 	<variable name="VideoAspect">
 		<value condition="StringCompare(VideoPlayer.VideoAspect,1.33)">4:3</value>
