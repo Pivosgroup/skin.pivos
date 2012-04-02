@@ -53,6 +53,7 @@
 				<posy>46</posy>
 				<width>180</width>
 				<height>16</height>
+				<info>Player.Progress</info>
 			</control>
 			<control type="progress">
 				<posx>100</posx>
