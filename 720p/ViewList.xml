@@ -24,7 +24,7 @@
 				<preloaditems>2</preloaditems>
 				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
-				<ondown>50</ondown>
+				<ondown>-</ondown>
 				<onleft condition="Window.IsVisible(VideoLibrary) | Window.IsVisible(VideoPlaylist)">1002</onleft>
 				<onleft condition="Window.IsVisible(MusicLibrary) | Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist)">1003</onleft>
 				<onleft condition="Window.IsVisible(Pictures)">1004</onleft>
