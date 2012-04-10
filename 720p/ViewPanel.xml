@@ -57,7 +57,7 @@
 				<preloaditems>4</preloaditems>
 				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
-				<ondown>-</ondown>
+				<ondown>51</ondown>
 				<onleft>1002</onleft>
 				<onright>60</onright>
 				<orientation>vertical</orientation>
@@ -895,7 +895,7 @@
 				<preloaditems>4</preloaditems>
 				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
-				<ondown>-</ondown>
+				<ondown>51</ondown>
 				<onleft>1003</onleft>
 				<onright>60</onright>
 				<orientation>vertical</orientation>
@@ -1174,7 +1174,7 @@
 				<preloaditems>4</preloaditems>
 				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
-				<ondown>-</ondown>
+				<ondown>51</ondown>
 				<onleft>1004</onleft>
 				<onright>60</onright>
 				<orientation>vertical</orientation>
@@ -1400,7 +1400,7 @@
 				<preloaditems>4</preloaditems>
 				<pagecontrol>60</pagecontrol>
 				<onup>9000</onup>
-				<ondown>-</ondown>
+				<ondown>51</ondown>
 				<onleft>1006</onleft>
 				<onright>60</onright>
 				<orientation>vertical</orientation>
