@@ -52,7 +52,7 @@
 					<posy>0</posy>
 					<width>170</width>
 					<height>35</height>
-					<label>$LOCALIZE[186]</label>
+					<label>$LOCALIZE[222]</label>
 					<font>font16m</font>
 					<align>center</align>
 					<textcolor>lightgrey</textcolor>
