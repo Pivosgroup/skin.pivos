@@ -28,7 +28,6 @@
 			<texture border="13">background-dark.png</texture>
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
-			<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
 			<visible>Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56)</visible>
 		</control>
 		<control type="image">
@@ -39,7 +38,6 @@
 			<texture border="13">background-dark.png</texture>
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
-			<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
 			<visible>Control.IsVisible(53)</visible>
 		</control>
 		<control type="image">
