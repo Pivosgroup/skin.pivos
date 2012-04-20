@@ -1,5 +1,5 @@
 <fonts>
-	<fontset id="Default" idlock="31000" unicode="true">
+	<fontset id="Default" idlock="31000" unicode="false">
 		<font>
 			<name>font13</name>
 			<filename>default.ttf</filename>
