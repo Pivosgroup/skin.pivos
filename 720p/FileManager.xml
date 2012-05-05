@@ -12,6 +12,7 @@
 				<height>628</height>
 				<texture border="6">background-light.png</texture>
 				<include>WindowOpenCloseFadeSettings</include>
+				<colordiffuse>D0000000</colordiffuse>
 			</control>
 			<include>SettingsHeader</include>
 			<control type="group">
@@ -140,6 +141,15 @@
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
+			</control>
+			<control type="image">
+				<posx>682</posx>
+				<posy>170</posy>
+				<width>1</width>
+				<height>480</height>
+				<texture>white.png</texture>
+				<colordiffuse>50FFFFFF</colordiffuse>
+				<include>WindowOpenCloseFade</include>
 			</control>
 			<control type="group">
 				<posx>688</posx>

@@ -14,31 +14,11 @@
 			<posx>100</posx>
 			<posy>7</posy>
 			<width>1173</width>
-			<height>706</height>
-			<texture border="13">background-dark.png</texture>
-			<include>VisibleFade</include>
-			<include>WindowOpenCloseFade</include>
-			<visible>![Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56)]</visible>
-		</control>
-		<control type="image">
-			<posx>100</posx>
-			<posy>7</posy>
-			<width>1173</width>
-			<height>99</height>
-			<texture border="13">background-dark.png</texture>
-			<include>VisibleFade</include>
-			<include>WindowOpenCloseFade</include>
-			<visible>Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56)</visible>
-		</control>
-		<control type="image">
-			<posx>100</posx>
-			<posy>7</posy>
-			<width>1173</width>
 			<height>53</height>
 			<texture border="13">background-dark.png</texture>
 			<include>VisibleFade</include>
 			<include>WindowOpenCloseFade</include>
-			<visible>Control.IsVisible(53)</visible>
+			<colordiffuse>D0000000</colordiffuse>
 		</control>
 		<control type="image">
 			<posx>100</posx>
@@ -58,6 +38,7 @@
 			<height>706</height>
 			<texture border="13">background-dark.png</texture>
 			<include>WindowOpenCloseFadeSettings</include>
+			<colordiffuse>D0000000</colordiffuse>
 		</control>
 		<control type="image">
 			<posx>100</posx>
@@ -131,6 +112,17 @@
 			<height>720</height>
 			<visible>Player.HasVideo</visible>
 		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+			<aspectratio>scale</aspectratio>
+			<fadetime>CrossFade</fadetime>
+			<include>VisibleFade</include>
+			<visible>Player.HasAudio + !Skin.HasSetting(MusicPlayerFanart) + !IsEmpty(MusicPlayer.Property(Fanart_Image))</visible>
+		</control>
 		<control type="visualisation">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -158,28 +150,27 @@
 	</include>
 	<include name="HomeHeader">
 		<control type="group">
-			<posx>842</posx>
-			<posy>12</posy>
+			<posx>832</posx>
+			<posy>14</posy>
 			<include>WindowOpenCloseFade</include>
 			<control type="image">
 				<posx>0</posx>
-				<posy>-2</posy>
-				<width>411</width>
+				<posy>0</posy>
+				<width>404</width>
 				<height>54</height>
 				<texture border="6">button_alt_NF.png</texture>
-				<colordiffuse>B0FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>-2</posy>
-				<width>411</width>
+				<posy>0</posy>
+				<width>404</width>
 				<height>30</height>
 				<texture border="2">header-back.png</texture>
 			</control>
 			<control type="grouplist">
 				<posx>0</posx>
-				<posy>-2</posy>
-				<width>401</width>
+				<posy>0</posy>
+				<width>394</width>
 				<height>30</height>
 				<align>right</align>
 				<orientation>horizontal</orientation>
@@ -226,9 +217,9 @@
 				</control>
 			</control>
 			<control type="label">
-				<posx>401</posx>
-				<posy>26</posy>
-				<width>401</width>
+				<posx>394</posx>
+				<posy>28</posy>
+				<width>394</width>
 				<height>30</height>
 				<label>[I]$LOCALIZE[31001] $INFO[System.ProfileName] [/I]</label>
 				<align>right</align>
@@ -241,12 +232,12 @@
 		<control type="group">
 			<include>WindowOpenCloseSlideHome</include>
 			<control type="image">
-				<posx>100</posx>
+				<posx>99</posx>
 				<posy>0</posy>
 				<width>248</width>
 				<height>720</height>
 				<texture>home_menu_background.png</texture>
-				<colordiffuse>A0FFFFFF</colordiffuse>
+				<colordiffuse>D0000000</colordiffuse>
 				<include>WindowOpenCloseSlideHome</include>
 				<visible>Window.IsVisible(Home)</visible>
 			</control>
@@ -1345,7 +1336,7 @@
 				<width>536</width>
 				<height>150</height>
 				<orientation>horizontal</orientation>
-				<scrolltime>1250</scrolltime>
+				<scrolltime>250</scrolltime>
 				<preloaditems>2</preloaditems>
 				<onup>2003</onup>
 				<ondown>2003</ondown>
@@ -1581,6 +1572,7 @@
 				<width>110</width>
 				<height>720</height>
 				<texture>home_icon_background.png</texture>
+				<animation effect="fade" end="96" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>0</posx>

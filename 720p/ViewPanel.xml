@@ -14,6 +14,7 @@
 				<width>1124</width>
 				<height>628</height>
 				<texture border="6">background-light.png</texture>
+				<colordiffuse>D0000000</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>112</posx>
@@ -516,10 +517,10 @@
 				<posy>15</posy>
 				<width>1182</width>
 				<height>110</height>
-				<texture border="0,8,0,0">info_background.png</texture>
+				<texture border="0,4,0,0">info_background.png</texture>
 			</control>
 			<control type="group">
-				<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
+				<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)] + !StringCompare(ListItem.Label,..)</visible>
 				<control type="image">
 					<posx>10</posx>
 					<posy>25</posy>
@@ -867,6 +868,7 @@
 				<width>1124</width>
 				<height>628</height>
 				<texture border="6">background-light.png</texture>
+				<colordiffuse>D0000000</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>112</posx>
@@ -999,9 +1001,9 @@
 			<animation effect="slide" start="0,0" end="0,120" time="300">Hidden</animation>
 			<visible>Control.IsVisible(51) + Control.HasFocus(51) + !StringCompare(ListItem.Label,..) + !Window.IsVisible(ContextMenu) + !Window.IsVisible(MusicInformation) + !Window.IsVisible(SongInformation) + [Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)] + System.IdleTime(2)</visible>
 			<control type="image">
-				<posx>0</posx>
+				<posx>-5</posx>
 				<posy>0</posy>
-				<width>1177</width>
+				<width>1182</width>
 				<height>120</height>
 				<texture border="0,4,0,0">info_background.png</texture>
 			</control>
@@ -1146,6 +1148,7 @@
 				<width>1124</width>
 				<height>628</height>
 				<texture border="6">background-light.png</texture>
+				<colordiffuse>D0000000</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>112</posx>
@@ -1229,9 +1232,9 @@
 			<animation effect="slide" start="0,0" end="0,120" time="300">Hidden</animation>
 			<visible>Control.IsVisible(51) + Control.HasFocus(51) + !StringCompare(ListItem.Label,..) + !Window.IsVisible(ContextMenu) + !Window.IsVisible(PictureInfo) + !ListItem.IsFolder + System.IdleTime(2)</visible>
 			<control type="image">
-				<posx>0</posx>
+				<posx>-5</posx>
 				<posy>0</posy>
-				<width>1177</width>
+				<width>1182</width>
 				<height>120</height>
 				<texture border="0,4,0,0">info_background.png</texture>
 			</control>
@@ -1372,6 +1375,7 @@
 				<width>1125</width>
 				<height>628</height>
 				<texture border="6">background-light.png</texture>
+				<colordiffuse>D0000000</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>112</posx>
@@ -1471,9 +1475,9 @@
 			<animation effect="slide" start="0,0" end="0,120" time="300">Hidden</animation>
 			<visible>Control.IsVisible(51) + Control.HasFocus(51) + !StringCompare(ListItem.Label,..) + !Window.IsVisible(ContextMenu) + !Window.IsVisible(AddonInformation) + !Window.IsVisible(AddonSettings) + !Window.IsVisible(TextViewer) + System.IdleTime(2)</visible>
 			<control type="image">
-				<posx>0</posx>
+				<posx>-5</posx>
 				<posy>0</posy>
-				<width>1177</width>
+				<width>1182</width>
 				<height>120</height>
 				<texture border="0,4,0,0">info_background.png</texture>
 			</control>

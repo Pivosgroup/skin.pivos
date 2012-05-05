@@ -42,9 +42,9 @@
 				<texture>$INFO[ListItem.Overlay]</texture>
 			</control>
 			<control type="image">
-				<posx>-5</posx>
+				<posx>-6</posx>
 				<posy>580</posy>
-				<width>1180</width>
+				<width>1182</width>
 				<height>180</height>
 				<texture>floor.png</texture>
 			</control>
@@ -635,9 +635,9 @@
 				<texture>$INFO[ListItem.Overlay]</texture>
 			</control>
 			<control type="image">
-				<posx>-5</posx>
+				<posx>-6</posx>
 				<posy>580</posy>
-				<width>1180</width>
+				<width>1182</width>
 				<height>180</height>
 				<texture>floor.png</texture>
 			</control>
@@ -1228,9 +1228,9 @@
 				<texture>$INFO[ListItem.Overlay]</texture>
 			</control>
 			<control type="image">
-				<posx>-5</posx>
+				<posx>-6</posx>
 				<posy>580</posy>
-				<width>1180</width>
+				<width>1182</width>
 				<height>180</height>
 				<texture>floor.png</texture>
 			</control>
@@ -1814,9 +1814,9 @@
 				<visible>IsEmpty(ListItem.Title)</visible>
 			</control>
 			<control type="image">
-				<posx>-5</posx>
+				<posx>-6</posx>
 				<posy>580</posy>
-				<width>1180</width>
+				<width>1182</width>
 				<height>180</height>
 				<texture>floor.png</texture>
 			</control>

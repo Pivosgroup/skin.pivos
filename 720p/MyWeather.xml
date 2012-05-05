@@ -28,6 +28,7 @@
 				<width>1124</width>
 				<height>628</height>
 				<texture border="6">background-light.png</texture>
+				<colordiffuse>D0000000</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>0</posx>

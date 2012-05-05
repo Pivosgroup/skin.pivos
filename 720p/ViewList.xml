@@ -14,6 +14,7 @@
 				<width>1125</width>
 				<height>628</height>
 				<texture border="6">background-light.png</texture>
+				<colordiffuse>D0000000</colordiffuse>
 			</control>
 			<control type="list" id="50">
 				<posx>28</posx>
@@ -358,7 +359,7 @@
 					<texture background="true" diffuse="background-diffuse.png">$INFO[Fanart.Image]</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<fadetime>CrossFade</fadetime>
-					<visible>!IsEmpty(Fanart.Image)</visible>
+					<visible>!Container.Content(Addons) + !IsEmpty(Fanart.Image)</visible>
 				</control>
 				<control type="image">
 					<posx>640</posx>
@@ -368,7 +369,7 @@
 					<texture background="true" diffuse="background-diffuse-reverse.png" flipy="true">$INFO[Fanart.Image]</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<fadetime>CrossFade</fadetime>
-					<visible>!IsEmpty(Fanart.Image)</visible>
+					<visible>!Container.Content(Addons) + !IsEmpty(Fanart.Image)</visible>
 				</control>
 				<control type="image">
 					<posx>640</posx>
@@ -378,7 +379,7 @@
 					<texture background="true" diffuse="background-diffuse.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<fadetime>CrossFade</fadetime>
-					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+					<visible>!Container.Content(Addons) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				</control>
 				<control type="image">
 					<posx>640</posx>
@@ -388,7 +389,7 @@
 					<texture background="true" diffuse="background-diffuse-reverse.png" flipy="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<fadetime>CrossFade</fadetime>
-					<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
+					<visible>!Container.Content(Addons) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				</control>
 				<control type="image">
 					<posx>738</posx>
@@ -398,7 +399,7 @@
 					<texture background="true" diffuse="thumb-diffuse.png" fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
 					<aspectratio scalediffuse="true">keep</aspectratio>
 					<fadetime>CrossFade</fadetime>
-					<visible>Container.Content(Addons) + IsEmpty(ListItem.Property(Fanart_Image))</visible>
+					<visible>Container.Content(Addons)</visible>
 				</control>
 				<control type="image">
 					<posx>738</posx>
@@ -408,7 +409,7 @@
 					<texture background="true" diffuse="thumb-diffuse-reverse.png" fallback="DefaultAddon.png" flipy="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio scalediffuse="true">keep</aspectratio>
 					<fadetime>CrossFade</fadetime>
-					<visible>Container.Content(Addons) + IsEmpty(ListItem.Property(Fanart_Image))</visible>
+					<visible>Container.Content(Addons)</visible>
 				</control>
 				<control type="image">
 					<posx>1050</posx>
@@ -640,7 +641,7 @@
 				<control type="group">
 					<posx>683</posx>
 					<posy>560</posy>
-					<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)</visible>
+					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos) | Window.IsVisible(VideoPlaylist)] + !StringCompare(ListItem.Label,..)</visible>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>

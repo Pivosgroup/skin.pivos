@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.xios" version="0.0.6" name="XIOS" provider-name="Pivos Technology Group, Inc.">
+<addon id="skin.xios" version="1.0.0" name="XIOS" provider-name="Pivos Technology Group, Inc.">
 	<requires>
 		<import	addon="xbmc.gui" version="3.00"/>
 		<import addon="script.favourites" version="3.2.1"/>

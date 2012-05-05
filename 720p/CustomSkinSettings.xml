@@ -12,6 +12,7 @@
 				<height>628</height>
 				<texture border="6">background-light.png</texture>
 				<include>WindowOpenCloseFade</include>
+				<colordiffuse>D0000000</colordiffuse>
 			</control>
 			<include>SettingsHeader</include>
 			<control type="group">
@@ -138,6 +139,15 @@
 						<label>$LOCALIZE[20189]</label>
 						<selected>!Skin.HasSetting(NoScrollDescription)</selected>
 						<onclick>Skin.ToggleSetting(NoScrollDescription)</onclick>
+					</control>
+					<control type="radiobutton" id="103">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>775</width>
+						<height>50</height>
+						<label>$LOCALIZE[31032]</label>
+						<selected>!Skin.HasSetting(MusicPlayerFanart)</selected>
+						<onclick>Skin.ToggleSetting(MusicPlayerFanart)</onclick>
 					</control>
 				</control>
 				<control type="scrollbar" id="199">

@@ -12,6 +12,7 @@
 				<height>628</height>
 				<texture border="6">background-light.png</texture>
 				<include>WindowOpenCloseFadeSettings</include>
+				<colordiffuse>D0000000</colordiffuse>
 			</control>
 			<include>SettingsHeader</include>
 			<control type="group">

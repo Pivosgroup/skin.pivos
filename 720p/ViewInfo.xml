@@ -28,9 +28,9 @@
 			</focusedlayout>
 		</control>
 		<control type="image">
-			<posx>100</posx>
+			<posx>99</posx>
 			<posy>620</posy>
-			<width>1180</width>
+			<width>1182</width>
 			<height>140</height>
 			<texture>floor.png</texture>
 			<include>ViewFade</include>
@@ -51,7 +51,7 @@
 				<width>310</width>
 				<height>315</height>
 				<texture border="6">button_alt_NF.png</texture>
-				<colordiffuse>60000000</colordiffuse>
+				<colordiffuse>FF000000</colordiffuse>
 				<visible>[Container.Content(Movies) + ![IsEmpty(ListItem.Plot) + IsEmpty(ListItem.PlotOutline) + IsEmpty(ListItem.TagLine)]] | [[Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Plot)] | [Container.Content(Seasons) + !IsEmpty(Container.ShowPlot)] | [Container.Content(Artists) + !IsEmpty(ListItem.Property(Artist_Description))] | [Container.Content(Albums) + !IsEmpty(ListItem.Property(Album_Description))]</visible>
 			</control>
 			<control type="textbox">
@@ -309,7 +309,7 @@
 			<control type="group">
 				<posx>920</posx>
 				<posy>676</posy>
-				<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+				<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !StringCompare(ListItem.Label,..)</visible>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
