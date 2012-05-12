@@ -155,12 +155,12 @@
 				<control type="grouplist" id="900">
 					<posx>40</posx>
 					<posy>2</posy>
-					<width>320</width>
+					<width>360</width>
 					<height>40</height>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<onleft>900</onleft>
-					<onright>900</onright>
+					<onleft>909</onleft>
+					<onright>901</onright>
 					<control type="button" id="901">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -255,9 +255,11 @@
 						<texturenofocus>-</texturenofocus>
 						<onclick>PlayerControl(Repeat)</onclick>
 					</control>
-					<control type="group">
+					<control type="group" id="999">
 						<posx>0</posx>
 						<posy>0</posy>
+						<width>40</width>
+						<height>40</height>
 						<control type="image">
 							<posx>-40</posx>
 							<posy>0</posy>

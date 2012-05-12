@@ -207,7 +207,7 @@
 						<texturenofocus>-</texturenofocus>
 						<onclick>PlayerControl(Repeat)</onclick>
 					</control>
-					<control type="group">
+					<control type="group" id="999">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>40</width>
