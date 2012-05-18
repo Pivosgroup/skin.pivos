@@ -346,7 +346,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[31005] 1</label>
 						<label2>$INFO[Skin.String(CustomFavourite.1.Label)]</label2>
-						<onclick>RunScript(script.favourites,property=CustomFavourite.1)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomFavourite.1)</onclick>
 					</control>
 					<control type="button" id="309">
 						<posx>0</posx>
@@ -355,7 +355,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[31005] 2</label>
 						<label2>$INFO[Skin.String(CustomFavourite.2.Label)]</label2>
-						<onclick>RunScript(script.favourites,property=CustomFavourite.2)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomFavourite.2)</onclick>
 					</control>
 					<control type="button" id="310">
 						<posx>0</posx>
@@ -364,7 +364,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[31005] 3</label>
 						<label2>$INFO[Skin.String(CustomFavourite.3.Label)]</label2>
-						<onclick>RunScript(script.favourites,property=CustomFavourite.3)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomFavourite.3)</onclick>
 					</control>
 					<control type="button" id="311">
 						<posx>0</posx>
@@ -373,7 +373,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[31005] 4</label>
 						<label2>$INFO[Skin.String(CustomFavourite.4.Label)]</label2>
-						<onclick>RunScript(script.favourites,property=CustomFavourite.4)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomFavourite.4)</onclick>
 					</control>
 					<control type="button" id="312">
 						<posx>0</posx>
@@ -382,7 +382,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[31005] 5</label>
 						<label2>$INFO[Skin.String(CustomFavourite.5.Label)]</label2>
-						<onclick>RunScript(script.favourites,property=CustomFavourite.5)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomFavourite.5)</onclick>
 					</control>
 					<control type="button" id="313">
 						<posx>0</posx>
@@ -391,7 +391,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[31005] 6</label>
 						<label2>$INFO[Skin.String(CustomFavourite.6.Label)]</label2>
-						<onclick>RunScript(script.favourites,property=CustomFavourite.6)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomFavourite.6)</onclick>
 					</control>
 					<control type="button" id="314">
 						<posx>0</posx>
@@ -400,7 +400,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[31005] 7</label>
 						<label2>$INFO[Skin.String(CustomFavourite.7.Label)]</label2>
-						<onclick>RunScript(script.favourites,property=CustomFavourite.7)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomFavourite.7)</onclick>
 					</control>
 					<control type="button" id="315">
 						<posx>0</posx>
@@ -409,7 +409,7 @@
 						<height>50</height>
 						<label>$LOCALIZE[31005] 8</label>
 						<label2>$INFO[Skin.String(CustomFavourite.8.Label)]</label2>
-						<onclick>RunScript(script.favourites,property=CustomFavourite.8)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomFavourite.8)</onclick>
 					</control>
 				</control>
 				<control type="scrollbar" id="399">
