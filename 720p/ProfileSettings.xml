@@ -40,7 +40,7 @@
 				<posy>78</posy>
 				<width>170</width>
 				<height>170</height>
-				<texture diffuse="thumb-diffuse.png" background="true">DefaultUser.png</texture>
+				<texture diffuse="thumb-diffuse.png" background="true">IconUser.png</texture>
 				<aspectratio scalediffuse="true">keep</aspectratio>
 				<fadetime>CrossFade</fadetime>
 			</control>

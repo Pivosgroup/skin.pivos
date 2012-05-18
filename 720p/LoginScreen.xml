@@ -37,7 +37,7 @@
 				<posy>78</posy>
 				<width>170</width>
 				<height>170</height>
-				<texture fallback="DefaultUser.png" diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture fallback="IconUser.png" diffuse="thumb-diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
 				<aspectratio scalediffuse="true">keep</aspectratio>
 				<fadetime>CrossFade</fadetime>
 			</control>
