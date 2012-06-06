@@ -341,6 +341,13 @@
 					<fadetime>CrossFade</fadetime>
 				</control>
 				<control type="image">
+					<posx>1050</posx>
+					<posy>420</posy>
+					<width>30</width>
+					<height>30</height>
+					<texture>$INFO[ListItem.Overlay]</texture>
+				</control>
+				<control type="image">
 					<posx>665</posx>
 					<posy>490</posy>
 					<width>400</width>

@@ -70,6 +70,13 @@
 						<height>160</height>
 						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 					</control>
+					<control type="image">
+						<posx>120</posx>
+						<posy>140</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+					</control>
 				</itemlayout>
 				<focusedlayout width="180" height="190" condition="!Container.Content(Movies) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes) + !Container.Content(MusicVideos) + !Window.IsVisible(VideoPlaylist)">
 					<control type="image">
@@ -80,6 +87,17 @@
 						<texture background="true" diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
 						<bordertexture border="18">thumb-glow.png</bordertexture>
 						<bordersize>14</bordersize>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" start="100" end="110" center="auto" time="300" tween="back" easing="out"/>
+						</animation>
+					</control>
+					<control type="image">
+						<posx>120</posx>
+						<posy>140</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<animation effect="slide" start="0,0" end="3,5" time="0" condition="true">Conditional</animation>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" start="100" end="110" center="auto" time="300" tween="back" easing="out"/>
 						</animation>
