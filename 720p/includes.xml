@@ -459,16 +459,19 @@
 				<control type="button" id="2502">
 					<label>$INFO[Skin.String(CustomFavourite.2.Label)]</label>
 					<include>HomeSubButton</include>
+					<onclick>$INFO[Skin.String(CustomFavourite.2.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.2.Label))</visible>
 				</control>
 				<control type="button" id="2503">
 					<label>$INFO[Skin.String(CustomFavourite.3.Label)]</label>
 					<include>HomeSubButton</include>
+					<onclick>$INFO[Skin.String(CustomFavourite.3.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.3.Label))</visible>
 				</control>
 				<control type="button" id="2504">
 					<label>$INFO[Skin.String(CustomFavourite.4.Label)]</label>
 					<include>HomeSubButton</include>
+					<onclick>$INFO[Skin.String(CustomFavourite.4.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.4.Label))</visible>
 				</control>
 				<control type="image" id="2505">
@@ -481,21 +484,25 @@
 				<control type="button" id="2506">
 					<label>$INFO[Skin.String(CustomFavourite.5.Label)]</label>
 					<include>HomeSubButton</include>
+					<onclick>$INFO[Skin.String(CustomFavourite.5.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.5.Label))</visible>
 				</control>
 				<control type="button" id="2507">
 					<label>$INFO[Skin.String(CustomFavourite.6.Label)]</label>
 					<include>HomeSubButton</include>
+					<onclick>$INFO[Skin.String(CustomFavourite.6.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.6.Label))</visible>
 				</control>
 				<control type="button" id="2508">
 					<label>$INFO[Skin.String(CustomFavourite.7.Label)]</label>
 					<include>HomeSubButton</include>
+					<onclick>$INFO[Skin.String(CustomFavourite.7.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.7.Label))</visible>
 				</control>
 				<control type="button" id="2509">
 					<label>$INFO[Skin.String(CustomFavourite.8.Label)]</label>
 					<include>HomeSubButton</include>
+					<onclick>$INFO[Skin.String(CustomFavourite.8.Path)]</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.8.Label))</visible>
 				</control>
 			</control>
