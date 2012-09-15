@@ -42,7 +42,7 @@
 					<scrolltime>250</scrolltime>
 					<preloaditems>2</preloaditems>
 					<onup>9000</onup>
-					<ondown>8000</ondown>
+					<ondown>50</ondown>
 					<onleft>1003</onleft>
 					<onright>60</onright>
 					<itemlayout width="520" height="40">
@@ -179,7 +179,7 @@
 					<scrolltime>250</scrolltime>
 					<preloaditems>2</preloaditems>
 					<onup>9000</onup>
-					<ondown>8000</ondown>
+					<ondown>100</ondown>
 					<onleft>50</onleft>
 					<onright>61</onright>
 					<itemlayout width="520" height="40">
