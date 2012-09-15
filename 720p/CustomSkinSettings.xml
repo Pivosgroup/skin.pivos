@@ -87,19 +87,19 @@
 					<content>
 						<item id="1">
 							<label>$LOCALIZE[128]</label>
-							<onclick>-</onclick>
+							<onclick></onclick>
 						</item>
 						<item id="2">
 							<label>$LOCALIZE[33068]</label>
-							<onclick>-</onclick>
+							<onclick></onclick>
 						</item>
 						<item id="3">
 							<label>$LOCALIZE[513]</label>
-							<onclick>-</onclick>
+							<onclick></onclick>
 						</item>
 						<item id="4">
 							<label>$LOCALIZE[24001]</label>
-							<onclick>-</onclick>
+							<onclick></onclick>
 						</item>
 					</content>
 				</control>

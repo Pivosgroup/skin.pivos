@@ -459,19 +459,16 @@
 				<control type="button" id="2502">
 					<label>$INFO[Skin.String(CustomFavourite.2.Label)]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.2.Label))</visible>
 				</control>
 				<control type="button" id="2503">
 					<label>$INFO[Skin.String(CustomFavourite.3.Label)]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.3.Label))</visible>
 				</control>
 				<control type="button" id="2504">
 					<label>$INFO[Skin.String(CustomFavourite.4.Label)]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.4.Label))</visible>
 				</control>
 				<control type="image" id="2505">
@@ -484,25 +481,21 @@
 				<control type="button" id="2506">
 					<label>$INFO[Skin.String(CustomFavourite.5.Label)]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.5.Label))</visible>
 				</control>
 				<control type="button" id="2507">
 					<label>$INFO[Skin.String(CustomFavourite.6.Label)]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.6.Label))</visible>
 				</control>
 				<control type="button" id="2508">
 					<label>$INFO[Skin.String(CustomFavourite.7.Label)]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.7.Label))</visible>
 				</control>
 				<control type="button" id="2509">
 					<label>$INFO[Skin.String(CustomFavourite.8.Label)]</label>
 					<include>HomeSubButton</include>
-					<onclick>-</onclick>
 					<visible>!IsEmpty(Skin.String(CustomFavourite.8.Label))</visible>
 				</control>
 			</control>
@@ -2042,7 +2035,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
@@ -2056,7 +2048,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
@@ -2073,7 +2064,6 @@
 					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="edit" id="19">
 					<posx>0</posx>
@@ -2086,7 +2076,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="radiobutton" id="20">
 					<posx>0</posx>
@@ -2121,7 +2110,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="radiobutton" id="16">
 					<posx>0</posx>
@@ -2172,7 +2160,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
@@ -2186,7 +2173,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
@@ -2203,7 +2189,6 @@
 					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="edit" id="19">
 					<posx>0</posx>
@@ -2216,7 +2201,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="radiobutton" id="20">
 					<posx>0</posx>
@@ -2328,7 +2312,6 @@
 					<radioposx>10</radioposx>
 					<radiowidth>16</radiowidth>
 					<radioheight>16</radioheight>
-					<onclick>-</onclick>
 				</control>
 			</control>
 		</control>
@@ -2420,7 +2403,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
@@ -2434,7 +2416,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
@@ -2451,7 +2432,6 @@
 					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="button" id="6">
 					<posx>0</posx>
@@ -2465,7 +2445,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="button" id="7">
 					<posx>0</posx>
@@ -2479,7 +2458,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="edit" id="19">
 					<posx>0</posx>
@@ -2492,7 +2470,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="radiobutton" id="9">
 					<posx>0</posx>
@@ -2511,7 +2488,6 @@
 					<radioposx>10</radioposx>
 					<radiowidth>16</radiowidth>
 					<radioheight>16</radioheight>
-					<onclick>-</onclick>
 				</control>
 			</control>
 		</control>
@@ -2544,7 +2520,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
@@ -2558,7 +2533,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
@@ -2575,7 +2549,6 @@
 					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="edit" id="19">
 					<posx>0</posx>
@@ -2588,7 +2561,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 			</control>
 		</control>
@@ -2742,7 +2714,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="button" id="3">
 					<posx>0</posx>
@@ -2756,7 +2727,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="togglebutton" id="4">
 					<posx>0</posx>
@@ -2773,7 +2743,6 @@
 					<texturenofocus>-</texturenofocus>
 					<alttexturefocus border="6">button_FO.png</alttexturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="button" id="10">
 					<posx>0</posx>
@@ -2787,7 +2756,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="button" id="8">
 					<posx>0</posx>
@@ -2819,7 +2787,6 @@
 					<radioposx>10</radioposx>
 					<radiowidth>16</radiowidth>
 					<radioheight>16</radioheight>
-					<onclick>-</onclick>
 				</control>
 				<control type="radiobutton" id="17">
 					<posx>0</posx>
@@ -2838,7 +2805,6 @@
 					<radioposx>10</radioposx>
 					<radiowidth>16</radiowidth>
 					<radioheight>16</radioheight>
-					<onclick>-</onclick>
 				</control>
 				<control type="radiobutton" id="16">
 					<posx>0</posx>
@@ -2857,7 +2823,6 @@
 					<radioposx>10</radioposx>
 					<radiowidth>16</radiowidth>
 					<radioheight>16</radioheight>
-					<onclick>-</onclick>
 				</control>
 				<control type="edit" id="19">
 					<posx>0</posx>
@@ -2870,7 +2835,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 				<control type="radiobutton" id="11">
 					<posx>0</posx>
@@ -2982,7 +2946,6 @@
 					<radioposx>10</radioposx>
 					<radiowidth>16</radiowidth>
 					<radioheight>16</radioheight>
-					<onclick>-</onclick>
 				</control>
 			</control>
 		</control>
@@ -3021,7 +2984,6 @@
 					<texturedownfocus>arrow_down_small_FO.png</texturedownfocus>
 					<spinwidth>16</spinwidth>
 					<spinheight>16</spinheight>
-					<onclick>-</onclick>
 				</control>
 				<control type="button" id="2">
 					<posx>0</posx>
@@ -3035,7 +2997,6 @@
 					<focusedcolor>white</focusedcolor>
 					<texturefocus border="6">topmenu-button_FO.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<onclick>-</onclick>
 				</control>
 			</control>
 			<control type="label">
