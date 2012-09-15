@@ -1927,7 +1927,7 @@
 				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>50</onup>
+				<onup>SetFocus(50,999999)</onup>
 				<ondown>50</ondown>
 				<onleft>1006</onleft>
 				<onright>6</onright>
@@ -2025,7 +2025,7 @@
 				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>50</onup>
+				<onup>SetFocus(50,999999)</onup>
 				<ondown>50</ondown>
 				<onleft>1003</onleft>
 				<onright>16</onright>
@@ -2156,7 +2156,7 @@
 				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>50</onup>
+				<onup>SetFocus(50,999999)</onup>
 				<ondown>50</ondown>
 				<onleft>1003</onleft>
 				<onright>20</onright>
@@ -2254,7 +2254,7 @@
 				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>50</onup>
+				<onup>SetFocus(50,999999)</onup>
 				<ondown>50</ondown>
 				<onleft>1003</onleft>
 				<onright>20</onright>
@@ -2345,7 +2345,7 @@
 				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>50</onup>
+				<onup>SetFocus(50,999999)</onup>
 				<ondown>50</ondown>
 				<onleft>1003</onleft>
 				<onright>8</onright>
@@ -2403,7 +2403,7 @@
 				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>50</onup>
+				<onup>SetFocus(50,999999)</onup>
 				<ondown>50</ondown>
 				<onleft>1004</onleft>
 				<onright>9</onright>
@@ -2528,7 +2528,7 @@
 				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>50</onup>
+				<onup>SetFocus(50,999999)</onup>
 				<ondown>50</ondown>
 				<onleft>1006</onleft>
 				<onright>19</onright>
@@ -2607,7 +2607,7 @@
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<onup condition="!Window.IsVisible(FileManager)">3</onup>
-				<onup condition="Window.IsVisible(FileManager)">20</onup>
+				<onup condition="Window.IsVisible(FileManager)">SetFocus(20,999999)</onup>
 				<ondown condition="!Window.IsVisible(FileManager)">3</ondown>
 				<ondown condition="Window.IsVisible(FileManager)">20</ondown>
 				<onleft>1008</onleft>
@@ -2725,7 +2725,7 @@
 				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>50</onup>
+				<onup>SetFocus(50,999999)</onup>
 				<ondown>50</ondown>
 				<onleft>1002</onleft>
 				<onright>11</onright>
@@ -2908,7 +2908,7 @@
 				<height>31</height>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<onup>50</onup>
+				<onup>SetFocus(50,999999)</onup>
 				<ondown>50</ondown>
 				<onleft>1002</onleft>
 				<onright>20</onright>
